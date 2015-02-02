@@ -1,0 +1,202 @@
+[[
+  {
+    "Country":"US",
+    "Institution":"Emory & CDC",
+    "City":"Atlanta",
+    "Contact":"Robert Breiman, Lesley McGee"
+  },
+  {
+    "Country":"UK",
+    "Institution":"Sanger Institute",
+    "City":"Cambridge, UK",
+    "Contact":"Stephen Bentley"
+  },
+  {
+    "Country":"Malawi",
+    "Institution":"MLW",
+    "City":"Blantyre, Malawi",
+    "Contact":"Dean Everett"
+  },
+  {
+    "Country":"South Africa",
+    "Institution":"National Institute for Communicable Disease",
+    "City":"Johannesburg",
+    "Contact":"Anne Von Gottberg"
+  },
+  {
+    "Country":"The Gambia",
+    "Institution":"MRC",
+    "City":"Bakau",
+    "Contact":"Martin Antonio"
+  }
+],
+[
+  {
+    "Country":"Turkey",
+    "Institution":"Hacettepe University",
+    "City":"Ankara",
+    "Contact":"Prof Eser Ozgen"
+  },
+  {
+    "Country":"Poland",
+    "Institution":"National Medicines Institute",
+    "City":"Warsaw",
+    "Contact":"Prof Waleria Hryniewicz, Dr Ewa Sadowy, Dr Anna Skoczynska"
+  },
+  {
+    "Country":"Israel",
+    "Institution":"Ben-Gurion University",
+    "City":"Beersheva",
+    "Contact":"Prof Ron Dagan"
+  },
+  {
+    "Country":"Pakistan",
+    "Institution":"Aga Khan University",
+    "City":"Karachi",
+    "Contact":"Sadia Shakour"
+  },
+  {
+    "Country":"India",
+    "Institution":"Christian Medical College",
+    "City":"Vellore",
+    "Contact":"Balaji Veeraraghavan"
+  },
+  {
+    "Country":"Bangladesh",
+    "Institution":"Child Health Research Foundation, International Center for Diarrhoeal Disease Research",
+    "City":"Dhaka",
+    "Contact":"Samir Saha, Abdullah Brooks"
+  },
+  {
+    "Country":"China",
+    "Institution":"Bao'an Maternal and Child Health Hospital of Shenzhen",
+    "City":"Shenzhen",
+    "Contact":"Wu Lijuan"
+  },
+  {
+    "Country":"Hong Kong",
+    "Institution":"University Hong Kong",
+    "City":"Pok Fu Lam",
+    "Contact":"PL Ho"
+  },
+  {
+    "Country":"Malaysia",
+    "Institution":"University of Southampton",
+    "City":"Kuala Lumur",
+    "Contact":"Dr Stuart Clarke"
+  },
+  {
+    "Country":"Singapore",
+    "Institution":"University of Southampton",
+    "City":"Singapore",
+    "Contact":"Dr Stuart Clark"
+  },
+  {
+    "Country":"Thailand",
+    "Institution":"University of Southampton",
+    "City":"Bangkok",
+    "Contact":"Dr Stuart Clark"
+  },
+  {
+    "Country":"South Korea",
+    "Institution":"Sungkyunkwan University School of Medicine",
+    "City":"Suwon",
+    "Contact":"Prof Kwan Soo Ko"
+  },
+  {
+    "Country":"Cambodia",
+    "Institution":"Cambodia-Oxford Medical Research Unit",
+    "City":"Siem Reap",
+    "Contact":"Dr Paul Turner"
+  },
+  {
+    "Country":"Thailand",
+    "Institution":"Cambodia-Oxford Medical Research Unit",
+    "City":"Maesot",
+    "Contact":"Dr Paul Turner"
+  },
+  {
+    "Country":"Nepal",
+    "Institution":"University of Oxford",
+    "City":"Kathmandu",
+    "Contact":"Andrew Pollard"
+  },
+  {
+    "Country":"Ethiopia",
+    "Institution":"University of California",
+    "City":"Amhara",
+    "Contact":"Jeremy Keenan, Tom Lietman"
+  },
+  {
+    "Country":"Australia",
+    "Institution":"Menzies School of Health Research",
+    "City":"Darwin",
+    "Contact":"Prof Amanda Leach"
+  },
+  {
+    "Country":"New Zealand",
+    "Institution":"University of Auckland, Institute of Environmental Research",
+    "City":"Aukland",
+    "Contact":"Emma Best, Phil Carter"
+  },
+  {
+    "Country":"Papua New Guinea",
+    "Institution":"Telethon Kids Institute",
+    "City":"Papua New Guinea",
+    "Contact":"Deborah Lehmann"
+  },
+  {
+    "Country":"Qatar",
+    "Institution":"Hamad Medical Corporation",
+    "City":"Qatar",
+    "Contact":"Sanjay Doiphode"
+  },
+  {
+    "Country":"Mozambique",
+    "Institution":"Manhica Health Research Centre",
+    "City":"Manhica",
+    "Contact":"Betuel Sigauque"
+  },
+  {
+    "Country":"Togo",
+    "Institution":"Agence de Medecine Preventive",
+    "City":"Lome",
+    "Contact":"Jennifer Moisi"
+  },
+  {
+    "Country":"Morocco",
+    "Institution":"Faculty of Medicine and Pharmacy",
+    "City":"Casablanca",
+    "Contact":"Pr. Naima Elmdaghri"
+  },
+  {
+    "Country":"Slovenia",
+    "Institution":"The National Laboratory of Health, Environment and Food",
+    "City":"Celije",
+    "Contact":"Tamara Kastrin"
+  },
+  {
+    "Country":"Nigeria",
+    "Institution":"University of Nebraska Medical Center and Ahmadu  Bello University Zaria ",
+    "City":"Abuja",
+    "Contact":"Stephen Obaro"
+  },
+  {
+    "Country":"Argentina",
+    "Institution":"Instituto Nacional de Enfermedades Infecciosas",
+    "City":"Buenos Aries",
+    "Contact":"Alejandra Corso"
+  },
+  {
+    "Country":"Brazil",
+    "Institution":"Adolfo Lutz Institute",
+    "City":"Sao Paolo",
+    "Contact":"Maria Cristina Brandileone"
+  },
+  {
+    "Country":"Peru",
+    "Institution":"Univesidad Peruana Cayetano Heredia",
+    "City":"Lima",
+    "Contact":"Theresa Ochoa"
+  }
+]]

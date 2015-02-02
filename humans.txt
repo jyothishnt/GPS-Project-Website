@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <GPS> -- <Global Pneumococcal Sequencing Project> -- <@pneumowatch>
+
+# THANKS
+
+    <Stephen Bentley>
+    <Rebecca Gladstone>
+    <Jyothish NT>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Javascript
+    Normalize.css, jQuery, Modernizr, Bootstrap
+    Google - Maps API, Charts
