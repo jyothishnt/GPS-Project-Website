@@ -763,6 +763,8 @@ img.logo-home {
 .biog_oneliner {
 	display: none;
 	font-size: 80%;
+	line-height: 1.8em;
+	text-align:justify;
 }
 /*
 .biog_oneliner { 
