@@ -148,13 +148,10 @@ blockquote{
   margin: 20px 0px;
 }
 
-.team_addr blockquote{
-  font-size: 80%;
-  height: 170px;
-}
 .color{
 	color: #1570a6;	
 }
+
 
 /* Form */
 
@@ -692,10 +689,143 @@ img.logo-home {
     font-size: 0.95em;
 }
 
+/*.biog {
+	width: 350px;
+	margin: 20px 10px;
+	padding: 5px;
+	background: #eee;
+	z-index: 1;
+	float: left;
+	overflow: hidden;
+}
+.biog:hover {
+}
+*/
+.biog_container {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 100px;
+    z-index: 1;
+		margin: 20px 0px;
+		padding: 0px 0px;
+		background: #eee;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px !important;
+
+}
+.biog_container:hover {
+    z-index: 2;
+
+}
+
 .biog {
-	font-size: 100%;
-	line-height: 1.4em;
-	font-style: italic;
+    position: absolute; 
+    display: inline-block;
+    width: 350px;
+    height: 100px;
+  	/*margin: 20px 0px;*/
+    width: 350px;
+    margin: 0px 0px 0 -0px;
+    height: auto;
+    background: #eee;
+    padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px !important;
+    background-clip: padding-box;
+    /*transition: height 0.3s ease 0.5s;*/
+    -webkit-transition: width 0.1s, height 0.1s, margin 0.1s;
+    -moz-transition: width 0.1s, height 0.1s,  margin 0.1s;
+    -ms-transition: width 0.1s, height 0.1s, margin 0.1s ;
+    transition: width 0.1s, height 0.1s,  margin 0.1s;
+}
+.biog:hover {
+    width: 350px;
+    margin: 0px 0px 0 -0px;
+    height: auto;
+    background: #f9f9f9;
+    padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px !important;
+    background-clip: padding-box;
+    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.4);
+    /*transition: height 0.3s ease 0.5s;*/
+    -webkit-transition: width 0.1s, height 0.1s, margin 0.1s;
+    -moz-transition: width 0.1s, height 0.1s,  margin 0.1s;
+    -ms-transition: width 0.1s, height 0.1s, margin 0.1s ;
+    transition: width 0.1s, height 0.1s,  margin 0.1s;
+
+}
+
+.biog_oneliner {
+	display: none;
+	font-size: 80%;
+}
+/*
+.biog_oneliner { 
+	overflow: hidden; 
+	width: 350px; 
+	font-size: 80%; 
+	height: 20px; 
+	position: absolute;
+	z-index: 1; 
+}
+.biog_oneliner:hover { 
+	overflow: auto; 
+	height: auto; 
+	margin: 0 0 0 -30px; 
+	width: 400px; 
+	z-index: 2; 
+	background: #eee;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-clip: padding-box;
+    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.4);
+    background-color: White;
+    padding: 10px;
+}
+*/
+
+.biog_img {
+	float: left;
+	height: 100px;
+}
+
+.biog_addr{
+	font-size: 80%;
+	padding: 10px 0 0 10px;
+	/*float: left;*/
+	/*margin: 10px 0 0 0px;*/
+	/*height: 100px;*/
+	overflow: hidden;
+}
+.biog_addr h4{
+	font-size: 120%;
+	color: #555;
+}
+.biog_addr  a{
+	float: right;
+}
+
+
+
+.rounded-img {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	border: solid 1px #555;
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50% !important;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+.rounded-img-unknown img{
 }
 .clear {
 	clear: both;
@@ -718,7 +848,10 @@ img.logo-home {
 .italics {
   font-style: italic;
 }
-
+.popover{
+    width:500px;
+    height:250px;    
+}
 
 
 /******** Video embedding - Respponsive CSS *****/
@@ -949,6 +1082,7 @@ footer .copy-right{
 	text-align:right;
 }
 
+
 /* Responsive */
 
 /* Large desktops and laptops */
@@ -1030,6 +1164,7 @@ footer .copy-right{
 	footer .copy-left, footer .copy-right{
 		text-align:center;
 	}
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -1061,9 +1196,6 @@ footer .copy-right{
   }
   footer .copy{
     text-align: center; 
-  }
-  .team_addr img {
-  	width: 100px;
   }
   .team_addr blockquote{
   	width: 100%;
