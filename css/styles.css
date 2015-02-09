@@ -765,6 +765,7 @@ img.logo-home {
 	font-size: 80%;
 	line-height: 1.8em;
 	text-align:justify;
+	padding: 10px 0px;
 }
 /*
 .biog_oneliner { 
@@ -797,11 +798,12 @@ img.logo-home {
 }
 
 .biog_addr{
+	display: block;
+	vertical-align: middle;
+	line-height: 100px;
 	font-size: 80%;
-	padding: 15px 0 0 10px;
-	/*float: left;*/
-	/*margin: 10px 0 0 0px;*/
-	/*height: 100px;*/
+	padding: 12px 0 0 10px;
+	height: 100px;
 	overflow: hidden;
 }
 .biog_addr h4{
