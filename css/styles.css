@@ -798,7 +798,7 @@ img.logo-home {
 
 .biog_addr{
 	font-size: 80%;
-	padding: 10px 0 0 10px;
+	padding: 15px 0 0 10px;
 	/*float: left;*/
 	/*margin: 10px 0 0 0px;*/
 	/*height: 100px;*/
@@ -806,13 +806,39 @@ img.logo-home {
 }
 .biog_addr h4{
 	font-size: 120%;
+	/*line-height: 1em;*/
 	color: #555;
 }
 .biog_addr  a{
 	float: right;
 }
-
-
+.biog .contact_links {
+	display: none;
+	background: rgba(100,100,100,0.1);
+	border-left: 1px solid rgba(51, 51, 51, 0.3);
+	border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+	border-bottom-left-radius: 5px !important;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 1 0px 3px rgba(0, 0, 0, .4);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	/*float: right;*/
+	text-align: center;
+	/*padding: 0 0 5px 0px;*/
+	width: 26px;
+}
+.biog .contact_links div {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+}
+.biog .contact_links #email {
+	height: 27px;
+}
+.biog .contact_links :hover {
+	background: lightblue;
+	cursor: pointer;
+}
 
 .rounded-img {
 	margin: 0px;
