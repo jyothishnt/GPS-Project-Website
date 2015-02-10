@@ -779,20 +779,6 @@
         $(this).children('.biog_oneliner').hide();
       }
     );
-
-    return;
-    $('.biog_oneliner').popover({
-      content: function(){
-        return $(this).html()
-      },
-      title: function(){
-        return $(this).prev('div.biog_addr').children('address').children('h4').html();
-      },
-      trigger: 'hover',
-      width: '300px',
-      container: 'body',
-      placement: 'bottom'
-    })
   });
     </script>
 </body>
