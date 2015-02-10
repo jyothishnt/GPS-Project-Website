@@ -705,15 +705,14 @@ img.logo-home {
     position: relative;
     display: inline-block;
     width: 350px;
-    height: 100px;
+    height: 120px;
     z-index: 1;
-		margin: 20px 0px;
-		padding: 0px 0px;
-		background: #eee;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px !important;
-
+	margin: 10px 0px;
+	padding: 0px 0px;
+	background: #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px !important;
 }
 .biog_container:hover {
     z-index: 2;
@@ -724,16 +723,15 @@ img.logo-home {
     position: absolute; 
     display: inline-block;
     width: 350px;
-    height: 100px;
   	/*margin: 20px 0px;*/
     width: 350px;
     margin: 0px 0px 0 -0px;
     height: auto;
     background: #e8e8e8;
     padding: 10px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px !important;
     background-clip: padding-box;
     /*transition: height 0.3s ease 0.5s;*/
     -webkit-transition: width 0.1s, height 0.1s, margin 0.1s;
@@ -747,9 +745,9 @@ img.logo-home {
     height: auto;
     background: #fff;
     padding: 10px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px !important;
     background-clip: padding-box;
     box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.4);
     /*transition: height 0.3s ease 0.5s;*/
@@ -758,6 +756,10 @@ img.logo-home {
     -ms-transition: width 0.1s, height 0.1s, margin 0.1s ;
     transition: width 0.1s, height 0.1s,  margin 0.1s;
 
+}
+
+.biog_img {
+  opacity: 0.8;
 }
 
 .biog_oneliner {

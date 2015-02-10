@@ -112,8 +112,8 @@
               <div class="biog_addr">
                   <address>
                     <h4>Maaike Alaerts</h4>
-                      Malawi-Liverpool-Wellcome Trust <br>
-                      Blantyre, Malawi 
+                      Malawi-Liverpool-Wellcome Trust, Malawi <br>
+                      University of Liverpool, UK
                   </address>
               </div>
               <div class="biog_oneliner">
@@ -302,9 +302,8 @@
               <div class="biog_addr">
                   <address>
                     <h4>Dean Everett</h4>
-                      University of Liverpool<br>
-                      Liverpool, UK<br>
-                      
+                      Malawi-Liverpool-Wellcome Trust, Malawi <br>
+                      University of Liverpool, UK
                   </address>
               </div>
             <!--   <div class="biog_oneliner"><br>
@@ -454,8 +453,8 @@
               <div class="biog_addr">
                   <address>
                     <h4>Anmol Kiran</h4>
-                      Malawi-Liverpool-Wellcome Trust<br>
-                      Blantyre, Malawi
+                      Malawi-Liverpool-Wellcome Trust, Malawi <br>
+                      University of Liverpool, UK
                   </address>
               </div>
               <div class="biog_oneliner">
@@ -749,11 +748,28 @@
         return false;
       }
     });
+
+
+        $('.biog').hover(
+          function(){
+            $(this).children('.biog_img').animate({'opacity':'1'},100);
+            // $('.biog_container').animate({'opacity':'0.7'},0);
+            
+          },
+          function() {
+            // $('.biog_container').css({'opacity':'0.7'},500);
+            $(this).children('.biog_img').animate({'opacity':'0.8'},100);
+          }
+        );
+
+
+
     $('.biog').hover(
       function(){
         $(this).children('.biog_oneliner').show();
         $(this).css({
-          top : 50 + $(this).position().top - $(this).height()/2 + 'px'
+          top : 50 + $(this).position().top - $(this).height()/2 + 'px',
+          opacity: 1.0
         });
         // if(!$(this).children('.contact_links').is( ":visible" ))
           $(this).children('.contact_links').toggle('slide');
