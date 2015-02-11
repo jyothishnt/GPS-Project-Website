@@ -76,7 +76,7 @@ function geocode(address) {
       marker.setIcon(icon);
       var html = "<div style='width: 120px; text-align: left; color: grey;'><b>"+ country + " : <span style='color:brown;'>" + count + "</span></b></div>";
       var html = "<div style='line-height:1.35;overflow:hidden;white-space:nowrap;font-weight:bold;'>";
-      html += "<span style='color: #666;'>City: </span><span style='color:brown;'>" + country + "</span><br>";
+      html += "<span style='color: #666;'>Location: </span><span style='color:brown;'>" + country + "</span><br>";
       html += "<span style='color: #666;'>Samples: </span><span style='color:brown;'>" + count + "</span><br>";
       html += "</div>";
 
