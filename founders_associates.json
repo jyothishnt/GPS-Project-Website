@@ -89,13 +89,13 @@
     "Country":"Singapore",
     "Institution":"University of Southampton",
     "City":"Singapore",
-    "Contact":"Dr Stuart Clark"
+    "Contact":"Dr Stuart Clarke"
   },
   {
     "Country":"Thailand",
     "Institution":"University of Southampton",
     "City":"Bangkok",
-    "Contact":"Dr Stuart Clark"
+    "Contact":"Dr Stuart Clarke"
   },
   {
     "Country":"South Korea",
@@ -198,5 +198,35 @@
     "Institution":"Univesidad Peruana Cayetano Heredia",
     "City":"Lima",
     "Contact":"Theresa Ochoa"
+  },
+  {
+    "Contact":"Leonid Titov, Alexander Davydov",
+    "Institution":"The Republican Research and Practical Center for Epidemiology and Microbiology",
+    "City":"Minsk",
+    "Country":"Belarus"
+  },
+  {
+    "Contact":"Eric Sampane-Donker",
+    "Institution":"University of Ghana Medical School",
+    "City":"Accra",
+    "Country":"Ghana"
+  },
+  {
+    "Contact":"Helmia Farida",
+    "Institution":"Faculty of Medicine, Diponegoro University",
+    "City":"Semarang",
+    "Country":"Indonesia"
+  },
+  {
+    "Contact":"Betuel Sigauque",
+    "Institution":"Centro de Investigacao em Saude de Manhica",
+    "City":"Manhica",
+    "Country":"Mozambique"
+  },
+  {
+    "Contact":"Ekatarina Egorova, Elena Voropaeva",
+    "Institution":"Moscow Research Institute for Epidemiology",
+    "City":"Moscow",
+    "Country":"Russian Federation"
   }
 ]]
