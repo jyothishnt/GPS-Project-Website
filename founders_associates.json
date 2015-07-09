@@ -153,7 +153,7 @@
   },
   {
     "Country":"Mozambique",
-    "Institution":"Manhica Health Research Centre",
+    "Institution":"Manhica Health Research Centre; Centro de Investigacao em Saude de Manhica",
     "City":"Manhica",
     "Contact":"Betuel Sigauque"
   },
@@ -216,12 +216,6 @@
     "Institution":"Faculty of Medicine, Diponegoro University",
     "City":"Semarang",
     "Country":"Indonesia"
-  },
-  {
-    "Contact":"Betuel Sigauque",
-    "Institution":"Centro de Investigacao em Saude de Manhica",
-    "City":"Manhica",
-    "Country":"Mozambique"
   },
   {
     "Contact":"Ekatarina Egorova, Elena Voropaeva",
