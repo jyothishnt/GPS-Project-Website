@@ -64,7 +64,7 @@ function geocode(address) {
           map: map,
           // icon: 'https://maps.google.com/mapfiles/kml/shapes/schools_maps.png'
       });
-      // Create icon 
+      // Create icon
       var icon = new google.maps.MarkerImage(
           "img/gps_icon.gif",
           null, /* size is determined at runtime */
@@ -102,7 +102,8 @@ function buildTable(ele,data) {
   $.each(data, function(i, map) {
     table_str += "<tr>";
     for (key in map) {
-      table_str += "<td>"+ key +"</td><td>" + map[key] + "</td>";
+      console.log(map[key])
+      table_str += "<td>"+ key +"</td><td>" + map[key].sample_count + "</td>";
     }
     table_str += "</tr>";
   })
