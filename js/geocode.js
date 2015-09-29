@@ -102,7 +102,6 @@ function buildTable(ele,data) {
   $.each(data, function(i, map) {
     table_str += "<tr>";
     for (key in map) {
-      console.log(map[key])
       table_str += "<td>"+ key +"</td><td>" + map[key].sample_count + "</td>";
     }
     table_str += "</tr>";
