@@ -1048,6 +1048,9 @@ ul.hover-block img {
 	z-index: 500;
 }
 
+.citation_table {
+    margin: 20px 0 !important;
+}
 
 .contact-img {
   background: url(../img/contact.png) no-repeat;
