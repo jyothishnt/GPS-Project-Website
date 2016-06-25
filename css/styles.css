@@ -144,12 +144,12 @@ a:hover{
 blockquote{
   border-left: 3px solid #1570a6;
   background: #f6f6f6;
-  font-size: 0.95em;    
+  font-size: 0.95em;
   margin: 20px 0px;
 }
 
 .color{
-	color: #1570a6;	
+	color: #1570a6;
 }
 
 
@@ -213,7 +213,7 @@ section {
 
 .purple{
 	color: #9b59bb !important;
-}	
+}
 
 .blue{
 	color: #1570a6 !important;
@@ -240,13 +240,21 @@ section {
 }
 
 .oblue {
-  color: #0c6ea8 !important; 
+  color: #0c6ea8 !important;
 }
 
 .yellow {
-  color: #dbcc1d !important; 
+  color: #dbcc1d !important;
 }
 /* Background colors */
+
+.white {
+    color: white !important;
+}
+
+#publications a.btn {
+    margin-right: 16px;
+}
 
 .b-oblue{
 	background: #1570a6;
@@ -256,7 +264,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
+	transition:background 1s ease;
 	cursor:default;
 }
 
@@ -268,7 +276,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
+	transition:background 1s ease;
 	cursor:default;
 }
 
@@ -277,7 +285,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
+	transition:background 1s ease;
 }
 
 .b-purple{
@@ -288,8 +296,8 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
-	cursor:default;	
+	transition:background 1s ease;
+	cursor:default;
 }
 
 .b-purple:hover{
@@ -297,7 +305,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;		
+	transition:background 1s ease;
 }
 
 .b-blue{
@@ -308,8 +316,8 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
-	cursor:default;		
+	transition:background 1s ease;
+	cursor:default;
 }
 
 .b-blue:hover{
@@ -317,7 +325,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;		
+	transition:background 1s ease;
 }
 
 .b-green{
@@ -328,8 +336,8 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
-	cursor:default;	
+	transition:background 1s ease;
+	cursor:default;
 }
 
 .b-green:hover{
@@ -337,7 +345,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;		
+	transition:background 1s ease;
 }
 
 .b-black{
@@ -348,8 +356,8 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
-	cursor:default;	
+	transition:background 1s ease;
+	cursor:default;
 }
 
 .b-black:hover{
@@ -357,7 +365,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;		
+	transition:background 1s ease;
 }
 
 .b-lblue{
@@ -368,8 +376,8 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
-	cursor:default;	
+	transition:background 1s ease;
+	cursor:default;
 }
 
 .b-lblue:hover{
@@ -377,7 +385,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;		
+	transition:background 1s ease;
 }
 
 .b-red{
@@ -388,8 +396,8 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
-	cursor:default;	
+	transition:background 1s ease;
+	cursor:default;
 }
 
 .b-red:hover{
@@ -397,7 +405,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:backgrou    nd 1s ease;		
+	transition:backgrou    nd 1s ease;
 }
 
 .b-greyblue{
@@ -408,8 +416,8 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:background 1s ease;	
-	cursor:default;	
+	transition:background 1s ease;
+	cursor:default;
 }
 
 .b-greyblue:hover{
@@ -417,7 +425,7 @@ section {
 	-webkit-transition:background 1s ease;
 	-moz-transition:background 1s ease;
 	-o-transition:background 1s ease;
-	transition:backgrou    nd 1s ease;		
+	transition:backgrou    nd 1s ease;
 }
 
 .container{
@@ -464,7 +472,7 @@ header form{
     background: url("");
     background-size: 20px 20px;
     background-position: right;
-    
+
 }
 /* Navigation */
 
@@ -473,7 +481,7 @@ header form{
 	box-shadow: none !important;
 	text-shadow: none !important;
 	border-radius: 0px !important;
-	font-weight: normal !important; 
+	font-weight: normal !important;
 	font-size: 14px !important;
   padding: 0;
 }
@@ -720,7 +728,7 @@ img.logo-home {
 }
 
 .biog {
-    position: absolute; 
+    position: absolute;
     display: inline-block;
     width: 350px;
   	/*margin: 20px 0px;*/
@@ -770,20 +778,20 @@ img.logo-home {
 	padding: 10px 0px;
 }
 /*
-.biog_oneliner { 
-	overflow: hidden; 
-	width: 350px; 
-	font-size: 80%; 
-	height: 20px; 
+.biog_oneliner {
+	overflow: hidden;
+	width: 350px;
+	font-size: 80%;
+	height: 20px;
 	position: absolute;
-	z-index: 1; 
+	z-index: 1;
 }
-.biog_oneliner:hover { 
-	overflow: auto; 
-	height: auto; 
-	margin: 0 0 0 -30px; 
-	width: 400px; 
-	z-index: 2; 
+.biog_oneliner:hover {
+	overflow: auto;
+	height: auto;
+	margin: 0 0 0 -30px;
+	width: 400px;
+	z-index: 2;
 	background: #eee;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -882,7 +890,7 @@ img.logo-home {
 }
 .popover{
     width:500px;
-    height:250px;    
+    height:250px;
 }
 
 
@@ -893,7 +901,7 @@ img.logo-home {
     padding-bottom: 50%;
     padding-top: 30px; height: 0; overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -922,18 +930,18 @@ ul#ticker {
     list-style-type: none;
     font-size: 1em;
 }
- 
+
 ul#ticker  li {
     width: 90%;
     height: 120px;
     padding: 10px;
     border-bottom: 1px dashed #ccc;
 }
- 
+
 ul#ticker li a {
     color: #666;
 }
- 
+
 ul#ticker li span {
     display: block;
     color: #06C;
@@ -1004,7 +1012,7 @@ ul.hover-block{
 ul.hover-block li{
 	list-style:none;
 	float:left;
-	width: 150px; 
+	width: 150px;
 	height: 150px;
 	position: relative;
 	margin: 0px 18px;
@@ -1021,7 +1029,7 @@ ul.hover-block li a {
   line-height: 1.5em;
 }
 
-ul.hover-block li a { 
+ul.hover-block li a {
 	text-decoration: none;
 }
 
@@ -1034,7 +1042,7 @@ ul.hover-block li .hover-content{
 	padding: 5px 0px;
 	cursor: pointer;
   text-align: center;
-    
+
 }
 
 ul.hover-block li .hover-content h6{
@@ -1133,7 +1141,7 @@ footer .copy-right{
   }
   .banner ul {
   	list-style: none;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .banner ul li {
   	font-size: 1.2em;
@@ -1144,7 +1152,7 @@ footer .copy-right{
 
   }
   footer .copy{
-    text-align: center; 
+    text-align: center;
   }
 }
 
@@ -1161,7 +1169,7 @@ footer .copy-right{
   }
   .banner ul {
   	list-style: none;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .banner ul li {
   	font-size: 0.85em;
@@ -1186,7 +1194,7 @@ footer .copy-right{
   }
   .banner ul {
   	list-style: none;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .banner ul li {
   	font-size: 0.95em;
@@ -1220,7 +1228,7 @@ footer .copy-right{
   }
   .banner ul {
   	list-style: none;
-    padding-left: 20px; 
+    padding-left: 20px;
   }
   .banner ul li {
     padding: 5px 0px;
@@ -1230,7 +1238,7 @@ footer .copy-right{
   	width: 30%;
   }
   footer .copy{
-    text-align: center; 
+    text-align: center;
   }
   .team_addr blockquote{
   	width: 100%;
@@ -1261,7 +1269,7 @@ footer .copy-right{
   }
   .banner ul {
   	list-style: none;
-    padding-left: 20px; 
+    padding-left: 20px;
   }
   .banner ul li {
     padding: 5px 0px;
@@ -1271,7 +1279,7 @@ footer .copy-right{
   	width: 30%;
   }
   footer .copy{
-    text-align: center; 
+    text-align: center;
   }
   .team_addr blockquote{
   	width: 100px;
