@@ -60,6 +60,10 @@ p{
 	margin: 2px 0px;
 }
 
+div#phylocanvas.pc-container {
+	overflow: hidden;
+}
+
 a:hover,a:active,a:focus {
 	outline: 0;
 }
@@ -195,6 +199,30 @@ section {
 .button a:hover{
 	color: #fff;
 	text-decoration: none;
+}
+
+.btn-microreact{
+	background-color: #3c7383;
+	border-color: #3c7383;
+	opacity: 0.85;
+}
+
+.btn-microreact:hover{
+	background-color: #3c7383 !important;
+	border-color: #3c7383 !important;
+	opacity: 1 !important;
+}
+
+.btn-data{
+	background-color: #1570a6;
+	border-color: #1570a6;
+	opacity: 0.85;
+}
+
+.btn-data:hover{
+	background-color: #1570a6 !important;
+	border-color: #1570a6 !important;
+	opacity: 1 !important;
 }
 
 /* Well */
