@@ -1565,7 +1565,7 @@ class Table extends Component {
                     <p className="popover__message"><strong>{item.title}</strong></p>
                     <p className="popover__message">Number of GPS samples: {item.num_GPSsamples}</p>
                     {/*if ({item.url} !== '') {*/} 
-                    <p><a href={item.url}>Microreact</a> {item.microreactStatus}</p>
+                    <p><a href={item.url} target="_blank">Microreact</a> {item.microreactStatus}</p>
                     {/*}}*/}
                 </div>
             </div>
@@ -1589,7 +1589,7 @@ class Table extends Component {
                         <p className="popover__message"><strong>{item.title}</strong></p>
                         <p className="popover__message">Number of GPS samples: {item.num_GPSsamples}</p>
                         {/*if ({item.url} !== '') {*/} 
-                        <p><a href={item.url}>Microreact</a> {item.microreactStatus}</p>
+                        <p><a href={item.url} target="_blank">Microreact</a> {item.microreactStatus}</p>
                         {/*}}*/}
                     </div>
                 </div>
@@ -1613,7 +1613,7 @@ class Table extends Component {
                             <p className="popover__message"><strong>{item.title}</strong></p>
                             <p className="popover__message">Number of GPS samples: {item.num_GPSsamples}</p>
                             {/* if ({item.url} !== '') { */}
-                            <p><a href={item.url}>Microreact</a> {item.microreactStatus}</p>
+                            <p><a href={item.url} target="_blank">Microreact</a> {item.microreactStatus}</p>
                             
                         </div>
                     </div>
@@ -1638,7 +1638,7 @@ class Table extends Component {
                                 <p className="popover__message"><strong>{item.title}</strong></p>
                                 <p className="popover__message">Number of GPS samples: {item.num_GPSsamples}</p>
                                 {/*if ({item.url} !== '') {*/} 
-                                <p><a href={item.url}>Microreact</a> {item.microreactStatus}</p>
+                                <p><a href={item.url} target="_blank">Microreact</a> {item.microreactStatus}</p>
                             </div>
                         </div>
                         </div>
@@ -1662,7 +1662,7 @@ class Table extends Component {
                                 <p className="popover__message"><strong>{item.title}</strong></p>
                                 <p className="popover__message">Number of GPS samples: {item.num_GPSsamples}</p>
                                 {/*if ({item.url} !== '') {*/} 
-                                <p><a href={item.url}>Microreact</a> {item.microreactStatus}</p>
+                                <p><a href={item.url} target="_blank">Microreact</a> {item.microreactStatus}</p>
                                 {/*}}*/}
                             </div>
                         </div>
