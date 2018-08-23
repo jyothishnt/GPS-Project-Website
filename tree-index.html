@@ -23,6 +23,11 @@
     margin-top: 100px;
   }
 
+  img.leaflet-marker-icon:hover {
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity:0.8;
+  }
+
   /* Popover styling */
 
 a {
@@ -51,7 +56,8 @@ a {
     position: absolute;
     left: -150px;
     transform: translate(0,10px);
-    background-color: #c6d7f2;
+    /*background-color: #c6d7f2; */
+    background-color: #e2f0f4;
     padding: 1.5rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     width: auto;
@@ -223,6 +229,7 @@ input.borderset {
         <p class="head">
             We employ whole genome sequencing of large numbers of isolates to create a picture of the evolution of <span class="italics">Streptococcus pneumoniae</span> during the introduction of pneumococcal conjugate vaccines to characterise patterns of genetic adaptation on global and regional scales
         </p>
+   
         <br>
       </div>
     </section>
@@ -235,11 +242,36 @@ input.borderset {
     </section>
 
     <section>
-      <div id="mapid" class="container">Map Here
+      <div id="mapid" class="container">
         <!--<img src='https://api.mapbox.com/styles/v1/mapbox/light-v9/static/0,0,1.0,0,0/256x256?access_token=pk.eyJ1IjoiY2dwcy13Z3NhLWVkZ2UiLCJhIjoiY2owaWE4d2w0MDAwMTMybXk4cTN2eG5xYSJ9.l5ZaIOGl6IY_2i_fWfsRDA'></img>-->
       </div>
+    </section><br>
+    <section>
+      <div class="container content">
+        <h3>Map Key</h3>
+          <p><i class="fa fa-map-marker oblue"></i><span> Country sample without a Microreact link</span></p>
+          <p><i class="fa fa-map-marker purple"></i><span> Country sample with a Microreact link</span></p>
+      </div><br>
     </section>
-
+    <section>
+    <div class="container content">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Click to see the above data in table format
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div id="sam_datatable" style="text-align:left;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section>
       <div class="container content"><br>
           <div class="row">
@@ -401,6 +433,7 @@ input.borderset {
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="js/custom.min.js"></script>
+    <script src="js/geocode.js"></script>
     <script type="text/javascript" src="/zxtm/piwik2.js"></script>
     <script src="js/locationsMap.js"></script>
   </body>
