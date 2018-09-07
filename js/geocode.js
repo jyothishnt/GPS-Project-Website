@@ -8,7 +8,7 @@ var mapOptions = {
   center: latlng,
   scrollwheel: false
 }
-map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+//map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 var url = '/dataviewer/json/meta/gmd_country';
 var total_entries = 0;
 function checkUrlExists() {
