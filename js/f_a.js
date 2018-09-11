@@ -1,6 +1,7 @@
 var map;
 var geocoder;
 var url = '';
+var addr;
 
 function checkUrlExists() {
   url = 'founders_associates.json';
@@ -30,14 +31,14 @@ function getMapObj() {
     zoom: 2,
     center: latlng,
   }
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  //map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var legend = document.getElementById('legend');
   var div = document.createElement('div');
   div.innerHTML = '<img src="img/gps.ico"> Founders<br>';
   div.innerHTML += '<img src="img/gps_icon.gif"> Associates';
   legend.appendChild(div);
 
-  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
+  //map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
   return map;
 }
 function showFounders(map, data) {
