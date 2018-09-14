@@ -35,7 +35,7 @@ var myBlueIcon = L.icon({
 });
 
 var markerHinxton =  L.marker([52.0785, 0.1861], {icon: myIcon}).addTo(mymap);
-markerHinxton.bindPopup("<b>Welcome Trust Sanger Institute</b>").openPopup();
+markerHinxton.bindPopup("<h3>Founder</h3><b>Welcome Trust Sanger Institute</b><br>Cambridge, UK<br>Stephen Bentley").openPopup();
 
 let isClicked = false
 
@@ -60,8 +60,80 @@ mymap.on ({
     }
 })
 
+var markerDarwinAUS = L.marker([-12.4634, 130.8456], {icon: myBlueIcon}).addTo(mymap);
+markerDarwinAUS.bindPopup("<h3>Associate</h3><b>Menzies School of Health Research</b><br>Darwin, Australia<br>Prof. Amanda Leach").openPopup();
+
+markerDarwinAUS.on({
+    mouseover: function() {
+        if(!isClicked) {
+            this.openPopup()
+        }
+    },
+    click: function() {
+        isClicked = true
+        this.openPopup()
+    }
+})
+
+mymap.on ({
+    click: function() {
+        isClicked = false
+    },
+    popupclose: function () {
+        isClicked = false
+    }
+})
+
+var markerCasuarinaAUS = L.marker([-28.2887, 153.5739], {icon: myBlueIcon}).addTo(mymap);
+markerCasuarinaAUS.bindPopup("<h3>Associate</h3><b>Centre for Disease Control, Department of Health</b><br>Casuarina, Australia<br>Heather Cook").openPopup();
+
+markerCasuarinaAUS.on({
+    mouseover: function() {
+        if(!isClicked) {
+            this.openPopup()
+        }
+    },
+    click: function() {
+        isClicked = true
+        this.openPopup()
+    }
+})
+
+mymap.on ({
+    click: function() {
+        isClicked = false
+    },
+    popupclose: function () {
+        isClicked = false
+    }
+})
+
+var markerSuwonSK = L.marker([37.2636, 127.0286], {icon: myBlueIcon}).addTo(mymap);
+markerSuwonSK.bindPopup("<h3>Associate</h3><b>Sungkyunkwan University of Medicine</b><br>Suwon, South Korea<br>Prof. Kwan Soo Ko<br>").openPopup();
+
+markerSuwonSK.on({
+    mouseover: function() {
+        if(!isClicked) {
+            this.openPopup()
+        }
+    },
+    click: function() {
+        isClicked = true
+        this.openPopup()
+    }
+})
+
+mymap.on ({
+    click: function() {
+        isClicked = false
+    },
+    popupclose: function () {
+        isClicked = false
+    }
+})
+
 var markerArgentina =  L.marker([-34.6037, -58.3816], {icon: myBlueIcon}).addTo(mymap);
-markerArgentina.bindPopup("<b>Argentina</b><br>Samples: 493<br>").openPopup();
+markerArgentina.bindPopup("<h3>Associate</h3><b>Instituto Nacional de Enfermedades Infecciosas</b><br>Buenos Aries, Argentina<br>Alejandra Corso").openPopup();
 
 markerArgentina.on({
     mouseover: function() {
@@ -85,7 +157,7 @@ mymap.on ({
 })
 
 var markerBangladesh = L.marker([23.8103, 90.4125], {icon: myBlueIcon}).addTo(mymap);
-markerBangladesh.bindPopup("<b>Bangladesh</b><br>Samples: 556<br>").openPopup();
+markerBangladesh.bindPopup("<h3>Associate</h3><b>Child Health Research Foundation, International Centre for Diarrhoeal Disease Research</b><br>Dhaka, Bangladesh<br>Samir Saha, Abdullah Brooks").openPopup();
 
 markerBangladesh.on({
     mouseover: function() {
@@ -109,7 +181,7 @@ mymap.on ({
 })
 
 var markerBelarus = L.marker([53.9045, 27.5615], {icon: myBlueIcon}).addTo(mymap);
-markerBelarus.bindPopup("<b>Belarus</b><br>Samples: 98<br>").openPopup();
+markerBelarus.bindPopup("<h3>Associate</h3><b>Centre for Disease Control, Department of Health</b><br>Casuarina, Australia<br>Heather Cook").openPopup();
 
 markerBelarus.on({
     mouseover: function() {
@@ -133,7 +205,7 @@ mymap.on ({
 })
 
 var markerBrazil = L.marker([-14.2350, -51.9253], {icon: myBlueIcon}).addTo(mymap);
-markerBrazil.bindPopup("<b>Brazil</b><br>Samples: 512<br>").openPopup();
+markerBrazil.bindPopup("<h3>Associate</h3><b>Adolfo Lutz Institute</b><br>Sao Paolo, Brazil<br>Maria Cristina Brandileone").openPopup();
 
 markerBrazil.on({
     mouseover: function() {
@@ -157,7 +229,7 @@ mymap.on ({
 })
 
 var markerCambodia = L.marker([11.562108, 104.888535], {icon: myBlueIcon}).addTo(mymap);
-markerCambodia.bindPopup("<b>Cambodia</b><br>Samples: 914<br>").openPopup();
+markerCambodia.bindPopup("<h3>Associate</h3><b>Cambodia-Oxford Medical Research Unit</b><br>Siem Reap & Maesot, Cambodia<br>Dr. Paul Turner").openPopup();
 
 markerCambodia.on({
     mouseover: function() {
@@ -181,7 +253,7 @@ mymap.on ({
 })
 
 var markerEthiopia = L.marker([9.005401, 38.763611], {icon: myBlueIcon}).addTo(mymap);
-markerEthiopia.bindPopup("<b>Ethiopia</b><br>Samples: 100<br>").openPopup();
+markerEthiopia.bindPopup("<h3>Associate</h3><b>University of California</b><br>Amhara, Ethiopia<br>Jeremy Keenan, Tom Lietman").openPopup();
 
 markerEthiopia.on({
     mouseover: function() {
@@ -204,8 +276,8 @@ mymap.on ({
     }
 })
 
-var markerGambia = L.marker([13.4527, -16.5780], {icon: myBlueIcon}).addTo(mymap);
-markerGambia.bindPopup("<b>The Gambia</b><br>Samples: 3069<br>").openPopup();
+var markerGambia = L.marker([13.4794, -16.6704], {icon: myIcon}).addTo(mymap);
+markerGambia.bindPopup("<h3>Founder</h3><b>MRC</b><br>Bakau, The Gambia<br>Martin Antonio").openPopup();
 
 markerGambia.on({
     mouseover: function() {
@@ -229,7 +301,7 @@ mymap.on ({
 })
 
 var markerHongKong = L.marker([22.3964, 114.1095], {icon: myBlueIcon}).addTo(mymap);
-markerHongKong.bindPopup("<b>Hong Kong</b><br>Samples: 444<br>").openPopup();
+markerHongKong.bindPopup("<h3>Associate</h3><b>University of Hong Kong</b><br>Pok Fu Lam, Hong Kong<br>PL Ho").openPopup();
 markerHongKong.on({
     mouseover: function() {
         if(!isClicked) {
@@ -252,7 +324,7 @@ mymap.on ({
 })
 
 var markerIndia = L.marker([20.5937, 78.9629], {icon: myBlueIcon}).addTo(mymap);
-markerIndia.bindPopup("<b>India</b><br>Samples: 423<br>").openPopup();
+markerIndia.bindPopup("<h3>Associate</h3><b>Christian Medical College</b><br>Vellore, India<br>Balaji Veeraraghavan").openPopup();
 markerIndia.on({
     mouseover: function() {
         if(!isClicked) {
@@ -275,7 +347,7 @@ mymap.on ({
 })
 
 var markerIsrael = L.marker([32.0853, 34.7818], {icon: myBlueIcon}).addTo(mymap);
-markerIsrael.bindPopup("<b>Israel</b><br>Samples: 1171<br>").openPopup();
+markerIsrael.bindPopup("<h3>Associate</h3><b>Ben-Gurion University</b><br>Beersheva, Israel<br>Prof. Ron Dagan").openPopup();
 markerIsrael.on({
     mouseover: function() {
         if(!isClicked) {
@@ -297,8 +369,8 @@ mymap.on ({
     }
 })
 
-var markerMalawi = L.marker([-13.58, 33.46], {icon: myBlueIcon}).addTo(mymap);
-markerMalawi.bindPopup("<b>Malawi</b><br>Samples: 1641<br>").openPopup();
+var markerMalawi = L.marker([-13.58, 33.46], {icon: myIcon}).addTo(mymap);
+markerMalawi.bindPopup("<h3>Associate</h3><b>MLW</b><br>Blantyre, Malawi<br>Dean Everett").openPopup();
 markerMalawi.on({
     mouseover: function() {
         if(!isClicked) {
@@ -321,7 +393,7 @@ mymap.on ({
 })
 
 var markerMozambique = L.marker([-25.9655, 32.5832], {icon: myBlueIcon}).addTo(mymap);
-markerMozambique.bindPopup("<b>Mozambique</b><br>Samples: 365<br>").openPopup();
+markerMozambique.bindPopup("<h3>Associate</h3><b>Manhica Health Research Centre; Centro de Investigacao em Saude de Manhica</b><br>Manhica, Mozambique<br>Betuel Sigauque").openPopup();
 markerMozambique.on({
     mouseover: function() {
         if(!isClicked) {
@@ -344,7 +416,7 @@ mymap.on ({
 })
 
 var markerNepal = L.marker([27.42, 85.19], {icon: myBlueIcon}).addTo(mymap);
-markerNepal.bindPopup("<b>Nepal</b><br>Samples: 455<br>").openPopup();
+markerNepal.bindPopup("<h3>Associate</h3><b>University of Oxford</b><br>Kathmandu, Nepal<br>Andrew Pollard").openPopup();
 markerNepal.on({
     mouseover: function() {
         if(!isClicked) {
@@ -367,7 +439,7 @@ mymap.on ({
 })
 
 var markerNigeria = L.marker([9.0820, 8.6753], {icon: myBlueIcon}).addTo(mymap);
-markerNigeria.bindPopup("<b>Nigeria</b><br>Samples: 107<br>").openPopup();
+markerNigeria.bindPopup("<h3>Associate</h3><b>University of Nebraska Medical Center and Ahmadu Bello University Zaria</b><br>Abuja, Nigeria<br>Stephen Obaro").openPopup();
 markerNigeria.on({
     mouseover: function() {
         if(!isClicked) {
@@ -390,7 +462,7 @@ mymap.on ({
 })
 
 var markerPakistan = L.marker([30.3753, 69.3451], {icon: myBlueIcon}).addTo(mymap);
-markerPakistan.bindPopup("<b>Pakistan</b><br>Samples: 100<br>").openPopup();
+markerPakistan.bindPopup("<h3>Associate</h3><b>Aga Khan University</b><br>Karachi, Pakistan<br>Sadia Shakour").openPopup();
 markerPakistan.on({
     mouseover: function() {
         if(!isClicked) {
@@ -413,7 +485,7 @@ mymap.on ({
 })
 
 var markerPapuaNG = L.marker([-9.44314, 147.17972], {icon: myBlueIcon}).addTo(mymap);
-markerPapuaNG.bindPopup("<b>Papua New Guinea</b><br>Samples: 185<br>").openPopup();
+markerPapuaNG.bindPopup("<h3>Associate</h3><b>Telethon Kids Institute</b><br>Papua New Guinea<br>Deborah Lehmann").openPopup();
 markerPapuaNG.on({
     mouseover: function() {
         if(!isClicked) {
@@ -436,7 +508,7 @@ mymap.on ({
 })
 
 var markerPeru = L.marker([-12.046374, -77.042793], {icon: myBlueIcon}).addTo(mymap);
-markerPeru.bindPopup("<b>Peru</b><br>Samples: 1019<br>").openPopup();
+markerPeru.bindPopup("<h3>Associate</h3><b>Universidad Peruana Cayetano Heredia</b><br>Lima, Peru<br>Theresa Ochoa").openPopup();
 markerPeru.on({
     mouseover: function() {
         if(!isClicked) {
@@ -459,7 +531,7 @@ mymap.on ({
 })
 
 var markerPoland = L.marker([52.237049, 21.017532], {icon: myBlueIcon}).addTo(mymap);
-markerPoland.bindPopup("<b>Poland</b><br>Samples: 268<br>").openPopup();
+markerPoland.bindPopup("<h3>Associate</h3><b>National Medicines Institute</b><br>Warsaw, Poland<br>Prof. Waleria Hryniewicz, Dr. Ewa Sadowy, Dr. Anna Skoczynska").openPopup();
 markerPoland.on({
     mouseover: function() {
         if(!isClicked) {
@@ -482,7 +554,7 @@ mymap.on ({
 })
 
 var markerQatar = L.marker([25.3548, 51.1839], {icon: myBlueIcon}).addTo(mymap);
-markerQatar.bindPopup("<b>Qatar</b><br>Samples: 114<br>").openPopup();
+markerQatar.bindPopup("<h3>Associate</h3><b>Hamad Medical Corporation</b><br>Qatar<br>Sanjay Doiphode").openPopup();
 markerQatar.on({
     mouseover: function() {
         if(!isClicked) {
@@ -504,8 +576,8 @@ mymap.on ({
     }
 })
 
-var markerSouthAfrica = L.marker([-33.918861, 18.423300], {icon: myBlueIcon}).addTo(mymap);
-markerSouthAfrica.bindPopup("<b>South Africa</b><br>Samples: 4865<br>").openPopup();
+var markerSouthAfrica = L.marker([-33.918861, 18.423300], {icon: myIcon}).addTo(mymap);
+markerSouthAfrica.bindPopup("<h3>Associate</h3><b>National Institute for Communicable Disease</b><br>Johannesburg, South Africa<br>Anne Von Gottberg").openPopup();
 markerSouthAfrica.on({
     mouseover: function() {
         if(!isClicked) {
@@ -528,7 +600,7 @@ mymap.on ({
 })
 
 var markerThailand = L.marker([13.736717, 100.523186], {icon: myBlueIcon}).addTo(mymap);
-markerThailand.bindPopup("<b>Thailand</b><br>Samples: 247<br>").openPopup();
+markerThailand.bindPopup("<h3>Associate</h3><b>University of Southampton</b><br>Bangkok, Thailand<br>Dr. Stuart Clarke").openPopup();
 markerThailand.on({
     mouseover: function() {
         if(!isClicked) {
@@ -551,7 +623,7 @@ mymap.on ({
 })
 
 var markerTogo = L.marker([6.136629, 1.222186], {icon: myBlueIcon}).addTo(mymap);
-markerTogo.bindPopup("<b>Togo</b><br>Samples: 120<br>").openPopup();
+markerTogo.bindPopup("<h3>Associate</h3><b>Agence de Medecine Preventive</b><br>Lome, Togo<br>Jennifer Moisi").openPopup();
 markerTogo.on({
     mouseover: function() {
         if(!isClicked) {
@@ -573,8 +645,8 @@ mymap.on ({
     }
 })
 
-var markerUSA = L.marker([38.889931, -87.009003], {icon: myIcon}).addTo(mymap);
-markerUSA.bindPopup("<b>USA</b><br>Samples: 1887<br>").openPopup();
+var markerUSA = L.marker([33.7490, -84.3880], {icon: myIcon}).addTo(mymap);
+markerUSA.bindPopup("<h3>Founder</h3><b>Emory & CDC</b><br>Atlanta, USA<br>Robert Breiman, Lesley McGee").openPopup();
 markerUSA.on({
     mouseover: function() {
         if(!isClicked) {
@@ -599,7 +671,7 @@ mymap.on ({
 // locations with smaller samples without a microreact tree
 
 var markerSlovenia = L.marker([46.056946, 14.505751], {icon: myBlueIcon}).addTo(mymap);
-markerSlovenia.bindPopup("<b>Slovenia</b><br>Samples: 96<br>").openPopup();
+markerSlovenia.bindPopup("<h3>Associate</h3><b>The National Laboratory of Health, Environment and Food</b><br>Celije, Slovenia<br>Tamara Kastrin").openPopup();
 markerSlovenia.on({
     mouseover: function() {
         if(!isClicked) {
@@ -622,7 +694,7 @@ mymap.on ({
 })
 
 var markerNewZealand = L.marker([-36.484461, 174.763336], {icon: myBlueIcon}).addTo(mymap);
-markerNewZealand.bindPopup("<b>New Zealand</b><br>Samples: 87<br>").openPopup();
+markerNewZealand.bindPopup("<h3>Associate</h3><b>University of Auckland, Institute of Environmental Research</b><br>Aukland, New Zealand<br>Emma Best, Phil Cater").openPopup();
 markerNewZealand.on({
     mouseover: function() {
         if(!isClicked) {
@@ -645,7 +717,7 @@ mymap.on ({
 })
 
 var markerIndonesia = L.marker([-6.21462, 106.84513], {icon: myBlueIcon}).addTo(mymap);
-markerIndonesia.bindPopup("<b>Indonesia</b><br>Samples: 5<br>").openPopup();
+markerIndonesia.bindPopup("<h3>Associate</h3><b>Faculty of Medicine, Diponegoro University</b><br>Semarang, Indonesia<br>Helmia Farida").openPopup();
 markerIndonesia.on({
     mouseover: function() {
         if(!isClicked) {
@@ -668,7 +740,7 @@ mymap.on ({
 })
 
 var markerMalaysia = L.marker([3.1412, 101.68653], {icon: myBlueIcon}).addTo(mymap);
-markerMalaysia.bindPopup("<b>Malaysia</b><br>Samples: 36<br>").openPopup();
+markerMalaysia.bindPopup("<h3>Associate</h3><b>University of Southampton</b><br>Kuala Lumpur, Malaysia<br>Dr. Stuart Clarke").openPopup();
 markerMalaysia.on({
     mouseover: function() {
         if(!isClicked) {
@@ -690,54 +762,8 @@ mymap.on ({
     }
 })
 
-var markerChina = L.marker([39.9042, 116.4074], {icon: myBlueIcon}).addTo(mymap);
-markerChina.bindPopup("<b>China</b><br>Samples: 548<br>").openPopup();
-markerChina.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-var markerMongolia = L.marker([47.921230, 106.918556], {icon: myBlueIcon}).addTo(mymap);
-markerMongolia.bindPopup("<b>Mongolia</b><br>Samples: 15<br>").openPopup();
-markerMongolia.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
 var markerRussia = L.marker([55.921230, 57.918556], {icon: myBlueIcon}).addTo(mymap);
-markerRussia.bindPopup("<b>Russia</b><br>Samples: 87<br>").openPopup();
+markerRussia.bindPopup("<h3>Associate</h3><b>Moscow Research Institute for Epidemiology</b><br>Moscow, Russia<br>Ekaterina Egorova, Elena Voropaeva").openPopup();
 markerRussia.on({
     mouseover: function() {
         if(!isClicked) {
@@ -760,7 +786,7 @@ mymap.on ({
 })
 
 var markerTurkey = L.marker([41.015137, 28.979530], {icon: myBlueIcon}).addTo(mymap);
-markerTurkey.bindPopup("<b>Turkey</b><br>Samples: 80<br>").openPopup();
+markerTurkey.bindPopup("<h3>Associate</h3><b>Hacettepe University</b><br>Ankara, Turkey<br>Prof. Eser Ozgen").openPopup();
 markerTurkey.on({
     mouseover: function() {
         if(!isClicked) {
@@ -782,77 +808,8 @@ mymap.on ({
     }
 })
 
-var markerKenya = L.marker([-1.2833, 36.8167], {icon: myBlueIcon}).addTo(mymap);
-markerKenya.bindPopup("<b>Kenya</b><br>Samples: 1<br>").openPopup();
-markerKenya.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-var markerBotswana = L.marker([-24.653257, 25.906792], {icon: myBlueIcon}).addTo(mymap);
-markerBotswana.bindPopup("<b>Botswana</b><br>Samples: 8<br>").openPopup();
-markerBotswana.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-var markerCentralAfRep = L.marker([6.6111112, 20.9394436], {icon: myBlueIcon}).addTo(mymap);
-markerCentralAfRep.bindPopup("<b>Central African Republic</b><br>Samples: 4<br>").openPopup();
-markerCentralAfRep.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
 var markerMorocco = L.marker([34.01325, -6.83255], {icon: myBlueIcon}).addTo(mymap);
-markerMorocco.bindPopup("<b>Morocco</b><br>Samples: 47<br>").openPopup();
+markerMorocco.bindPopup("<h3>Associate</h3><b>Faculty of Medicine and Pharmacy</b><br>Casablanca, Morocco<br>Prof. Naima Elmdaghri").openPopup();
 markerMorocco.on({
     mouseover: function() {
         if(!isClicked) {
@@ -874,54 +831,8 @@ mymap.on ({
     }
 })
 
-var markerNiger = L.marker([13.5137, 2.1098], {icon: myBlueIcon}).addTo(mymap);
-markerNiger.bindPopup("<b>Niger</b><br>Samples: 19<br>").openPopup();
-markerNiger.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-var markerIvoryCoast = L.marker([5.345317, -6.524429], {icon: myBlueIcon}).addTo(mymap);
-markerIvoryCoast.bindPopup("<b>Ivory Coast</b><br>Samples: 2<br>").openPopup();
-markerIvoryCoast.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
 var markerGhana = L.marker([5.5560, -2.1969], {icon: myBlueIcon}).addTo(mymap);
-markerGhana.bindPopup("<b>Ghana</b><br>Samples: 43<br>").openPopup();
+markerGhana.bindPopup("<h3>Associate</h3><b>University of Ghana Medical School</b><br>Accra, Ghana<br>Eric Sampane-Donker").openPopup();
 markerGhana.on({
     mouseover: function() {
         if(!isClicked) {
@@ -942,97 +853,3 @@ mymap.on ({
         isClicked = false
     }
 })
-
-var markerBenin = L.marker([9.3217, 2.3100], {icon: myBlueIcon}).addTo(mymap);
-markerBenin.bindPopup("<b>Benin</b><br>Samples: 5<br>").openPopup();
-markerBenin.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-var markerSenegal = L.marker([14.6937, -17.44406], {icon: myBlueIcon}).addTo(mymap);
-markerSenegal.bindPopup("<b>Senegal</b><br>Samples: 40<br>").openPopup();
-markerSenegal.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-var markerCameroon = L.marker([7.3696, 12.3446], {icon: myBlueIcon}).addTo(mymap);
-markerCameroon.bindPopup("<b>Cameroon</b><br>Samples: 29<br>").openPopup();
-markerCameroon.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-var markerDRCongo = L.marker([-4.322447, 15.307045], {icon: myBlueIcon}).addTo(mymap);
-markerDRCongo.bindPopup("<b>Democratic Republic of the Congo</b><br>Samples: 1<br>").openPopup();
-markerDRCongo.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
-
-

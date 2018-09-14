@@ -12,9 +12,9 @@ function checkUrlExists() {
     url: url,
     success: function(res) {
       buildTable('f_a_datatable',res);
-      var map = getMapObj();
-      showFounders(map,res[0]);
-      showAssociates(map,res[1]);
+      //var map = getMapObj();
+      //showFounders(map,res[0]);
+      //showAssociates(map,res[1]);
     },
     error: function(jqxhr, errorText) {
       $('.msg').html('Sorry, not availble now. Please try after sometime.');
@@ -24,23 +24,23 @@ function checkUrlExists() {
   return 0;
 }
 
-function getMapObj() {
+/*function getMapObj() {
   geocoder = new google.maps.Geocoder();
   var latlng = new google.maps.LatLng(9.554772, 7.908414);
   var mapOptions = {
     zoom: 2,
     center: latlng,
-  }
+  } */
   //map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var legend = document.getElementById('legend');
   var div = document.createElement('div');
-  div.innerHTML = '<img src="img/gps.ico"> Founders<br>';
-  div.innerHTML += '<img src="img/gps_icon.gif"> Associates';
+  div.innerHTML = '<img src="img/microreact-map-marker2.svg"> Founders<br>';
+  div.innerHTML += '<img src="img/microreact-map-marker-blue.svg"> Associates';
   legend.appendChild(div);
 
   //map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
-  return map;
-}
+  //return map;
+//}
 function showFounders(map, data) {
 
   // Work on founders first
@@ -53,7 +53,7 @@ function showFounders(map, data) {
       // city = "United States of America";
     }
     // Geocoding the address (get the lat and lng positions)
-    $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+city+'&sensor=false', null, function (data) {
+    /*$.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+city+'&sensor=false', null, function (data) {
       if(data.results[0]) {
         var p = data.results[0].geometry.location;
         var latlng = new google.maps.LatLng(p.lat, p.lng);
@@ -66,9 +66,9 @@ function showFounders(map, data) {
         var icon = new google.maps.MarkerImage(
             "img/gps.ico",
             null, /* size is determined at runtime */
-            null, /* origin is 0,0 */
-            null, /* anchor is bottom center of the scaled image */
-            new google.maps.Size(20,20)
+          /*  null, /* origin is 0,0 */
+          /*  null, /* anchor is bottom center of the scaled image */
+          /*  new google.maps.Size(20,20)
         );
         // set icon to marker
         marker.setIcon(icon);
@@ -89,7 +89,7 @@ function showFounders(map, data) {
       else {
         console.log(addr + ' not found')
       }
-    });
+    }); */
   });
 }
 
@@ -105,7 +105,7 @@ function showAssociates(map, data) {
       // city = "United States of America";
     }
     // Geocoding the address (get the lat and lng positions)
-    $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+city+'&sensor=false', null, function (data) {
+   /* $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+city+'&sensor=false', null, function (data) {
       if(data.results[0]) {
         var p = data.results[0].geometry.location;
         var latlng = new google.maps.LatLng(p.lat, p.lng);
@@ -119,9 +119,9 @@ function showAssociates(map, data) {
             // "https://maps.google.com/mapfiles/kml/shapes/sunny.png",
             "img/gps_icon.gif",
             null, /* size is determined at runtime */
-            null, /* origin is 0,0 */
-            null, /* anchor is bottom center of the scaled image */
-            new google.maps.Size(20,20)
+          /*  null, /* origin is 0,0 */
+          /*  null, /* anchor is bottom center of the scaled image */
+          /*  new google.maps.Size(20,20)
         );
         // set icon to marker
         marker.setIcon(icon);
@@ -142,11 +142,11 @@ function showAssociates(map, data) {
       else {
         console.log(addr + ' not found')
       }
-    });
+    }); */
   });
 }
 
-function placeMarker(location, text) {
+/*function placeMarker(location, text) {
   var marker = new google.maps.Marker({
       position: location,
       map: map
@@ -160,9 +160,9 @@ function placeMarker(location, text) {
 
   google.maps.event.addListener(marker, 'click', function() { infowindow.open(map, marker);});
   map.setCenter(location);
-}
+} */
 
-function showAddressInMap(address) {
+/*function showAddressInMap(address) {
   $.each(address, function(i,addr) {
     $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addr+'&sensor=false', null, function (data) {
       if(data.results[0]) {
@@ -173,7 +173,7 @@ function showAddressInMap(address) {
     });
   });
 
-}
+} */
 
 google.maps.event.addDomListener(window, 'load', checkUrlExists);
 
