@@ -370,7 +370,7 @@ mymap.on ({
 })
 
 var markerMalawi = L.marker([-13.58, 33.46], {icon: myIcon}).addTo(mymap);
-markerMalawi.bindPopup("<h3>Associate</h3><b>MLW</b><br>Blantyre, Malawi<br>Dean Everett").openPopup();
+markerMalawi.bindPopup("<h3>Founder</h3><b>MLW</b><br>Blantyre, Malawi<br>Dean Everett").openPopup();
 markerMalawi.on({
     mouseover: function() {
         if(!isClicked) {
@@ -577,7 +577,7 @@ mymap.on ({
 })
 
 var markerSouthAfrica = L.marker([-33.918861, 18.423300], {icon: myIcon}).addTo(mymap);
-markerSouthAfrica.bindPopup("<h3>Associate</h3><b>National Institute for Communicable Disease</b><br>Johannesburg, South Africa<br>Anne Von Gottberg").openPopup();
+markerSouthAfrica.bindPopup("<h3>Founder</h3><b>National Institute for Communicable Disease</b><br>Johannesburg, South Africa<br>Anne Von Gottberg").openPopup();
 markerSouthAfrica.on({
     mouseover: function() {
         if(!isClicked) {
