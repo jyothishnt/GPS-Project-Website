@@ -15,7 +15,7 @@ L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap);
 // locations with a microreact tree
 
 var myIcon = L.icon({
-    iconUrl: 'microreact-map-marker2.svg',
+    iconUrl: 'img/microreact-map-marker2.svg',
     shadowUrl: 'https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png',
     iconSize: [25, 40],
     iconAnchor: [15, 36],
