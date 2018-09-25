@@ -20218,7 +20218,7 @@
 	}, {
 	  title: 'GPSC39',
 	  url: 'https://microreact.org/project/H1QOsrLmm',
-	  image: 'img/clusterImages/Cluster39.png',
+	  image: 'img/clusterImages/cluster39.png',
 	  height: '120px',
 	  width: '70px',
 	  microreactStatus: 'available',
@@ -20230,7 +20230,7 @@
 	}, {
 	  title: 'GPSC40',
 	  url: 'https://microreact.org/project/HkHZKtosZ',
-	  image: 'img/clusterImages/Cluster40.png',
+	  image: 'img/clusterImages/cluster40.png',
 	  height: '70px',
 	  width: '70px',
 	  microreactStatus: 'available',
@@ -20242,7 +20242,7 @@
 	}, {
 	  title: 'GPSC41',
 	  url: 'https://microreact.org/project/By9Dope3W',
-	  image: 'img/clusterImages/Cluster41.png',
+	  image: 'img/clusterImages/cluster41.png',
 	  height: '70px',
 	  width: '70px',
 	  microreactStatus: 'available',
@@ -20278,7 +20278,7 @@
 	}, {
 	  title: 'GPSC44',
 	  url: '',
-	  image: 'img/clusterImages/Cluster44.png',
+	  image: 'img/clusterImages/cluster44.png',
 	  height: '60px',
 	  width: '90px',
 	  microreactStatus: 'unavailable',
@@ -20290,7 +20290,7 @@
 	}, {
 	  title: 'GPSC45',
 	  url: '',
-	  image: 'img/clusterImages/Cluster45.png',
+	  image: 'img/clusterImages/cluster45.png',
 	  height: '100px',
 	  width: '90px',
 	  microreactStatus: 'unavailable',
