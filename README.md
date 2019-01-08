@@ -3,7 +3,8 @@
 ###Pneumogen.net is the Global Pneumococcal Sequencing project website
 
 ####Designed and Developed by 
-* Jyothish NT @ [The Wellcome Trust Sanger Institute](http://www.sanger.ac.uk)
+* Jyothish NT @ [The Wellcome Trust Sanger Institute](http://www.sanger.ac.uk) until 2016
+* Rebecca Henderson @ [The Wellcome Trust Sanger Institute](http://www.sanger.ac.uk) from 2018
 
 This responsive website is designed using the latest web technology standards
 such as [HTML5](www.html5rocks.com/), [Bootstrap](http://getbootstrap.com/), [jQuery](http://jquery.com), and [CSS3](http://www.w3schools.com/css/css3_intro.asp)
@@ -29,4 +30,6 @@ The front-end template was created using [HTML5 Boilerplate] with the following 
 * Cross-domain Ajax and Flash.
 * "Delete-key friendly." Easy to strip out parts you don't need.
 * Extensive inline and accompanying documentation.
+* 2018 -2019
+* Site updated with React.js, the Leaflet.js mapping library and D3.js for charts
 
