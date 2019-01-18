@@ -130,8 +130,12 @@ input.borderset {
 #bar-one, #bar-two, #bar-three, #bar-four, svg {
   display: inline;
 }
+div#legend-one, div#legend-two, div#legend-three, div#legend-four, svg {
+  display: inline-block;
+  width: 140px;
+}
 svg {
-  height:370px;
+  height:320px;
   width: 130px;
 }
 div.legendBox{height: 18px !important;
@@ -271,7 +275,7 @@ text.legendText { font-size: 14px;}
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" class="text-center" id="exampleModalLabel">Modal title</h3>
+        <h3 class="modal-title text-center" id="exampleModalLabel">Modal title</h3>
         <h5 class="sampleSize"></h5>
         <h5 class="microreactLink"></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -282,13 +286,21 @@ text.legendText { font-size: 14px;}
           <div id="bar-one">
               <svg class="firstbar"></svg>
           </div>
-        <div id="bar-two">
-          <svg class="secondbar"></svg></div>
-        <div id="bar-three">
-          <svg class="thirdbar"></svg></div>
-        <div id="bar-four">
-          <svg class="fourthbar"></svg></div>
-      </div>
+          <div id="bar-two">
+            <svg class="secondbar"></svg>
+          </div>
+          <div id="bar-three">
+            <svg class="thirdbar"></svg>
+          </div>
+          <div id="bar-four">
+            <svg class="fourthbar"></svg>
+          </div>
+          
+        </div>
+        <div id="legend-one"></div>
+        <div id="legend-two"></div>
+        <div id="legend-three"></div>
+        <div id="legend-four"></div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
@@ -621,10 +633,10 @@ var legendWidth = 250 - margin.left - margin.right,
         });
     </script>-->
     <script src="js/locationsMap.js"></script>
-    <script src="js/ArgentinaBars.js"></script>
-    <script src="js/ArgentinaAgeBar.js"></script>
-    <script src="js/ArgentinaClinicalMBar.js"></script>
-    <script src="js/ArgentinaVacBar.js"></script>
+    <!--<script src="js/ArgentinaBars.js"></script>-->
+    <!--<script src="js/ArgentinaAgeBar.js"></script>-->
+    <!--<script src="js/ArgentinaClinicalMBar.js"></script>-->
+    <!--<script src="js/ArgentinaVacBar.js"></script>-->
   </body>
 </html>
 
