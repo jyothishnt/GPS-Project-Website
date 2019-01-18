@@ -16,13 +16,54 @@ var svg = d3.select("#bar-four")
   .classed(".fourthbar", true);
   //.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
 
-  var data = [
+  countryValue = d3.select("#exampleModalLabel.modal-title").text();
+  if (countryValue == 'Argentina') {
+    var data = [
+      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Bangladesh') {
+    var data = [
+      { category: "Age group", "<=2":434, ">2<=5":66, ">5<=15":56, "Unknown":1 }
+      ];
+  } 
+  if (countryValue == 'Brazil') {
+    var data = [
+      { category: "Age group", "<=2":219, ">2<=5":53, ">5<=15":23, ">15<=24":12, ">24<=44":35, ">44<=65":56, ">65":13, "Unknown":1 }
+      ];
+  }  
+  if (countryValue == 'Papua New Guinea') {
+    var data = [
+      { category: "Age group", "<=2":151, ">2<=5":9, ">5<=15":3, "Unknown":2 }
+      ];
+  }  
+  if (countryValue == 'Peru') {
+    var data = [
+      { category: "Age group", "<=2":113, ">2<=5":16, ">5<=15":0, ">5<=18":32, ">18<=65":23, ">65":19, "Unknown":533 }
+      ];
+  }  
+  if (countryValue == 'South Africa') {
+    var data = [
+      { category: "Age group", "<=2":2582, ">2<=5":1060, ">5<=15":0, ">5<=18":327, ">18<=65":23, ">65":19, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'USA') {
+    var data = [
+      { category: "Age group", "<=2":984, ">2<=5":410, ">5<=15":0, ">5<=18":30, ">18<=65":861, ">65":26, "Unknown":0 }
+      ];
+  }  
+  /*else {
+    var data = [
+      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, "Unknown":0 }
+      ];
+  }    */
+  /*var data = [
     /*{ category: "Sampling Years", 1998: '75', 1999: '53', 2010: '41', 2011: '95', 2012: '100', 2013: '62' }, 
     { category: "Vaccine Period", PrePCV: '4', NouniversalintroductiontoPCV: '7', PostPCV7: '8', PostPCV10: '13', PostPCV13: '9'}, 
     { category: "Clinical Manifest", Disease: 426}, 
-    { category: "Ages", under2: '323', between2and5: '103'}, */
+    { category: "Ages", under2: '323', between2and5: '103'}, 
     { category: "Age group", "total":426, "<=2":323, ">2<=5":103}
-    ]; 
+    ]; */
   
   var svg = d3.select(".fourthbar"),
     margin = {top: 20, right: 60, bottom: 30, left: 40},
@@ -39,9 +80,9 @@ var svg = d3.select("#bar-four")
     .range([height, 0]);
   
   var z = d3.scaleOrdinal()
-    .range(["#b33040", "#e9d574"]);
+    .range(["#d25c4d", "#f2b447", "#e9d574", "#c1d574", "#b1c574", "#e7d1bc"]);
   
-  if (data.category == "Sampling Years") {
+  /*if (data.category == "Sampling Years") {
   // Transpose the data into layers
   var dataset = d3.stack()(["1998", "1999", "2010", "2011", "2012", "2013"].map(function(fruit) {
   return data.map(function(d) {
@@ -55,19 +96,19 @@ var svg = d3.select("#bar-four")
           return {x: (d.category), y: +d[fruit], z: (d.label)};
         });
       }));
-  }
+  } */
   var stack = d3.stack()
     .order(d3.stackOrderNone)
     .offset(d3.stackOffsetExpand);  
   
-  data.forEach(function(d){d.satisfied=d.totalHours-d.leftHours});
-  data.sort(function(a, b) { return b.totalHours-a.totalHours; });
+  //data.forEach(function(d){d.satisfied=d.totalHours-d.leftHours});
+  //data.sort(function(a, b) { return b.totalHours-a.totalHours; });
   
   x.domain(data.map(function(d) { return d.category; }));
-  z.domain([">2<=5", "<=2"]);
+  z.domain(["<=2", ">2<=5", ">5<=18", ">18<=65", ">65", "Unknown"]);
   
   var serie = g.selectAll(".serie")
-    .data(stack.keys(["<=2", ">2<=5"])(data))
+    .data(stack.keys(["<=2", ">2<=5", ">5<=18", ">5<=15", ">18<=65", ">15<=24", ">24<=44", ">44<=65", ">65", "Unknown"])(data))
     .enter().append("g")
       .attr("class", "serie")
       .attr("fill", function(d) { return z(d.key); }); 
@@ -90,7 +131,7 @@ var svg = d3.select("#bar-four")
       .attr("class", "axis axis--y")
       .call(d3.axisLeft(y).ticks(10, "%"));
   
-  var colors = ["#b33040", "#e9d574"];
+  var colors = ["#d25c4d", "#f2b447", "#e9d574", "#c1d574", "#b1c574", "#e7d1bc"];
   var svg2 = d3.select("#legend-four");
   
   var legend = svg2.selectAll(".legend")
@@ -106,9 +147,12 @@ var svg = d3.select("#bar-four")
         .attr("height", 18)
         .style("background-color", function(d, i) {
             switch (i) {
-            case 0: return "#e9d574";
-            case 1: return "#b33040";
-            
+            case 0: return "#e7d1bc";
+            case 1: return "#b1c574";
+            case 2: return "#c1d574";
+            case 3: return "#e9d574";
+            case 4: return "#f2b447";
+            case 5: return "#d25c4d";
           }
         });
        
@@ -121,7 +165,11 @@ var svg = d3.select("#bar-four")
         .style("text-anchor", "start")
         .text(function(d, i) { 
           switch (i) {
-            case 0: return '<=2';
-            case 1: return '>2<=5';
+            case 0: return 'Unknown';
+            case 1: return '>65';
+            case 2: return '>18<=65';
+            case 3: return '>5<=18';
+            case 4: return '>2<=5';
+            case 5: return '<2'
           }
         });

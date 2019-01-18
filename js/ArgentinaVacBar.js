@@ -14,10 +14,46 @@ var svg = d3.select("#bar-two")
   .classed(".secondbar", true);
   //.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var data = [
-    /*{ category: "Sampling Years", 1998: '75', 1999: '53', 2010: '41', 2011: '95', 2012: '100', 2013: '62' }, */
-    { category: "Vaccine Period", PrePCV: '4', NouniversalintroductiontoPCV: '7', PostPCV7: '8', PostPCV10: '13', PostPCV13: '9'}
+  countryValue = d3.select("#exampleModalLabel.modal-title").text();
+  if (countryValue == 'Argentina') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', PostPCV13: '0', Unknown: '0'}
     ];
+  }
+  if (countryValue == 'Bangladesh') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '533', NouniversalintroductiontoPCV: '0', PostPCV7: '0', introPCV10: '21', PostPCV10: '1', PostPCV13: '0', Unknown: '2'}
+    ];
+  }
+  if (countryValue == 'Brazil') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '206', NouniversalintroductiontoPCV: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '205', PostPCV13: '0', Unknown: '1'}
+    ];
+  }
+  if (countryValue == 'Papua New Guinea') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '155', NouniversalintroductiontoPCV: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', introPCV13: '1', PostPCV13: '5', Unknown: '4'}
+    ];
+  }
+  if (countryValue == 'Peru') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '31', prePCV7: '445', PostPCV7: '48', introPCV10: '0', PostPCV10: '0', introPCV10and13: '31', PostPCV13: '0', Unknown: '181'}
+    ];
+  }
+  if (countryValue == 'South Africa') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', prePCV7: '1237', introPCV7: '679', PostPCV7: '662', introPCV10: '0', PostPCV10: '0', introPCV13: '673', PostPCV13: '1648', Unknown: '2'}
+    ];
+  }
+  if (countryValue == 'USA') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '40', prePCV7: '688', PostPCV7: '928', introPCV10: '0', PostPCV10: '0', PostPCV13: '353', Unknown: '2'}
+    ];
+  }
+  /*var data = [
+    /*{ category: "Sampling Years", 1998: '75', 1999: '53', 2010: '41', 2011: '95', 2012: '100', 2013: '62' }, 
+    { category: "Vaccine Period", PrePCV: '4', NouniversalintroductiontoPCV: '7', PostPCV7: '8', PostPCV10: '13', PostPCV13: '9'}
+    ]; */
       
       var svg = d3.select(".secondbar");
       //var g = d3.selectAll("svg.secondbar")
@@ -41,7 +77,7 @@ var svg = d3.select("#bar-two")
       var z = d3.scaleOrdinal()
         .range(["#b33040", "#d25c4d", "#f2b447", "#e9d574", "#c1d574", "#b1c574"]);
       
-      if (data.category == "Vaccine Period") {
+      /* if (data.category == "Vaccine Period") {
       // Transpose the data into layers
       var dataset = d3.stack()(['PrePCV', 'NouniversalintroductiontoPCV', 'PostPCV7', 'PostPCV10','PostPCV13']
       .map(function(fruit) {
@@ -56,19 +92,19 @@ var svg = d3.select("#bar-two")
               return {x: (d.category), y: +d[fruit], z: (d.label)};
             });
           }));
-      }
+      } */
       var stack = d3.stack()
         .order(d3.stackOrderNone)
         .offset(d3.stackOffsetExpand);  
       
-      data.forEach(function(d){d.satisfied=d.totalHours-d.leftHours});
-      data.sort(function(a, b) { return b.totalHours-a.totalHours; });
+      //data.forEach(function(d){d.satisfied=d.totalHours-d.leftHours});
+      //data.sort(function(a, b) { return b.totalHours-a.totalHours; });
       
       x.domain(data.map(function(d) { return d.category; }));
-      z.domain(['PrePCV', 'NouniversalintroductiontoPCV', 'PostPCV7', 'PostPCV10','PostPCV13']);
+      z.domain(['PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PostPCV7', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'introPCV13', 'PostPCV13', 'Unknown']);
       
       var serie = g.selectAll(".serie")
-        .data(stack.keys(['PrePCV', 'NouniversalintroductiontoPCV', 'PostPCV7', 'PostPCV10','PostPCV13'])(data))
+        .data(stack.keys(['PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PostPCV7', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'introPCV13', 'PostPCV13', 'Unknown'])(data))
         .enter().append("g")
           .attr("class", "serie")
           .attr("fill", function(d) { return z(d.key); }); 
