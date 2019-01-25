@@ -126,13 +126,26 @@ input.borderset {
 /*h5.sampleSize, h5.microreactLink {
   display: inline-block;
 } */
-
-#bar-one, #bar-two, #bar-three, #bar-four, svg {
-  display: inline;
+div.modal-body {
+  padding: 0px;
 }
-div#legend-one, div#legend-two, div#legend-three, div#legend-four, svg {
+div#bar-one, div#bar-two, div#bar-three, div#bar-four, svg {
+  display: inline;
+  max-width: 140px;
+}
+div#legend-two, svg {
   display: inline-block;
   width: 140px;
+}
+div#legend-one {
+  display: inline-block;
+  min-height: 325px;
+  max-height: 400px;
+  width: 170px;
+}
+div#legend-three, div#legend-four {
+  display: inline-block;
+  width: 110px;
 }
 svg {
   height:320px;
@@ -142,10 +155,13 @@ div.legendBox{height: 18px !important;
     width: 18px;
     display: inline-block;
     margin-right: 4px;}
-g.legend {display: block;
-margin-left: 40px;
+g.legend, g.yearlegend {display: block;
+margin-left: 10px;
 margin-right: 4px;}
 
+g.yearlegend {display: inline-block;
+margin-left: 10px;
+margin-right: 4px;}
 text.legendText { font-size: 14px;}
   </style>
 
@@ -283,24 +299,26 @@ text.legendText { font-size: 14px;}
         </button>
       </div>
       <div class="modal-body">
-          <div id="bar-one">
+          
+          <!--<div id="bar-one">-->
               <svg class="firstbar"></svg>
-          </div>
+          <!--</div>-->
           <div id="bar-two">
             <svg class="secondbar"></svg>
-          </div>
-          <div id="bar-three">
-            <svg class="thirdbar"></svg>
-          </div>
-          <div id="bar-four">
-            <svg class="fourthbar"></svg>
+            
           </div>
           
+            <svg class="thirdbar"></svg>
+          
+          
+            <svg class="fourthbar"></svg>
+            <div id="legend-one"></div>
+            <div id="legend-two"></div>
+            <div id="legend-three"></div>
+            <div id="legend-four"></div>
         </div>
-        <div id="legend-one"></div>
-        <div id="legend-two"></div>
-        <div id="legend-three"></div>
-        <div id="legend-four"></div>
+        
+        
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
