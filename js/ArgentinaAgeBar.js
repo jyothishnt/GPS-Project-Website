@@ -19,37 +19,62 @@ var svg = d3.select("#bar-four")
   countryValue = d3.select("#exampleModalLabel.modal-title").text();
   if (countryValue == 'Argentina') {
     var data = [
-      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, "Unknown":0 }
+      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":0 }
       ];
   }  
   if (countryValue == 'Bangladesh') {
     var data = [
-      { category: "Age group", "<=2":434, ">2<=5":66, ">5<=15":56, "Unknown":1 }
+      { category: "Age group", "<=2":434, ">2<=5":66, ">5<=15":56, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0,"Unknown":1 }
+      ];
+  } 
+  if (countryValue == 'Belarus') {
+    var data = [
+      { category: "Age group", "<=2":40, ">2<=5":28, ">5<=15":8, ">5<=18":0, ">15<=24":1, ">24<=44":10, ">44<=65":7, ">18<=65":0, ">65":4, "Unknown":0 }
       ];
   } 
   if (countryValue == 'Brazil') {
     var data = [
-      { category: "Age group", "<=2":219, ">2<=5":53, ">5<=15":23, ">15<=24":12, ">24<=44":35, ">44<=65":56, ">65":13, "Unknown":1 }
+      { category: "Age group", "<=2":219, ">2<=5":53, ">5<=15":23, ">5<=18":0, ">15<=24":12, ">24<=44":35, ">44<=65":56, ">18<=65":0, ">65":13, "Unknown":1 }
+      ];
+  }  
+  if (countryValue == 'India') {
+    var data = [
+      { category: "Age group", "<=2":68, ">2<=5":84, ">5<=15":39, ">5<=18":0, ">15<=24":10, ">24<=44":43, ">44<=65":78, ">18<=65":0, ">65":42, "Unknown":21 }
+      ];
+  }  
+  if (countryValue == 'Israel') {
+    var data = [
+      { category: "Age group", "<=2":586, ">2<=5":279, ">5<=15":98, ">5<=18":0, ">15<=24":18, ">24<=44":45, ">44<=65":46, ">18<=65":0, ">65":99, "Unknown":1 }
+      ];
+  }  
+  if (countryValue == 'Mozambique') {
+    var data = [
+      { category: "Age group", "<=2":144, ">2<=5":20, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":12, ">65":0, "Unknown":191 }
       ];
   }  
   if (countryValue == 'Papua New Guinea') {
     var data = [
-      { category: "Age group", "<=2":151, ">2<=5":9, ">5<=15":3, "Unknown":2 }
+      { category: "Age group", "<=2":151, ">2<=5":9, ">5<=15":3, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":2 }
       ];
   }  
   if (countryValue == 'Peru') {
     var data = [
-      { category: "Age group", "<=2":113, ">2<=5":16, ">5<=15":0, ">5<=18":32, ">18<=65":23, ">65":19, "Unknown":533 }
+      { category: "Age group", "<=2":113, ">2<=5":16, ">5<=15":0, ">5<=18":32, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":23, ">65":19, "Unknown":533 }
       ];
   }  
   if (countryValue == 'South Africa') {
     var data = [
-      { category: "Age group", "<=2":2582, ">2<=5":1060, ">5<=15":0, ">5<=18":327, ">18<=65":23, ">65":19, "Unknown":0 }
+      { category: "Age group", "<=2":2582, ">2<=5":1060, ">5<=15":0, ">5<=18":327, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":23, ">65":19, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Togo') {
+    var data = [
+      { category: "Age group", "<=2":27, ">2<=5":7, ">5<=15":0, ">5<=18":30, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":57, ">65":4, "Unknown":2 }
       ];
   }  
   if (countryValue == 'USA') {
     var data = [
-      { category: "Age group", "<=2":984, ">2<=5":410, ">5<=15":0, ">5<=18":30, ">18<=65":861, ">65":26, "Unknown":0 }
+      { category: "Age group", "<=2":984, ">2<=5":410, ">5<=15":0, ">5<=18":30, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":861, ">65":26, "Unknown":0 }
       ];
   }  
   /*else {
@@ -80,23 +105,8 @@ var svg = d3.select("#bar-four")
     .range([height, 0]);
   
   var z = d3.scaleOrdinal()
-    .range(["#d25c4d", "#f2b447", "#e9d574", "#c1d574", "#b1c574", "#e7d1bc"]);
+    .range(["#949aa4", "#697f98", "#aecbc9", "#e9d574", "#f2b447", "#f16000", "#d25c4d", "#b33040", "#800000", "#e7d1bc"]);
   
-  /*if (data.category == "Sampling Years") {
-  // Transpose the data into layers
-  var dataset = d3.stack()(["1998", "1999", "2010", "2011", "2012", "2013"].map(function(fruit) {
-  return data.map(function(d) {
-    return {x: (d.category), y: +d[fruit]};
-  });
-  }));
-  }
-  if (data.category == "Age group") {
-    var dataset = d3.stack(['<=2', '>2<=5'].map(function(fruit) {
-        return data.map(function(d) {
-          return {x: (d.category), y: +d[fruit], z: (d.label)};
-        });
-      }));
-  } */
   var stack = d3.stack()
     .order(d3.stackOrderNone)
     .offset(d3.stackOffsetExpand);  
@@ -105,10 +115,10 @@ var svg = d3.select("#bar-four")
   //data.sort(function(a, b) { return b.totalHours-a.totalHours; });
   
   x.domain(data.map(function(d) { return d.category; }));
-  z.domain(["<=2", ">2<=5", ">5<=18", ">18<=65", ">65", "Unknown"]);
+  z.domain(["<=2", ">2<=5", ">5<=15", ">5<=18", ">15<=24", ">24<=44", ">44<=65", ">18<=65", ">65", "Unknown"]);
   
   var serie = g.selectAll(".serie")
-    .data(stack.keys(["<=2", ">2<=5", ">5<=18", ">5<=15", ">18<=65", ">15<=24", ">24<=44", ">44<=65", ">65", "Unknown"])(data))
+    .data(stack.keys(["<=2", ">2<=5", ">5<=15", ">5<=18", ">15<=24", ">24<=44", ">44<=65", ">18<=65", ">65", "Unknown"])(data))
     .enter().append("g")
       .attr("class", "serie")
       .attr("fill", function(d) { return z(d.key); }); 
@@ -131,7 +141,7 @@ var svg = d3.select("#bar-four")
       .attr("class", "axis axis--y")
       .call(d3.axisLeft(y).ticks(10, "%"));
   
-  var colors = ["#d25c4d", "#f2b447", "#e9d574", "#c1d574", "#b1c574", "#e7d1bc"];
+  var colors = ["#949aa4", "#697f98", "#aecbc9", "#e9d574", "#f2b447", "#f16000", "#d25c4d", "#b33040", "#800000", "#e7d1bc"];
   var svg2 = d3.select("#legend-four");
   
   var legend = svg2.selectAll(".legend")
@@ -148,11 +158,16 @@ var svg = d3.select("#bar-four")
         .style("background-color", function(d, i) {
             switch (i) {
             case 0: return "#e7d1bc";
-            case 1: return "#b1c574";
-            case 2: return "#c1d574";
-            case 3: return "#e9d574";
-            case 4: return "#f2b447";
-            case 5: return "#d25c4d";
+            case 1: return "#800000";
+            case 2: return "#b33040";
+            case 3: return "#d25c4d";
+            case 4: return "#f16000";
+            case 5: return "#f2b447";
+            case 6: return "#e9d574";
+            case 7: return "#aecbc9";
+            case 8: return "#697f98";
+            case 9: return "#949aa4";
+            
           }
         });
        
@@ -165,11 +180,15 @@ var svg = d3.select("#bar-four")
         .style("text-anchor", "start")
         .text(function(d, i) { 
           switch (i) {
-            case 0: return 'Unknown';
-            case 1: return '>65';
+            case 0: return "Unknown";
+            case 1: return ">65";
             case 2: return '>18<=65';
-            case 3: return '>5<=18';
-            case 4: return '>2<=5';
-            case 5: return '<2'
+            case 3: return ">44<=65";
+            case 4: return ">24<=44";
+            case 5: return ">15<=24";
+            case 6: return '>5<=18';
+            case 7: return ">5<=15";
+            case 8: return '>2<=5';
+            case 9: return '<=2';
           }
         });

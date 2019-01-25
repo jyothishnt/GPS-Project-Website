@@ -81,28 +81,26 @@ mymap.on('click', function(e) {
 });
 
 var markerBelarus = L.marker([53.9045, 27.5615], {icon: myIcon}).addTo(mymap);
-markerBelarus.bindPopup("<b>Belarus</b><br>Samples: 98<br><a href='https://microreact.org/project/SyeXKdonZ'>Microreact</a>").openPopup();
+//markerBelarus.bindPopup("<b>Belarus</b><br>Samples: 98<br><a href='https://microreact.org/project/SyeXKdonZ'>Microreact</a>").openPopup();
 
 markerBelarus.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
+    click: function (country) {
+        $("#exampleModal").modal("show");
+        $("#exampleModalLabel.modal-title").text("Belarus");
+        $(".sampleSize").text("Samples: 98 ");
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/SyeXKdonZ'));
+        // May need to change url on live
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
+
     }
 })
 
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
+mymap.on ('click', function(e) {
+    $('#exampleModal').modal('hide');
+});
 
 var markerBrazil = L.marker([-14.2350, -51.9253], {icon: myIcon}).addTo(mymap);
 //markerBrazil.bindPopup("<b>Brazil</b><br>Samples: 512<br><a href='https://microreact.org/project/GPS_Brazil'>Microreact</a>").openPopup();
@@ -222,50 +220,46 @@ mymap.on ({
 })
 
 var markerIndia = L.marker([20.5937, 78.9629], {icon: myIcon}).addTo(mymap);
-markerIndia.bindPopup("<b>India</b><br>Samples: 423<br><a href='https://microreact.org/project/S1Tfqn_AZ'>Microreact</a>").openPopup();
+//markerIndia.bindPopup("<b>India</b><br>Samples: 423<br><a href='https://microreact.org/project/S1Tfqn_AZ'>Microreact</a>").openPopup();
 markerIndia.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
+    click: function (country) {
+            $("#exampleModal").modal("show");
+            $("#exampleModalLabel.modal-title").text("India");
+            $(".sampleSize").text("Samples: 385 ");
+            $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/S1Tfqn_AZ'));
+            // May need to change url on live
+            $.getScript("../js/ArgentinaBars.js");
+            $.getScript("../js/ArgentinaVacBar.js");
+            $.getScript("../js/ArgentinaClinicalMBar.js");
+            $.getScript("../js/ArgentinaAgeBar.js");
+    
         }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
-    }
-})
-
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
+    })
+    
+    mymap.on ('click', function(e) {
+        $('#exampleModal').modal('hide');
+    });
 
 var markerIsrael = L.marker([32.0853, 34.7818], {icon: myIcon}).addTo(mymap);
-markerIsrael.bindPopup("<b>Israel</b><br>Samples: 1171<br><a href='https://microreact.org/project/GPS_Israel'>Microreact</a>").openPopup();
+//markerIsrael.bindPopup("<b>Israel</b><br>Samples: 1171<br><a href='https://microreact.org/project/GPS_Israel'>Microreact</a>").openPopup();
 markerIsrael.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
+    click: function (country) {
+        $("#exampleModal").modal("show");
+        $("#exampleModalLabel.modal-title").text("Israel");
+        $(".sampleSize").text("Samples: 1172 ");
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Israel'));
+        // May need to change url on live
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
+
     }
 })
 
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
+mymap.on ('click', function(e) {
+    $('#exampleModal').modal('hide');
+});
 
 var markerMalawi = L.marker([-13.58, 33.46], {icon: myIcon}).addTo(mymap);
 markerMalawi.bindPopup("<b>Malawi</b><br>Samples: 1641<br><a href='https://microreact.org/project/GPS_Malawi'>Microreact</a>").openPopup();
@@ -291,27 +285,25 @@ mymap.on ({
 })
 
 var markerMozambique = L.marker([-25.9655, 32.5832], {icon: myIcon}).addTo(mymap);
-markerMozambique.bindPopup("<b>Mozambique</b><br>Samples: 365<br><a href='https://microreact.org/project/GPS_Mozambique'>Microreact</a>").openPopup();
+//markerMozambique.bindPopup("<b>Mozambique</b><br>Samples: 365<br><a href='https://microreact.org/project/GPS_Mozambique'>Microreact</a>").openPopup();
 markerMozambique.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
+    click: function (country) {
+        $("#exampleModal").modal("show");
+        $("#exampleModalLabel.modal-title").text("Mozambique");
+        $(".sampleSize").text("Samples: 367 ");
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Mozambique'));
+        // May need to change url on live
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
+
     }
 })
 
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
+mymap.on ('click', function(e) {
+    $('#exampleModal').modal('hide');
+});
 
 var markerNepal = L.marker([27.42, 85.19], {icon: myIcon}).addTo(mymap);
 markerNepal.bindPopup("<b>Nepal</b><br>Samples: 455<br><a href='https://microreact.org/project/GPS_Nepal'>Microreact</a>").openPopup();
@@ -516,27 +508,25 @@ mymap.on ({
 })
 
 var markerTogo = L.marker([6.136629, 1.222186], {icon: myIcon}).addTo(mymap);
-markerTogo.bindPopup("<b>Togo</b><br>Samples: 120<br><a href='https://microreact.org/project/GPS_Togo'>Microreact</a>").openPopup();
+//markerTogo.bindPopup("<b>Togo</b><br>Samples: 120<br><a href='https://microreact.org/project/GPS_Togo'>Microreact</a>").openPopup();
 markerTogo.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
+    click: function (country) {
+        $("#exampleModal").modal("show");
+        $("#exampleModalLabel.modal-title").text("Togo");
+        $(".sampleSize").text("Samples: 127 ");
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Togo'));
+        // May need to change url on live
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
+
     }
 })
 
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
+mymap.on ('click', function(e) {
+    $('#exampleModal').modal('hide');
+});
 
 var markerUSA = L.marker([38.889931, -87.009003], {icon: myIcon}).addTo(mymap);
 //markerUSA.bindPopup("<b>USA</b><br>Samples: 1887<br><a href='https://microreact.org/project/GPS_United-States'>Microreact</a>").openPopup();

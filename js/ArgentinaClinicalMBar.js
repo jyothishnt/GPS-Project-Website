@@ -20,6 +20,11 @@ var svg = d3.select("#bar-three")
       { category: "Clinical Manifest", "Carriage": '0', "Disease": '426', "Unknown": '0' }
       ];
   }
+  if (countryValue == 'Belarus') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '23', "Disease": '75', "Unknown": '0' }
+      ];
+  } 
   if (countryValue == 'Brazil') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '0', "Disease": '411', "Unknown": '1' }
@@ -28,6 +33,21 @@ var svg = d3.select("#bar-three")
   if (countryValue == 'Bangladesh') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '19', "Disease": '537', "Unknown": '1' }
+      ];
+  } 
+  if (countryValue == 'India') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '176', "Disease": '209', "Unknown": '0' }
+      ];
+  } 
+  if (countryValue == 'Israel') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '1171', "Unknown": '0' }
+      ];
+  } 
+  if (countryValue == 'Mozambique') {
+    var data = [
+      { category: "Clinical Manifest", "IPD": '363', "Carriage": '2', "Disease": '1', "Unknown": '1' }
       ];
   } 
   if (countryValue == 'Papua New Guinea') {
@@ -45,6 +65,11 @@ var svg = d3.select("#bar-three")
       { category: "Clinical Manifest", "Carriage": '1858', "Disease": '426', "Unknown": '0' }
       ];
   }
+  if (countryValue == 'Togo') {
+    var data = [
+      { category: "Clinical Manifest", "IPD": '0', "Carriage": '0', "Disease": '127', "Unknown": '0' }
+      ];
+  } 
   if (countryValue == 'USA') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '0', "Disease": '1195', "Unknown": '817' }
@@ -56,13 +81,6 @@ var svg = d3.select("#bar-three")
       ];
   } */
   console.log("data country from title: " + countryValue) 
-
-  //var data = [
-    /*{ category: "Sampling Years", 1998: '75', 1999: '53', 2010: '41', 2011: '95', 2012: '100', 2013: '62' }, 
-    { category: "Vaccine Period", PrePCV: '4', NouniversalintroductiontoPCV: '7', PostPCV7: '8', PostPCV10: '13', PostPCV13: '9'}, 
-    { category: "Ages", under2: '323', between2and5: '103'}, */
-   // { category: "Clinical Manifest", "Disease":426}
-    //]; 
   
   var svg = d3.select(".thirdbar"),
     margin = {top: 20, right: 60, bottom: 30, left: 40},
@@ -81,23 +99,7 @@ var svg = d3.select("#bar-three")
     .range([height, 0]);
   
   var z = d3.scaleOrdinal()
-    .range(["#e9d574", "#e9d574", "#b1c574"]);
-  
-  /* if (data.category == "Sampling Years") {
-  // Transpose the data into layers
-  var dataset = d3.stack()(["1998", "1999", "2010", "2011", "2012", "2013"].map(function(fruit) {
-  return data.map(function(d) {
-    return {x: (d.category), y: +d[fruit]};
-  });
-  }));
-  }
-  if (data.category == "Age group") {
-    var dataset = d3.stack(['<=2', '>2<=5'].map(function(fruit) {
-        return data.map(function(d) {
-          return {x: (d.category), y: +d[fruit], z: (d.label)};
-        });
-      }));
-  } */
+    .range(["#aecbc9", "#e9d574", "#697F98", "#e7d1bc"]);
 
   var stack = d3.stack()
     .order(d3.stackOrderNone)
@@ -107,10 +109,10 @@ var svg = d3.select("#bar-three")
   //data.sort(function(a, b) { return b.totalHours-a.totalHours; });
   
   x.domain(data.map(function(d) { return d.category; }));
-  z.domain(["Disease", "Carriage", "Unknown"]);
+  z.domain(["IPD", "Disease", "Carriage", "Unknown"]);
   
   var serie = g.selectAll(".serie")
-    .data(stack.keys(["Disease", "Carriage", "Unknown"])(data))
+    .data(stack.keys(["IPD", "Disease", "Carriage", "Unknown"])(data))
     .enter().append("g")
       .attr("class", "serie")
       .attr("fill", function(d) { return z(d.key); }); 
@@ -154,7 +156,7 @@ var svg = d3.select("#bar-three")
       .attr("class", "axis axis--y")
       .call(d3.axisLeft(y).ticks(10, "%"));
   
-  var colors = ["#b33040", "#F2B447", "#e9d574"];
+  var colors = ["#e7d1bc", "#697F98", "#e9d574", "#aecbc9"];
   var svg2 = d3.select("#legend-three");
   
   var legend = svg2.selectAll(".legend")
@@ -170,9 +172,10 @@ var svg = d3.select("#bar-three")
         .attr("height", 18)
         .style("background-color", function(d, i) {
             switch (i) {
-            case 2: return "#e9d574";
-            case 1: return "#c1d574";
             case 0: return "#e7d1bc";
+            case 1: return "#697F98";
+            case 2: return "#e9d574";
+            case 3: return "#aecbc9";
           }
         });
        
@@ -188,6 +191,7 @@ var svg = d3.select("#bar-three")
             case 0: return 'Unknown';
             case 1: return 'Carriage';
             case 2: return 'Disease';
+            case 3: return 'IPD';
           }
         });
       
