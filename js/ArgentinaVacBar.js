@@ -45,6 +45,11 @@ var svg = d3.select("#bar-two")
       { category: "Vaccine Period", PrePCV: '432', NouniversalintroductiontoPCV: '0', introPCV7: '176', prePCV7: '0', PostPCV7: '250', introPCV10: '0', PostPCV10: '0', PostPCV13: '192', NVT: '0', VRT: '0', Unknown: '1'}
     ];
   }
+  if (countryValue == 'Malawi') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', introPCV13: '0', PCV13: '927', PostPCV13: '0', NVT: '617', VRT: '92', Unknown: '0'}
+    ];
+  }
   if (countryValue == 'Mozambique') {
     var data = [
       { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', prePCV10: '364', introPCV10: '0', PostPCV10: '0', PostPCV13: '0', NVT: '0', VRT: '0', Unknown: '3'}
@@ -63,6 +68,11 @@ var svg = d3.select("#bar-two")
   if (countryValue == 'South Africa') {
     var data = [
       { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '679', prePCV7: '1237', PostPCV7: '662', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', introPCV13: '673', PostPCV13: '1648', NVT: '0', VRT: '0', Unknown: '2'}
+    ];
+  }
+  if (countryValue == 'Thailand') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '93', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', introPCV13: '0', PCV13: '73', PostPCV13: '0', NVT: '49', VRT: '34', Unknown: '0'}
     ];
   }
   if (countryValue == 'Togo') {
@@ -100,7 +110,7 @@ var svg = d3.select("#bar-two")
         .range([height, 0]);
       
       var z = d3.scaleOrdinal()
-        .range(["#e7d1bc", "#800000", "#b33040", "#d25c4d", "#f16000", "#f2b447", "#e9d574", "#aecbc9", "#697F98", "#949aa4", '#bdb5b0', '#f3842a', '#cf9a82', '#645cc1']);
+        .range(["#e7d1bc", '#cf9a82', "#b3654c", "#800000", "#b33040", "#d25c4d", "#f16000", '#f3842a', "#f2b447", "#e9d574", "#aecbc9", "#697F98", '#645cc1', '#432fea', "#949aa4", '#bdb5b0']);
         //.range(["#aecbc9", "#697F98", "#949aa4", '#bdb5b0', "#e7d1bc", "#800000", "#b33040", "#d25c4d", "#f16000", "#f2b447", "#e9d574", ]);
       /* if (data.category == "Vaccine Period") {
       // Transpose the data into layers
@@ -152,7 +162,7 @@ var svg = d3.select("#bar-two")
           .attr("class", "axis axis--y")
           .call(d3.axisLeft(y).ticks(10, "%"));
       
-      var colors = ["#e7d1bc", "#800000", "#b33040", "#d25c4d", "#f16000", "#f2b447", "#e9d574", "#aecbc9", "#697F98", "#949aa4", '#bdb5b0', '#f3842a', '#cf9a82', '#645cc1', "#aecbc9", "#697F98"];
+      var colors = ["#e7d1bc", '#cf9a82', "#b3654c", "#800000", "#b33040", "#d25c4d", "#f16000", '#f3842a', "#f2b447", "#e9d574", "#aecbc9", "#697F98", '#645cc1', '#432fea', "#949aa4", '#bdb5b0'];
       var svg2 = d3.select("#legend-two");
       
       var legend = svg2.selectAll(".legend")
@@ -169,21 +179,21 @@ var svg = d3.select("#bar-two")
             .style("background-color", function(d, i) {
               switch (i) {
                 case 0: return "#e7d1bc";
-                case 1: return "#800000";
-                case 2: return "#b33040";
-                case 3: return "#d25c4d";
-                case 4: return "#f16000";
-                case 5: return "#f2b447";
-                case 6: return "#e9d574";
-                case 7: return "#aecbc9";
-                case 8: return "#697F98";
-                case 9: return "#949aa4";
-                case 10: return '#bdb5b0';
-                case 11: return '#f3842a';
-                case 12: return '#cf9a82';
-                case 13: return '#645cc1';
-                case 14: return "#aecbc9";
-                case 15: return "#697F98";
+                case 1: return '#cf9a82';
+                case 2: return "#b3654c";
+                case 3: return "#800000";
+                case 4: return "#b33040";
+                case 5: return "#d25c4d";
+                case 6: return "#f16000";
+                case 7: return '#f3842a';
+                case 8: return "#f2b447";
+                case 9: return "#e9d574";
+                case 10: return "#aecbc9";
+                case 11: return "#697F98";
+                case 12: return '#645cc1';
+                case 13: return '#432fea';
+                case 14: return "#949aa4"; 
+                case 15: return '#bdb5b0';
               }
             });
            
