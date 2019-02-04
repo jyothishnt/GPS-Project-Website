@@ -42,6 +42,11 @@ var svg = d3.select("#bar-four")
       { category: "Age group", "<=2":737, ">2<=5":155, ">5<=15":21, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":0 }
       ];
   }  
+  if (countryValue == 'Ethiopia') {
+    var data = [
+      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":100 }
+      ];
+  }  
   if (countryValue == 'The Gambia') {
     var data = [
       { category: "Age group", "<=2":1247, ">2<=5":212, ">5<=15":0, ">5<=18":136, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":81, ">65":7, "Unknown":89 }
@@ -100,6 +105,11 @@ var svg = d3.select("#bar-four")
   if (countryValue == 'Poland') {
     var data = [
       { category: "Age group", "<=2":182, ">2<=5":85, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":1, ">65":2, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Qatar') {
+    var data = [
+      { category: "Age group", "<=2":44, ">2<=5":12, ">5<=15":0, ">5<=18":6, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":24, ">65":24, "Unknown":7 }
       ];
   }  
   if (countryValue == 'South Africa') {
