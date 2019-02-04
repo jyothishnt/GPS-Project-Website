@@ -35,6 +35,26 @@ var svg = d3.select("#bar-three")
       { category: "Clinical Manifest", "Carriage": '19', "Disease": '537', "Unknown": '1' }
       ];
   } 
+  if (countryValue == 'Cambodia') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '0', "Unknown": '913' }
+      ];
+  } 
+  if (countryValue == 'Ethiopia') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '99', "Disease": '0', "Unknown": '1'}
+      ];
+  } 
+  if (countryValue == 'The Gambia') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '1270', "Disease": '497', "Unknown": '5' }
+      ];
+  } 
+  if (countryValue == 'Hong Kong') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '299', "Disease": '174', "Unknown": '1' }
+      ];
+  } 
   if (countryValue == 'India') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '176', "Disease": '209', "Unknown": '0' }
@@ -45,9 +65,29 @@ var svg = d3.select("#bar-three")
       { category: "Clinical Manifest", "Carriage": '0', "Disease": '1171', "Unknown": '0' }
       ];
   } 
+  if (countryValue == 'Malawi') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '958', "Disease": '663', "Unknown": '15' }
+      ];
+  } 
   if (countryValue == 'Mozambique') {
     var data = [
-      { category: "Clinical Manifest", "IPD": '363', "Carriage": '2', "Disease": '1', "Unknown": '1' }
+      { category: "Clinical Manifest", "Carriage": '2', "Disease": '364', "Unknown": '1' }
+      ];
+  } 
+  if (countryValue == 'Nepal') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '405', "Disease": '71', "Unknown": '0' }
+      ];
+  } 
+  if (countryValue == 'Nigeria') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '67', "Unknown": '0' }
+      ];
+  } 
+  if (countryValue == 'Pakistan') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '61', "Disease": '41', "Unknown": '0'}
       ];
   } 
   if (countryValue == 'Papua New Guinea') {
@@ -60,14 +100,29 @@ var svg = d3.select("#bar-three")
       { category: "Clinical Manifest", "Carriage": '519', "Disease": '207', "Unknown": '10'}
       ];
   } 
+  if (countryValue == 'Poland') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '270', "Unknown": '0'}
+      ];
+  } 
+  if (countryValue == 'Qatar') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '2', "Disease": '115', "Unknown": '0'}
+      ];
+  } 
   if (countryValue == 'South Africa') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '1858', "Disease": '426', "Unknown": '0' }
       ];
   }
+  if (countryValue == 'Thailand') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '249', "Unknown": '0' }
+      ];
+  } 
   if (countryValue == 'Togo') {
     var data = [
-      { category: "Clinical Manifest", "IPD": '0', "Carriage": '0', "Disease": '127', "Unknown": '0' }
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '127', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'USA') {
@@ -99,7 +154,7 @@ var svg = d3.select("#bar-three")
     .range([height, 0]);
   
   var z = d3.scaleOrdinal()
-    .range(["#aecbc9", "#e9d574", "#697F98", "#e7d1bc"]);
+    .range(["#aecbc9", "#e9d574", "#e7d1bc"]);
 
   var stack = d3.stack()
     .order(d3.stackOrderNone)
@@ -109,10 +164,10 @@ var svg = d3.select("#bar-three")
   //data.sort(function(a, b) { return b.totalHours-a.totalHours; });
   
   x.domain(data.map(function(d) { return d.category; }));
-  z.domain(["IPD", "Disease", "Carriage", "Unknown"]);
+  z.domain(["Carriage", "Disease", "Unknown"]);
   
   var serie = g.selectAll(".serie")
-    .data(stack.keys(["IPD", "Disease", "Carriage", "Unknown"])(data))
+    .data(stack.keys(["Carriage", "Disease",  "Unknown"])(data))
     .enter().append("g")
       .attr("class", "serie")
       .attr("fill", function(d) { return z(d.key); }); 
@@ -144,7 +199,14 @@ var svg = d3.select("#bar-three")
       .attr("y", function(d) {return y(d[1]); })
       .attr("height", function(d) { return y(d[0]) - y(d[1]); })
       //.attr("height", function(d) { return y(d[0]); })
-      .attr("width", x.bandwidth());
+      .attr("width", x.bandwidth())
+      .attr("fill-opacity", 0.8)
+      .append("title")
+        .attr("id", "popup")
+        .text(function(d) {
+          return d.data.keys + " " + ((d[0] - d[1]) * 100) + "%";
+      });
+      //.append('text'); 
   //}
 
    g.append("g")
@@ -156,7 +218,7 @@ var svg = d3.select("#bar-three")
       .attr("class", "axis axis--y")
       .call(d3.axisLeft(y).ticks(10, "%"));
   
-  var colors = ["#e7d1bc", "#697F98", "#e9d574", "#aecbc9"];
+  var colors = ["#aecbc9", "#e9d574", "#e7d1bc"];
   var svg2 = d3.select("#legend-three");
   
   var legend = svg2.selectAll(".legend")
@@ -173,9 +235,8 @@ var svg = d3.select("#bar-three")
         .style("background-color", function(d, i) {
             switch (i) {
             case 0: return "#e7d1bc";
-            case 1: return "#697F98";
-            case 2: return "#e9d574";
-            case 3: return "#aecbc9";
+            case 1: return "#e9d574";
+            case 2: return "#aecbc9";
           }
         });
        
@@ -189,9 +250,8 @@ var svg = d3.select("#bar-three")
         .text(function(d, i) { 
           switch (i) {
             case 0: return 'Unknown';
-            case 1: return 'Carriage';
-            case 2: return 'Disease';
-            case 3: return 'IPD';
+            case 1: return 'Disease';
+            case 2: return 'Carriage';
           }
         });
       

@@ -131,10 +131,10 @@ markerCambodia.on({
         $(".sampleSize").text("Samples: 913 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Cambodia'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -144,28 +144,26 @@ mymap.on ('click', function(e) {
 });
 
 var markerEthiopia = L.marker([9.005401, 38.763611], {icon: myIcon}).addTo(mymap);
-markerEthiopia.bindPopup("<b>Ethiopia</b><br>Samples: 100<br><a href='https://microreact.org/project/GPS_Ethiopia'>Microreact</a>").openPopup();
+//markerEthiopia.bindPopup("<b>Ethiopia</b><br>Samples: 100<br><a href='https://microreact.org/project/GPS_Ethiopia'>Microreact</a>").openPopup();
 
 markerEthiopia.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
+    click: function (country) {
+        $("#exampleModal").modal("show");
+        $("#exampleModalLabel.modal-title").text("Ethiopia");
+        $(".sampleSize").text("Samples: 100 ");
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Ethiopia'));
+        // May need to change url on live
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
+
     }
 })
 
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
+mymap.on ('click', function(e) {
+    $('#exampleModal').modal('hide');
+});
 
 var markerGambia = L.marker([13.4527, -16.5780], {icon: myIcon}).addTo(mymap);
 //markerGambia.bindPopup("<b>The Gambia</b><br>Samples: 3069<br><a href='https://microreact.org/project/GPS_The-Gambia'>Microreact</a>").openPopup();
@@ -177,10 +175,10 @@ markerGambia.on({
         $(".sampleSize").text("Samples: 1772 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_The-Gambia'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -198,10 +196,10 @@ markerHongKong.on({
         $(".sampleSize").text("Samples: 474 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS-HK-HKU'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -260,10 +258,10 @@ markerMalawi.on({
         $(".sampleSize").text("Samples: 1636 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Malawi'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -302,10 +300,10 @@ markerNepal.on({
         $(".sampleSize").text("Samples: 476 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Nepal'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -323,10 +321,10 @@ markerNigeria.on({
         $(".sampleSize").text("Samples: 67 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Nigeria'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -344,10 +342,10 @@ markerPakistan.on({
         $(".sampleSize").text("Samples: 102 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Nigeria'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -408,10 +406,10 @@ markerPoland.on({
         $(".sampleSize").text("Samples: 270 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Poland'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })
@@ -421,27 +419,25 @@ mymap.on ('click', function(e) {
 });
 
 var markerQatar = L.marker([25.3548, 51.1839], {icon: myIcon}).addTo(mymap);
-markerQatar.bindPopup("<b>Qatar</b><br>Samples: 114<br><a href='https://microreact.org/project/GPS_Qatar'>Microreact</a>").openPopup();
+//markerQatar.bindPopup("<b>Qatar</b><br>Samples: 114<br><a href='https://microreact.org/project/GPS_Qatar'>Microreact</a>").openPopup();
 markerQatar.on({
-    mouseover: function() {
-        if(!isClicked) {
-            this.openPopup()
-        }
-    },
-    click: function() {
-        isClicked = true
-        this.openPopup()
+    click: function (country) {
+        $("#exampleModal").modal("show");
+        $("#exampleModalLabel.modal-title").text("Qatar");
+        $(".sampleSize").text("Samples: 117 ");
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Qatar'));
+        // May need to change url on live
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
+
     }
 })
 
-mymap.on ({
-    click: function() {
-        isClicked = false
-    },
-    popupclose: function () {
-        isClicked = false
-    }
-})
+mymap.on ('click', function(e) {
+        $('#exampleModal').modal('hide');
+});
 
 var markerSouthAfrica = L.marker([-33.918861, 18.423300], {icon: myIcon}).addTo(mymap);
 //markerSouthAfrica.bindPopup("<b>South Africa</b><br>Samples: 4865<br><a href='https://microreact.org/project/GPS_South-Africa'>Microreact</a>").openPopup();
@@ -473,10 +469,10 @@ markerThailand.on({
         $(".sampleSize").text("Samples: 249 ");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/GPS_Thailand'));
         // May need to change url on live
-        $.getScript("../js/ArgentinaBars.js");
-        $.getScript("../js/ArgentinaVacBar.js");
-        $.getScript("../js/ArgentinaClinicalMBar.js");
-        $.getScript("../js/ArgentinaAgeBar.js");
+        $.getScript("../gps/js/ArgentinaBars.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
 })

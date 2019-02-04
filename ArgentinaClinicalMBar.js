@@ -40,6 +40,11 @@ var svg = d3.select("#bar-three")
       { category: "Clinical Manifest", "Carriage": '0', "Disease": '0', "Unknown": '913' }
       ];
   } 
+  if (countryValue == 'Ethiopia') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '99', "Disease": '0', "Unknown": '1'}
+      ];
+  } 
   if (countryValue == 'The Gambia') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '1270', "Disease": '497', "Unknown": '5' }
@@ -98,6 +103,11 @@ var svg = d3.select("#bar-three")
   if (countryValue == 'Poland') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '0', "Disease": '270', "Unknown": '0'}
+      ];
+  } 
+  if (countryValue == 'Qatar') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '2', "Disease": '115', "Unknown": '0'}
       ];
   } 
   if (countryValue == 'South Africa') {
