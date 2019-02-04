@@ -37,6 +37,26 @@ var svg = d3.select("#bar-four")
       { category: "Age group", "<=2":219, ">2<=5":53, ">5<=15":23, ">5<=18":0, ">15<=24":12, ">24<=44":35, ">44<=65":56, ">18<=65":0, ">65":13, "Unknown":1 }
       ];
   }  
+  if (countryValue == 'Cambodia') {
+    var data = [
+      { category: "Age group", "<=2":737, ">2<=5":155, ">5<=15":21, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Ethiopia') {
+    var data = [
+      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":100 }
+      ];
+  }  
+  if (countryValue == 'The Gambia') {
+    var data = [
+      { category: "Age group", "<=2":1247, ">2<=5":212, ">5<=15":0, ">5<=18":136, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":81, ">65":7, "Unknown":89 }
+      ];
+  }  
+  if (countryValue == 'Hong Kong') {
+    var data = [
+      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":474 }
+      ];
+  }  
   if (countryValue == 'India') {
     var data = [
       { category: "Age group", "<=2":68, ">2<=5":84, ">5<=15":39, ">5<=18":0, ">15<=24":10, ">24<=44":43, ">44<=65":78, ">18<=65":0, ">65":42, "Unknown":21 }
@@ -47,9 +67,29 @@ var svg = d3.select("#bar-four")
       { category: "Age group", "<=2":586, ">2<=5":279, ">5<=15":98, ">5<=18":0, ">15<=24":18, ">24<=44":45, ">44<=65":46, ">18<=65":0, ">65":99, "Unknown":1 }
       ];
   }  
+  if (countryValue == 'Malawi') {
+    var data = [
+      { category: "Age group", "<=2":716, ">2<=5":298, ">5<=15":0, ">5<=18":167, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":249, ">65":2, "Unknown":204 }
+      ];
+  }  
   if (countryValue == 'Mozambique') {
     var data = [
       { category: "Age group", "<=2":144, ">2<=5":20, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":12, ">65":0, "Unknown":191 }
+      ];
+  }  
+  if (countryValue == 'Nepal') {
+    var data = [
+      { category: "Age group", "<=2":405, ">2<=5":44, ">5<=15":0, ">5<=18":27, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Nigeria') {
+    var data = [
+      { category: "Age group", "<=2":56, ">2<=5":9, ">5<=15":2, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Pakistan') {
+    var data = [
+      { category: "Age group", "<=2":20, ">2<=5":3, ">5<=15":12, ">5<=18":0, ">15<=24":1, ">24<=44":0, ">44<=65":1, ">18<=65":0, ">65":1, "Unknown":64 }
       ];
   }  
   if (countryValue == 'Papua New Guinea') {
@@ -62,9 +102,24 @@ var svg = d3.select("#bar-four")
       { category: "Age group", "<=2":113, ">2<=5":16, ">5<=15":0, ">5<=18":32, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":23, ">65":19, "Unknown":533 }
       ];
   }  
+  if (countryValue == 'Poland') {
+    var data = [
+      { category: "Age group", "<=2":182, ">2<=5":85, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":1, ">65":2, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Qatar') {
+    var data = [
+      { category: "Age group", "<=2":44, ">2<=5":12, ">5<=15":0, ">5<=18":6, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":24, ">65":24, "Unknown":7 }
+      ];
+  }  
   if (countryValue == 'South Africa') {
     var data = [
       { category: "Age group", "<=2":2582, ">2<=5":1060, ">5<=15":0, ">5<=18":327, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":23, ">65":19, "Unknown":0 }
+      ];
+  }  
+  if (countryValue == 'Thailand') {
+    var data = [
+      { category: "Age group", "<=2":53, ">2<=5":41, ">5<=15":0, ">5<=18":17, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":81, ">65":56, "Unknown":1 }
       ];
   }  
   if (countryValue == 'Togo') {
@@ -105,7 +160,7 @@ var svg = d3.select("#bar-four")
     .range([height, 0]);
   
   var z = d3.scaleOrdinal()
-    .range(["#949aa4", "#697f98", "#aecbc9", "#e9d574", "#f2b447", "#f16000", "#d25c4d", "#b33040", "#800000", "#e7d1bc"]);
+    .range(['#8098a8', '#9eb9be', "#aecbc9", "#e9d574", "#f2b447", "#f16000", "#d25c4d", "#b33040", "#800000", "#e7d1bc"]);
   
   var stack = d3.stack()
     .order(d3.stackOrderNone)
@@ -141,7 +196,7 @@ var svg = d3.select("#bar-four")
       .attr("class", "axis axis--y")
       .call(d3.axisLeft(y).ticks(10, "%"));
   
-  var colors = ["#949aa4", "#697f98", "#aecbc9", "#e9d574", "#f2b447", "#f16000", "#d25c4d", "#b33040", "#800000", "#e7d1bc"];
+  var colors = ['#8098a8', '#9eb9be', "#aecbc9", "#e9d574", "#f2b447", "#f16000", "#d25c4d", "#b33040", "#800000", "#e7d1bc"];
   var svg2 = d3.select("#legend-four");
   
   var legend = svg2.selectAll(".legend")
@@ -165,8 +220,8 @@ var svg = d3.select("#bar-four")
             case 5: return "#f2b447";
             case 6: return "#e9d574";
             case 7: return "#aecbc9";
-            case 8: return "#697f98";
-            case 9: return "#949aa4";
+            case 8: return '#9eb9be'; 
+            case 9: return '#8098a8';
             
           }
         });
