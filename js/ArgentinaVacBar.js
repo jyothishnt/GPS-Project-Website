@@ -265,8 +265,6 @@ var svg = d3.select("#bar-two")
                 case 11: return 'introPCV13';
                 case 12: return 'PCV13'
                 case 13: return 'PostPCV13';
-                case 14: return 'NVT';
-                case 15: return 'VRT';
               }
             });
           
