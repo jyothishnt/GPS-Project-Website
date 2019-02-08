@@ -185,7 +185,17 @@ var svg = d3.select("#bar-four")
       .attr("x", function(d) {return x(d.data.category); })
       .attr("y", function(d) {return y(d[1]); })
       .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-      .attr("width", x.bandwidth());
+      .attr("width", x.bandwidth())
+      .append("title")
+          .attr("id", "popup")
+          .text(function(d) {
+            //return d.data.key + " " + ((d[0] - d[1]) * 100) + "%";
+            var percent = (d[0]  -  d[1])
+            //var res = percent.toPrecision(2).toString(2).replace(/-/i, " ")
+            var res = percent.toFixed(2).replace(/-/i, " ")
+            //return k(d.key) + " " + (res * 100) + "%";
+            return (res * 100) + "%";
+        });
   
    g.append("g")
       .attr("class", "axis axis--x")
