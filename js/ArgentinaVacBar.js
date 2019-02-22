@@ -47,7 +47,7 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'The Gambia') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '238', prePCV7: '1081', PCV7: '0', PostPCV7: '241', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '27', PCV13: '0', PostPCV13: '177', Unknown: '8'}
+      { category: "Vaccine Period", PrePCV: '1253', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '238', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '156', Unknown: '0'}
     ];
   }
   if (countryValue == 'Hong Kong') {
@@ -62,12 +62,12 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'Israel') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '432', NouniversalintroductiontoPCV: '0', introPCV7: '176', prePCV7: '0', PostPCV7: '250', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '192', Unknown: '1'}
+      { category: "Vaccine Period", PrePCV: '588', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '112', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '443', Unknown: '0'}
     ];
   }
   if (countryValue == 'Malawi') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '982', introPCV13: '37', PCV13: '0', PostPCV13: '492', Unknown: '124'}
+      { category: "Vaccine Period", PrePCV: '785', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '519', Unknown: '0'}
     ];
   }
   if (countryValue == 'Mozambique') {
@@ -112,7 +112,7 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'South Africa') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '679', prePCV7: '1237', PCV7: '0', PostPCV7: '662', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '673', PostPCV13: '1648', Unknown: '2'}
+      { category: "Vaccine Period", PrePCV: '1825', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '1269', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PostPCV13: '1521', Unknown: '0'}
     ];
   }
   if (countryValue == 'Thailand') {
@@ -127,7 +127,7 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'USA') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '40', prePCV7: '688', PCV7: '0', PostPCV7: '928', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '353', Unknown: '2'}
+      { category: "Vaccine Period", PrePCV: '459', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '779', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '346', Unknown: '0'}
     ];
   }
       
@@ -148,17 +148,17 @@ var svg = d3.select("#bar-two")
         .range([height, 0]);
       
       var z = d3.scaleOrdinal()
-        .range(["#e7d1bc", '#cf9a82', "#b3654c", "#800000", "#b33040", "#d25c4d", "#f16000", '#f3842a', "#f2b447", "#e9d574", "#aecbc9", "#697F98", '#645cc1', '#432fea', "#949aa4"]);
+        .range(['#cf9a82', "#b3654c", "#800000", "#b33040", "#d25c4d", "#f16000", '#f3842a', "#f2b447", "#e9d574", "#aecbc9", "#697F98", '#645cc1', '#432fea', "#949aa4", "#e7d1bc"]);
 
       var stack = d3.stack()
         .order(d3.stackOrderNone)
         .offset(d3.stackOffsetExpand);  
       
       x.domain(data.map(function(d) { return d.category; }));
-      z.domain(['Unknown', 'PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PCV7', 'PostPCV7', 'prePCV10', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'prePCV13', 'introPCV13', 'PCV13', 'PostPCV13']);
+      z.domain(['PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PCV7', 'PostPCV7', 'prePCV10', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'prePCV13', 'introPCV13', 'PCV13', 'PostPCV13', 'Unknown']);
       
       var serie = g.selectAll(".serie")
-        .data(stack.keys(['Unknown', 'PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PCV7', 'PostPCV7', 'prePCV10', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'prePCV13', 'introPCV13', 'PCV13', 'PostPCV13', 'Unknown'])(data))
+        .data(stack.keys(['PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PCV7', 'PostPCV7', 'prePCV10', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'prePCV13', 'introPCV13', 'PCV13', 'PostPCV13', 'Unknown'])(data))
         .enter().append("g")
           .attr("class", "serie")
           .attr("fill", function(d) { return z(d.key); }); 
@@ -190,7 +190,7 @@ var svg = d3.select("#bar-two")
           .attr("class", "axis axis--y")
           .call(d3.axisLeft(y).ticks(10, "%"));
       
-      var colors = ["#e7d1bc", '#cf9a82', "#b3654c", "#800000", "#b33040", "#d25c4d", "#f16000", '#f3842a', "#f2b447", "#e9d574", "#aecbc9", "#697F98", '#645cc1', '#432fea', "#949aa4"];
+      var colors = ['#cf9a82', "#b3654c", "#800000", "#b33040", "#d25c4d", "#f16000", '#f3842a', "#f2b447", "#e9d574", "#aecbc9", "#697F98", '#645cc1', '#432fea', "#949aa4", "#e7d1bc",];
       var svg2 = d3.select("#legend-two");
       
       var legend = svg2.selectAll(".legend")
@@ -220,7 +220,7 @@ var svg = d3.select("#bar-two")
                 case 11: return "#697F98";
                 case 12: return '#645cc1';
                 case 13: return '#432fea';
-                case 14: return "#949aa4"; 
+                case 14: return '#bdb5b0';
               }
             });
            
