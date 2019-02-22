@@ -49,7 +49,7 @@ var svg = d3.select("#bar-four")
   }  
   if (countryValue == 'The Gambia') {
     var data = [
-      { category: "Age group", "<=2":1247, ">2<=5":212, ">5<=15":0, ">5<=18":136, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":81, ">65":7, "Unknown":89 }
+      { category: "Age group", "<=2":1230, ">2<=5":202, ">5<=15":123, ">5<=18":0, ">15<=24":21, ">24<=44":37, ">44<=65":28, ">18<=65":0, ">65":6, "Unknown":0 }
       ];
   }  
   if (countryValue == 'Hong Kong') {
@@ -64,12 +64,12 @@ var svg = d3.select("#bar-four")
   }  
   if (countryValue == 'Israel') {
     var data = [
-      { category: "Age group", "<=2":586, ">2<=5":279, ">5<=15":98, ">5<=18":0, ">15<=24":18, ">24<=44":45, ">44<=65":46, ">18<=65":0, ">65":99, "Unknown":1 }
+      { category: "Age group", "<=2":570, ">2<=5":270, ">5<=15":96, ">5<=18":0, ">15<=24":18, ">24<=44":45, ">44<=65":45, ">18<=65":0, ">65":99, "Unknown":0 }
       ];
   }  
   if (countryValue == 'Malawi') {
     var data = [
-      { category: "Age group", "<=2":716, ">2<=5":298, ">5<=15":0, ">5<=18":167, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":249, ">65":2, "Unknown":204 }
+      { category: "Age group", "<=2":681, ">2<=5":256, ">5<=15":122, ">5<=18":0, ">15<=24":57, ">24<=44":154, ">44<=65":32, ">18<=65":0, ">65":2, "Unknown":0 }
       ];
   }  
   if (countryValue == 'Mozambique') {
@@ -114,7 +114,7 @@ var svg = d3.select("#bar-four")
   }  
   if (countryValue == 'South Africa') {
     var data = [
-      { category: "Age group", "<=2":2582, ">2<=5":1060, ">5<=15":0, ">5<=18":327, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":23, ">65":19, "Unknown":0 }
+      { category: "Age group", "<=2":2425, ">2<=5":999, ">5<=15":319, ">5<=18":0, ">15<=24":132, ">24<=44":540, ">44<=65":174, ">18<=65":0, ">65":26, "Unknown":0 }
       ];
   }  
   if (countryValue == 'Thailand') {
@@ -129,21 +129,9 @@ var svg = d3.select("#bar-four")
   }  
   if (countryValue == 'USA') {
     var data = [
-      { category: "Age group", "<=2":984, ">2<=5":410, ">5<=15":0, ">5<=18":30, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":861, ">65":26, "Unknown":0 }
+      { category: "Age group", "<=2":710, ">2<=5":353, ">5<=15":25, ">5<=18":0, ">15<=24":15, ">24<=44":106, ">44<=65":189, ">18<=65":0, ">65":186, "Unknown":0 }
       ];
   }  
-  /*else {
-    var data = [
-      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, "Unknown":0 }
-      ];
-  }    */
-  /*var data = [
-    /*{ category: "Sampling Years", 1998: '75', 1999: '53', 2010: '41', 2011: '95', 2012: '100', 2013: '62' }, 
-    { category: "Vaccine Period", PrePCV: '4', NouniversalintroductiontoPCV: '7', PostPCV7: '8', PostPCV10: '13', PostPCV13: '9'}, 
-    { category: "Clinical Manifest", Disease: 426}, 
-    { category: "Ages", under2: '323', between2and5: '103'}, 
-    { category: "Age group", "total":426, "<=2":323, ">2<=5":103}
-    ]; */
   
   var svg = d3.select(".fourthbar"),
     margin = {top: 20, right: 60, bottom: 30, left: 40},

@@ -47,7 +47,7 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'The Gambia') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '1270', "Disease": '497', "Unknown": '5' }
+      { category: "Clinical Manifest", "Carriage": '1249', "Disease": '398', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Hong Kong') {
@@ -62,12 +62,12 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'Israel') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '0', "Disease": '1171', "Unknown": '0' }
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '1143', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Malawi') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '958', "Disease": '663', "Unknown": '15' }
+      { category: "Clinical Manifest", "Carriage": '749', "Disease": '555', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Mozambique') {
@@ -112,7 +112,7 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'South Africa') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '1858', "Disease": '426', "Unknown": '0' }
+      { category: "Clinical Manifest", "Carriage": '1695', "Disease": '2920', "Unknown": '0' }
       ];
   }
   if (countryValue == 'Thailand') {
@@ -127,7 +127,7 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'USA') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '0', "Disease": '1195', "Unknown": '817' }
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '1584', "Unknown": '0' }
       ];
   } 
   
@@ -170,16 +170,6 @@ var svg = d3.select("#bar-three")
       .attr("fill", function(d) { return z(d.key);
   });
   
-  /*var serie = g.selectAll(".serie")
-    .data(stack.keys(["Carriage", "Disease",  "Unknown"])(data))
-    .enter().append("title")
-    .attr("class", "serie")        
-        .attr("id", "popup")
-        .text(function(d) {
-          //return d.data.keys + " " + ((d[0] - d[1]) * 100) + "%";
-          return k(d.key) + " " + ((d[0] - d[1]) * 100) + "%";
-  }); */
-  
   countryValue = d3.select("#exampleModalLabel.modal-title").text();   
     
   
@@ -201,7 +191,7 @@ var svg = d3.select("#bar-three")
         .text(function(d) {
           //return d.data.key + " " + ((d[0] - d[1]) * 100) + "%";
           var percent = (d[0]  -  d[1])
-          var res = percent.toPrecision(2).toString().replace(/-/i, " ")
+          var res = percent.toFixed(2).replace(/-/i, " ")
           //return k(d.key) + " " + (res * 100) + "%";
           return (res * 100) + "%";
       });
