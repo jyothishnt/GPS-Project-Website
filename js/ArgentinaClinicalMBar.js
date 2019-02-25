@@ -27,7 +27,7 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'Brazil') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '0', "Disease": '411', "Unknown": '1' }
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '420', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Bangladesh') {
@@ -38,6 +38,11 @@ var svg = d3.select("#bar-three")
   if (countryValue == 'Cambodia') {
     var data = [
       { category: "Clinical Manifest", "Carriage": '0', "Disease": '0', "Unknown": '913' }
+      ];
+  } 
+  if (countryValue == 'China') {
+    var data = [
+      { category: "Clinical Manifest", "Carriage": '291', "Disease": '213', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Ethiopia') {
@@ -57,7 +62,7 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'India') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '176', "Disease": '209', "Unknown": '0' }
+      { category: "Clinical Manifest", "Carriage": '3', "Disease": '111', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Israel') {
@@ -72,12 +77,12 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'Mozambique') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '2', "Disease": '364', "Unknown": '1' }
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '167', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Nepal') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '405', "Disease": '71', "Unknown": '0' }
+      { category: "Clinical Manifest", "Carriage": '351', "Disease": '65', "Unknown": '0' }
       ];
   } 
   if (countryValue == 'Nigeria') {
@@ -97,12 +102,12 @@ var svg = d3.select("#bar-three")
   } 
   if (countryValue == 'Peru') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '519', "Disease": '207', "Unknown": '10'}
+      { category: "Clinical Manifest", "Carriage": '419', "Disease": '188', "Unknown": '0'}
       ];
   } 
   if (countryValue == 'Poland') {
     var data = [
-      { category: "Clinical Manifest", "Carriage": '0', "Disease": '270', "Unknown": '0'}
+      { category: "Clinical Manifest", "Carriage": '0', "Disease": '189', "Unknown": '0'}
       ];
   } 
   if (countryValue == 'Qatar') {

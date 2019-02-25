@@ -106,7 +106,7 @@ markerBrazil.on({
     click: function (country) {
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Brazil");
-        $(".sampleSize").text("Number of samples: 412 ");
+        $(".sampleSize").text("Number of samples: 420");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/BQhquY56Y').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
@@ -149,13 +149,13 @@ markerChina.on({
     click: function (country) {
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("China");
-        $(".sampleSize").text("Number of samples: 548 ");
+        $(".sampleSize").text("Number of samples: 504");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/tNf7d9rUm').attr("target", '_blank'));
         // May need to change url on live
-        $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
-        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-        $.getScript("../gps/js/ArgentinaAgeBar.js");
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
 
     }
 })
@@ -235,7 +235,7 @@ markerIndia.on({
     click: function (country) {
             $("#exampleModal").modal("show");
             $("#exampleModalLabel.modal-title").text("India");
-            $(".sampleSize").text("Number of samples: 385 ");
+            $(".sampleSize").text("Number of samples: 114");
             $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/powMnZnUm'));
             // May need to change url on live
             $.getScript("../gps/js/ArgentinaBars.js");
@@ -297,7 +297,7 @@ markerMozambique.on({
     click: function (country) {
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Mozambique");
-        $(".sampleSize").text("Number of samples: 367 ");
+        $(".sampleSize").text("Number of samples: 167");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/I4f92vXua'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
@@ -318,7 +318,7 @@ markerNepal.on({
     click: function (country) {
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Nepal");
-        $(".sampleSize").text("Number of samples: 476 ");
+        $(".sampleSize").text("Number of samples: 416");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/dpwXlG5H8'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
@@ -405,10 +405,10 @@ markerPeru.on({
         $(".sampleSize").text("Number of samples: 607");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/Ga1_98KSo'));
         // May need to change url on live
-        $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
-        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-        $.getScript("../gps/js/ArgentinaAgeBar.js");
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
 
     }
 })
@@ -424,7 +424,7 @@ markerPoland.on({
     click: function (country) {
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Poland");
-        $(".sampleSize").text("Number of samples: 270 ");
+        $(".sampleSize").text("Number of samples: 189");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/ZqJmW54D5'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");

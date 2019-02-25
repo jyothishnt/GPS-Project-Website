@@ -32,12 +32,17 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'Brazil') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '206', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '205', prePCV13: '0', PostPCV13: '0', Unknown: '1'}
+      { category: "Vaccine Period", PrePCV: '201', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '219', prePCV13: '0', PostPCV13: '0', Unknown: '0'}
     ];
   }
   if (countryValue == 'Cambodia') {
     var data = [
       { category: "Vaccine Period", PrePCV: '289', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '103', PCV13: '0', PostPCV13: '521', Unknown: '0'}
+    ];
+  }
+  if (countryValue == 'China') {
+    var data = [
+      { category: "Vaccine Period", PrePCV: '347', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '64', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '93', Unknown: '0'}
     ];
   }
   if (countryValue == 'Ethiopia') {
@@ -57,7 +62,7 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'India') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '385', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '0', Unknown: '0'}
+      { category: "Vaccine Period", PrePCV: '114', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '0', Unknown: '0'}
     ];
   }
   if (countryValue == 'Israel') {
@@ -72,12 +77,12 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'Mozambique') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', prePCV10: '364', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '0', Unknown: '3'}
+      { category: "Vaccine Period", PrePCV: '167', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', prePCV10: '0', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '0', Unknown: '0'}
     ];
   }
   if (countryValue == 'Nepal') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '1', PostPCV7: '0', prePCV10: '475', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '0', Unknown: '0'}
+      { category: "Vaccine Period", PrePCV: '416', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PostPCV7: '0', prePCV10: '0', introPCV10: '0', PostPCV10: '0', prePCV13: '0', PostPCV13: '0', Unknown: '0'}
     ];
   }
   if (countryValue == 'Nigeria') {
@@ -97,12 +102,12 @@ var svg = d3.select("#bar-two")
   }
   if (countryValue == 'Peru') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '31', prePCV7: '445', PCV7: '0', PostPCV7: '48', introPCV10: '0', PostPCV10: '0', introPCV10and13: '31', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '0', Unknown: '181'}
+      { category: "Vaccine Period", PrePCV: '541', NouniversalintroductiontoPCV: '0', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '66', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '0', Unknown: '0'}
     ];
   }
   if (countryValue == 'Poland') {
     var data = [
-      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '0', introPCV7: '8', prePCV7: '46', PCV7: '0', PostPCV7: '57', introPCV10: '29', PostPCV10: '30', introPCV10and13: '0', prePCV13: '0', introPCV13: '33', PCV13: '0', PostPCV13: '67', Unknown: '0'}
+      { category: "Vaccine Period", PrePCV: '0', NouniversalintroductiontoPCV: '189', introPCV7: '0', prePCV7: '0', PCV7: '0', PostPCV7: '0', introPCV10: '0', PostPCV10: '0', introPCV10and13: '0', prePCV13: '0', introPCV13: '0', PCV13: '0', PostPCV13: '0', Unknown: '0'}
     ];
   }
   if (countryValue == 'Qatar') {
