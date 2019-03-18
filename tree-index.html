@@ -15,6 +15,23 @@
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"> -->
   <link href="css/styles.min.css" rel="stylesheet">
   <style>
+
+  div.imageDiv {
+    display:inline-block;
+    margin-right: 65px;
+  }
+  img.pageImage {
+    width: 500px;
+    height: 350px;
+    border: 1px solid #1570a6;
+  }
+  img.pageImage:hover {
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity:0.8;
+  }
+  h3.imageTitle {
+    color: #1570a6;
+  }
   #mapid { 
     height: 720px;
     margin-top: 100px;
@@ -198,6 +215,7 @@ rect:hover {
 .cls-6{fill:#3c7382;}
 </style>
 
+
   <!-- HTML5 Support for IE -->
   <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -263,6 +281,7 @@ rect:hover {
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                        <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">GPSC Lineages</a></li>
                         <li class=""><a id="sampling_map" href="sampling_map.html">Sampling Map</a></li>
                         <li class=""><a id="publications" href="publications.html">Publications</a></li>
                         <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Data Downloads</a></li>
@@ -305,22 +324,31 @@ rect:hover {
         </header>
         <p class="head">
             We employ whole genome sequencing of large numbers of isolates to create a picture of the evolution of <span class="italics">Streptococcus pneumoniae</span> during the introduction of pneumococcal conjugate vaccines to characterise patterns of genetic adaptation on global and regional scales
-        </p>
-   
+        </p><br>
+        <div class='imageDiv'>
+          <a href='GPSC_lineages.html'>
+            <h3 class='imageTitle'>Explore GPSC lineages</h3>
+            <image class="pageImage" src='GPSCsScreenShot.png' alt="Screen shot of GPSC clusters" class="img-responsive"></image></a>
+        </div>
+        <div class='imageDiv'>
+            <a href='new_sampling_map.html'>
+            <h3 class='imageTitle'>Explore country specific data</h3>
+            <image class="pageImage" src='CountriesScreenShot.png' alt="Screen shot of World map" class="img-responsive"></image></a>
+        </div>
         <br>
       </div>
     </section>
 
-<section>
+<!--<section>
 <div id="root" class="container">  
 <div class="container" id='app'></div>
-  <!--<script type="text/javascript" src='bundle.js'></script>-->
+  <script type="text/javascript" src='bundle.js'></script>
   <script type="text/javascript" src='bundle.js'></script>
 </div>
-    </section>
+    </section>-->
     <!-- Map modal-->
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -328,6 +356,15 @@ rect:hover {
         <h4 class="sampleText text-center"></h4>
         <h4 class="sampleSize text-center"></h4>
         <h4 class="microreactLink text-center"></h4>
+        <script type="text/javascript">
+          if (h4.microreactLink.text-center.innerHtml != "") {
+          <svg id="Micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.25 85.86"><defs></defs><title>SAIRA LOGOS SEP 2018</title><path class="cls-2" d="M60.29,0H60A11.09,11.09,0,0,0,49.2,11.34v0h0a22,22,0,0,1-2.71,11.09A22.35,22.35,0,0,1,44,26.13a22.1,22.1,0,0,1-12.08,7.35A22.31,22.31,0,0,1,27,34a21.78,21.78,0,0,1-3.85-.34,22.31,22.31,0,0,1-6.75-2.37h0A11,11,0,0,0,11.1,30a11.09,11.09,0,1,0,5.41,20.76l.36-.23h0l.38-.22a22.17,22.17,0,0,1,11.14-3,22.93,22.93,0,0,1,3.88.34,22,22,0,0,1,5.94,1.94h0c.56.27,1.12.58,1.66.9h0a21.95,21.95,0,0,1,7.43,7.42,21.78,21.78,0,0,1,1.93,4,22.07,22.07,0,0,1,1.29,6.46c0,.17,0,.34,0,.52a5.42,5.42,0,0,1,0,.57A11.09,11.09,0,1,0,67,58.94l-.1,0h0a22.16,22.16,0,0,1-8.73-30,22.72,22.72,0,0,1,2.47-3.63A21.88,21.88,0,0,1,66,20.6h0A11.09,11.09,0,0,0,60.29,0"/><path class="cls-3" d="M27.06.77a11.1,11.1,0,1,0,5.3,1.36A11.08,11.08,0,0,0,27.06.77"/><path class="cls-4" d="M77.62,28.4a11.09,11.09,0,1,0,5.31,1.36,11.1,11.1,0,0,0-5.31-1.36"/><path class="cls-5" d="M28.42,58.31a11.09,11.09,0,1,0,9.48,5.32,11.07,11.07,0,0,0-9.48-5.32"/><path class="cls-6" d="M11.13,30a11.09,11.09,0,1,0,9.48,5.32A11,11,0,0,0,11.13,30"/></svg>
+          }
+          /*else {
+          <svg id="Micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.25 85.86"><defs></defs><title>SAIRA LOGOS SEP 2018</title><path class="cls-2" d="M60.29,0H60A11.09,11.09,0,0,0,49.2,11.34v0h0a22,22,0,0,1-2.71,11.09A22.35,22.35,0,0,1,44,26.13a22.1,22.1,0,0,1-12.08,7.35A22.31,22.31,0,0,1,27,34a21.78,21.78,0,0,1-3.85-.34,22.31,22.31,0,0,1-6.75-2.37h0A11,11,0,0,0,11.1,30a11.09,11.09,0,1,0,5.41,20.76l.36-.23h0l.38-.22a22.17,22.17,0,0,1,11.14-3,22.93,22.93,0,0,1,3.88.34,22,22,0,0,1,5.94,1.94h0c.56.27,1.12.58,1.66.9h0a21.95,21.95,0,0,1,7.43,7.42,21.78,21.78,0,0,1,1.93,4,22.07,22.07,0,0,1,1.29,6.46c0,.17,0,.34,0,.52a5.42,5.42,0,0,1,0,.57A11.09,11.09,0,1,0,67,58.94l-.1,0h0a22.16,22.16,0,0,1-8.73-30,22.72,22.72,0,0,1,2.47-3.63A21.88,21.88,0,0,1,66,20.6h0A11.09,11.09,0,0,0,60.29,0"/><path class="cls-3" d="M27.06.77a11.1,11.1,0,1,0,5.3,1.36A11.08,11.08,0,0,0,27.06.77"/><path class="cls-4" d="M77.62,28.4a11.09,11.09,0,1,0,5.31,1.36,11.1,11.1,0,0,0-5.31-1.36"/><path class="cls-5" d="M28.42,58.31a11.09,11.09,0,1,0,9.48,5.32,11.07,11.07,0,0,0-9.48-5.32"/><path class="cls-6" d="M11.13,30a11.09,11.09,0,1,0,9.48,5.32A11,11,0,0,0,11.13,30"/></svg>
+          
+          } */
+        </script>
         <svg id="Micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.25 85.86"><defs><style>.cls-1{isolation:isolate;}.cls-2,.cls-3{fill:#3b7383;}.cls-3{opacity:0.53;}.cls-4{fill:#673b8d;}.cls-5{fill:#a288ba;}.cls-6{fill:#3c7382;}</style></defs><title>SAIRA LOGOS SEP 2018</title><path class="cls-2" d="M60.29,0H60A11.09,11.09,0,0,0,49.2,11.34v0h0a22,22,0,0,1-2.71,11.09A22.35,22.35,0,0,1,44,26.13a22.1,22.1,0,0,1-12.08,7.35A22.31,22.31,0,0,1,27,34a21.78,21.78,0,0,1-3.85-.34,22.31,22.31,0,0,1-6.75-2.37h0A11,11,0,0,0,11.1,30a11.09,11.09,0,1,0,5.41,20.76l.36-.23h0l.38-.22a22.17,22.17,0,0,1,11.14-3,22.93,22.93,0,0,1,3.88.34,22,22,0,0,1,5.94,1.94h0c.56.27,1.12.58,1.66.9h0a21.95,21.95,0,0,1,7.43,7.42,21.78,21.78,0,0,1,1.93,4,22.07,22.07,0,0,1,1.29,6.46c0,.17,0,.34,0,.52a5.42,5.42,0,0,1,0,.57A11.09,11.09,0,1,0,67,58.94l-.1,0h0a22.16,22.16,0,0,1-8.73-30,22.72,22.72,0,0,1,2.47-3.63A21.88,21.88,0,0,1,66,20.6h0A11.09,11.09,0,0,0,60.29,0"/><path class="cls-3" d="M27.06.77a11.1,11.1,0,1,0,5.3,1.36A11.08,11.08,0,0,0,27.06.77"/><path class="cls-4" d="M77.62,28.4a11.09,11.09,0,1,0,5.31,1.36,11.1,11.1,0,0,0-5.31-1.36"/><path class="cls-5" d="M28.42,58.31a11.09,11.09,0,1,0,9.48,5.32,11.07,11.07,0,0,0-9.48-5.32"/><path class="cls-6" d="M11.13,30a11.09,11.09,0,1,0,9.48,5.32A11,11,0,0,0,11.13,30"/></svg>
         
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -353,8 +390,8 @@ rect:hover {
 </div>
     <section>
       <div id="mapid" class="container">
-        <!--<img src='https://api.mapbox.com/styles/v1/mapbox/light-v9/static/0,0,1.0,0,0/256x256?access_token=pk.eyJ1IjoiY2dwcy13Z3NhLWVkZ2UiLCJhIjoiY2owaWE4d2w0MDAwMTMybXk4cTN2eG5xYSJ9.l5ZaIOGl6IY_2i_fWfsRDA'></img>-->
-      </div>
+        <img src='https://api.mapbox.com/styles/v1/mapbox/light-v9/static/0,0,1.0,0,0/256x256?access_token=pk.eyJ1IjoiY2dwcy13Z3NhLWVkZ2UiLCJhIjoiY2owaWE4d2w0MDAwMTMybXk4cTN2eG5xYSJ9.l5ZaIOGl6IY_2i_fWfsRDA'></img>-->
+      <!--</div>
     </section><br>
     <section>
       <div class="container content">
@@ -381,7 +418,7 @@ rect:hover {
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <section>
       <div class="container content"><br>
           <div class="row">
@@ -548,10 +585,6 @@ rect:hover {
     <script src="https://d3js.org/d3.v4.min.js"></script> 
      
     <script src="js/locationsMap.js"></script>
-    <!--<script src="js/ArgentinaBars.js"></script>-->
-    <!--<script src="js/ArgentinaAgeBar.js"></script>-->
-    <!--<script src="js/ArgentinaClinicalMBar.js"></script>-->
-    <!--<script src="js/ArgentinaVacBar.js"></script>-->
   </body>
 </html>
 
