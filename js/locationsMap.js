@@ -109,10 +109,10 @@ markerBrazil.on({
         $(".sampleSize").text("Number of samples: 420");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/BQhquY56Y').attr("target", '_blank'));
         // May need to change url on live
-        $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
-        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-        $.getScript("../gps/js/ArgentinaAgeBar.js");
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
 
     }
 })
@@ -131,10 +131,10 @@ markerCambodia.on({
         $(".sampleSize").text("Number of samples: 913 ");
         $(".microreactLink").html($(""));
         // May need to change url on live
-        $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
-        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-        $.getScript("../gps/js/ArgentinaAgeBar.js");
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
 
     }
 })
@@ -152,10 +152,10 @@ markerChina.on({
         $(".sampleSize").text("Number of samples: 504");
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/tNf7d9rUm').attr("target", '_blank'));
         // May need to change url on live
-        $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
-        $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-        $.getScript("../gps/js/ArgentinaAgeBar.js");
+        $.getScript("../js/ArgentinaBars.js");
+        $.getScript("../js/ArgentinaVacBar.js");
+        $.getScript("../js/ArgentinaClinicalMBar.js");
+        $.getScript("../js/ArgentinaAgeBar.js");
 
     }
 })
@@ -194,7 +194,7 @@ markerGambia.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("The Gambia");
         $(".sampleSize").text("Number of samples: 1647");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/NyFMWfCDV'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/NyFMWfCDV').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -236,12 +236,12 @@ markerIndia.on({
             $("#exampleModal").modal("show");
             $("#exampleModalLabel.modal-title").text("India");
             $(".sampleSize").text("Number of samples: 114");
-            $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/powMnZnUm'));
+            $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/powMnZnUm').attr("target", '_blank'));
             // May need to change url on live
-            $.getScript("../gps/js/ArgentinaBars.js");
-            $.getScript("../gps/js/ArgentinaVacBar.js");
-            $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-            $.getScript("../gps/js/ArgentinaAgeBar.js");
+            $.getScript("../js/ArgentinaBars.js");
+            $.getScript("../js/ArgentinaVacBar.js");
+            $.getScript("../js/ArgentinaClinicalMBar.js");
+            $.getScript("../js/ArgentinaAgeBar.js");
         }
     })
     
@@ -256,7 +256,7 @@ markerIsrael.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Israel");
         $(".sampleSize").text("Number of samples: 1143");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/hFXRPy-_s'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/hFXRPy-_s').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -277,7 +277,7 @@ markerMalawi.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Malawi");
         $(".sampleSize").text("Number of samples: 1304");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/vjh3bOpAd'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/vjh3bOpAd').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -298,7 +298,7 @@ markerMozambique.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Mozambique");
         $(".sampleSize").text("Number of samples: 167");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/I4f92vXua'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/I4f92vXua').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -319,7 +319,7 @@ markerNepal.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Nepal");
         $(".sampleSize").text("Number of samples: 416");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/dpwXlG5H8'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/dpwXlG5H8').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -403,7 +403,7 @@ markerPeru.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Peru");
         $(".sampleSize").text("Number of samples: 607");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/Ga1_98KSo'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/Ga1_98KSo').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -425,7 +425,7 @@ markerPoland.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Poland");
         $(".sampleSize").text("Number of samples: 189");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/ZqJmW54D5'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/ZqJmW54D5').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -467,7 +467,7 @@ markerSouthAfrica.on({
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("South Africa");
         $(".sampleSize").text("Number of samples: 4615");
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/iN5TCEAHi'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/iN5TCEAHi').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
@@ -531,7 +531,7 @@ markerUSA.on({
         $("#exampleModalLabel.modal-title").text("USA");
         //$(".sampleText").text("Number of samples: ");
         $(".sampleSize").html($("<strong>Number of samples: 1584</strong>").attr("class", "text-center"));
-        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/EtowUOjr0'));
+        $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/EtowUOjr0').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/ArgentinaVacBar.js");
