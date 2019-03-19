@@ -24,7 +24,10 @@
     <style type="text/css">
     #mapid { 
     height: 720px;
-    margin-top: 100px;
+    margin-top: 20px;
+  }
+  p.mapLegend {
+    padding: 1px !important;
   }
       #map-canvas { height: 500px;}
 
@@ -328,10 +331,10 @@ rect:hover {
             </div>
           <br>
           <section>
-                <div class="container content">
+                <div class="container">
                   <h3>Map Key</h3>
-                    <p><i class="fa fa-map-marker purple"></i><span> Country sample with a Microreact link</span></p>
-                    <p><i class="fa fa-map-marker oblue"></i><span> Country sample without a Microreact link</span></p>
+                    <p class="mapLegend"><i class="fa fa-map-marker purple"></i><span> Country sample with a Microreact link</span></p>
+                    <p class="mapLegend"><i class="fa fa-map-marker oblue"></i><span> Country sample without a Microreact link</span></p>
                 </div><br>
               </section>
       <div class="panel-group" id="accordion">
@@ -370,11 +373,11 @@ rect:hover {
 </footer>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script src="js/custom.min.js"></script>
-<!--<script src="js/geocode.js"></script>-->
+<script src="js/geocode.js"></script>
 <!--<script type="text/javascript" src="/zxtm/piwik2.js"></script>-->
 <script src="https://d3js.org/d3.v4.min.js"></script> 
- 
 <script src="js/locationsMap.js"></script>
 </body>
 </html>
