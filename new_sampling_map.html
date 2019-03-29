@@ -24,7 +24,6 @@
     <style type="text/css">
     #mapid { 
     height: 720px;
-    margin-top: 100px;
   }
       #map-canvas { height: 500px;}
 
@@ -36,6 +35,9 @@
   img.leaflet-marker-icon:hover {
     transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
     opacity:0.8;
+  }
+  .mapKey {
+    margin-right: 20px;
   }
 
   /* Popover styling */
@@ -281,6 +283,12 @@ rect:hover {
     </header>
     <div class="desc">
       <p>Map showing the number of samples collected from each location so far with links to Microreact for some countries to further explore the data and charts providing supplementary information.</p><div class="msg"></div>
+      
+        <div class="desc">
+          <h3>Map Key</h3>
+            <p><i class="fa fa-map-marker purple"></i><span class='mapKey'> Country sample with a Microreact link</span><i class="fa fa-map-marker oblue"></i><span> Country sample without a Microreact link</span></p>
+        </div>
+      
       <!-- Map modal-->
     <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -327,13 +335,6 @@ rect:hover {
             <div id="mapid" class="container">
             </div>
           <br>
-          <section>
-                <div class="container content">
-                  <h3>Map Key</h3>
-                    <p><i class="fa fa-map-marker purple"></i><span> Country sample with a Microreact link</span></p>
-                    <p><i class="fa fa-map-marker oblue"></i><span> Country sample without a Microreact link</span></p>
-                </div><br>
-              </section>
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
