@@ -20696,7 +20696,8 @@
 	  serotype: [],
 	  countries: '',
 	  objectID: 73
-	}, {
+	},
+	/*{
 	  title: 'GPSC75',
 	  url: 'https://microreact.org/project/gpsGPSC75',
 	  image: 'img/clusterImages/cluster75.png',
@@ -20707,8 +20708,9 @@
 	  ST: [452],
 	  serotype: ['35B'],
 	  countries: ['USA'],
-	  objectID: 74
-	}, {
+	  objectID: 74,
+	}, */
+	{
 	  title: 'GPSC76',
 	  url: 'https://microreact.org/project/gpsGPSC76',
 	  image: 'img/clusterImages/cluster76.png',
@@ -21092,15 +21094,20 @@
 	          'div',
 	          { className: 'container' },
 	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'GPSC Strains'
+	          ),
+	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Each GPSC lineage is represented by a cluster. Explore each lineage in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango.'
+	            'Each GPSC strain is represented by a cluster. Explore a selection of strains, those with at least 20 samples, in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'The search feature enables search by GPSC lineage, Serotype or ST.'
+	            'The search feature below enables search by GPSC strain, serotype or ST.'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -21110,7 +21117,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Select the category \'Serotype\' in the first box and choose a serotype from the dropdown to search for all of the GPSC lineages that contain that particular serotype. If searching for a GPSC lineage that contains a particular ST select \'ST\' and type the ST you are searching for, e.g. \'376\' in the second box.'
+	            'Select the category \'Serotype\' in the first box and choose a serotype from the dropdown to search for all of the GPSC strains that contain that particular serotype. If searching for a GPSC strain that contains a particular ST select \'ST\' and type the ST you are searching for, e.g. \'376\' in the second box.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
