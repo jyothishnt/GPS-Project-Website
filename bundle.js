@@ -21324,6 +21324,11 @@
 	              { value: value, onChange: onChange, className: 'category' },
 	              _react2.default.createElement(
 	                'option',
+	                { value: 'None' },
+	                'None selected'
+	              ),
+	              _react2.default.createElement(
+	                'option',
 	                { value: '1' },
 	                '1'
 	              ),
