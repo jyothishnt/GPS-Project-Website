@@ -16,14 +16,22 @@
   <link href="css/styles.min.css" rel="stylesheet">
   <style>
 
-  div.imageDiv {
+  div.imageDivRight {
     display:inline-block;
-    margin-right: 65px;
+    width: 560px;
   }
-  img.pageImage {
-    width: 500px;
-    height: 350px;
+  div.imageDivLeft {
+    display:inline-block;
+    width: 560px;
+  }
+  img.pageImageRight, img.pageImageLeft {
+    width: 460px;
+    height: 300px;
+    margin-left: 50px;
     border: 1px solid #1570a6;
+  }
+  img.pageImageRight, img.pageImage {
+    margin-left: 50px;
   }
   img.pageImage:hover {
     transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -325,15 +333,15 @@ rect:hover {
         <p class="head">
             We employ whole genome sequencing of large numbers of isolates to create a picture of the evolution of <span class="italics">Streptococcus pneumoniae</span> during the introduction of pneumococcal conjugate vaccines to characterise patterns of genetic adaptation on global and regional scales
         </p><br>
-        <div class='imageDiv'>
+        <div class='imageDivLeft'>
           <a href='GPSC_lineages.html'>
-            <h3 class='imageTitle'>Explore strains</h3>
-            <image class="pageImage" src='GPSCsScreenShot.png' alt="Screen shot of GPSC clusters" class="img-responsive"></image></a>
+            <h3 class='imageTitle center'>Explore strains</h3>
+            <image class="pageImageLeft center" src='GPSCs.png' alt="Screen shot of GPSC clusters" class="img-responsive"></image></a>
         </div>
-        <div class='imageDiv'>
+        <div class='imageDivRight'>
             <a href='new_sampling_map.html'>
-            <h3 class='imageTitle'>Explore countries</h3>
-            <image class="pageImage" src='CountriesScreenShot.png' alt="Screen shot of World map" class="img-responsive"></image></a>
+            <h3 class='imageTitle center'>Explore countries</h3>
+            <image class="pageImageRight center" src='Sample-map.png' alt="Screen shot of World map" class="img-responsive"></image></a>
         </div>
         <br>
       </div>
@@ -499,8 +507,6 @@ rect:hover {
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="js/custom.min.js"></script>
-    <!--<script src="js/geocode.js"></script>-->
-    <!--<script type="text/javascript" src="/zxtm/piwik2.js"></script>-->
     <script src="https://d3js.org/d3.v4.min.js"></script> 
      
     <script src="js/locationsMap.js"></script>
