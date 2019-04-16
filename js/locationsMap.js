@@ -110,7 +110,7 @@ markerBrazil.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/BQhquY56Y').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -143,7 +143,7 @@ mymap.on ('click', function(e) {
     $('#exampleModal').modal('hide');
 });
 
-var markerChina = L.marker([39.9042, 116.4074], {icon: myIcon}).addTo(mymap);
+var markerChina = L.marker([22.3964, 114.1095], {icon: myIcon}).addTo(mymap);
 //markerChina.bindPopup("<b>China</b><br>Samples: 548<br><a href='https://microreact.org/project/tNf7d9rUm' target='_blank'>Microreact</a>").openPopup();
 markerChina.on({
     click: function (country) {
@@ -153,9 +153,9 @@ markerChina.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/tNf7d9rUm').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-        $.getScript("../gps/js/ArgentinaAgeBar.js");
+        $.getScript("../gpsjs/ArgentinaAgeBar.js");
 
     }
 })
@@ -197,7 +197,7 @@ markerGambia.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/NyFMWfCDV').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -208,9 +208,9 @@ mymap.on ('click', function(e) {
         $('#exampleModal').modal('hide');
 });
 
-var markerHongKong = L.marker([22.3964, 114.1095], {icon: myBlueIcon}).addTo(mymap);
+//var markerHongKong = L.marker([22.3964, 114.1095], {icon: myBlueIcon}).addTo(mymap);
 //markerHongKong.bindPopup("<b>Hong Kong</b><br>Samples: 444<br><a href='https://microreact.org/project/GPS-HK-HKU'>Microreact</a>").openPopup();
-markerHongKong.on({
+/*markerHongKong.on({
     click: function (country) {
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Hong Kong");
@@ -223,7 +223,7 @@ markerHongKong.on({
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
     }
-})
+}) */
 
 mymap.on ('click', function(e) {
         $('#exampleModal').modal('hide');
@@ -239,7 +239,7 @@ markerIndia.on({
             $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/powMnZnUm').attr("target", '_blank'));
             // May need to change url on live
             $.getScript("../gps/js/ArgentinaBars.js");
-            $.getScript("../gps/js/ArgentinaVacBar.js");
+            $.getScript("../gps/js/MicroVacBar.js");
             $.getScript("../gps/js/ArgentinaClinicalMBar.js");
             $.getScript("../gps/js/ArgentinaAgeBar.js");
         }
@@ -259,7 +259,7 @@ markerIsrael.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/hFXRPy-_s').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -280,7 +280,7 @@ markerMalawi.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/vjh3bOpAd').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -301,7 +301,7 @@ markerMozambique.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/I4f92vXua').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -322,7 +322,7 @@ markerNepal.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/dpwXlG5H8').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -406,7 +406,7 @@ markerPeru.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/Ga1_98KSo').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -428,7 +428,7 @@ markerPoland.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/ZqJmW54D5').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -470,7 +470,7 @@ markerSouthAfrica.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/iN5TCEAHi').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
@@ -534,7 +534,7 @@ markerUSA.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/EtowUOjr0').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/ArgentinaVacBar.js");
+        $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
     }
