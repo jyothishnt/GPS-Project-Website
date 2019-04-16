@@ -11,15 +11,235 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
   <!-- fonts, icons for bootstrap -->
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap, latest compiled and minified CSS -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"> -->
   <link href="css/styles.min.css" rel="stylesheet">
+  <style>
+
+  div.imageDivRight {
+    display:inline-block;
+    width: 560px;
+  }
+  div.imageDivLeft {
+    display:inline-block;
+    width: 560px;
+  }
+  img.pageImageRight, img.pageImageLeft {
+    width: 460px;
+    height: 300px;
+    margin-left: 50px;
+    border: 1px solid #1570a6;
+  }
+  img.pageImageRight, img.pageImage {
+    margin-left: 50px;
+  }
+  img.pageImage:hover {
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity:0.8;
+  }
+  h3.imageTitle {
+    color: #1570a6;
+  }
+  #mapid { 
+    height: 720px;
+    margin-top: 100px;
+  }
+
+  img.leaflet-marker-icon:hover {
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity:0.8;
+  }
+
+  /* Popover styling */
+
+a {
+  text-decoration: none;
+}
+
+.popover__title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  color: rgb(228, 68, 68);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.popover__wrapper {
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+    
+}
+.popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -150px;
+    transform: translate(0,10px);
+    /*background-color: #c6d7f2; */
+    background-color: #e2f0f4;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+    margin-left: 60px;
+}
+.popover__content:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #e2f0f4 transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0,-20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+  text-align: center;
+}
+.chartsdiv {
+  height: 350px;
+}
+
+input:focus {
+  outline-offset: -2px;
+}
+
+.clusterImg {
+  display: inline-block;
+}
+
+.clusterContainer {
+  width: auto;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.popover__content {
+  min-width: 255px;
+  margin-bottom: 40px;
+  z-index: 100;
+}
+#mapid {
+  z-index: 0;
+}
+.datainfo {
+  margin-top:5px;
+  overflow-x:auto;
+}
+
+.datainfotitle {
+  margin-top: 120px;
+  overflow-x:auto;
+}
+
+.borderset {
+  border-width: 1px !important;
+}
+input.borderset {
+  height: 22px;
+}
+
+div.modal-body {
+  padding: 0px;
+}
+.modal-title {
+  color: #1570a6;
+}
+svg#Micro {
+  max-height: 30px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.microLink {
+  display: inline-block;
+}
+.sampleText, .sampleSize {
+  display:inline-block;
+  margin-left: 82px;
+}
+.microreactLink {
+  display: inline-block;
+  margin-left: 150px;
+}
+div#bar-one, div#bar-two, div#bar-three, div#bar-four, svg {
+  display: inline;
+  max-width: 140px;
+  margin-left: 10px;
+}
+div#legend-two, svg {
+  display: inline-block;
+  width: 140px;
+  margin-left: 10px;
+}
+div#legend-one {
+  display: inline-block;
+  min-height: 325px;
+  max-height: 400px;
+  width: 170px;
+  margin-left: 5px;
+}
+div#legend-three, div#legend-four {
+  display: inline-block;
+  width: 110px;
+  margin-left: 10px;
+}
+svg {
+  height:320px;
+  width: 130px;
+  margin-left: 10px;
+}
+div.legendBox{height: 18px !important;
+    width: 18px;
+    display: inline-block;
+    margin-right: 4px;}
+g.legend, g.yearlegend {display: block;
+margin-left: 10px;
+margin-right: 4px;}
+
+g.yearlegend {display: inline-block;
+margin-left: 10px;
+margin-right: 4px;}
+text.legendText { font-size: 14px;}
+
+rect:hover {
+  fill-opacity:0.9;
+}
+.cls-1{isolation:isolate;}
+.cls-2,.cls-3{fill:#3b7383;}
+.cls-3{opacity:0.53;}
+.cls-4{fill:#673b8d;}
+.cls-5{fill:#a288ba;}
+.cls-6{fill:#3c7382;}
+</style>
+
 
   <!-- HTML5 Support for IE -->
   <!--[if lt IE 9]>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <![endif]-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-sham.js"></script>
+<![endif]-->
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="gps.ico">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin=""></script>
 </head>
 
   <body>
@@ -112,11 +332,20 @@
         </header>
         <p class="head">
             We employ whole genome sequencing of large numbers of isolates to create a picture of the evolution of <span class="italics">Streptococcus pneumoniae</span> during the introduction of pneumococcal conjugate vaccines to characterise patterns of genetic adaptation on global and regional scales
-        </p>
+        </p><br>
+        <div class='imageDivLeft'>
+          <a href='GPSC_lineages.html'>
+            <h3 class='imageTitle center'>Explore strains</h3>
+            <image class="pageImageLeft center" src='GPSCs.png' alt="Screen shot of GPSC clusters" class="img-responsive"></image></a>
+        </div>
+        <div class='imageDivRight'>
+            <a href='new_sampling_map.html'>
+            <h3 class='imageTitle center'>Explore countries</h3>
+            <image class="pageImageRight center" src='Sample-map.png' alt="Screen shot of World map" class="img-responsive"></image></a>
+        </div>
         <br>
       </div>
     </section>
-
     <section>
       <div class="container content"><br>
           <div class="row">
@@ -278,6 +507,9 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="js/custom.min.js"></script>
-    <script type="text/javascript" src="/zxtm/piwik2.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script> 
+     
+    <script src="js/locationsMap.js"></script>
   </body>
 </html>
+
