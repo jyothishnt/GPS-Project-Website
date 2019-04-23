@@ -69,7 +69,6 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">GPSC Lineages</a></li>
                         <li class=""><a id="sampling_map" href="sampling_map.html">Sampling Map</a></li>
                         <li class=""><a id="publications" href="publications.html">Publications</a></li>
                         <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Data Downloads</a></li>
@@ -88,19 +87,21 @@
     <section>
       <div class="container content">
         <header>
-            <h1>Assigning your own data to GPSCs</h1>
+            <h1>Assigning your own data to GPSCs v2</h1>
         </header><br>
         <p class="head">
-          After installing popPUNK as per instructions at <a href="https://poppunk.readthedocs.io/en/latest/installation.html">https://poppunk.readthedocs.io/en/latest/installation.html</a> and downloading the GPS reference database “GPS_query.tar.bz2” <a class="btn btn-info white btn-spaced download" target="_blank" href="GPS_query.tar.bz2">
-          <i class="fa fa-download white fa-lg "></i> Database</a> and the GPSC designations for the references “gpsc_definitive.csv” from <a class="btn btn-info white btn-spaced download" target="_blank" href="gpsc_definitive.csv">
-            <i class="fa fa-download white fa-lg"></i> CSV </a> this page.
+          Install popPUNK as per instructions at <a href="https://poppunk.readthedocs.io/en/latest/installation.html">https://poppunk.readthedocs.io/en/latest/installation.html</a> and download the GPS reference database “GPS_query.tar.bz2” from the following link <a class="btn btn-info white btn-spaced download" target="_blank" href="GPS_query.tar.bz2">
+          <i class="fa fa-download white fa-lg "></i> Database</a> 
+          <!--and the GPSC designations for the references “gpsc_definitive.csv” from <a class="btn btn-info white btn-spaced download" target="_blank" href="gpsc_definitive.csv">
+            <i class="fa fa-download white fa-lg"></i> CSV </a> this page.-->
         </p><br>
         <p class="head">Uncompress the GPS_query.tar.bz2 database file.
         </p><br>
         <ol class="head">Files required to run GPSC assignment using popPUNK: 
-          <li>queries.txt (a list of paths to assemblies you wish to assign)</li>
-          <li>GPS_query (GPS reference database, GPS_query.tar.bz2, uncompressed)</li>
-          <li>gpsc_definitive.csv (Published GPSC designations for the references)</li></ol>
+          <li>queries.txt: a list of paths to assemblies you wish to assign GPSCs to</li>
+          <li>GPS_query: GPS reference database, uncompress GPS_query.tar.bz2 </li>
+          <!--<li>gpsc_definitive.csv (Published GPSC designations for the references)</li>-->
+        </ol>
         <br>
         <p>output directory name is assigned using --output
         </p>
@@ -111,23 +112,20 @@
         <p>poppunk --assign-query --ref-db GPS_query --distances GPS_query/GPS_query.dists --model-dir GPS_query --q-files queries.txt --output GPSC_assignment --threads 8 --no-stream --full-db --external-clustering gpsc_definitive.csv</p>
         <br>
         <p>Outputs:
-          <p>_clusters.csv (popPUNK clusters arbitrary nomenclature)</p>
-          <p>_external_clusters.csv (GPSC scheme designations)</p></p><br>
-        <p>Novel Clusters: Will be assigned NA in the _external_clusters.csv as they have not been seen in the dataset used to designated the GPSCs. The popPUNK _clusters.csv file can be used to determine if NA isolates are the same cluster or not. 
-          Please email: globalpneumoseq@gmail.com to have novel clusters added to the database and a GPSC cluster name assigned.</p><br>
-        <p>Merged clusters: Unsampled diversity may represent variation between two clusters, GPSCs are the merged, for example if GPSC23 and GPSC362 merged the GPSC would be then reported to as GPSC23;362
+          <p>_clusters.csv: popPUNK clusters with dataset specific nomenclature</p>
+          <p>_external_clusters.csv: GPSC v2 scheme designations</p></p><br>
+        <p>Novel Clusters: Will be assigned NA in the _external_clusters.csv as they have not been seen in the v2 dataset used to designate the GPSCs. The popPUNK _clusters.csv file can be used to determine if NA isolates are the same cluster or not. 
+          Please email: globalpneumoseq@gmail.com to have novel clusters added to the database and a GPSC cluster name assigned after you have checked for low level contamination which may contribute to biased accessory distances.</p><br>
+        <p>Merged clusters: Unsampled diversity may represent variation between two clusters, GPSCs are the merged, for example if GPSC23 and GPSC362 merged the GPSC would be then reported to as GPSC23 with a merge history of GPSC23;362.
         </p>
         <p>These instructions are available to download here: <a class="btn btn-info white btn-spaced download" target="_blank" href="GPSC_README.rtf">
           <i class="fa fa-download white fa-lg "></i> Instructions</a></p>
       </div>
     </section>
 
-    
-      
-
     </div>
     <div id="modal"></div>
-    <footer class="footer">
+    <footer>
           
         <div class="container">
             <div class="row copy">
