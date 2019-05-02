@@ -21101,7 +21101,12 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Each GPSC strain is represented by a cluster. Explore a selection of strains, those with at least 20 samples, in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango.'
+	            'Each GPSC strain is represented by a cluster. Explore a selection of strains, those with at least 20 samples, in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango. Understand the definition and application of GPSC to contextualise disease, antibiotic resistance and vaccine impact by reading one of our headline studies at ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.ebiomedicine.com/article/S2352-3964(19)30259-2/abstract' },
+	              'EbioMedicine'
+	            )
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
