@@ -19,7 +19,7 @@ var svg = d3.select("#bar-four")
   countryValue = d3.select("#exampleModalLabel.modal-title").text();
   if (countryValue == 'Argentina') {
     var data = [
-      { category: "Age group", "<=2":0, ">2<=5":0, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":0 }
+      { category: "Age group", "<=2":323, ">2<=5":103, ">5<=15":0, ">5<=18":0, ">15<=24":0, ">24<=44":0, ">44<=65":0, ">18<=65":0, ">65":0, "Unknown":0 }
       ];
   }  
   if (countryValue == 'Bangladesh') {
