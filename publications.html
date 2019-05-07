@@ -7,6 +7,7 @@
     <title>GPS :: Global Pneumococcal Sequencing Project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- fonts, icons for bootstrap -->
@@ -20,6 +21,19 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="gps.ico">
+  <style>
+      hr {margin-top: 10px};
+      #publications a.btn {margin-top: 20px};
+      #publications a.btn {margin-right: 0px !important;}
+      div.card-deck {margin-bottom: 10px;}
+      .card-deck {margin-top: 10px;}
+      .three-lines {margin-bottom: 50px;}
+      .four-lines {margin-bottom: 25px;}
+      .btn-spaced {margin-right: 140px !important;}
+      .three-lines-plus {margin-bottom: 90px;}
+      .four-lines-plus {margin-bottom: 65px;}
+      .last-card-deck { margin-bottom: 20px;}
+  </style>
 </head>
 
 <body>
@@ -37,50 +51,47 @@
   </header>
 
   <!-- Navigation bar starts -->
-
-  <div class="navbar navbar-default bs-docs-nav top-menu" role="banner">
-    <div class="container">
-     <div class="navbar-header">
-       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-       </button>
-     </div>
-
-      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-              <li class="">
-                  <a id="home" href="index.html">
-                      <!-- <i class="fa fa-home blue"> </i> --> Home
-                  </a>
-              </li>
-              <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                       About <b class="caret"></b>
-                  </a>
-                  <ul class="dropdown-menu">
-                      <li><a id="background"  href="background.html">Background</a></li>
-                      <li class=""><a id="summary" href="project_outline.html">Project Outline</a></li>
-                      <li class=""><a id="founders" href="partners.html">Project Partners </a></li>
-                      <li class=""><a id="team" href="the_team.html">The Team </a></li>
-                  </ul>
-              </li>
-              <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li class=""><a id="sampling_map" href="sampling_map.html">Sampling Map</a></li>
-                      <li class=""><a id="prevalence" href="st_prevalence.html">Serotype prevalence</a></li>
-                      <li class=""><a id="publications" href="publications.html">Publications</a></li>
-                      <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Data Downloads</a></li>
-                  </ul>
-              </li>
-              <li class="active"><a id="contact" href="contact.html"> Contact</a></li>
-          </ul>
-        </nav>
-     </div>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class='container'>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="background.html">Background</a>
+                <a class="dropdown-item" href="project_outline.html">Project Outline</a>
+                <a class="dropdown-item" href="partners.html">Project Partners</a>
+                <a class="dropdown-item" href="the_team.html">The Team</a>
+              </div>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" id="GPSC_lineages" href="GPSC_lineages.html">GPSC Lineages</a>
+              <a class="dropdown-item" href="sampling_map.html">Sampling Map</a>
+              <a class="dropdown-item" href="publications.html">Publications</a>
+              <a class="dropdown-item" href="/dataviewer/gps/data">Data Downloads</a>
+              <a class="dropdown-item" id="assigning_GPSCs" target="_blank" href="assigningGPSCs.html">Assigning GPSCs</a>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
 <!-- Navigation bar ends -->
 
 <div id="content">
@@ -89,651 +100,439 @@
           <header>
               <h1><i class="fa fa-pencil oblue"></i> Publications </h1>
           </header>
-          <div class="desc italics">
-            <ul>
-		    <li>
+          <h2 class="oblue">2018</h2>
+          <h2 class="oblue">Journal Articles</h2>
+          
+
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Global distribution of invasive serotype 35D Streptococcus pneumoniae post-PCV13 introduction 
+                </p><br>
+                <p class="card-text">JCM 2018</p>
                 <p>
-                  <span class="grey">
-                	JCM 2018 Global distribution of invasive serotype 35D Streptococcus pneumoniae post-PCV13 introduction
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
                   <a class="btn btn-info white" target="_blank" href="Journals/2018-Lo-JCM-35D.pdf">
                     <i class="fa fa-download white fa-lg"></i> 
                     Journal
                   </a>
                 </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                	BioRxiv 2018 Global emergence and population dynamics of divergent serotype 3 CC180 pneumococci
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="Journals/2018-Taj-BioRvix-serotype3_ST180.pdf">
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Global emergence and population dynamics of divergent serotype 3 CC180 pneumococci.
+                    </p><br>
+                    <p class="card-text">bioRxiv 2018</p>
+                      <p>
+                          <a class="btn btn-info white" target="_blank" href="Journals/2018-Taj-BioRvix-serotype3_ST180.pdf">
+                            <i class="fa fa-download white fa-lg"></i> 
+                            Journal
+                          </a>
+                        </p>
+              </div>
+            </div>
+          </div>
+          <h2 class="oblue">Posters</h2>
+
+                  <div class="card-deck">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="card-text">Diversity of pneumococcal carriage in the Upper River Region of The Gambia in 2009 prior to the introduction of pneumococcal conjugate vaccines. 
+                            </p>
+                            <p class="card-text">ISPPD 2018</p>
+                            <p>
+                              <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_48_Arafat_Mohamed_Cham.pdf">
+                                <i class="fa fa-download white fa-lg"></i>
+                                Poster
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="card-text">Molecular characterization of <span class="italics">Streptococcus pneumoniae</span> strains isolated from invasive disease in the pre- and post-PCV10 periods in Brazil, 2005-2015. 
+                            </span><br>ISPPD 2018<br>
+                                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_126_Samanta_Grassi_Almeida.pdf">
+                                    <i class="fa fa-download white fa-lg"></i>
+                                    Poster
+                                  </a>
+                        </p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="card-text three-lines">Global emergence and population dynamics of divergent serotype 3 CC180 pneumococci. 
+                                <br>ISPPD 2018<br></p>
+                                
+                                      <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_127_Taj_Azarian.pdf">
+                                        <i class="fa fa-download white fa-lg"></i>
+                                        Poster
+                                      </a>
+                                      
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-deck">
+                          <div class="card">
+                            <div class="card-body">
+                                  <p class="card-text four-lines">Longitudinal surveillance reveals high clonality of pneumococcal carriage in the first year of life in The Gambia. 
+                                      </p>
+                                      <p class="card-text">ISPPD 2018</p>
+                                  
+                                <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_128_Madikay_Senghore_cariage.pdf">
+                                  <i class="fa fa-download white fa-lg"></i>
+                                  Poster
+                                </a>
+                                
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <p class="card-text">Genetic diversity and distribution of pneumococcal surface lipoproteins and implications on potential protein-based vaccines. 
+                                  <br>ISPPD 2018<br>
+                              
+                                    <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_129_Ebrima_Bojang.pdf">
+                                      <i class="fa fa-download white fa-lg"></i>
+                                      Poster
+                                    </a>
+                                    
+                          </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <p class="card-text four-lines">Population genomics reveals vaccination-induced genotypic changes in carried pneumococcal population.
+                                  </p>
+                                  <p class="card-text">ISPPD 2018</p>
+                                  
+                                        <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_132_Chrispin_Chaguza.pdf">
+                                          <i class="fa fa-download white fa-lg"></i>
+                                          Poster
+                                        </a>
+                                        
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card-deck">
+
+                            <div class="card">
+                                <div class="card-body">
+                                  <p class="card-text four-lines">Genetic diversity, serotype prediction and resistotyping of nasopharyngeal isolates of S. pneumoniae from Indian Hajj pilgrims by whole genome sequencing
+                                      </p>
+                                      <p class="card-text">ISPPD 2018</p>
+                                      
+                                            <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_136_Feroze_Ganaie.pdf">
+                                              <i class="fa fa-download white fa-lg"></i>
+                                              Poster
+                                            </a>
+                                            
+                                </div>
+                              </div>
+
+                            <div class="card">
+                              <div class="card-body">
+                                    <p class="card-text three-lines">Defining the lineages of the pneumococcus to understand disease and vaccine impact: a multi-continent genome analysis. 
+                                        </p>
+                                        <p class="card-text">ISPPD 2018</p>
+                                    
+                                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_137_Rebecca_Gladstone.pdf">
+                                    <i class="fa fa-download white fa-lg"></i>
+                                    Poster
+                                  </a>
+                                  
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                  <p class="card-text three-lines">Hotspots of recombination in pneumococci isolated from nepalese children prior to PCV introduction 
+                                      </p>
+                                      <p class="card-text">ISPPD 2018</p>
+                                      
+                                            <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_140_Rama_Kandasamy_recombination.pdf">
+                                              <i class="fa fa-download white fa-lg"></i>
+                                              Poster
+                                            </a>
+                                            
+                                </div>
+                              </div>
+                            </div>
+                            <div class='card-deck'>
+                            <div class="card">
+                              <div class="card-body">
+                                <p class="card-text four-lines">Insights into potential PCV effects on pneumococcal lineages using whole genome sequencing.  
+                                  <p class="card-text">ISPPD 2018</p>
+                                
+                                      <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_141_Rama_Kandasamy_PCV_effect.pdf">
+                                        <i class="fa fa-download white fa-lg"></i>
+                                        Poster
+                                      </a>
+                                      
+                            </p>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                  <p class="card-text">Comparative genomic analysis of samples collected pre- and post-introduction of pneumococcal conjugate vaccine (PCV7) in Hong Kong.  
+                                      <br>ISPPD 2018<br>
+                                  
+                                        <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_143_Pierra_Law.pdf">
+                                          <i class="fa fa-download white fa-lg"></i>
+                                          Poster
+                                        </a>
+                                        
+                              </p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-body">
+                                    <p class="card-text">A multidrug resistant pneumococcal CC230 sub-lineage harbouring a mosaic tet(S/M) gene encoding tetracycline resistance in South Africa.
+                                        <br>ISPPD 2018<br>
+                                    
+                                          <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_146_Stephanie_Lo_tetSM.pdf">
+                                            <i class="fa fa-download white fa-lg"></i>
+                                            Poster
+                                          </a>
+                                          
+                                </p>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class='card-deck'>
+                              <div class="card">
+                                <div class="card-body">
+                                  <p class="card-text four-lines"> Whole genome sequencing of <span class="italics">Streptococcus pneumoniae</span> serogroup 19 isolates before the introduction of vaccine in the National Immunization Programme of India (NIP).  
+                                    <p class="card-text">ISPPD 2018</p>
+                                  
+                                        <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_149_Geetha_Nagaraj_serogroup19.pdf">
+                                          <i class="fa fa-download white fa-lg"></i>
+                                          Poster
+                                        </a>
+                                        
+                              </p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-body">
+                                    <p class="card-text"> Indian population genomics datasets describing the pre-vaccine evolutionary epidemiology of <span class="italics">Streptococcus pneumoniae</span>  using a whole genome sequencing approach.
+                                      <br>ISPPD 2018<br>
+                                    
+                                          <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_150_Geetha_Nagaraj_pre-vaccine.pdf">
+                                            <i class="fa fa-download white fa-lg"></i>
+                                            Poster
+                                          </a>
+                                          
+                                </p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                      <p class="card-text four-lines">Nasopharyngeal carriage of <span class="italics">Streptococcus pneumoniae</span> serotype 6A/6B in Gambian infants is highly dynamic within the first year of life: a longitudinal study. 
+                                        <p class="card-text">ISPPD 2018</p>
+                                      
+                                            <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_154_Sambou_Suso.pdf">
+                                              <i class="fa fa-download white fa-lg"></i>
+                                              Poster
+                                            </a>
+                                            
+                                  </p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class='card-deck'>
+                                <div class="card">
+                                  <div class="card-body">
+                                    <p class="card-text three-lines">Serotype diversity and putative novel cps loci in a large, global collection of pneumococci. 
+                                      <p class="card-text">ISPPD 2018</p>
+                                    
+                                          <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_157_Andries_van_Tonder.pdf">
+                                            <i class="fa fa-download white fa-lg"></i>
+                                            Poster
+                                          </a>
+                                          
+                                </p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                      <p class="card-text three-lines">Invasive <span class="italics">Streptococcus pneumoniae</span> serotype 35B in South Africa, 2005-2016. 
+                                        <p class="card-text">ISPPD 2018</p>
+                                      
+                                            <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_303_Mignon_du_Plessis.pdf">
+                                              <i class="fa fa-download white fa-lg"></i>
+                                              Poster
+                                            </a>
+                                            
+                                  </p>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                      <div class="card-body">
+                                        <p class="card-text">Antimicrobial resistance determinants and susceptibility profiles of pneumococcal carriage isolates recovered from healthy children in Peru pre-PCV introduction. 
+                                          <p class="card-text">ISPPD 2018</p>
+                                        
+                                              <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_318_Erik_Mercado.pdf">
+                                                <i class="fa fa-download white fa-lg"></i>
+                                                Poster
+                                              </a>
+                                              
+                                    </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class='card-deck'>
+                                    <div class="card">
+                                        <div class="card-body">
+                                          <p class="card-text four-lines">Antibiotic resistance of <span class="italics">Streptococcus pneumoniae</span> causing paediatric meningitis in west and central Africa, 2007-2016.
+                                            <p class="card-text">ISPPD 2018</p>
+                                          
+                                                <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_324_Catherine_Okoi.pdf">
+                                                  <i class="fa fa-download white fa-lg"></i>
+                                                  Poster
+                                                </a>
+                                                
+                                      </p>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                          <div class="card-body">
+                                            <p class="card-text">Population structure and erythromycin resistance of <span class="italics">Streptococcus pneumoniae</span> isolates collected in Moscow between 2011-2015.
+                                              <br>ISPPD 2018<br>
+                                            
+                                                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_348_Elena_Voropaeva.pdf">
+                                                    <i class="fa fa-download white fa-lg"></i>
+                                                    Poster
+                                                  </a>
+                                                  
+                                        </p>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                              <p class="card-text">Understanding the links between non-invasive and invasive pneumococci in children with severe pneumonia through comparative genomics.
+                                                <br>ISPPD 2018<br>
+                                              
+                                                    <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_382_Peggy-Estelle_Tientcheu.pdf">
+                                                      <i class="fa fa-download white fa-lg"></i>
+                                                      Poster
+                                                    </a>
+                                                    
+                                          </p>
+                                            </div>
+                                          </div>
+                            </div>
+                          <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body">
+                                  <p class="card-text">Hospital based surveillance of vaccine preventable pneumococcal meningitis among children <=59 months in west and central Africa, 2010 to 2016.
+                                    <br>ISPPD 2018<br>
+                                  
+                                        <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_431_Brenda Kwambana_Hospital_Based_Surveillance.pdf">
+                                          <i class="fa fa-download white fa-lg"></i>
+                                          Poster
+                                        </a>
+                                        
+                              </p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-body">
+                                    <p class="card-text four-lines">Continued surveillance of invasive pneumococcal disease in African countries is needed to guide optimal vaccine design.
+                                      <p class="card-text">ISPPD 2018</p>
+                                    
+                                          <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_484_Stephanie_Lo_IPD.pdf">
+                                            <i class="fa fa-download white fa-lg"></i>
+                                            Poster
+                                          </a>
+                                          
+                                </p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                      <p class="card-text">Impact of vaccination on nasopharyngeal carriage pneumococcal genotypic diversity among children in The Gambia: a longitudinal study.
+                                        <br>ISPPD 2018<br>
+                                      
+                                            <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_528_Madikay_Senghore_vaccine_impact.pdf">
+                                              <i class="fa fa-download white fa-lg"></i>
+                                              Poster
+                                            </a>
+                                            
+                                  </p>
+                                    </div>
+                                  </div>
+
+                </div>
+              <div class='card-deck'>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Genomic epidemiology of <span class="italics">Streptococcus pneumoniae</span> serotype 5 pre and post introduction of PCV13 in The Gambia. 
+                      <br>ISPPD 2018<br>
+                          <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_529_Madikay_Senghore_serotype_5.pdf">
+                            <i class="fa fa-download white fa-lg"></i>
+                            Poster
+                          </a>
                 </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Diversity of pneumococcal carriage in the Upper River Region of The Gambia in 2009 prior to the introduction of pneumococcal conjugate vaccines
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_48_Arafat_Mohamed_Cham.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <h2 class="oblue">2017</h2>
+              <h2 class="oblue">Journal Articles</h2>
+
+              <div class='card-deck'>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text four-lines">Antimicrobial resistance determinants and susceptibility profiles of pneumococcal isolates recovered from Trinidad and Tobago. 
+                  <p class="card-text">JGAR 2017</p>
+                          <a class="btn btn-info white btn-spaced" target="_blank" href="Journals/GAR-2017-Hawkins.pdf">
+                            <i class="fa fa-download white fa-lg"></i> 
+                            Journal
+                          </a>
+                          <a class="btn btn-info white btn-microreact" target="_blank" href="https://microreact.org/project/GPS_serotype_35B_35D">
+                            <i class="fa fa-download white fa-lg"></i> 
+                            Microreact
+                          </a>
+                          <a class="btn btn-info white btn-data" target="_blank" href="" disabled>
+                            <i class="fa fa-download white fa-lg"></i> 
+                            Data
+                          </a>
                 </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Molecular characterization of Streptococcus pneumoniae strains isolated from invasive disease in the pre- and post-PCV10 periods in Brazil, 2005-2015
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_126_Samanta_Grassi_Almeida.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text three-lines-plus">Key features of invasive pneumococcal isolates recovered in Lima, Peru determined through whole genome sequencing. 
+                    <p class="card-text">IJMM 2017</p>
+                          <a class="btn btn-info white" target="_blank" href="Journals/IJMM-2017-Hawkins.pdf">
+                            <i class="fa fa-download white fa-lg"></i> 
+                            Journal
+                          </a>
                 </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Global emergence and population dynamics of divergent serotype 3 CC180 pneumococci
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_127_Taj_Azarian.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text four-lines-plus">Population genetic structure, antibiotic resistance, capsule switching and evolution of invasive pneumococci before conjugate vaccination in Malawi. 
+                    <p class="card-text">Vaccine 2017</p>
+                          <a class="btn btn-info white" target="_blank" href="Journals/Vaccine-2017-Chaguza.pdf">
+                            <i class="fa fa-download white fa-lg"></i> 
+                            Journal
+                          </a>
                 </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Longitudinal surveillance reveals high clonality of pneumococcal carriage in the first year of life in The Gambia
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_128_Madikay_Senghore_cariage.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Genetic diversity and distribution of pneumococcal surface lipoproteins and implications on potential protein-based vaccines
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_129_Ebrima_Bojang.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Population genomics reveals vaccination-induced genotypic changes in carried pneumococcal population
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_132_Chrispin_Chaguza.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Genetic diversity, serotype prediction and resistotyping of nasopharyngeal isolates of S. pneumoniae from Indian Hajj pilgrims by whole genome sequencing
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_136_Feroze_Ganaie.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Defining the lineages of the pneumococcus to understand disease and vaccine impact: a multi-continent genome analysis
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_137_Rebecca_Gladstone.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Hotspots of recombination in pneumococci isolated from nepalese children prior to PCV introduction
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_140_Rama_Kandasamy_recombination.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Insights into potential PCV effects on pneumococcal lineages using whole genome sequencing
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_141_Rama_Kandasamy_PCV_effect.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Comparative genomic analysis of samples collected pre- and post-introduction of pneumococcal conjugate vaccine (PCV7) in Hong Kong
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_143_Pierra_Law.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 A multidrug resistant pneumococcal CC230 sub-lineage harbouring a mosaic tet(S/M) gene encoding tetracycline resistance in South Africa
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_146_Stephanie_Lo_tetSM.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Whole genome sequencing of Streptococcus pneumoniae serogroup 19 isolates before the introduction of vaccine in the National Immunization Programme of India (NIP)
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_149_Geetha_Nagaraj_serogroup19.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Indian population genomics datasets describing the pre-vaccine evolutionary epidemiology of Streptococcus pneumoniae using a whole genome sequencing approach
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_150_Geetha_Nagaraj_pre-vaccine.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Nasopharyngeal carriage of Streptococcus pneumoniae serotype 6A/6B in Gambian infants is highly dynamic within the first year of life: a longitudinal study
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_154_Sambou_Suso.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Serotype diversity and putative novel cps loci in a large, global collection of pneumococci
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_157_Andries_van_Tonder.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Invasive Streptococcus pneumoniae serotype 35B in South Africa, 2005-2016
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_303_Mignon_du_Plessis.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Antimicrobial resistance determinants and susceptibility profiles of pneumococcal carriage isolates recovered from healthy children in Peru pre-PCV introduction
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_318_Erik_Mercado.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Antibiotic resistance of Streptococcus pneumoniae causing paediatric meningitis in west and central Africa, 2007-2016
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_324_Catherine_Okoi.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Population structure and erythromycin resistance of Streptococcus pneumoniae isolates collected in Moscow between 2011-2015
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_348_Elena_Voropaeva.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Understanding the links between non-invasive and invasive pneumococci in children with severe pneumonia through comparative genomics
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_382_Peggy-Estelle_Tientcheu.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Hospital based surveillance of vaccine preventable pneumococcal meningitis among children <=59 months in west and central Africa, 2010 to 2016
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_431_Brenda Kwambana_Hospital_Based_Surveillance.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Continued surveillance of invasive pneumococcal disease in African countries is needed to guide optimal vaccine design
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_484_Stephanie_Lo_IPD.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Impact of vaccination on nasopharyngeal carriage pneumococcal genotypic diversity among children in The Gambia: a longitudinal study
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_528_Madikay_Senghore_vaccine_impact.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-		    <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2018 Genomic epidemiology of Streptococcus pneumoniae serotype 5 pre and post introduction of PCV13 in The Gambia
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/ISPPD2018_529_Madikay_Senghore_serotype_5.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    <li>
-                <p>
-                  <span class="grey">
-                	JGAR 2017 Antimicrobial resistance determinants and susceptibility profiles of pneumococcal isolates recovered from Trinidad and Tobago
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="Journals/GAR-2017-Hawkins.pdf">
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-	            <li>
-                <p>
-                  <span class="grey">
-                	IJMM 2017 Key features of invasive pneumococcal isolates recovered in Lima, Peru determined through whole genome sequencing
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="Journals/IJMM-2017-Hawkins.pdf">
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-              
-               <li>
-                <p>
-                  <span class="grey">
-                	Vaccine 2017 Population genetic structure, antibiotic resistance, capsule switching and evolution of invasive pneumococci before conjugate vaccination in Malawi
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="Journals/Vaccine-2017-Chaguza.pdf" d>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
- 		<li>
-                <p>
-                  <span class="grey">
-                	JCM 2016 Phylogenetic analysis of invasive serotype 1 pneumococcus in South Africa, 1989 to 2013
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="" disabled>
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="Journals/JCM-2016-Mignon.pdf">
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
-              <hr>
-		    
-              <li>
-                <p>
-                  <span class="grey">
-                    ABPMH 2017 Rapid pneumococcal evolution in response to co-trimoxazole prophylaxis in a high-HIV burden population
-                  </span><br>
+                  </div>
+                </div>
+              </div>
+              <h2 class="oblue">Posters</h2>
+            <div class="card-deck">  
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Rapid pneumococcal evolution in response to co-trimoxazole prophylaxis in a high-HIV burden population. 
+                  </span><br>ABPMH 2017<br>
                   <a class="btn btn-default" title="Authors &amp; Affiliations" href="posters/PMEN15_authors_webpage.xlsx">
                     <i class="fa fa-users oblue fa-lg"></i>
                     Authors
@@ -742,72 +541,93 @@
                     <i class="fa fa-download white fa-lg"></i>
                     Poster
                   </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
+              </p>
+                </div>
+              </div>
+            </div>
+            
+              <h2 class="oblue">2016</h2>
+              <h2 class="oblue">Journals</h2>
+              <div class='card-deck'>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Phylogenetic analysis of invasive serotype 1 pneumococcus in South Africa, 1989 to 2013. 
+                    </span><br><br>JCM 2016<br>
+                          <a class="btn btn-info white" target="_blank" href="Journals/JCM-2016-Mignon.pdf">
+                            <i class="fa fa-download white fa-lg"></i> 
+                            Journal
+                          </a>
                 </p>
-              </li>
-              <hr>
-
-          
-
-              <li>
-                <p>
-                  <span class="grey">
-                    ISPPD 2016 Detection of Streptococcus pneumoniae non vaccine
-                    serotype 12F clone 989 with acquired antibiotic resistance,
-                    circulating globally
-                  </span>
-                  <br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/GPS_ISPPD_poster_2016.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Detection of <span class="italics">Streptococcus pneumoniae</span> non vaccine
+                      serotype 12F clone 989 with acquired antibiotic resistance,
+                      circulating globally. 
+                    </span>
+                    <br>ISPPD 2016<br>
+                    <a class="btn btn-default" title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
+                      <i class="fa fa-users oblue fa-lg"></i>
+                      Authors
+                    </a>
+                    <a class="btn btn-success white" target="_blank" href="posters/GPS_ISPPD_poster_2016.pdf">
+                      <i class="fa fa-download white fa-lg"></i>
+                      Poster
+                    </a>
                 </p>
-              </li>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Detection of <span class="italics">Streptococcus pneumoniae</span> non vaccine
+                      serotype 12F clone 989 with acquired antibiotic resistance,
+                      circulating globally. 
+                    </span><br>IMMEM XI<br>
+                    <a class="btn btn-default" title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
+                      <i class="fa fa-users oblue fa-lg"></i>
+                      Authors
+                    </a>
+                    <a class="btn btn-success white" target="_blank" href="posters/GPS_IMMEM_XI_2016_CC989_poster.pdf">
+                      <i class="fa fa-download white fa-lg"></i>
+                      Poster
+                    </a>
+                </p>
+                  </div>
+                </div>
+              </div>
+
               
 <!-- Copy below snippet for adding another publication -->
-              <hr>
-              <li>
-                <p>
-                  <span class="grey">
-                    IMMEM XI Detection of Streptococcus pneumoniae non vaccine
-                    serotype 12F clone 989 with acquired antibiotic resistance,
-                    circulating globally
-                  </span><br>
-                  <a class="btn btn-default" title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
-                    <i class="fa fa-users oblue fa-lg"></i>
-                    Authors
-                  </a>
-                  <a class="btn btn-success white" target="_blank" href="posters/GPS_IMMEM_XI_2016_CC989_poster.pdf">
-                    <i class="fa fa-download white fa-lg"></i>
-                    Poster
-                  </a>
-                  <a class="btn btn-info white" target="_blank" href="" disabled>
-                    <i class="fa fa-download white fa-lg"></i> 
-                    Journal
-                  </a>
-                </p>
-              </li>
+
+<!--<div class="card">
+  <div class="card-body">
+    <p class="card-text">Detection of <span class="italics">Streptococcus pneumoniae</span> non vaccine
+      serotype 12F clone 989 with acquired antibiotic resistance,
+      circulating globally. 
+    </span><br>IMMEM XI<br>
+    <a class="btn btn-default" title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
+      <i class="fa fa-users oblue fa-lg"></i>
+      Authors
+    </a>
+    <a class="btn btn-success white" target="_blank" href="posters/GPS_IMMEM_XI_2016_CC989_poster.pdf">
+      <i class="fa fa-download white fa-lg"></i>
+      Poster
+    </a>
+</p>
+  </div>
+</div>-->
+              
  <!-- END -->    
  
 
-            </ul>
+            
           </div>
       </div>
   </section>
 </div>
 <div id="modal"></div>
-<footer>
+<footer class="footer">
         <div class="container">
             <div class="row copy">
               <div class="col-lg-7 col-md-7 col-sm-12 copy-left">

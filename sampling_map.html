@@ -22,9 +22,203 @@
   <link rel="shortcut icon" href="gps.ico">
 
     <style type="text/css">
+    #mapid { 
+    height: 720px;
+  }
       #map-canvas { height: 500px;}
-    </style>
 
+  #sampleMapid { 
+    height: 500px;
+    margin-top: 20px;
+  }
+div#accordian.panel-group {
+  margin-bottom: 80px !important;
+}
+
+.panel-group {
+  margin-bottom: 80px !important;
+}
+
+  img.leaflet-marker-icon:hover {
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity:0.8;
+  }
+  .mapKey {
+    margin-right: 20px;
+  }
+
+  /* Popover styling */
+
+a {
+  text-decoration: none;
+}
+
+.popover__title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  color: rgb(228, 68, 68);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.popover__wrapper {
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+    
+}
+.popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -150px;
+    transform: translate(0,10px);
+    /*background-color: #c6d7f2; */
+    background-color: #e2f0f4;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+    margin-left: 60px;
+}
+.popover__content:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #c6d7f2 transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0,-20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+  text-align: center;
+}
+
+input:focus {
+  outline-offset: -2px;
+}
+
+.clusterImg {
+  display: inline-block;
+}
+
+.clusterContainer {
+  width: auto;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.popover__content {
+  min-width: 255px;
+}
+
+.datainfo {
+  margin-top:5px;
+  overflow-x:auto;
+}
+
+.datainfotitle {
+  margin-top: 120px;
+  overflow-x:auto;
+}
+
+.borderset {
+  border-width: 1px !important;
+}
+input.borderset {
+  height: 22px;
+}
+div.modal-body {
+  padding: 0px;
+}
+.modal-title {
+  color: #1570a6;
+}
+svg#Micro {
+  max-height: 30px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.microLink {
+  display: inline-block;
+}
+.sampleText, .sampleSize {
+  display:inline-block;
+  margin-left: 170px;
+  margin-right: 50px;
+}
+.microreactLink {
+  display: inline-block;
+  margin-left: 150px;
+}
+div#bar-one, div#bar-two, div#bar-three, div#bar-four, svg {
+  display: inline;
+  max-width: 140px;
+  margin-left: 10px;
+}
+div#legend-two, svg {
+  display: inline-block;
+  width: 140px;
+  margin-left: 10px;
+}
+div#legend-one {
+  display: inline-block;
+  min-height: 325px;
+  max-height: 400px;
+  width: 170px;
+  margin-left: 5px;
+}
+div#legend-three, div#legend-four {
+  display: inline-block;
+  width: 110px;
+  margin-left: 10px;
+}
+svg {
+  height:320px;
+  width: 130px;
+  margin-left: 10px;
+}
+div.legendBox{height: 18px !important;
+    width: 18px;
+    display: inline-block;
+    margin-right: 4px;}
+g.legend, g.yearlegend {display: block;
+margin-left: 10px;
+margin-right: 4px;}
+
+g.yearlegend {display: inline-block;
+margin-left: 10px;
+margin-right: 4px;}
+text.legendText { font-size: 14px;}
+
+rect:hover {
+  fill-opacity:0.9;
+}
+.cls-1{isolation:isolate;}
+.cls-2,.cls-3{fill:#3b7383;}
+.cls-3{opacity:0.53;}
+.cls-4{fill:#673b8d;}
+.cls-5{fill:#a288ba;}
+.cls-6{fill:#3c7382;}
+  </style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin=""></script>
 </head>
 
 <body>
@@ -75,10 +269,11 @@
                 <li class="dropdown active">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a id="sampling_map" href="sampling_map.html">Sampling Map</a></li>
-                        <li class=""><a id="prevalence" href="st_prevalence.html">Serotype prevalence</a></li>
+                        <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">Strains</a></li>
+                        <li class=""><a id="sampling_map" href="sampling_map.html">Countries</a></li>
                         <li class=""><a id="publications" href="publications.html">Publications</a></li>
-                        <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Data Downloads</a></li>
+                        <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">GPS dataviewer</a></li>
+                        <li class=""><a id="assigning_GPSCs" target="_blank" href="assigningGPSCs.html">Assigning GPSCs</a></li>
                     </ul>
                 </li>
                 <li><a id="contact" href="contact.html"> Contact</a></li>
@@ -94,14 +289,65 @@
         <h1><i class="fa fa-map-marker oblue"></i> Sampling Map </h1>
     </header>
     <div class="desc">
-      <p>Map showing the number of samples collected from each location till date</p><div class="msg"></div>
-      <div id="map-canvas"> Connecting to database... </div><br>
+      <p>Map showing the number of samples collected from each location so far. Explore the published analyses on countries with at least 100 samples in greater depth by following the link to an interactive visualisation tool Microreact.</p><div class="msg"></div>
+      
+        <div class="desc">
+          <h3>Map Key</h3>
+            <p><i class="fa fa-map-marker purple"></i><span class='mapKey'> Country sample with a Microreact link</span><i class="fa fa-map-marker oblue"></i><span> Country sample without a Microreact link</span></p>
+        </div>
+      
+      <!-- Map modal-->
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title text-center" id="exampleModalLabel">Modal title</h2>
+              
+              <h4 class="sampleSize text-center"></h4>
+              <h4 class="microreactLink text-center"></h4>
+              <script type="text/javascript">
+                if (h4.microreactLink.text-center.innerHtml != "") {
+                <svg id="Micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.25 85.86"><defs></defs><title>SAIRA LOGOS SEP 2018</title><path class="cls-2" d="M60.29,0H60A11.09,11.09,0,0,0,49.2,11.34v0h0a22,22,0,0,1-2.71,11.09A22.35,22.35,0,0,1,44,26.13a22.1,22.1,0,0,1-12.08,7.35A22.31,22.31,0,0,1,27,34a21.78,21.78,0,0,1-3.85-.34,22.31,22.31,0,0,1-6.75-2.37h0A11,11,0,0,0,11.1,30a11.09,11.09,0,1,0,5.41,20.76l.36-.23h0l.38-.22a22.17,22.17,0,0,1,11.14-3,22.93,22.93,0,0,1,3.88.34,22,22,0,0,1,5.94,1.94h0c.56.27,1.12.58,1.66.9h0a21.95,21.95,0,0,1,7.43,7.42,21.78,21.78,0,0,1,1.93,4,22.07,22.07,0,0,1,1.29,6.46c0,.17,0,.34,0,.52a5.42,5.42,0,0,1,0,.57A11.09,11.09,0,1,0,67,58.94l-.1,0h0a22.16,22.16,0,0,1-8.73-30,22.72,22.72,0,0,1,2.47-3.63A21.88,21.88,0,0,1,66,20.6h0A11.09,11.09,0,0,0,60.29,0"/><path class="cls-3" d="M27.06.77a11.1,11.1,0,1,0,5.3,1.36A11.08,11.08,0,0,0,27.06.77"/><path class="cls-4" d="M77.62,28.4a11.09,11.09,0,1,0,5.31,1.36,11.1,11.1,0,0,0-5.31-1.36"/><path class="cls-5" d="M28.42,58.31a11.09,11.09,0,1,0,9.48,5.32,11.07,11.07,0,0,0-9.48-5.32"/><path class="cls-6" d="M11.13,30a11.09,11.09,0,1,0,9.48,5.32A11,11,0,0,0,11.13,30"/></svg>
+                }
+                /*else {
+                <svg id="Micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.25 85.86"><defs></defs><title>SAIRA LOGOS SEP 2018</title><path class="cls-2" d="M60.29,0H60A11.09,11.09,0,0,0,49.2,11.34v0h0a22,22,0,0,1-2.71,11.09A22.35,22.35,0,0,1,44,26.13a22.1,22.1,0,0,1-12.08,7.35A22.31,22.31,0,0,1,27,34a21.78,21.78,0,0,1-3.85-.34,22.31,22.31,0,0,1-6.75-2.37h0A11,11,0,0,0,11.1,30a11.09,11.09,0,1,0,5.41,20.76l.36-.23h0l.38-.22a22.17,22.17,0,0,1,11.14-3,22.93,22.93,0,0,1,3.88.34,22,22,0,0,1,5.94,1.94h0c.56.27,1.12.58,1.66.9h0a21.95,21.95,0,0,1,7.43,7.42,21.78,21.78,0,0,1,1.93,4,22.07,22.07,0,0,1,1.29,6.46c0,.17,0,.34,0,.52a5.42,5.42,0,0,1,0,.57A11.09,11.09,0,1,0,67,58.94l-.1,0h0a22.16,22.16,0,0,1-8.73-30,22.72,22.72,0,0,1,2.47-3.63A21.88,21.88,0,0,1,66,20.6h0A11.09,11.09,0,0,0,60.29,0"/><path class="cls-3" d="M27.06.77a11.1,11.1,0,1,0,5.3,1.36A11.08,11.08,0,0,0,27.06.77"/><path class="cls-4" d="M77.62,28.4a11.09,11.09,0,1,0,5.31,1.36,11.1,11.1,0,0,0-5.31-1.36"/><path class="cls-5" d="M28.42,58.31a11.09,11.09,0,1,0,9.48,5.32,11.07,11.07,0,0,0-9.48-5.32"/><path class="cls-6" d="M11.13,30a11.09,11.09,0,1,0,9.48,5.32A11,11,0,0,0,11.13,30"/></svg>
+                
+                } */
+              </script>
+              <svg id="Micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.25 85.86"><defs><style>.cls-1{isolation:isolate;}.cls-2,.cls-3{fill:#3b7383;}.cls-3{opacity:0.53;}.cls-4{fill:#673b8d;}.cls-5{fill:#a288ba;}.cls-6{fill:#3c7382;}</style></defs><title>SAIRA LOGOS SEP 2018</title><path class="cls-2" d="M60.29,0H60A11.09,11.09,0,0,0,49.2,11.34v0h0a22,22,0,0,1-2.71,11.09A22.35,22.35,0,0,1,44,26.13a22.1,22.1,0,0,1-12.08,7.35A22.31,22.31,0,0,1,27,34a21.78,21.78,0,0,1-3.85-.34,22.31,22.31,0,0,1-6.75-2.37h0A11,11,0,0,0,11.1,30a11.09,11.09,0,1,0,5.41,20.76l.36-.23h0l.38-.22a22.17,22.17,0,0,1,11.14-3,22.93,22.93,0,0,1,3.88.34,22,22,0,0,1,5.94,1.94h0c.56.27,1.12.58,1.66.9h0a21.95,21.95,0,0,1,7.43,7.42,21.78,21.78,0,0,1,1.93,4,22.07,22.07,0,0,1,1.29,6.46c0,.17,0,.34,0,.52a5.42,5.42,0,0,1,0,.57A11.09,11.09,0,1,0,67,58.94l-.1,0h0a22.16,22.16,0,0,1-8.73-30,22.72,22.72,0,0,1,2.47-3.63A21.88,21.88,0,0,1,66,20.6h0A11.09,11.09,0,0,0,60.29,0"/><path class="cls-3" d="M27.06.77a11.1,11.1,0,1,0,5.3,1.36A11.08,11.08,0,0,0,27.06.77"/><path class="cls-4" d="M77.62,28.4a11.09,11.09,0,1,0,5.31,1.36,11.1,11.1,0,0,0-5.31-1.36"/><path class="cls-5" d="M28.42,58.31a11.09,11.09,0,1,0,9.48,5.32,11.07,11.07,0,0,0-9.48-5.32"/><path class="cls-6" d="M11.13,30a11.09,11.09,0,1,0,9.48,5.32A11,11,0,0,0,11.13,30"/></svg>
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                  <svg class="firstbar"></svg>
+                  <svg class="secondbar"></svg>
+                  <svg class="thirdbar"></svg>
+                  <svg class="fourthbar"></svg>
+                  <div id="legend-one"></div>
+                  <div id="legend-two"></div>
+                  <div id="legend-three"></div>
+                  <div id="legend-four"></div>
+              </div>
+            <div class="modal-footer">
+              <svg id="Micro" class="pull-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.25 85.86"><defs><style>.cls-1{isolation:isolate;}.cls-2,.cls-3{fill:#3b7383;}.cls-3{opacity:0.53;}.cls-4{fill:#673b8d;}.cls-5{fill:#a288ba;}.cls-6{fill:#3c7382;}</style></defs><title>SAIRA LOGOS SEP 2018</title><g class="cls-1"><path class="cls-2" d="M138.87,61.92V24.61h-.25l-14,37.31h-3.33L107.45,24.61h-.26V61.92h-3.58v-44h5.25l14.08,37.83h.32L137.4,17.89h5.19v44Z"/><path class="cls-2" d="M153.47,19.17v-4.8h4v4.8Zm.19,42.75V29.28h3.58V61.92Z"/><path class="cls-2" d="M182.11,62.21a39.86,39.86,0,0,1-4.13.23q-5.25,0-7.72-1.67a7.72,7.72,0,0,1-3.19-5,50.15,50.15,0,0,1-.74-10.08,45.46,45.46,0,0,1,.89-10.37,7.84,7.84,0,0,1,3.33-5q2.43-1.52,7.23-1.51a39,39,0,0,1,4.07.23,29.3,29.3,0,0,1,3.49.54v3.07a34.57,34.57,0,0,0-6.79-.7A11.13,11.13,0,0,0,172.92,33a5.64,5.64,0,0,0-2.4,3.84,44,44,0,0,0-.61,8.7,46,46,0,0,0,.61,8.93,5.48,5.48,0,0,0,2.4,3.81,12.17,12.17,0,0,0,5.76,1,31.83,31.83,0,0,0,3.62-.22,27,27,0,0,0,3.29-.55V61.6A20.62,20.62,0,0,1,182.11,62.21Z"/><path class="cls-2" d="M193.53,29.28h3.07l.26,6.47h.25q1-4,3.43-5.47A12.12,12.12,0,0,1,207,28.77v3.65a10.46,10.46,0,0,0-6.05,1.5,7.79,7.79,0,0,0-3,4.42,28.39,28.39,0,0,0-.84,7.65V61.92h-3.58Z"/><path class="cls-2" d="M216.06,61.12a6.3,6.3,0,0,1-3.27-4.6,58.39,58.39,0,0,1-.7-10.85,58.71,58.71,0,0,1,.7-10.91,6.39,6.39,0,0,1,3.27-4.64c1.7-.9,4.52-1.35,8.44-1.35s6.8.45,8.48,1.35a6.5,6.5,0,0,1,3.27,4.64A56.35,56.35,0,0,1,237,45.67a56.05,56.05,0,0,1-.73,10.85,6.4,6.4,0,0,1-3.27,4.6q-2.52,1.32-8.48,1.32C220.58,62.44,217.76,62,216.06,61.12Zm14.72-2.78a4.47,4.47,0,0,0,2.2-3.49,66,66,0,0,0,.42-9.18,67,67,0,0,0-.42-9.22,4.6,4.6,0,0,0-2.2-3.55q-1.8-1-6.28-1t-6.24,1a4.61,4.61,0,0,0-2.17,3.52,66.88,66.88,0,0,0-.42,9.25,66,66,0,0,0,.42,9.18,4.52,4.52,0,0,0,2.17,3.49q1.77,1,6.24,1T230.78,58.34Z"/><path class="cls-2" d="M245.3,29.28h5.64l.25,5.89h.45a8,8,0,0,1,3.36-5,12.09,12.09,0,0,1,6.18-1.38V35a11.42,11.42,0,0,0-5.89,1.28,6.78,6.78,0,0,0-2.95,3.94,25.37,25.37,0,0,0-.83,7.26V61.92H245.3Z"/><path class="cls-2" d="M290.55,47.65H271.74a28.73,28.73,0,0,0,.48,6.34,3.56,3.56,0,0,0,2.24,2.56,17.51,17.51,0,0,0,5.92.7,83.28,83.28,0,0,0,9.08-.64v4.87a32.53,32.53,0,0,1-4.73.7c-2,.17-3.86.26-5.7.26-4,0-7-.53-8.93-1.57a7.61,7.61,0,0,1-3.74-5,43.06,43.06,0,0,1-.9-10.24,45.79,45.79,0,0,1,.84-10.15,7.8,7.8,0,0,1,3.58-5.08q2.75-1.67,8.64-1.67c3.8,0,6.54.55,8.22,1.63a7.19,7.19,0,0,1,3.17,4.93,58.92,58.92,0,0,1,.64,10.27ZM274,34.66a3.67,3.67,0,0,0-1.76,2.56,30.65,30.65,0,0,0-.51,6.08h12.8V43A24.63,24.63,0,0,0,284,37a3.59,3.59,0,0,0-1.76-2.47,9.39,9.39,0,0,0-3.87-.6A9.87,9.87,0,0,0,274,34.66Z"/><path class="cls-2" d="M298.71,60.26q-2.2-2.17-2.21-7.42a16.46,16.46,0,0,1,.84-5.89,5.51,5.51,0,0,1,2.81-3.07,13.06,13.06,0,0,1,5.57-1c2.18,0,5.31.08,9.41.25V41.44a15.23,15.23,0,0,0-.58-5,3.09,3.09,0,0,0-2.17-1.92A22.33,22.33,0,0,0,307,34c-1.2,0-2.69.06-4.48.19s-3.18.28-4.16.45v-5a57.8,57.8,0,0,1,10.62-.9c3.55,0,6.19.41,7.94,1.22a6.38,6.38,0,0,1,3.52,3.87,25.3,25.3,0,0,1,.9,7.71V61.92H315.7l-.25-4.22h-.39a6.59,6.59,0,0,1-3.68,3.78,15.69,15.69,0,0,1-5.72,1Q300.92,62.44,298.71,60.26Zm13.22-3.52a4,4,0,0,0,2.17-1.92,13.75,13.75,0,0,0,1-6V47.27h-7.87a9.3,9.3,0,0,0-2.95.35A2.19,2.19,0,0,0,303,49a10.18,10.18,0,0,0-.39,3.29,8.78,8.78,0,0,0,.42,3.14,2.44,2.44,0,0,0,1.6,1.41,13.17,13.17,0,0,0,3.68.38A10.93,10.93,0,0,0,311.93,56.74Z"/><path class="cls-2" d="M345.43,62.18a38.71,38.71,0,0,1-4.32.26c-3.63,0-6.3-.58-8-1.73a7.86,7.86,0,0,1-3.33-5.12,50.73,50.73,0,0,1-.73-10,43.71,43.71,0,0,1,.86-10,8.32,8.32,0,0,1,3.42-5.18q2.56-1.7,7.68-1.7a37.92,37.92,0,0,1,4.29.26,26.72,26.72,0,0,1,3.71.64V34.6a35.76,35.76,0,0,0-6.46-.58,9.62,9.62,0,0,0-4.77.9,4.57,4.57,0,0,0-2,3.23,41,41,0,0,0-.48,7.45,39.8,39.8,0,0,0,.51,7.56,4.49,4.49,0,0,0,2,3.2,10.53,10.53,0,0,0,4.83.83,35.91,35.91,0,0,0,6.59-.58v4.93A29.07,29.07,0,0,1,345.43,62.18Z"/><path class="cls-2" d="M358.71,61.92V34.53h-5.57V29.28h5.57V19.81h6.21v9.47h6.59v5.25h-6.59V61.92Z"/></g><path class="cls-2" d="M60.29,0H60A11.09,11.09,0,0,0,49.2,11.34v0h0a22,22,0,0,1-2.71,11.09A22.35,22.35,0,0,1,44,26.13a22.1,22.1,0,0,1-12.08,7.35A22.31,22.31,0,0,1,27,34a21.78,21.78,0,0,1-3.85-.34,22.31,22.31,0,0,1-6.75-2.37h0A11,11,0,0,0,11.1,30a11.09,11.09,0,1,0,5.41,20.76l.36-.23h0l.38-.22a22.17,22.17,0,0,1,11.14-3,22.93,22.93,0,0,1,3.88.34,22,22,0,0,1,5.94,1.94h0c.56.27,1.12.58,1.66.9h0a21.95,21.95,0,0,1,7.43,7.42,21.78,21.78,0,0,1,1.93,4,22.07,22.07,0,0,1,1.29,6.46c0,.17,0,.34,0,.52a5.42,5.42,0,0,1,0,.57A11.09,11.09,0,1,0,67,58.94l-.1,0h0a22.16,22.16,0,0,1-8.73-30,22.72,22.72,0,0,1,2.47-3.63A21.88,21.88,0,0,1,66,20.6h0A11.09,11.09,0,0,0,60.29,0"/><path class="cls-3" d="M27.06.77a11.1,11.1,0,1,0,5.3,1.36A11.08,11.08,0,0,0,27.06.77"/><path class="cls-4" d="M77.62,28.4a11.09,11.09,0,1,0,5.31,1.36,11.1,11.1,0,0,0-5.31-1.36"/><path class="cls-5" d="M28.42,58.31a11.09,11.09,0,1,0,9.48,5.32,11.07,11.07,0,0,0-9.48-5.32"/><path class="cls-6" d="M11.13,30a11.09,11.09,0,1,0,9.48,5.32A11,11,0,0,0,11.13,30"/></svg>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            <div id="mapid" class="container">
+            </div>
+          <br>
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                Click to see the above data in table format
+                Click to see the above data in table format (see below)
               </a>
             </h4>
           </div>
@@ -116,7 +362,7 @@
   </div>
 </section>
 <div id="modal"></div>
-<footer>
+<footer class="footer navbar-fixed-bottom">
   <div class="container">
       <div class="row copy">
         <div class="col-lg-7 col-md-7 col-sm-12 copy-left">
@@ -130,11 +376,14 @@
   </div>
   <div class="clearfix"></div>
 </footer>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/geocode.js"></script>
-    <script type="text/javascript" src="/zxtm/piwik2.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="js/custom.min.js"></script>
+<script src="js/geocode.js"></script>
+<!--<script type="text/javascript" src="/zxtm/piwik2.js"></script>-->
+<script src="https://d3js.org/d3.v4.min.js"></script> 
+ 
+<script src="js/locationsMap.js"></script>
 </body>
 </html>

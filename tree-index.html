@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+
+  <title>GPS :: Global Pneumococcal Sequencing Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+  <!-- fonts, icons for bootstrap -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap, latest compiled and minified CSS -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"> -->
+  <link href="css/styles.min.css" rel="stylesheet">
+  <style>
+
+  div.imageDivRight {
+    display:inline-block;
+    width: 560px;
+  }
+  div.imageDivLeft {
+    display:inline-block;
+    width: 560px;
+  }
+  img.pageImageRight, img.pageImageLeft {
+    width: 460px;
+    height: 300px;
+    margin-left: 50px;
+    border: 1px solid #1570a6;
+  }
+  img.pageImageRight, img.pageImage {
+    margin-left: 50px;
+  }
+  img.pageImage:hover {
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity:0.8;
+  }
+  h3.imageTitle {
+    color: #1570a6;
+  }
+  #mapid { 
+    height: 720px;
+    margin-top: 100px;
+  }
+
+  img.leaflet-marker-icon:hover {
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity:0.8;
+  }
+
+  /* Popover styling */
+
+a {
+  text-decoration: none;
+}
+
+.popover__title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  color: rgb(228, 68, 68);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.popover__wrapper {
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+    
+}
+.popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -150px;
+    transform: translate(0,10px);
+    /*background-color: #c6d7f2; */
+    background-color: #e2f0f4;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+    margin-left: 60px;
+}
+.popover__content:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #e2f0f4 transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0,-20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+  text-align: center;
+}
+.chartsdiv {
+  height: 350px;
+}
+
+input:focus {
+  outline-offset: -2px;
+}
+
+.clusterImg {
+  display: inline-block;
+}
+
+.clusterContainer {
+  width: auto;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.popover__content {
+  min-width: 255px;
+  margin-bottom: 40px;
+  z-index: 100;
+}
+#mapid {
+  z-index: 0;
+}
+.datainfo {
+  margin-top:5px;
+  overflow-x:auto;
+}
+
+.datainfotitle {
+  margin-top: 120px;
+  overflow-x:auto;
+}
+
+.borderset {
+  border-width: 1px !important;
+}
+input.borderset {
+  height: 22px;
+}
+
+div.modal-body {
+  padding: 0px;
+}
+.modal-title {
+  color: #1570a6;
+}
+svg#Micro {
+  max-height: 30px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.microLink {
+  display: inline-block;
+}
+.sampleText, .sampleSize {
+  display:inline-block;
+  margin-left: 82px;
+}
+.microreactLink {
+  display: inline-block;
+  margin-left: 150px;
+}
+div#bar-one, div#bar-two, div#bar-three, div#bar-four, svg {
+  display: inline;
+  max-width: 140px;
+  margin-left: 10px;
+}
+div#legend-two, svg {
+  display: inline-block;
+  width: 140px;
+  margin-left: 10px;
+}
+div#legend-one {
+  display: inline-block;
+  min-height: 325px;
+  max-height: 400px;
+  width: 170px;
+  margin-left: 5px;
+}
+div#legend-three, div#legend-four {
+  display: inline-block;
+  width: 110px;
+  margin-left: 10px;
+}
+svg {
+  height:320px;
+  width: 130px;
+  margin-left: 10px;
+}
+div.legendBox{height: 18px !important;
+    width: 18px;
+    display: inline-block;
+    margin-right: 4px;}
+g.legend, g.yearlegend {display: block;
+margin-left: 10px;
+margin-right: 4px;}
+
+g.yearlegend {display: inline-block;
+margin-left: 10px;
+margin-right: 4px;}
+text.legendText { font-size: 14px;}
+
+rect:hover {
+  fill-opacity:0.9;
+}
+.cls-1{isolation:isolate;}
+.cls-2,.cls-3{fill:#3b7383;}
+.cls-3{opacity:0.53;}
+.cls-4{fill:#673b8d;}
+.cls-5{fill:#a288ba;}
+.cls-6{fill:#3c7382;}
+</style>
+
+
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-sham.js"></script>
+<![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="gps.ico">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin=""></script>
+</head>
+
+  <body>
+    <!-- Header Starts -->
+    <header>
+      <div class="container">
+        <div class="row">
+            <div class="logo">
+                <h1><i class=""></i><a href="index.html"><span class="color">GPS</span></a></h1>
+                <div class="hmeta">Global Pneumococcal Sequencing Project</div>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation bar starts -->
+
+    <div class="navbar navbar-default bs-docs-nav top-menu" role="banner">
+      <div class="container">
+       <div class="navbar-header">
+         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </button>
+       </div>
+
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a id="home" href="index.html">
+                        <!-- <i class="fa fa-home blue"> </i> --> Home
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                         About <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a id="background"  href="background.html">Background</a></li>
+                        <li class=""><a id="summary" href="project_outline.html">Project Outline</a></li>
+                        <li class=""><a id="founders" href="partners.html">Project Partners </a></li>
+                        <li class=""><a id="team" href="the_team.html">The Team </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">GPSC Lineages</a></li>
+                        <li class=""><a id="sampling_map" href="sampling_map.html">Sampling Map</a></li>
+                        <li class=""><a id="publications" href="publications.html">Publications</a></li>
+                        <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Data Downloads</a></li>
+                        <li class=""><a id="assigning_GPSCs" target="_blank" href="assigningGPSCs.html">Assigning GPSCs</a></li>
+                    </ul>
+                </li>
+                <li><a id="contact" href="contact.html"> Contact</a></li>
+            </ul>
+          </nav>
+       </div>
+    </div>
+<!-- Navigation bar ends -->
+
+<div id="content">
+
+    <div class="container">
+      <div class="banner">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+                <img class="logo-home" src="img/gps_banner.jpg" />
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                  <h2>The Global Pneumococcal Sequencing Project</h2>
+                  <ul>
+                    <li>
+                      A worldwide genomic survey of the impact of vaccination on the pathogen population
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <section>
+      <div class="container content">
+        <header>
+            <h1>Our Mission</h1>
+        </header>
+        <p class="head">
+            We employ whole genome sequencing of large numbers of isolates to create a picture of the evolution of <span class="italics">Streptococcus pneumoniae</span> during the introduction of pneumococcal conjugate vaccines to characterise patterns of genetic adaptation on global and regional scales
+        </p><br>
+        <div class='imageDivLeft'>
+          <a href='GPSC_lineages.html'>
+            <h3 class='imageTitle center'>Explore strains</h3>
+            <image class="pageImageLeft center" src='GPSCs.png' alt="Screen shot of GPSC clusters" class="img-responsive"></image></a>
+        </div>
+        <div class='imageDivRight'>
+            <a href='new_sampling_map.html'>
+            <h3 class='imageTitle center'>Explore countries</h3>
+            <image class="pageImageRight center" src='Sample-map.png' alt="Screen shot of World map" class="img-responsive"></image></a>
+        </div>
+        <br>
+      </div>
+    </section>
+    <section>
+      <div class="container content"><br>
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-6">
+              <!-- Title -->
+              <h1>Project Leaders</h1>
+              <div class="table-responsive">
+                  <table class="table table-striped table-condensed">
+                    <tr>
+                        <td>
+                          Stephen Bentley,
+                          <a target="_blank" href="http://www.sanger.ac.uk">
+                            <span class="small">Wellcome Trust Sanger Institute</span>
+                          </a>
+                        </td>
+                        <td>
+                          <a class="small" id="map_view" target="_blank" href="http://www.sanger.ac.uk/people/directory/bentley-stephen-d"> <i class="fa fa-arrow-circle-right oblue"></i> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Lesley McGee,
+                          <a target="_blank" href="http://www.cdc.gov/">
+                            <span class="small">Centers for Disease Control and Prevention</span>
+                          </a>
+                        </td>
+                        <td>
+                          <a class="small" id="map_view" target="_blank" href="http://sph.emory.edu/faculty/profile/#LMCGEE"> <i class="fa fa-arrow-circle-right oblue"></i> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Robert Breiman,
+                          <a target="_blank" href="http://www.globalhealth.emory.edu/">
+                            <span class="small">The Emory Global Health Institute</span>
+                          </a>
+                        </td>
+                        <td>
+                          <a class="small" id="map_view" target="_blank" href="http://globalhealth.emory.edu/who/leadership/breiman.html"> <i class="fa fa-arrow-circle-right oblue"></i> </a>
+                        </td>
+                    </tr>
+                  </table>
+              </div>
+            </div><div class="col-lg-1 col-md-1"> </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                  <h1>Funded by</h1>
+                </div>
+                <div class="col-lg-6 col-md-7 col-sm-8 col-xs-5">
+                  <a target="_blank" href="http://www.gatesfoundation.org/">
+                    <img src="img/gates.gif" class="img-responsive">
+                  </a>
+                </div>
+              </div>
+              <div class="row"><hr>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h3>Co-funded by</h3>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-5">
+                  <a target="_blank" href="http://www.wellcome.ac.uk/">
+                    <img src="img/wellcome_trust.jpg" style="width:80%;" class="img-responsive">
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </section>
+
+      <!------------------ Funders Logo ---------------->
+      <section>
+        <div class="container">
+           <header>
+              <h1>Founding Partners<h1>
+          </header>
+          <div class="desc">
+              <ul class="hover-block text-left">
+                <li>
+                  <a target="_blank" href="http://www.cdc.gov/">
+                    <!-- Image logo-->
+                    <img src="img/cdc-Logo.png" alt="United States Centers for Disease Control and Prevention" title="United States Centers for Disease Control and Prevention" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.globalhealth.emory.edu/">
+                    <!-- Image logo-->
+                    <img src="img/emory.png" alt="Global Health - Emory University" title="Global Health - Emory University" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.mlw.medcol.mw/">
+                    <!-- Image logo-->
+                    <img src="img/mlw_logo.jpg" alt="Malawi-Liverpool Wellcome Trust Clinical Research Programme" title="Malawi-Liverpool Wellcome Trust Clinical Research Programme"  />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.mrc.gm/">
+                    <!-- Image logo-->
+                    <img src="img/mrc-gambia.png" alt="Medical Research Council Unit, The Gambia" title="Medical Research Council Unit, The Gambia" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.nicd.ac.za/">
+                    <!-- Image logo-->
+                    <img src="img/nicd-logo.png" alt="National Institute for Communicable Diseases" title="National Institute for Communicable Diseases" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.sanger.ac.uk">
+                    <!-- Image logo-->
+                    <img src="img/sanger-logo.png" alt="Wellcome Trust Sanger Institute" title="Wellcome Trust Sanger Institute" />
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <br>
+      </section>
+
+    </div>
+    <div id="modal"></div>
+    <footer class="footer">
+          <!------------------ Social Communications ---------------->
+          <section id="social-footer">
+            <div class="container">
+              <div class="row">
+                  <br>
+                  <!-- Twitter widget here -->
+                  <div class="col-lg-7 col-md-6 col-sm-5">
+                      <h1><i class="fa fa-twitter lblue"></i> </h1>
+      <a class="twitter-timeline"  href="https://twitter.com/pneumowatch"  data-widget-id="431451222445285377">Tweets by @pneumowatch</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                      <!-- END: Twitter website widget (http://twitterforweb.com) -->
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-7">
+                      <h1><i class="lblue"></i> GPS Symposium at ISPPD 2018</h1>
+                    <img src="img/GPSimage.png" class="img-responsive">
+                  </div>
+              </div>
+          </div><hr>
+        </section>
+
+        <div class="container">
+            <div class="row copy">
+              <div class="col-lg-7 col-md-7 col-sm-12 copy-left">
+                <span>GPS &copy; 2016</span> -
+                <a href="cookiespolicy.html" onclick="">Cookies policy</a> | <a href="legal.html">Terms &amp; Conditions.</a>
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-12 copy-right">
+                This site is hosted by the <a href="http://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a>
+              </div>
+            </div>
+        </div>
+      <div class="clearfix"></div>
+    </footer>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script> 
+     
+    <script src="js/locationsMap.js"></script>
+  </body>
+</html>
+
