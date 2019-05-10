@@ -32,10 +32,10 @@ function checkUrlExists() {
     center: latlng,
   } */
   //map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-  var legend = document.getElementById('legend');
+  var legend = document.getElementById('dataTable');
   var div = document.createElement('div');
-  div.innerHTML = '<img src="img/microreact-map-marker2.svg"> Founders<br>';
-  div.innerHTML += '<img src="img/microreact-map-marker-blue.svg"> Associates';
+  //div.innerHTML = '<img src="img/microreact-map-marker2.svg"> Founders<br>';
+  //div.innerHTML += '<img src="img/microreact-map-marker-blue.svg"> Associates';
   legend.appendChild(div);
 
   //map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
