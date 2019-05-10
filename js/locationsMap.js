@@ -426,7 +426,7 @@ markerPoland.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/ZqJmW54D5').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/MicroVacBar.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
