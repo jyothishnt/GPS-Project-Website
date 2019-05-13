@@ -152,21 +152,21 @@ var svg = d3.select("#bar-two")
       var y = d3.scaleLinear()
         .range([height, 0]);
       
-      if(countryValue == 'Brazil'||'China'||'India') {  
+      //if(countryValue == 'Brazil'||'China'||'India') {  
       var z = d3.scaleOrdinal()
         .range(['#f3842a', '#e9d574', '#cbcfa6', '#aecbc9', '#8fa9b3']);
-      }
-      else {  
+      //}
+      /*else {  
         var z = d3.scaleOrdinal()
           .range(['#cf9a82', "#b3654c", "#800000", "#b33040", "#d25c4d", "#f16000", '#f3842a', "#f2b447", "#e9d574", "#aecbc9", "#697F98", '#645cc1', '#432fea', "#949aa4", "#e7d1bc"]);
-      }
+      }*/
 
       var stack = d3.stack()
         .order(d3.stackOrderNone)
         .offset(d3.stackOffsetExpand);  
       
       x.domain(data.map(function(d) { return d.category; }));
-      z.domain(['PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PCV7', 'PostPCV7', 'prePCV10', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'prePCV13', 'introPCV13', 'PCV13', 'PostPCV13', 'Unknown']);
+      //z.domain(['PrePCV', 'NouniversalintroductiontoPCV', 'prePCV7', 'introPCV7', 'PCV7', 'PostPCV7', 'prePCV10', 'introPCV10', 'PostPCV10', 'introPCV10and13', 'prePCV13', 'introPCV13', 'PCV13', 'PostPCV13', 'Unknown']);
       
       if(countryValue == 'Brazil'||'China'||'India') {
         var serie = g.selectAll(".serie")

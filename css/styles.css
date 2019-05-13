@@ -713,7 +713,7 @@ img.logo-home {
     position: relative;
     display: inline-block;
     width: 350px;
-    height: 120px;
+    height: 125px;
     z-index: 1;
 	margin: 10px 0px;
 	padding: 0px 0px;
@@ -813,7 +813,7 @@ img.logo-home {
 	line-height: 100px;
 	font-size: 80%;
 	padding: 12px 0 0 10px;
-	height: 100px;
+	height: 105px;
 	overflow: hidden;
 }
 .biog_addr h4{

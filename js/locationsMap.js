@@ -128,7 +128,7 @@ markerCambodia.on({
     click: function (country) {
         $("#exampleModal").modal("show");
         $("#exampleModalLabel.modal-title").text("Cambodia");
-        $(".sampleSize").text("Number of samples: 913 ");
+        $(".sampleSize").text("Number of samples: 914 ");
         $(".microreactLink").html($(""));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
@@ -155,8 +155,7 @@ markerChina.on({
         $.getScript("../gps/js/ArgentinaBars.js");
         $.getScript("../gps/js/MicroVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
-        $.getScript("../gpsjs/ArgentinaAgeBar.js");
-
+        $.getScript("../gps/js/ArgentinaAgeBar.js");
     }
 })
 
@@ -178,7 +177,6 @@ markerEthiopia.on({
         $.getScript("../gps/js/ArgentinaVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
-
     }
 })
 
@@ -428,7 +426,7 @@ markerPoland.on({
         $(".microreactLink").html($("<a>Explore data in Microreact</a>").attr("href", 'https://microreact.org/project/ZqJmW54D5').attr("target", '_blank'));
         // May need to change url on live
         $.getScript("../gps/js/ArgentinaBars.js");
-        $.getScript("../gps/js/MicroVacBar.js");
+        $.getScript("../gps/js/ArgentinaVacBar.js");
         $.getScript("../gps/js/ArgentinaClinicalMBar.js");
         $.getScript("../gps/js/ArgentinaAgeBar.js");
 
