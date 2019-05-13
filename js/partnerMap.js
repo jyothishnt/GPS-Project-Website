@@ -577,7 +577,7 @@ mymap.on ({
 })
 
 var markerSouthAfrica = L.marker([-33.918861, 18.423300], {icon: myBlueIcon}).addTo(mymap);
-markerSouthAfrica.bindPopup("<b>National Institute for Communicable Disease</b><br>Johannesburg, South Africa<br>Anne Von Gottberg, Mignon du Plessis<br>Linda De Gouveia, Kedibone M. Ndlangisa<br>Mushal Ali, Nicole Wolter"").openPopup();
+markerSouthAfrica.bindPopup("<b>National Institute for Communicable Disease</b><br>Johannesburg, South Africa<br>Anne Von Gottberg, Mignon du Plessis<br>Linda De Gouveia, Kedibone M. Ndlangisa<br>Mushal Ali, Nicole Wolter").openPopup();
 markerSouthAfrica.on({
     mouseover: function() {
         if(!isClicked) {
