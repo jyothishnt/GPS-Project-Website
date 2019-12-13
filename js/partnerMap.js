@@ -34,12 +34,12 @@ var myBlueIcon = L.icon({
     shadowAnchor: [20, 36]
 });
 
-var markerHinxton =  L.marker([56.490669, -4.202646], {icon: myBlueIcon}).addTo(mymap);
-markerHinxton.bindPopup("<b>Welcome Sanger Institute</b><br>Cambridge, UK<br>Stephen Bentley").openPopup();
+var markerHinx =  L.marker([56.490669, -4.202646], {icon: myBlueIcon}).addTo(mymap);
+markerHinx.bindPopup("<b>Welcome Sanger Institute</b><br>Cambridge, UK<br>Stephen Bentley").openPopup();
 
 let isClicked = false
 
-markerHinxton.on({
+markerHinx.on({
     mouseover: function() {
         if(!isClicked) {
             this.openPopup()
