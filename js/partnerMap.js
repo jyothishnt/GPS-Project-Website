@@ -34,8 +34,34 @@ var myBlueIcon = L.icon({
     shadowAnchor: [20, 36]
 });
 
+var markerHinxton =  L.marker([56.490669, -4.202646], {icon: myBlueIcon}).addTo(mymap);
+markerHinxton.bindPopup("<b>Welcome Sanger Institute</b><br>Cambridge, UK<br>Stephen Bentley").openPopup();
+
+let isClicked = false
+
+markerHinxton.on({
+    mouseover: function() {
+        if(!isClicked) {
+            this.openPopup()
+        }
+    },
+    click: function() {
+        isClicked = true
+        this.openPopup()
+    }
+})
+
+mymap.on ({
+    click: function() {
+        isClicked = false
+    },
+    popupclose: function () {
+        isClicked = false
+    }
+})
+
 var markerHinxton =  L.marker([52.0785, 0.1861], {icon: myBlueIcon}).addTo(mymap);
-markerHinxton.bindPopup("<b>Welcome Trust Sanger Institute</b><br>Cambridge, UK<br>Stephen Bentley").openPopup();
+markerHinxton.bindPopup("<b>Welcome Sanger Institute</b><br>Cambridge, UK<br>Stephen Bentley").openPopup();
 
 let isClicked = false
 
