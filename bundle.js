@@ -20194,11 +20194,11 @@
 	  objectID: 33
 	}, {
 	  title: 'GPSC35',
-	  url: 'https://microreact.org/project/gpsGPSC35',
+	  url: '',
 	  image: 'img/clusterImages/Cluster34.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 41,
 	  ST: [97, 585, 1282, 1551, 4753, 8821, 8825, 10938, 10978, 12282, 12741],
 	  serotype: ['10A'],
@@ -20206,11 +20206,11 @@
 	  objectID: 34
 	}, {
 	  title: 'GPSC36',
-	  url: 'https://microreact.org/project/gpsGPSC36',
+	  url: '',
 	  image: 'img/clusterImages/Cluster35.png',
 	  height: '100px',
 	  width: '90px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 40,
 	  ST: [446, 498, 816, 1635, 2068, 10864, 10919, 10954, 12705],
 	  serotype: ['10A', '35F'],
@@ -20495,11 +20495,11 @@
 	  objectID: 57
 	}, {
 	  title: 'GPSC59',
-	  url: 'https://microreact.org/project/gpsGPSC59',
+	  url: '',
 	  image: 'img/clusterImages/cluster59.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 37,
 	  ST: [558, 10175, 10222, 10493, 10766, 12713, 12809],
 	  serotype: ['35B', '35D'],
@@ -20648,11 +20648,11 @@
 	  objectID: 69
 	}, {
 	  title: 'GPSC71',
-	  url: 'https://microreact.org/project/gpsGPSC71',
+	  url: '',
 	  image: 'img/clusterImages/cluster71.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 30,
 	  ST: [5103, 11735],
 	  serotype: ['21'],
@@ -20686,11 +20686,11 @@
 	}, */
 	{
 	  title: 'GPSC74',
-	  url: 'https://microreact.org/project/gpsGPSC74',
+	  url: '',
 	  image: 'img/clusterImages/cluster74.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 29,
 	  ST: [],
 	  serotype: [],
@@ -20800,11 +20800,11 @@
 	}, */
 	{
 	  title: 'GPSC83',
-	  url: 'https://microreact.org/project/gpsGPSC83',
+	  url: '',
 	  image: 'img/clusterImages/cluster83.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 25,
 	  ST: [232, 260, 378, 1220, 1377, 6014, 7369, 11931],
 	  serotype: ['3'],
@@ -20812,11 +20812,11 @@
 	  objectID: 82
 	}, {
 	  title: 'GPSC84',
-	  url: 'https://microreact.org/project/gpsGPSC84',
+	  url: '',
 	  image: 'img/clusterImages/cluster84.png',
 	  height: '90px',
 	  width: '180px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 24,
 	  ST: [2014, 2931, 3518, 4194, 5702, 7526, 7622, 10589, 10669, 11013, 11017, 11034, 12307, 12725, 12789, 13865, 13936],
 	  serotype: ['19A', '19F'],
@@ -20824,11 +20824,11 @@
 	  objectID: 83
 	}, {
 	  title: 'GPSC85',
-	  url: 'https://microreact.org/project/gpsGPSC85',
+	  url: '',
 	  image: 'img/clusterImages/cluster85.png',
 	  height: '70px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 24,
 	  ST: [1871, 4424, 5726, 5964, 10625, 11010, 11902, 12800, 13921, 13929],
 	  serotype: ['9V', '11A', '20A', '35C'],
@@ -20836,11 +20836,11 @@
 	  objectID: 84
 	}, {
 	  title: 'GPSC86',
-	  url: 'https://microreact.org/project/gpsGPSC86',
+	  url: '',
 	  image: 'img/clusterImages/cluster86.png',
 	  height: '90px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 24,
 	  ST: [2036, 2213, 2712, 9438, 9554, 10757, 10839, 11000, 11024, 12744, 13941],
 	  serotype: ['4'],
@@ -20875,11 +20875,11 @@
 	}, */
 	{
 	  title: 'GPSC89',
-	  url: 'https://microreact.org/project/gpsGPSC89',
+	  url: '',
 	  image: 'img/clusterImages/cluster89.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 22,
 	  ST: [1292, 1379, 2064, 9455],
 	  serotype: ['6C'],
