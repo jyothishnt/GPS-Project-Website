@@ -20429,13 +20429,13 @@
 	  countries: [''],
 	  objectID: 52
 	},
-	/*{
+	{
 	  title: 'GPSC54',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC54',
 	  image: 'img/clusterImages/cluster54.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 97,
 	  ST: [706, 3454, 4881, 5778, 6314, 6317, 6530, 7058, 7059, 7889, 8763, 9473, 10688, 10789, 10797, 10876, 10895, 10944, 11680, 12326, 12532, 12558, 12567],
 	  serotype: ['9V', '23F', '28F'],
@@ -20444,11 +20444,11 @@
 	},
 	{
 	  title: 'GPSC55',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC55',
 	  image: 'img/clusterImages/cluster55.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 90,
 	  ST: [3524, 3774, 3776, 13950],
 	  serotype: ['12F'],
@@ -20457,11 +20457,11 @@
 	},
 	{
 	  title: 'GPSC56',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC56',
 	  image: 'img/clusterImages/cluster56.png',
 	  height: '100px',
 	  width: '90px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 'unknown',
 	  ST: [2416, 5027, 5068, 7048, 7141, 8672, 9531, 10675, 10792, 11767, 11768, 11769, 11915, 12151, 12820, 12951],
 	  serotype: ['7F', '12F', '18C'],
@@ -20470,17 +20470,17 @@
 	}, 
 	{
 	  title: 'GPSC57',
-	  url: 'https://microreact.org/project/rykFUvqs-',
+	  url: 'https://microreact.org/project/gpsGPSC57',
 	  image: 'img/clusterImages/cluster57.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 56,
 	  ST: [444, 568, 1111, 1766, 1994, 3358, 3548, 6029, 8289, 10479, 10821, 12144, 12582, 12682],
 	  serotype: ['31'],
 	  countries: [''],
 	  objectID: 56,
-	}, */
+	},
 	{
 	  title: 'GPSC58',
 	  url: 'https://microreact.org/project/gpsGPSC58',
@@ -20569,21 +20569,21 @@
 	  serotype: ['6A'],
 	  countries: [''],
 	  objectID: 63,
-	},
+	},*/
 	{
 	  title: 'GPSC65',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC65',
 	  image: 'img/clusterImages/cluster65.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 'unknown',
 	  ST: [2053],
 	  serotype: ['13', '19A'],
 	  countries: ['Malawi'],
 	  objectID: 64,
 	},
-	{
+	/*{
 	  title: 'GPSC66',
 	  url: '',
 	  image: 'img/clusterImages/cluster66.png',
@@ -20723,19 +20723,19 @@
 	  countries: [],
 	  objectID: 75
 	},
-	/*{
+	{
 	  title: 'GPSC77',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC77',
 	  image: 'img/clusterImages/cluster77.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 'unknown',
 	  ST: [185, 7307, 7738, 10661, 10686, 10720, 10726, 10845, 10846, 10871, 11719, 12528],
 	  serotype: ['6A', '6B'],
 	  countries: ['South Africa'],
 	  objectID: 76,
-	}, */
+	},
 	{
 	  title: 'GPSC78',
 	  url: 'https://microreact.org/project/gpsGPSC78',
