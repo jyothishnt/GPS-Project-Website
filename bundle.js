@@ -20194,11 +20194,11 @@
 	  objectID: 33
 	}, {
 	  title: 'GPSC35',
-	  url: 'https://microreact.org/project/gpsGPSC35',
+	  url: '',
 	  image: 'img/clusterImages/Cluster34.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 41,
 	  ST: [97, 585, 1282, 1551, 4753, 8821, 8825, 10938, 10978, 12282, 12741],
 	  serotype: ['10A'],
@@ -20206,11 +20206,11 @@
 	  objectID: 34
 	}, {
 	  title: 'GPSC36',
-	  url: 'https://microreact.org/project/gpsGPSC36',
+	  url: '',
 	  image: 'img/clusterImages/Cluster35.png',
 	  height: '100px',
 	  width: '90px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 40,
 	  ST: [446, 498, 816, 1635, 2068, 10864, 10919, 10954, 12705],
 	  serotype: ['10A', '35F'],
@@ -20429,13 +20429,13 @@
 	  countries: [''],
 	  objectID: 52
 	},
-	/*{
+	{
 	  title: 'GPSC54',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC54',
 	  image: 'img/clusterImages/cluster54.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 97,
 	  ST: [706, 3454, 4881, 5778, 6314, 6317, 6530, 7058, 7059, 7889, 8763, 9473, 10688, 10789, 10797, 10876, 10895, 10944, 11680, 12326, 12532, 12558, 12567],
 	  serotype: ['9V', '23F', '28F'],
@@ -20444,11 +20444,11 @@
 	},
 	{
 	  title: 'GPSC55',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC55',
 	  image: 'img/clusterImages/cluster55.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 90,
 	  ST: [3524, 3774, 3776, 13950],
 	  serotype: ['12F'],
@@ -20457,11 +20457,11 @@
 	},
 	{
 	  title: 'GPSC56',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC56',
 	  image: 'img/clusterImages/cluster56.png',
 	  height: '100px',
 	  width: '90px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 'unknown',
 	  ST: [2416, 5027, 5068, 7048, 7141, 8672, 9531, 10675, 10792, 11767, 11768, 11769, 11915, 12151, 12820, 12951],
 	  serotype: ['7F', '12F', '18C'],
@@ -20470,17 +20470,17 @@
 	}, 
 	{
 	  title: 'GPSC57',
-	  url: 'https://microreact.org/project/rykFUvqs-',
+	  url: 'https://microreact.org/project/gpsGPSC57',
 	  image: 'img/clusterImages/cluster57.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 56,
 	  ST: [444, 568, 1111, 1766, 1994, 3358, 3548, 6029, 8289, 10479, 10821, 12144, 12582, 12682],
 	  serotype: ['31'],
 	  countries: [''],
 	  objectID: 56,
-	}, */
+	},
 	{
 	  title: 'GPSC58',
 	  url: 'https://microreact.org/project/gpsGPSC58',
@@ -20495,11 +20495,11 @@
 	  objectID: 57
 	}, {
 	  title: 'GPSC59',
-	  url: 'https://microreact.org/project/gpsGPSC59',
+	  url: '',
 	  image: 'img/clusterImages/cluster59.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 37,
 	  ST: [558, 10175, 10222, 10493, 10766, 12713, 12809],
 	  serotype: ['35B', '35D'],
@@ -20569,21 +20569,21 @@
 	  serotype: ['6A'],
 	  countries: [''],
 	  objectID: 63,
-	},
+	},*/
 	{
 	  title: 'GPSC65',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC65',
 	  image: 'img/clusterImages/cluster65.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 'unknown',
 	  ST: [2053],
 	  serotype: ['13', '19A'],
 	  countries: ['Malawi'],
 	  objectID: 64,
 	},
-	{
+	/*{
 	  title: 'GPSC66',
 	  url: '',
 	  image: 'img/clusterImages/cluster66.png',
@@ -20648,11 +20648,11 @@
 	  objectID: 69
 	}, {
 	  title: 'GPSC71',
-	  url: 'https://microreact.org/project/gpsGPSC71',
+	  url: '',
 	  image: 'img/clusterImages/cluster71.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 30,
 	  ST: [5103, 11735],
 	  serotype: ['21'],
@@ -20686,11 +20686,11 @@
 	}, */
 	{
 	  title: 'GPSC74',
-	  url: 'https://microreact.org/project/gpsGPSC74',
+	  url: '',
 	  image: 'img/clusterImages/cluster74.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 29,
 	  ST: [],
 	  serotype: [],
@@ -20723,19 +20723,19 @@
 	  countries: [],
 	  objectID: 75
 	},
-	/*{
+	{
 	  title: 'GPSC77',
-	  url: '',
+	  url: 'https://microreact.org/project/gpsGPSC77',
 	  image: 'img/clusterImages/cluster77.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'unavailable',
+	  microreactStatus: 'available',
 	  num_GPSsamples: 'unknown',
 	  ST: [185, 7307, 7738, 10661, 10686, 10720, 10726, 10845, 10846, 10871, 11719, 12528],
 	  serotype: ['6A', '6B'],
 	  countries: ['South Africa'],
 	  objectID: 76,
-	}, */
+	},
 	{
 	  title: 'GPSC78',
 	  url: 'https://microreact.org/project/gpsGPSC78',
@@ -20800,11 +20800,11 @@
 	}, */
 	{
 	  title: 'GPSC83',
-	  url: 'https://microreact.org/project/gpsGPSC83',
+	  url: '',
 	  image: 'img/clusterImages/cluster83.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 25,
 	  ST: [232, 260, 378, 1220, 1377, 6014, 7369, 11931],
 	  serotype: ['3'],
@@ -20812,11 +20812,11 @@
 	  objectID: 82
 	}, {
 	  title: 'GPSC84',
-	  url: 'https://microreact.org/project/gpsGPSC84',
+	  url: '',
 	  image: 'img/clusterImages/cluster84.png',
 	  height: '90px',
 	  width: '180px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 24,
 	  ST: [2014, 2931, 3518, 4194, 5702, 7526, 7622, 10589, 10669, 11013, 11017, 11034, 12307, 12725, 12789, 13865, 13936],
 	  serotype: ['19A', '19F'],
@@ -20824,11 +20824,11 @@
 	  objectID: 83
 	}, {
 	  title: 'GPSC85',
-	  url: 'https://microreact.org/project/gpsGPSC85',
+	  url: '',
 	  image: 'img/clusterImages/cluster85.png',
 	  height: '70px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 24,
 	  ST: [1871, 4424, 5726, 5964, 10625, 11010, 11902, 12800, 13921, 13929],
 	  serotype: ['9V', '11A', '20A', '35C'],
@@ -20836,11 +20836,11 @@
 	  objectID: 84
 	}, {
 	  title: 'GPSC86',
-	  url: 'https://microreact.org/project/gpsGPSC86',
+	  url: '',
 	  image: 'img/clusterImages/cluster86.png',
 	  height: '90px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 24,
 	  ST: [2036, 2213, 2712, 9438, 9554, 10757, 10839, 11000, 11024, 12744, 13941],
 	  serotype: ['4'],
@@ -20875,11 +20875,11 @@
 	}, */
 	{
 	  title: 'GPSC89',
-	  url: 'https://microreact.org/project/gpsGPSC89',
+	  url: '',
 	  image: 'img/clusterImages/cluster89.png',
 	  height: '60px',
 	  width: '70px',
-	  microreactStatus: 'available',
+	  microreactStatus: 'unavailable',
 	  num_GPSsamples: 22,
 	  ST: [1292, 1379, 2064, 9455],
 	  serotype: ['6C'],
@@ -21101,12 +21101,31 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Each GPSC strain is represented by a cluster. Explore the common 77 GPSCs in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango. Understand the definition and application of GPSC to contextualise disease, antibiotic resistance and vaccine impact by reading one of our headline studies at ',
+	            'Each GPSC strain is represented by a cluster. Explore the common GPSCs in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango. Understand the definition and application of GPSC to contextualise disease, antibiotic resistance and vaccine impact by reading our headline studies at ',
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://www.ebiomedicine.com/article/S2352-3964(19)30259-2/abstract' },
 	              'EbioMedicine'
-	            )
+				),
+				' and at ',
+				_react2.default.createElement(
+					'a',
+					{ href: 'https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(19)30297-X/fulltext' },
+					'Lancet Infectious Diseases'
+				  ),
+				  '.'
+			  ),
+			  _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+				'Pangenome analysis by Roary and time-measured phylogeny built by Bacdating were performed for the common 73 GPSCs. Access the analyses output for each of them at ',
+				_react2.default.createElement(
+					'a',
+					{ href: 'https://figshare.com/projects/Gladstone_et_al_MGEN_2019/69173' },
+					'GPS Figshare'
+				  ),
+				  '.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
@@ -21117,12 +21136,12 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'For example select the category \'GPSC\' in the first box and type \'GPSC32\' in the second box to display GPSC32.'
+	            'For example, select the category \'GPSC\' in the first box and type \'GPSC32\' in the second box to display GPSC32.'
 	          ),
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Select the category \'Serotype\' in the first box and choose a serotype from the dropdown to search for all of the GPSC strains that contain that particular serotype. If searching for a GPSC strain that contains a particular ST select \'ST\' and type the ST you are searching for, e.g. \'376\' in the second box.'
+	            'Select the category \'Serotype\' in the first box and choose a serotype from the dropdown to search for all of the GPSC strains that contain that particular serotype. If searching for a GPSC strain that contains a particular ST, select \'ST\' and type the ST you are searching for, e.g. \'376\' in the second box.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
