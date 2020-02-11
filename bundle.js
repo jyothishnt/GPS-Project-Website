@@ -21101,12 +21101,31 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Each GPSC strain is represented by a cluster. Explore the common 77 GPSCs in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango. Understand the definition and application of GPSC to contextualise disease, antibiotic resistance and vaccine impact by reading one of our headline studies at ',
+	            'Each GPSC strain is represented by a cluster. Explore the common GPSCs in greater depth by hovering over the cluster image and viewing the data in Microreact and Phandango. Understand the definition and application of GPSC to contextualise disease, antibiotic resistance and vaccine impact by reading our headline studies at ',
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://www.ebiomedicine.com/article/S2352-3964(19)30259-2/abstract' },
 	              'EbioMedicine'
-	            )
+				),
+				' and at ',
+				_react2.default.createElement(
+					'a',
+					{ href: 'https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(19)30297-X/fulltext' },
+					'Lancet Infectious Diseases'
+				  ),
+				  '.'
+			  ),
+			  _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+				'Pangenome analysis by Roary and time-measured phylogeny built by Bacdating were performed for the common 73 GPSCs. Access the analyses output for each of them at ',
+				_react2.default.createElement(
+					'a',
+					{ href: 'https://figshare.com/projects/Gladstone_et_al_MGEN_2019/69173' },
+					'GPS Figshare'
+				  ),
+				  '.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
@@ -21117,12 +21136,12 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'For example select the category \'GPSC\' in the first box and type \'GPSC32\' in the second box to display GPSC32.'
+	            'For example, select the category \'GPSC\' in the first box and type \'GPSC32\' in the second box to display GPSC32.'
 	          ),
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Select the category \'Serotype\' in the first box and choose a serotype from the dropdown to search for all of the GPSC strains that contain that particular serotype. If searching for a GPSC strain that contains a particular ST select \'ST\' and type the ST you are searching for, e.g. \'376\' in the second box.'
+	            'Select the category \'Serotype\' in the first box and choose a serotype from the dropdown to search for all of the GPSC strains that contain that particular serotype. If searching for a GPSC strain that contains a particular ST, select \'ST\' and type the ST you are searching for, e.g. \'376\' in the second box.'
 	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
