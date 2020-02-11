@@ -1,0 +1,140 @@
+Name	Country	City	latitude	Longitude	Email	Affiliation
+Alejandra Corso	Argentina	Buenos Aires	-38.416096	-63.616673	acorso@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud, Buenos Aires, Argentina
+Diego Faccone	Argentina	Buenos Aires	-38.416096	-63.616673	dfaccone@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas (INEI)-Administración Nacional de Laboratorios e Institutos de Salud (ANLIS) "Dr. C. Malbrán", Buenos Aires, Argentina
+Paula Gagetti	Argentina	Buenos Aires	-38.416096	-63.616673	pgagetti@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud, Buenos Aires, Argentina
+Abdullah W Brooks	Bangladesh	Dhaka	23.684994	90.356331	abrooks@mac.com	International Centre for Diarrheal Diseases Research, Dhaka, Bangladesh
+Md Hasanuzzaman	Bangladesh	Dhaka	23.684994	90.356331	hsnzmn027@gmail.com	Child Health Research Foundation, Dhaka, Bangladesh
+Roly Malaker	Bangladesh	Dhaka	23.684994	90.356331	roly@chrfbd.org	Child Health Research Foundation, Dhaka, Bangladesh
+Samir K. Saha	Bangladesh	Dhaka	23.684994	90.356331	samirk.sks@gmail.com	Child Health Research Foundation, Dhaka, Bangladesh
+Alexander Davydov	Belarus	Minsk	53.709808	27.953388	alexander.davydovv@gmail.com	The Republican Research and Practical Center for Epidemiology and Microbiology, Minsk, Belarus
+Leonid Titov	Belarus	Minsk	53.709808	27.953388	leonidtitov@tut.by	The Republican Research and Practical Center for Epidemiology and Microbiology, Minsk, Belarus
+Maria Cristina de Cunto Brandileone	Brazil	São Paulo	-14.235004	-51.925282	maria.brandileone@ial.sp.gov.br	Center of Bacteriology, Adolfo Lutz Institute, São Paulo, Brazil
+Samanta Cristine Grassi Almeida	Brazil	São Paulo	-14.235004	-51.925282	salmeida@ial.sp.gov.br	Center of Bacteriology, Adolfo Lutz Institute, São Paulo, Brazil
+Paul Turner	Cambodia	Siem Reap	12.565679	104.990967	pault@tropmedres.ac	University of Oxford, Oxford, UK
+Margaret Ip	China	Hong Kong	35.86166	104.195396	margaretip@cuhk.edu.hk	Chinese University of Hong Kong, Hong Kong, China
+Pak Leung Ho	China 	Hong Kong	35.86166	104.195396	plho@hku.hk	The University of Hong Kong, Hong Kong, China
+Pierra Law	China 	Hong Kong	35.86166	104.195396	pytlaw@gmail.com	The University of Hong Kong, Hong Kong, China
+Luis Felipe Reyes Velasco 	Colombia	Bogota	4.570868	-74.297333	luis.reyes5@unisabana.edu.co	Universidad De La Sabana, Colombia
+Jeremy Keenan	Ethiopia	Amhara	9.145	40.489674	jeremy.keenan@ucsf.edu	University of California, San Francisco, CA, USA
+Eric Sampane-Donkor	Ghana	Accra	7.946527	-1.023194	ericsdon@hotmail.com	School of Biomedical and Allied Health Sciences, University of Ghana, Accra, Ghana
+Balaji Veeraraghavan	India	Vellore	20.593683	78.962883	vbalaji@cmcvellore.ac.in	Christian Medical College, Vellore,India
+Geetha Nagaraj	India	Bangalore	20.593683	78.962883	geetha.ndri@gmail.com	Kempegowda Institute of Medical Sciences Hospital & Research Center, Bangalore, India
+KL Ravikumar	India	Bangalore	20.593683	78.962883	klravikumar@gmail.com	Kempegowda Institute of Medical Sciences Hospital & Research Center, Bangalore, India
+Noga Givon-Lavi	Israel	Beersheva	31.046051	34.851612	givon@bgu.ac.il	Ben-Gurion University of the Negev, Beer-Sheva, Israel,
+Nurit Porat	Israel	Beersheva	31.046051	34.851612	npurat@bgu.ac.il	Ben-Gurion University of the Negev, Beer-Sheva, Israel,
+Rachel Benisty	Israel	Beersheva	31.046051	34.851612	kahanr@bgu.ac.il	Ben-Gurion University of the Negev, Beer-Sheva, Israel,
+Ron Dagan	Israel	Beersheva	31.046051	34.851612	rdagan@bgu.ac.il	Ben-Gurion University of the Negev, Beer-Sheva, Israel,
+Godfrey Bigogo	Kenya	Nairobi	-0.023559	37.906193	GBigogo@kemricdc.org	Kenya Medical Research Institute, Kisumu, Kenya
+Anthony Scott	Kenya	Kilifi	-0.023559	37.906193	Anthony.Scott@lshtm.ac.uk	Epidemiology and Demography Department, KEMRI-Wellcome Trust Research Programme, Centre for Geographic Medicine-Coast, Kilifi, Kenya
+Anmol Kiran	Malawi	Blantyre	-13.254308	34.301525	Anmol.Kiran@liverpool.ac.uk	Malawi-Liverpool-Wellcome-Trust, Blantyre, Malawi
+Dean B Everett	Malawi	Blantyre	-13.254308	34.301525	Dean.Everett@ed.ac.uk	University of Edinburgh, Edinburgh, UK
+Jennifer Cornick	Malawi	Blantyre	-13.254308	34.301525	j.cornick@liverpool.ac.uk	Malawi-Liverpool-Wellcome-Trust, Blantyre, Malawi
+Maaike Alaerts	Malawi	Blantyre	-13.254308	34.301525	maaike_esi@hotmail.com	Malawi-Liverpool-Wellcome-Trust, Blantyre, Malawi
+Shamala Devi Sekaran (Sekaran SD)	Malaysia	Selangor	4.210484	101.975769	shamalamy@yahoo.com	MAHSA University, Selangor, Malaysia
+Stuart C Clarke	Malaysia	Kuala Lumpur	4.210484	101.975769	s.c.clarke@soton.ac.uk	University of Southampton, Southampton, UK
+Houria Belabbès 	Morocco	Casablanca	31.791702	-7.09262	belhor2001@yahoo.fr	Ibn Rochd university-hospital center, Casablanca, Morocco
+Idrissa Diawara 	Morocco	Casablanca	31.791702	-7.09262	diawaraidris@gmail.com	Mohammed VI University of Health Sciences (UM6SS), Casablanca, Morocco
+Khalid Zerouali	Morocco	Casablanca	31.791702	-7.09262	khalid.zerouali2000@gmail.com	Faculté de médecine et de pharmacie de Casablanca, Casablanca, Morocco
+Naima Elmdaghri	Morocco	Casablanca	31.791702	-7.09262	naimaelmdaghri@yahoo.fr	Faculty of Medicine and Pharmacy &  Ibn Rochd University Hospital Center ,Casablanca, Morocco
+Benild Moiane	Mozambique	Manhica	-18.665695	35.529564	 	Centro de Investigação em Saúde da Manhiça, Maputo, Moçambique
+Betuel Sigauque	Mozambique	Manhica	-18.665695	35.529564	Betuel.Sigauque@manhica.net	Centro de Investigação em Saúde da Manhiça, Maputo, Moçambique
+Helio Mucavele	Mozambique	Manhica	-18.665695	35.529564	Helio.Mucavele@manhica.net	Centro de Investigação em Saúde da Manhiça, Maputo, Moçambique
+Andrew J Pollard	Nepal	Kathmandu	28.394857	84.124008	andrew.pollard@paediatrics.ox.ac.uk	University of Oxford and the NIHR Oxford Biomedical Research Centre, Oxford, UK
+Rama Kandasamy	Nepal	Kathmandu	28.394857	84.124008	rama.kandasamy@paediatrics.ox.ac.uk	University of Oxford, and the NIHR Oxford Biomedical Research Centre, Oxford, UK
+Philip E Carter 	New Zealand	Auckland	-40.900558	174.885971	Philip.Carter@ESR.CRI.NZ	Kenepuru Science Centre, Porirua, Zealand
+Christian Happi	Nigeria	Ede	9.081999	8.675277	happic@run.edu.ng	Department of Biological Sciences, Redeemers’ University, Nigeria
+Iruka Okeke	Nigeria	Ibadan	9.081999	8.675277	iruka.n.okeke@gmail.com	Pharmaceutical Microbiology, University of Ibadan, Nigeria
+Stephen Obaro	Nigeria	Abuja	9.081999	8.675277	stephen.obaro@unmc.edu	University of Nebraska Medical Center, Omaha, USA
+Imran Nisar	Pakistan	Karachi	30.37532	69.345116	imran.nisar@aku.edu	"Department of Paediatrics and Child Health, Aga Khan University, Pakistan
+"
+Sadia Shakoor	Pakistan	Karachi	30.37532	69.345116	sadia.shakoor@aku.edu	The Aga Khan University, Karachi, Pakistan
+Shaper Misra	Pakistan	Lahore	30.37532	69.345116	shaper.mirza@lums.edu.pk 	Department Of Biology, Lahore University of Management and Sciences, Pakistan
+Deborah Lehmann	Papua New Guinea	Papua New Guinea	-6.314993	143.955551	deborah.lehmann@telethonkids.org.au	The University of Western Australia, Perth, WA, Australia
+Rebecca Ford	Papua New Guinea	Papua New Guinea	-6.314993	143.955551	rebecca.ford@pngimr.org.pg	Papua New Guinea Institute of Medical Research, Goroka, Papua New Guinea
+Theresa J. Ochoa	Peru	Lima	-9.189967	-75.015152	Theresa.J.Ochoa@uth.tmc.edu	Instituto de Medicina Tropical, Universidad Peruana Cayetano Heredia, Lima, Peru
+Anna Skoczynska	Poland	Warsaw	51.919437	19.145136	a.skoczynska@nil.gov.pl	National Medicines Institute, Warsaw, Poland
+Ewa Sadowy	Poland	Warsaw	51.919437	19.145136	e.sadowy@nil.gov.pl	National Medicines Institute, Warsaw, Poland
+Waleria Hryniewicz	Poland	Warsaw	51.919437	19.145136	w.hryniewicz@nil.gov.pl	National Medicines Institute, Warsaw, Poland
+Sanjay Doiphode	Qatar	Doha	25.354826	51.183884	SDOIPHODE@hamad.qa	Hamad Medical Corporation, Doha, Qatar
+Ekaterina Egorova	Russia	Moscow	61.52401	105.318756	yegorovaea@gmail.com	Moscow Research Institute for Epidemiology and Microbiology, Moscow, Russia Federation
+Elena Voropaeva	Russia	Moscow	61.52401	105.318756	voropaevaea2011@gmail.com	Gabrichevsky Epidemiology and Microbiology Research Institute, Moscow, Russia
+Yulia Urban	Russia	Moscow	61.52401	105.318756	urbanek@mail.ru 	G. N. GABRICHEVSKY  RESEARCH  INSTITUTE  FOR  EPIDEMIOLOGY AND MICROBIOLOGY, Moscow, Russia
+Stuart C Clarke	Singapore	Singapore	1.352083	103.819839	s.c.clarke@soton.ac.uk	University of Southampton, Southampton, UK
+Metka Paragi	Slovenia	Celije	46.151241	14.995463	metka.paragi@nlzoh.si	National Laboratory of Health, Environment and Food,  Ljubljana, Slovenia
+Tamara Kastrin	Slovenia	Celije	46.151241	14.995463	tamara.kastrin@nlzoh.si	National Laboratory of Health, Environment and Food,  Ljubljana, Slovenia
+Anne von Gottberg	South Africa	Johannesburg	30.5595	22.9375	annev@nicd.ac.za	Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases, Johannesburg, South Africa
+Kedibone M. Ndlangisa	South Africa	Johannesburg	30.5595	22.9375	kedibonen@nicd.ac.za	Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases, Johannesburg, South Africa
+Linda De Gouveia	South Africa	Johannesburg	30.5595	22.9375	lindad@nicd.ac.za	Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases, Johannesburg, South Africa
+Mignon du Plessis	South Africa	Johannesburg	30.5595	22.9375	mignond@nicd.ac.za	Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases, Johannesburg, South Africa
+Mushal Ali	South Africa	Johannesburg	30.5595	22.9375	MushalA@nicd.ac.za	Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases, Johannesburg, South Africa
+Nicole Wolter	South Africa	Johannesburg	30.5595	22.9375	nicolew@nicd.ac.za	Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases, Johannesburg, South Africa
+Shabir A. Madhi	South Africa	Soweto	30.5595	22.9375	madhis@rmpru.co.za	University of the Witwatersrand, Johannesburg, South Africa
+Susan A Nzenze	South Africa	Soweto	30.5595	22.9375	sanzenze@gmail.com	School of Pathology, Faculty of Health Sciences, University of Witwatersrand, Johannesburg, South Africa
+Carmen Muñoz Almagro	Spain	Barcelona	40.4637	3.7492	cma@sjdhospitalbarcelona.org	Molecular Microbiology Department, Hospital Sant Joan de Deu, Barcelona, Spain
+Paul Turner	Thailand	Maesot	15.870032	100.992538	pault@tropmedres.ac	University of Oxford, Oxford, UK
+Stuart C Clarke	Thailand	Bangkok	15.870032	100.992538	s.c.clarke@soton.ac.uk	University of Southampton, Southampton, UK
+Somporn Srifuengfung	Thailand	Bangkok	15.870032	100.992538	somporn.sri@mahidol.ac.th 	Faculty of Medicine Siriraj Hospital, Mahidol University, Thailand; Faculty of Medicine, Siam University, Thailand
+Brenda Kwambana-Adams	The Gambia	Banjul	13.4432	15.3101	bkwambana@mrc.gm	Medical Research Council Unit The Gambia, The Gabmia
+Ebenezer Foster-Nyarko	The Gambia	Banjul	13.4432	15.3101	efosternyarko@mrc.gm	Medical Research Council Unit The Gambia, The Gabmia
+Ebrima Bojang	The Gambia	Banjul	13.4432	15.3101	exb862@student.bham.ac.uk	Medical Research Council Unit The Gambia, The Gabmia
+Martin Antonio	The Gambia	Banjul	13.4432	15.3101	mantonio@mrc.gm	Medical Research Council Unit The Gambia, The Gabmia
+Peggy-Estelle Tientcheu 	The Gambia	Banjul	13.4432	15.3101	ptientcheu@mrc.gm	Medical Research Council Unit The Gambia, The Gabmia
+Jennifer Moïsi	Togo	Lome	8.6195	0.8248	Jennifer.Moisi@pfizer.com	Agence de Médecine Préventive, Paris, France
+Michele Nurse-Lucas	Trinidad and Tobago	St. Augustine	10.6918	61.2225	nurselmi@gmail.com	Department of Paraclinical Sciences, The University of the West Indies, St. Augustine, Trinidad and Tobago
+Patrick E Akpaka	Trinidad and Tobago	St. Augustine	10.6918	61.2225	Patrick.Akpaka@sta.uwi.edu	The University of the West Indies, St. Augustine, Trinidad and Tobago
+Özgen Köseoglu Eser	Turkey	Ankara	38.9637	35.2433	eser.ozgen@gmail.com	Hacettepe University Faculty of Medicine, Ankara, Turkey
+Alison Maguire	UK	Cambridge	52.0785	0.1861	ajm38@cam.ac.uk	University of Cambridge, Cambridge, UK
+David Aanensen	UK	Cambridge	52.0785	0.1861	daanensen@gmail.com	School of Public Health, Imperial College London, UK
+Leon Bentley	UK	Cambridge	52.0785	0.1861	leonjbentley@gmail.com	Wellcome Sanger Institute, Cambridge, UK
+Jyothish N Nair Thulasee Bhai	UK	Cambridge	52.0785	0.1861	joyjoy.nt@gmail.com	Wellcome Sanger Institute, Cambridge, UK
+Nicholas Croucher	UK	London	52.0785	0.1861	n.croucher@imperial.ac.uk	Sir Henry Dale research fellow, Imperial College London, UK
+Rafal Mostowy	UK	London	52.0785	0.1861	r.mostowy@imperial.ac.uk	Imperial College London, UK
+Rebecca A Gladstone	UK	Cambridge	52.0785	0.1861	rg9@sanger.ac.uk	Wellcome Sanger Institute, Cambridge, UK
+Rebecca Henderson	UK	Cambridge	52.0785	0.1861	rh23@sanger.ac.uk	Wellcome Sanger Institute, Cambridge, UK
+Stephanie W Lo	UK	Cambridge	52.0785	0.1861	sl28@sanger.ac.uk	Wellcome Sanger Institute, Cambridge, UK
+Stephen D Bentley	UK	Cambridge	52.0785	0.1861	sdb@sanger.ac.uk	Wellcome Sanger Institute, Cambridge, UK
+John A Lees	UK	London	52.0785	0.1861	j.lees@imperial.ac.uk	"Department of
+Microbiology, New York
+University School of Medicine,
+New York, NY, USA"
+Jennifer Verani	USA	Atlanta	37.09024	-95.712891	qzr7@cdc.gov	National Center for Immunization and Respiratory Diseases, Centers for Disease Control and Prevention, Atlanta, USA
+Bernard Beall	USA	Atlanta	37.09024	-95.712891	beb0@cdc.gov	Centers for Disease Control and Prevention, Atlanta, USA.
+Keith P Klugman	USA	Seattle	37.09024	-95.712891	Keith.Klugman@gatesfoundation.org	Bill & Melinda Gates Foundation, Seattle, WA, USA
+Lesley McGee	USA	Atlanta	37.09024	-95.712891	afi4@cdc.gov	CDC/NCIRD/DBD/RDB, Atlanta, GA, USA
+Paulina Hawkins	USA	Atlanta	37.09024	-95.712891	pahues@emory.edu	Rollins School of Public Health, Emory University, Atlanta, GA, USA
+Robert F Breiman	USA	Atlanta	37.09024	-95.712891	rfbreiman@emory.edu	The Emory Global Health Institute, Atlanta, GA, USA
+Stephen Bentley	 UK	Cambridge	52.0785	0.1861		Welcome Sanger Institute
+Prof. Amanda Leach	 Australia	Darwin	-12.4634	130.8456		Menzies School of Health Research
+Heather Cook	 Australia	Casuarina	-28.2887	153.5739		Centre for Disease Control, Department of Health
+Prof. Kwan Soo Ko	 South Korea	Suwon	37.2636	127.0286		Sungkyunkwan University of Medicine
+Alejandra Corso	 Argentina	Buenos Aries	-34.6037	-58.3816		Instituto Nacional de Enfermedades Infecciosas
+Samir Saha, Abdullah Brooks	 Bangladesh	Dhaka	23.8103	90.4125		Child Health Research Foundation, International Centre for Diarrhoeal Disease Research
+Heather Cook	 Australia	Casuarina	53.9045	27.5615		Centre for Disease Control, Department of Health
+Maria Cristina Brandileone	 Brazil	Sao Paolo	-14.235	-51.9253		Adolfo Lutz Institute
+Dr. Paul Turner	 Cambodia	Siem Reap & Maesot	11.562108	104.888535		Cambodia-Oxford Medical Research Unit
+Jeremy Keenan, Tom Lietman	 Ethiopia	Amhara	9.005401	38.763611		University of California
+Martin Antonio	 The Gambia	Bakau	13.4794	-16.6704		MRC
+PL Ho	 Hong Kong	Pok Fu Lam	22.3964	114.1095		University of Hong Kong
+Balaji Veeraraghavan	 India	Vellore	20.5937	78.9629		Christian Medical College
+Prof. Ron Dagan	 Israel	Beersheva	32.0853	34.7818		Ben-Gurion University
+Dean Everett	 Malawi	Blantyre	-13.58	33.46		MLW
+Betuel Sigauque	 Mozambique	Manhica	-25.9655	32.5832		Manhica Health Research Centre; Centro de Investigacao em Saude de Manhica
+Andrew Pollard	 Nepal	Kathmandu	27.42	85.19		University of Oxford
+Stephen Obaro	 Nigeria	Abuja	9.082	8.6753		University of Nebraska Medical Center and Ahmadu Bello University Zaria
+Sadia Shakour	 Pakistan	Karachi	30.3753	69.3451		Aga Khan University
+Deborah Lehmann	Papua New Guinea		-9.44314	147.17972		Telethon Kids Institute
+Theresa Ochoa	 Peru	Lima	-12.046374	-77.042793		Universidad Peruana Cayetano Heredia
+Prof. Waleria Hryniewicz, Dr. Ewa Sadowy, Dr. Anna Skoczynska	 Poland	Warsaw	52.237049	21.017532		National Medicines Institute
+Sanjay Doiphode	Qatar		25.3548	51.1839		Hamad Medical Corporation
+Anne Von Gottberg, Mignon du Plessis	 South Africa	Johannesburg	-33.918861	18.4233		National Institute for Communicable Disease
+Dr. Stuart Clarke	 Thailand	Bangkok	13.736717	100.523186		University of Southampton
+Jennifer Moisi	 Togo	Lome	6.136629	1.222186		Agence de Medecine Preventive
+Robert Breiman, Lesley McGee	 USA	Atlanta	33.749	-84.388		Emory & CDC
+Tamara Kastrin	 Slovenia	Celije	46.056946	14.505751		The National Laboratory of Health, Environment and Food
+Emma Best, Phil Cater	 New Zealand	Aukland	-36.484461	174.763336		University of Auckland, Institute of Environmental Research
+Helmia Farida	 Indonesia	Semarang	-6.21462	106.84513		Faculty of Medicine, Diponegoro University
+Dr. Stuart Clarke	 Malaysia	Kuala Lumpur	3.1412	101.68653		University of Southampton
+Ekaterina Egorova, Elena Voropaeva	 Russia	Moscow	55.92123	57.918556		Moscow Research Institute for Epidemiology
+Prof. Eser Ozgen	 Turkey	Ankara	41.015137	28.97953		Hacettepe University
+Prof. Naima Elmdaghri	 Morocco	Casablanca	34.01325	-6.83255		Faculty of Medicine and Pharmacy
+Eric Sampane-Donker	 Ghana	Accra	5.556	-2.1969		University of Ghana Medical School
