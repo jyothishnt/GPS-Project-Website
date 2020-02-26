@@ -45,8 +45,8 @@ Philip E Carter 	New Zealand	Auckland	-36.852095	174.7631803	Philip.Carter@ESR.C
 Christian Happi	Nigeria	Ede	52.0458265	5.6702011	happic@run.edu.ng	Redeemers’ University
 Iruka Okeke	Nigeria	Ibadan	7.3777462	3.8972497	iruka.n.okeke@gmail.com	University of Ibadan
 Stephen Obaro	Nigeria	Abuja	9.0643305	7.4892974	stephen.obaro@unmc.edu	University of Nebraska Medical Center
-Imran Nisar	Pakistan	Karachi	25.1446897	67.18477673	imran.nisar@aku.edu	"Aga Khan University
-"
+Imran Nisar	Pakistan	Karachi	25.1446897	67.18477673	imran.nisar@aku.edu	Aga Khan University
+
 Sadia Shakoor	Pakistan	Karachi	25.1446897	67.18477673	sadia.shakoor@aku.edu	Aga Khan University
 Shaper Misra	Pakistan	Lahore	31.5656079	74.3141775	shaper.mirza@lums.edu.pk 	University of Ibadan
 Deborah Lehmann	Papua New Guinea	Papua New Guinea	-5.6816069	144.2489081	deborah.lehmann@telethonkids.org.au	The University of Western Australia
