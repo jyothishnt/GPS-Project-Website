@@ -73,7 +73,7 @@ Susan A Nzenze	South Africa	Soweto	-26.2227778	27.89	sanzenze@gmail.com	Universi
 Carmen Muñoz Almagro	Spain	Barcelona	41.3828939	2.1774322	cma@sjdhospitalbarcelona.org	Hospital Sant Joan de Deu
 Paul Turner	Thailand	Maesot	41.67410365	1.479358689	pault@tropmedres.ac	University of Oxford
 Stuart C Clarke	Thailand	Bangkok	13.7542529	100.493087	s.c.clarke@soton.ac.uk	University of Southampton
-Somporn Srifuengfung	Thailand	Bangkok	13.7542529	100.493087	somporn.sri@mahidol.ac.th 	Siriraj Hospital
+Somporn Srifuengfung	Thailand	Bangkok	13.7542529	100.493087	somporn.sri@mahidol.ac.th 	Siriraj Hospital and Siam University
 Brenda Kwambana-Adams	The Gambia	Banjul	13.45535	-16.575646	bkwambana@mrc.gm	MRC Unit The Gambia at LSHTM
 Ebenezer Foster-Nyarko	The Gambia	Banjul	13.45535	-16.575646	efosternyarko@mrc.gm	MRC Unit The Gambia at LSHTM
 Ebrima Bojang	The Gambia	Banjul	13.45535	-16.575646	exb862@student.bham.ac.uk	MRC Unit The Gambia at LSHTM
