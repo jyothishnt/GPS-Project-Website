@@ -68,7 +68,9 @@ function add_partners_to_map() {
       })
       .join("<br/><br/>");
     marker
-      .bindPopup("<i>" + city.city + "</i><br/>" + affiliationsHtml)
+      .bindPopup(
+        "<i>" + city.city + ", " + city.country + "</i><br/>" + affiliationsHtml
+      )
       .openPopup();
 
     marker.on({
