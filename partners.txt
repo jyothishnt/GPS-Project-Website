@@ -13,7 +13,9 @@ Samanta Cristine Grassi Almeida	Brazil	São Paulo	-23.5506507	-46.6333824	salmei
 Paul Turner	Cambodia	Siem Reap	13.3617562	103.8590321	pault@tropmedres.ac	University of Oxford
 Margaret Ip	China	Hong Kong	22.2793278	114.1628131	margaretip@cuhk.edu.hk	Chinese University of Hong Kong
 Pak Leung Ho	China 	Hong Kong	22.2793278	114.1628131	plho@hku.hk	The University of Hong Kong
-Pierra Law	China 	Hong Kong	22.2793278	114.1628131	pytlaw@gmail.com	The University of Hong Kong
+Pierra Law  China 	Hong Kong	22.2793278	114.1628131	pytlaw@gmail.com	The University of Hong Kong
+Hui Wang  China   Beijing 39.904202 116.407394  whuibj@163.com  Peking University People 's Hospital, China
+Chunjiang Zhao  China   Beijing 39.904202 116.407394  chunkiang@163.com  Peking University People 's Hospital, China
 Luis Felipe Reyes Velasco 	Colombia	Bogota	4.59808	-74.0760439	luis.reyes5@unisabana.edu.co	Universidad De La Sabana
 Jeremy Keenan	Ethiopia	Amhara	11.5	38.5	jeremy.keenan@ucsf.edu	University of California
 Eric Sampane-Donkor	Ghana	Accra	5.5600141	-0.2057437	ericsdon@hotmail.com	School of Biomedical and Allied Health Sciences
