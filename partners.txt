@@ -13,9 +13,9 @@ Samanta Cristine Grassi Almeida	Brazil	São Paulo	-23.5506507	-46.6333824	salmei
 Paul Turner	Cambodia	Siem Reap	13.3617562	103.8590321	pault@tropmedres.ac	University of Oxford
 Margaret Ip	China	Hong Kong	22.2793278	114.1628131	margaretip@cuhk.edu.hk	Chinese University of Hong Kong
 Pak Leung Ho	China 	Hong Kong	22.2793278	114.1628131	plho@hku.hk	The University of Hong Kong
-Pierra Law  China 	Hong Kong	22.2793278	114.1628131	pytlaw@gmail.com	The University of Hong Kong
-Hui Wang  China   Beijing 39.904202 116.407394  whuibj@163.com  Peking University People 's Hospital, China
-Chunjiang Zhao  China   Beijing 39.904202 116.407394  chunkiang@163.com  Peking University People 's Hospital, China
+Pierra Law	China 	Hong Kong	22.2793278	114.1628131	pytlaw@gmail.com	The University of Hong Kong
+Hui Wang	China	Beijing	39.904202	116.407394	whuibj@163.com	Peking University People's Hospital, China
+Chunjiang Zhao	China	Beijing	39.904202	116.407394	chunkiang@163.com	Peking University People's Hospital, China
 Luis Felipe Reyes Velasco 	Colombia	Bogota	4.59808	-74.0760439	luis.reyes5@unisabana.edu.co	Universidad De La Sabana
 Jeremy Keenan	Ethiopia	Amhara	11.5	38.5	jeremy.keenan@ucsf.edu	University of California
 Eric Sampane-Donkor	Ghana	Accra	5.5600141	-0.2057437	ericsdon@hotmail.com	School of Biomedical and Allied Health Sciences
@@ -48,7 +48,6 @@ Christian Happi	Nigeria	Ede	7.733890	4.434980	happic@run.edu.ng	Redeemers’ Uni
 Iruka Okeke	Nigeria	Ibadan	7.3777462	3.8972497	iruka.n.okeke@gmail.com	University of Ibadan
 Stephen Obaro	Nigeria	Abuja	9.0643305	7.4892974	stephen.obaro@unmc.edu	University of Nebraska Medical Center
 Imran Nisar	Pakistan	Karachi	25.1446897	67.18477673	imran.nisar@aku.edu	Aga Khan University
-
 Sadia Shakoor	Pakistan	Karachi	25.1446897	67.18477673	sadia.shakoor@aku.edu	Aga Khan University
 Shaper Misra	Pakistan	Lahore	31.5656079	74.3141775	shaper.mirza@lums.edu.pk 	University of Ibadan
 Deborah Lehmann	Papua New Guinea	Papua New Guinea	-5.6816069	144.2489081	deborah.lehmann@telethonkids.org.au	The University of Western Australia
