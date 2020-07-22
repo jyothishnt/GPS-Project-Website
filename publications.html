@@ -30,10 +30,6 @@
     }
 
     #publications a.btn {
-      margin-top: 20px;
-    }
-
-    #publications a.btn {
       margin-right: 0px !important;
     }
 
@@ -45,24 +41,13 @@
       margin-top: 10px;
     }
 
-    .three-lines {
-      margin-bottom: 50px;
-    }
-
-    .four-lines {
-      margin-bottom: 25px;
-    }
-
     .btn-spaced {
       margin-right: 140px !important;
     }
 
-    .three-lines-plus {
-      margin-bottom: 90px;
-    }
-
-    .four-lines-plus {
-      margin-bottom: 65px;
+    .card-footer {
+      border-top: none;
+      padding-top: 0;
     }
   </style>
 </head>
@@ -130,6 +115,23 @@
   <!-- Navigation bar ends -->
   <div id="content">
     <section id="publications">
+
+      <!-- publication blocks:
+        <div class="card">
+          <div class="card-body">
+            <p class="card-title">{title}</p>
+          </div>
+          <div class="card-footer bg-transparent">
+            <p class="card-text">{conference/journal}</p>
+            <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1205.pdf">
+              <i class="fa fa-download white fa-lg"></i>
+              {text}
+            </a>
+          </div>
+        </div>
+       -->
+
+
       <div class="container content justify">
         <header>
           <h1><i class="fa fa-pencil oblue"></i> Publications </h1>
@@ -140,26 +142,28 @@
         <div class="card-deck">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Following a decade of PCV in The Gambia should a decline in reistance be anticipated?
-
+              <p class="card-title">Following a decade of PCV in The Gambia should a decline in reistance be
+                anticipated?</p>
+            </div>
+            <div class="card-footer bg-transparent">
               <p class="card-text">ISPPD 2020</p>
-              <p>
-                <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1205.pdf">
-                  <i class="fa fa-download white fa-lg"></i>
-                  Abstract
-                </a>
-              </p>
+              <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1205.pdf">
+                <i class="fa fa-download white fa-lg"></i>
+                Abstract
+              </a>
             </div>
           </div>
         </div>
+
         <div class="card-deck">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Predominance of clonal complex 320 among invasive Streptococcus pneumoniae serotyep
+              <p class="card-title">Predominance of clonal complex 320 among invasive Streptococcus pneumoniae serotyep
                 19F isolates from India in pre-vaccine era
               </p>
+            </div>
+            <div class="card-footer bg-transparent">
               <p class="card-text">ISPPD 2020</p>
-
               <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1203.pdf">
                 <i class="fa fa-download white fa-lg"></i>
                 Abstract
@@ -169,21 +173,19 @@
                 <i class="fa fa-download white fa-lg"></i>
                 Poster
               </a>
-              </p>
             </div>
           </div>
 
-
-
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Delineating the perturbation by PCV13 in composition of Streptococcus pneumoniae
-                carriage isolates in Cambodia
+              <p class="card-title">Delineating the perturbation by PCV13 in composition of Streptococcus pneumoniae
+                carriage isolates in Cambodia</p>
 
-                <br>ISPPD 2020<br>
-              </p>
-              </p>
 
+
+            </div>
+            <div class="card-footer bg-transparent">
+              <p class="card-text">ISPPD 2020</p>
               <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1159.pdf">
                 <i class="fa fa-download white fa-lg"></i>
                 Abstract
@@ -193,15 +195,17 @@
                 <i class="fa fa-download white fa-lg"></i>
                 Poster
               </a>
-              </p>
             </div>
           </div>
+
           <div class="card">
             <div class="card-body">
-              <p class="card-text three-lines">Genetic diversity of cbpA among invasive Streptococcus pneumoniae
-                isolates from India
-                <br>ISPPD 2020<br></p>
+              <p class="card-text">Genetic diversity of cbpA among invasive Streptococcus pneumoniae isolates from India
+              </p>
 
+            </div>
+            <div class="card-footer bg-transparent">
+              <p class="card-text">ISPPD 2020</p>
               <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1152.pdf">
                 <i class="fa fa-download white fa-lg"></i>
                 Abstract
@@ -211,7 +215,6 @@
                 <i class="fa fa-download white fa-lg"></i>
                 Poster
               </a>
-
             </div>
           </div>
         </div>
@@ -219,40 +222,45 @@
         <div class="card-deck">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Genetic variation associated with serotype 19A vaccine failures in Ireland
-              </p>
-              <p class="card-text">ISPPD 2020</p>
-              <p>
-                <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1139.pdf">
-                  <i class="fa fa-download white fa-lg"></i>
-                  Abstract
-                </a>
+              <p class="card-title">Genetic variation associated with serotype 19A vaccine failures in Ireland
               </p>
             </div>
+            <div class="card-footer bg-transparent">
+              <p class="card-text">ISPPD 2020</p>
+              <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1139.pdf">
+                <i class="fa fa-download white fa-lg"></i>
+                Abstract
+              </a>
+            </div>
           </div>
+
           <div class="card">
             <div class="card-body">
               <p class="card-text">zmpB allelic variation in Streptococcus pneumoniae isolates causing meningitis in
-                India population
-                <br>ISPPD 2020<br>
-                <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1138.pdf">
-                  <i class="fa fa-download white fa-lg"></i>
-                  Abstract
-                </a>
-                <a class="btn btn-success white" target="_blank"
-                  href="https://cslide.ctimeetingtech.com/isppd20/attendee/eposter/poster/1138">
-                  <i class="fa fa-download white fa-lg"></i>
-                  Poster
-                </a>
-              </p>
+                India population</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <p class="card-text">ISPPD 2020</p>
+              <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1138.pdf">
+                <i class="fa fa-download white fa-lg"></i>
+                Abstract
+              </a>
+              <a class="btn btn-success white" target="_blank"
+                href="https://cslide.ctimeetingtech.com/isppd20/attendee/eposter/poster/1138">
+                <i class="fa fa-download white fa-lg"></i>
+                Poster
+              </a>
             </div>
           </div>
+
           <div class="card">
             <div class="card-body">
-              <p class="card-text three-lines">Serotype, genotype and antibiotic resistance of non-vaccine type invasive
+              <p class="card-text">Serotype, genotype and antibiotic resistance of non-vaccine type invasive
                 pneumococcal isolates from pre-vaccine era (before 2018) - An Indian study
-                <br>ISPPD 2020<br></p>
-
+              </p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <p class="card-text">ISPPD 2020</p>
               <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1125.pdf">
                 <i class="fa fa-download white fa-lg"></i>
                 Abstract
@@ -262,53 +270,57 @@
                 <i class="fa fa-download white fa-lg"></i>
                 Poster
               </a>
-
             </div>
           </div>
-        </div>
 
+        </div>
         <div class="card-deck">
+
           <div class="card">
             <div class="card-body">
               <p class="card-text">Global genomic epidemiology of pneumococcal serotype 2 isolated during 1989 to 2019
               </p>
+            </div>
+            <div class="card-footer bg-transparent">
               <p class="card-text">ISPPD 2020</p>
-              <p>
-                <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1084.pdf">
-                  <i class="fa fa-download white fa-lg"></i>
-                  Abstract
-                </a>
-              </p>
+              <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1084.pdf">
+                <i class="fa fa-download white fa-lg"></i>
+                Abstract
+              </a>
             </div>
           </div>
+          
           <div class="card">
             <div class="card-body">
               <p class="card-text">Molecular epidemiology of pneumococcus isolated from invasive pneumococcal diseases
-                before introduction of PCV-10 in Bangladesh, 2002-2015
-                <br>ISPPD 2020<br>
-                <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1037.pdf">
-                  <i class="fa fa-download white fa-lg"></i>
-                  Abstract
-                </a>
-              </p>
+                before introduction of PCV-10 in Bangladesh, 2002-2015</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <p class="card-text">ISPPD 2020</p>
+              <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_1037.pdf">
+                <i class="fa fa-download white fa-lg"></i>
+                Abstract
+              </a>
             </div>
           </div>
+          
           <div class="card">
             <div class="card-body">
-              <p class="card-text three-lines">Acquisition and clearance of pneumococcal serotypes in
-                naturally-colonised PCV-exposed Gambian infants
-                <br>ISPPD 2020<br></p>
-
+              <p class="card-text">Acquisition and clearance of pneumococcal serotypes in
+                naturally-colonised PCV-exposed Gambian infants</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <p class="card-text">ISPPD 2020</p>
               <a class="btn btn-success white" target="_blank" href="posters/ISPPD12_abstract_990.pdf">
                 <i class="fa fa-download white fa-lg"></i>
                 Abstract
               </a>
-
             </div>
           </div>
-        </div>
 
+        </div>
         <div class="card-deck">
+<!-- ************************************ -->
           <div class="card">
             <div class="card-body">
               <p class="card-text">Antibiotic resistance patterns and phylogeography of Streptococcus pneumoniae
