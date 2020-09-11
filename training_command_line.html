@@ -101,6 +101,101 @@
         </header>
         <div class="desc">
             <!-- TODO: add training command line -->
+
+            <h3>In silico serotyping</h3>
+ 
+            <p>Install SeroBA (<a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000186">Epping et al 2018</a>) as per instructions at <a href="https://github.com/sanger-pathogens/seroba#installation">https://github.com/sanger-pathogens/seroba#installation</a> and git clone the database from the following link <a href="https://github.com/sanger-pathogens/seroba.git">https://github.com/sanger-pathogens/seroba.git</a>.</p>
+ 
+            <p>Files required to run serotyping using SeroBA:</p>
+              <ol>
+                <li>paired-end fastq files</li>
+                <li>database</li>
+                <li>sample list (only for running on multiple samples)</li>
+              </ol>
+            
+
+          <p>Run in silico serotyping on a single sample:
+            <pre>serotype runSerotyping &lt;full path to the database&gt; &lt;read 1&gt; &lt;read 2&gt; &lt;output folder prefix&gt;</pre>
+          </p>
+
+          <p>Run in silico serotyping on multiple samples:</p>
+            <ol>
+              <li>
+                create a list of sample names and save it as samplelist (e.g. the sample name for <em>24371_8#283_1.fastq.gz</em> is <em>24371_8#283</em>)
+              </li>
+              <li>
+                <pre>for f in $(cat samplelist); do seroba runSerotyping &lt;path to the database&gt; ${f}_1.fastq.gz ${f}_2.fastq.gz ${f}; done</pre>
+              </li>
+              <li><pre>seroba summary ./</pre></li>
+            </ol>
+          
+ 
+          <p>
+            <strong>Output:</strong>
+            <br>
+            summary.tsv
+          </p>
+ 
+          <p>
+            <!-- TODO: link to instructions -->
+            These instructions are available to download here: <a href="https://drive.google.com/file/d/1VbYVQ0uFNCHQYW95vkB5r18Jo3G86j0y/view?usp=sharing">Instructions</a>
+          </p>
+ 
+          <h3>GPSC assignment</h3>
+ 
+          <p>Install popPUNK (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6360808/">Lees et al 2018</a>) as per instructions at <a href="https://poppunk.readthedocs.io/en/latest/installation.html">https://poppunk.readthedocs.io/en/latest/installation.html</a> and download the GPS reference database “GPS_query.tar.bz2” from the following link <a href="https://www.pneumogen.net/gps/GPS_query.tar.bz2">Database</a> and the GPSC designations “gpsc_definitive.csv” from <a href="https://www.pneumogen.net/gps/gpsc_definitive.csv">CSV</a> this page.</p>
+
+          <p>Files required to run GPSC assignment using popPUNK:</p>
+          <ol>
+            <li>queries.txt: a list of paths to assemblies you wish to assign GPSCs to</li>
+            <li>GPS_query: GPS reference database, uncompress GPS_query.tar.bz2</li>
+            <li>gpsc_definitive.csv: Published GPSC designations for the references</li>
+          </ol>
+          <p>
+            output directory name is assigned using <em>--output</em>
+            <br>
+            number of threads can be changed using <em>–threads</em>
+          </p>           
+
+          
+          <p>Run GPSC assignment:</p>
+          <pre>poppunk --assign-query --ref-db GPS_query --distances GPS_query/GPS_query.dists --model-dir GPS_query --q-files queries.txt --output GPSC_assignment --threads 8 --full-db --external-clustering gpsc_definitive.csv</pre>
+
+          <p>
+            <strong>Outputs:</strong>
+            <br>
+            <em>_clusters.csv</em>: popPUNK clusters with dataset specific nomenclature
+            <br>
+            <em>_external_clusters.csv</em>: GPSC v2 scheme designations
+          </p>
+
+<p>Novel Clusters: Will be assigned NA in the <em>_external_clusters.csv</em> as they have not been seen in the v2 dataset used to designate the GPSCs. The popPUNK <em>_clusters.csv</em> file can be used to determine if NA isolates are the same cluster or not.</p>
+ 
+<p>Please email: <strong>globalpneumoseq@gmail.com</strong> to have novel clusters added to the database and a GPSC cluster name assigned after you have checked for low level contamination which may contribute to biased accessory distances.</p>
+
+<p>Merged clusters: Unsampled diversity may represent missing variation linking two clusters. GPSCs are then merged. For example if GPSC23 and GPSC362 merged, the GPSC would be then reported as GPSC23, with a merge history of GPSC23;362.</p>
+ 
+<p>These instructions are available to download here: <a href="https://www.pneumogen.net/gps/GPSC_README.rtf">Instructions</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
 </section>
