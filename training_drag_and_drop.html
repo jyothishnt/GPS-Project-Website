@@ -51,7 +51,7 @@
 
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
-            <li class="active">
+            <li >
                 <a id="home" href="index.html">
                     <!-- <i class="fa fa-home blue"> </i> --> Home
                 </a>
@@ -77,7 +77,7 @@
                 </ul>
             </li>
             <li><a id="publications" href="publications.html">Publications</a></li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training <b class="caret"></b></a>
               <ul class="dropdown-menu">
                   <li class=""><a id="training_browser_based" href="training_drag_and_drop.html">Drag and Drop Tools</a></li>
@@ -92,106 +92,58 @@
 <!-- Navigation bar ends -->
 
 <div id="content">
-  <section>
-    <div class="container content">
-      <header>
-        <h1><i class="fa fa-pencil oblue"></i> Citations</h1>
-      </header>
 
-      <table class="citation_table table table-striped">
+<!-- Here goes the content for 'summary' menu item in the top navigation bar -->
+<section>
+    <div class="container content justify">
+        <header>
+            <h1><i class="fa fa-pencil-square-o blue"></i> Training: Drag and Drop Tools</h1>
+        </header>
+        <div class="desc">
+            <!-- TODO: add training drag and drop -->
+            <p>To achieve an ongoing genomic surveillance in LMICs, we encourage GPS partners to generate and analyse data locally. For the latter, GPS2, together with a sister project <a href="https://www.gbsgen.net/">JUNO</a>, develop a series of online bioinformatics training modules and they are freely available at our <a href="https://training.bactgen.sanger.ac.uk/">training site</a>.</p>
+ 
+            <p>Below are tutorial videos to illustrate how to use web-based tools to perform bioinformatic analyses for pneumococcal genome dataset.</p>
 
-        <thead>
-          <th>Title</th>
-          <th>Authors &amp; Affiliations</th>
-          <th>Posters &amp; Publications</th>
-        </thead>
+            <p>
+            <h2 class="oblue">Pathogenwatch</h2>
+            <em>In silico serotype, GPSC, MLST and antibiotic resistance</em>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8bDuZZ3hXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </p>
 
-        <tbody>
-          <tr>
-            <td class="desc italics">
-              <!-- Change below for updating title text -->
-              ISPPD 2016 Detection of Streptococcus pneumoniae non vaccine serotype 12F clone 989 with acquired antibiotic resistance, circulating globally
-            </td>
-            <td>
-              <!-- Change href="" path to authors file  -->
-              <a title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
-                <i class="fa fa-users oblue fa-lg"></i>
-              </a>
-            </td>
-            <td>
-              <!-- Change href="" path to poster  -->
-              <a target="_blank" href="posters/GPS_IMMEM_XI_2016_CC989_poster.pdf">
-                <i class="fa fa-download oblue fa-lg"></i>
-              </a>
-            </td>
-          </tr>
+            <p>
+            <h2 class="oblue">Microreact</h2>
+            <em>Visualisation of phylogeny with temporal and spatial metadata</em>
+            <br>
+            <a href="https://microreact.org/introduction">Go to video</a>
+            </p>
 
-          <tr>
-            <td class="desc italics">
-              ISPPD 2016 Detection of Streptococcus pneumoniae non vaccine serotype 12F clone 989 with acquired antibiotic resistance, circulating globally
-            </td>
-            <td>
-              <a title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
-                <i class="fa fa-users oblue fa-lg"></i>
-              </a>
-            </td>
-            <td>
-              <a target="_blank" href="posters/GPS_IMMEM_XI_2016_CC989_poster.pdf">
-                <i class="fa fa-download oblue fa-lg"></i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="desc italics">
-              ISPPD 2016 Detection of Streptococcus pneumoniae non vaccine serotype 12F clone 989 with acquired antibiotic resistance, circulating globally
-            </td>
-            <td>
-              <a title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
-                <i class="fa fa-users oblue fa-lg"></i>
-              </a>
-            </td>
-            <td>
-              <a target="_blank" href="posters/GPS_IMMEM_XI_2016_CC989_poster.pdf">
-                <i class="fa fa-download oblue fa-lg"></i>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td class="desc italics">
-              ISPPD 2016 Detection of Streptococcus pneumoniae non vaccine serotype 12F clone 989 with acquired antibiotic resistance, circulating globally
-            </td>
-            <td>
-              <a title="Authors &amp; Affiliations" href="posters/989_authors_webpage.xlsx">
-                <i class="fa fa-users oblue fa-lg"></i>
-              </a>
-            </td>
-            <td>
-              <a target="_blank" href="posters/GPS_IMMEM_XI_2016_CC989_poster.pdf">
-                <i class="fa fa-download oblue fa-lg"></i>
-              </a>
-            </td>
-          </tr>
-
-        </tbody>
-      </table>
+            <p>
+            <h2 class="oblue">Phandango</h2>
+            <em>Visualisation of recombination and pangenome analysis</em>
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/pGgtt2z8sUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </p>
+      </div>
     </div>
-  </section>
-</div>
+</section>
+
 <div id="modal"></div>
 <footer>
-        <div class="container">
-            <div class="row copy">
-              <div class="col-lg-7 col-md-7 col-sm-12 copy-left">
-                <span>GPS &copy; 2016</span> -
-                <a href="cookiespolicy.html" onclick="">Cookies policy</a> | <a href="legal.html">Terms &amp; Conditions.</a>
-              </div>
-              <div class="col-lg-5 col-md-5 col-sm-12 copy-right">
-                This site is hosted by the <a href="https://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a>
-              </div>
-            </div>
+  <div class="container">
+      <div class="row copy">
+        <div class="col-lg-7 col-md-7 col-sm-12 copy-left">
+          <span>GPS &copy; 2016</span> -
+          <a href="cookiespolicy.html" onclick="">Cookies policy</a> | <a href="legal.html">Terms &amp; Conditions.</a>
         </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 copy-right">
+          This site is hosted by the <a href="https://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a>
+        </div>
+      </div>
+  </div>
 
   <div class="clearfix"></div>
 </footer>
@@ -199,5 +151,11 @@
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script type="text/javascript" src="/zxtm/piwik2.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      /***** To show chart in the summary page ****/
+      google.load('visualization', '1', {packages: ['corechart']});
+      google.setOnLoadCallback(drawChart);
+    </script>
 </body>
 </html>
