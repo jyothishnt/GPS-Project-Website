@@ -162,7 +162,7 @@
             { name: 'Serotype', accessor: function (d) { return d.serotype } },
             { name: 'Accession Number', accessor: function (d) { return d.accessionNumber } },
             { name: 'Comments', accessor: function (d) { return d.comments } },
-            { name: 'Reference', accessor: function (d) { return '<a href="https://' + d.link + '">' + d.reference + '</a>' } },
+            { name: 'Reference', accessor: function (d) { return '<a target="_blank" href="https://' + d.link + '">' + d.reference + '</a>' } },
         ]
 
         window.onload = function() {
