@@ -21092,7 +21092,7 @@
 	        null,
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'container' },
+			  null,
 	          _react2.default.createElement(
 	            'h2',
 	            null,
