@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
@@ -8,178 +9,216 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600' rel='stylesheet'
+    type='text/css'>
   <!-- fonts, icons for bootstrap -->
   <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <!-- Bootstrap, latest compiled and minified CSS -->
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"> -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"> -->
   <link href="css/styles.min.css" rel="stylesheet">
   <style>
-  #mapid { 
-    height: 720px;
-    margin-top: 100px;
-  }
+    #mapid {
+      height: 720px;
+      margin-top: 100px;
+    }
 
-  img.leaflet-marker-icon:hover {
-    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    opacity:0.8;
-  }
+    img.leaflet-marker-icon:hover {
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      opacity: 0.8;
+    }
 
-  /* Popover styling */
+    /* Popover styling */
 
-a {
-  text-decoration: none;
-}
+    a {
+      text-decoration: none;
+    }
 
-.popover__title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 36px;
-  text-decoration: none;
-  color: rgb(228, 68, 68);
-  text-align: center;
-  padding: 15px 0;
-}
+    .popover__title {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      line-height: 36px;
+      text-decoration: none;
+      color: rgb(228, 68, 68);
+      text-align: center;
+      padding: 15px 0;
+    }
 
-.popover__wrapper {
-    position: relative;
-    margin-top: 1.5rem;
-    display: inline-block;
-    
-}
-.popover__content {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    left: -150px;
-    transform: translate(0,10px);
-    /*background-color: #c6d7f2; */
-    background-color: #e2f0f4;
-    padding: 1.5rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    width: auto;
-    margin-left: 60px;
-}
-.popover__content:before {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    right: calc(50% - 10px);
-    top: -8px;
-    border-style: solid;
-    border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #e2f0f4 transparent;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-.popover__wrapper:hover .popover__content {
-    z-index: 10;
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0,-20px);
-    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
-}
-.popover__message {
-  text-align: center;
-}
-.chartsdiv {
-  height: 350px;
-}
+    .popover__wrapper {
+      position: relative;
+      margin-top: 1.5rem;
+      display: inline-block;
 
-input:focus {
-  outline-offset: -2px;
-}
+    }
 
-.clusterImg {
-  display: inline-block;
-}
+    .popover__content {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: -150px;
+      transform: translate(0, 10px);
+      /*background-color: #c6d7f2; */
+      background-color: #e2f0f4;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      width: auto;
+      margin-left: 60px;
+    }
 
-.clusterContainer {
-  width: auto;
-  margin-right: 5px;
-  display: inline-block;
-}
+    .popover__content:before {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      right: calc(50% - 10px);
+      top: -8px;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent #e2f0f4 transparent;
+      transition-duration: 0.3s;
+      transition-property: transform;
+    }
 
-.popover__content {
-  min-width: 255px;
-  margin-bottom: 40px;
-  z-index: 100;
-}
-#mapid {
-  z-index: 0;
-}
-.datainfo {
-  margin-top:5px;
-  overflow-x:auto;
-}
+    .popover__wrapper:hover .popover__content {
+      z-index: 10;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, -20px);
+      transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    }
 
-.datainfotitle {
-  margin-top: 120px;
-  overflow-x:auto;
-}
+    .popover__message {
+      text-align: center;
+    }
 
-.borderset {
-  border-width: 1px !important;
-}
-input.borderset {
-  height: 22px;
-}
+    .chartsdiv {
+      height: 350px;
+    }
 
-div.modal-body {
-  padding: 0px;
-}
-.modal-title {
-  color: #1570a6;
-}
-svg#Micro {
-  max-height: 30px;
-  display: inline-block;
-  margin-top: 5px;
-}
-.microLink {
-  display: inline-block;
-}
-.sampleText, .sampleSize {
-  display:inline-block;
-  margin-left: 82px;
-}
-.microreactLink {
-  display: inline-block;
-  margin-left: 150px;
-}
-select.category {
-  margin-right: 40px;
-  height: 30px;
-  color: #1570a6;
-}
-.categoryLabel {
-  font-size: 20px;
-  color: #1570a6;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 10px;
-}
-form { 
-  display: inline-block;
-  background-color: #e2f0f4;
-  font-weight: 700;
-}
-div.formGroup {
-  background-color: #e2f0f4;
-}
-svg {
-  height:320px;
-  width: 130px;
-  margin-left: 10px;
-}
+    input:focus {
+      outline-offset: -2px;
+    }
 
-.cls-1{isolation:isolate;}
-.cls-2,.cls-3{fill:#3b7383;}
-.cls-3{opacity:0.53;}
-.cls-4{fill:#673b8d;}
-.cls-5{fill:#a288ba;}
-.cls-6{fill:#3c7382;}
-</style>
+    .clusterImg {
+      display: inline-block;
+    }
+
+    .clusterContainer {
+      width: auto;
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    .popover__content {
+      min-width: 255px;
+      margin-bottom: 40px;
+      z-index: 100;
+    }
+
+    #mapid {
+      z-index: 0;
+    }
+
+    .datainfo {
+      margin-top: 5px;
+      overflow-x: auto;
+    }
+
+    .datainfotitle {
+      margin-top: 120px;
+      overflow-x: auto;
+    }
+
+    .borderset {
+      border-width: 1px !important;
+    }
+
+    input.borderset {
+      height: 22px;
+    }
+
+    div.modal-body {
+      padding: 0px;
+    }
+
+    .modal-title {
+      color: #1570a6;
+    }
+
+    svg#Micro {
+      max-height: 30px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .microLink {
+      display: inline-block;
+    }
+
+    .sampleText,
+    .sampleSize {
+      display: inline-block;
+      margin-left: 82px;
+    }
+
+    .microreactLink {
+      display: inline-block;
+      margin-left: 150px;
+    }
+
+    select.category {
+      margin-right: 40px;
+      height: 30px;
+      color: #1570a6;
+    }
+
+    .categoryLabel {
+      font-size: 20px;
+      color: #1570a6;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+
+    form {
+      display: inline-block;
+      background-color: #e2f0f4;
+      font-weight: 700;
+    }
+
+    div.formGroup {
+      background-color: #e2f0f4;
+    }
+
+    svg {
+      height: 320px;
+      width: 130px;
+      margin-left: 10px;
+    }
+
+    .cls-1 {
+      isolation: isolate;
+    }
+
+    .cls-2,
+    .cls-3 {
+      fill: #3b7383;
+    }
+
+    .cls-3 {
+      opacity: 0.53;
+    }
+
+    .cls-4 {
+      fill: #673b8d;
+    }
+
+    .cls-5 {
+      fill: #a288ba;
+    }
+
+    .cls-6 {
+      fill: #3c7382;
+    }
+  </style>
 
 
   <!-- HTML5 Support for IE -->
@@ -200,106 +239,107 @@ svg {
    crossorigin=""></script>-->
 </head>
 
-  <body>
-    <!-- Header Starts -->
-    <header>
-      <div class="container">
-        <div class="row">
-            <div class="logo">
-                <h1><i class=""></i><a href="index.html"><span class="color">GPS</span></a></h1>
-                <div class="hmeta">Global Pneumococcal Sequencing Project</div>
-            </div>
+<body>
+  <!-- Header Starts -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          <h1><i class=""></i><a href="index.html"><span class="color">GPS</span></a></h1>
+          <div class="hmeta">Global Pneumococcal Sequencing Project</div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Navigation bar starts -->
+  <!-- Navigation bar starts -->
 
-    <div class="navbar navbar-default bs-docs-nav top-menu" role="banner">
-      <div class="container">
-       <div class="navbar-header">
-         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-         </button>
-       </div>
+  <div class="navbar navbar-default bs-docs-nav top-menu" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
-            <li>
-                <a id="home" href="index.html">
-                    <!-- <i class="fa fa-home blue"> </i> --> Home
-                </a>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                     About <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class=""><a id="summary" href="project_outline.html">Project Outline</a></li>
-                    <li class=""><a id="summary" href="the_team.html">The Team</a></li>
-                    <li class=""><a id="founders" href="partners.html">Project Partners </a></li>
-                    <li class=""><a id="substudies" href="substudies.html">Sub-studies</a></li>
-                </ul>
-            </li>
-            <li class="dropdown active">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li class=""><a id="resources_overview" href="resources_overview.html">Overview</a></li>
-                    <li class=""><a id="sampling_map" href="sampling_map.html">Countries</a></li>
-                    <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">Strains</a></li>
-                    <li class=""><a id="serotypes" href="serotypes.html">Serotypes</a></li>
-                    <!-- <li class=""><a id="public_database" href="/public_database.html">Database (public)</a></li> -->
-                    <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Database</a></li>
-                </ul>
-            </li>
-            <li><a id="publications" href="publications.html">Publications</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                  <li class=""><a id="training_browser_based" href="training_drag_and_drop.html">Drag and Drop Tools</a></li>
-                  <li class=""><a id="training_command_line" href="training_command_line.html">Command Line</a></li>
-              </ul>
+          <li>
+            <a id="home" href="index.html">
+              <!-- <i class="fa fa-home blue"> </i> --> Home
+            </a>
           </li>
-            <li><a id="contact" href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              About <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class=""><a id="summary" href="project_outline.html">Project Outline</a></li>
+              <li class=""><a id="summary" href="the_team.html">The Team</a></li>
+              <li class=""><a id="founders" href="partners.html">Project Partners </a></li>
+              <li class=""><a id="substudies" href="substudies.html">Sub-studies</a></li>
+            </ul>
+          </li>
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class=""><a id="resources_overview" href="resources_overview.html">Overview</a></li>
+              <li class=""><a id="sampling_map" href="sampling_map.html">Countries</a></li>
+              <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">Strains</a></li>
+              <li class=""><a id="serotypes" href="serotypes.html">Serotypes</a></li>
+              <!-- <li class=""><a id="public_database" href="/public_database.html">Database (public)</a></li> -->
+              <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Database</a></li>
+            </ul>
+          </li>
+          <li><a id="publications" href="publications.html">Publications</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class=""><a id="training_browser_based" href="training_drag_and_drop.html">Drag and Drop Tools</a>
+              </li>
+              <li class=""><a id="training_command_line" href="training_command_line.html">Command Line</a></li>
+            </ul>
+          </li>
+          <li><a id="contact" href="contact.html">Contact</a></li>
         </ul>
       </nav>
-       </div>
     </div>
-<!-- Navigation bar ends -->
+  </div>
+  <!-- Navigation bar ends -->
 
-    <section>
-      <div class="container" id='app'></div>
-      <script type="text/javascript" src='bundle.js'></script>
-    </section>
+  <section>
+    <div class="container" id='app'></div>
+    <script type="text/javascript" src='bundle.js'></script>
+  </section>
 
 
-    <div id="modal"></div>
-    <footer class="footer navbar-fixed-bottom">
-          
+  <div id="modal"></div>
+  <footer class="footer navbar-fixed-bottom">
 
-        <div class="container">
-            <div class="row copy">
-              <div class="col-lg-7 col-md-7 col-sm-12 copy-left">
-                <span>GPS &copy; 2016</span> -
-                <a href="cookiespolicy.html" onclick="">Cookies policy</a> | <a href="legal.html">Terms &amp; Conditions.</a>
-              </div>
-              <div class="col-lg-5 col-md-5 col-sm-12 copy-right">
-                This site is hosted by the <a href="https://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a>
-              </div>
-            </div>
+
+    <div class="container">
+      <div class="row copy">
+        <div class="col-lg-7 col-md-7 col-sm-12 copy-left">
+          <span>GPS &copy; 2016</span> -
+          <a href="cookiespolicy.html" onclick="">Cookies policy</a> | <a href="legal.html">Terms &amp; Conditions.</a>
         </div>
-      <div class="clearfix"></div>
-    </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <!--<script src="js/geocode.js"></script>-->
-    <!--<script type="text/javascript" src="/zxtm/piwik2.js"></script>-->
-    <script src="https://d3js.org/d3.v4.min.js"></script> 
-     
-  </body>
-</html>
+        <div class="col-lg-5 col-md-5 col-sm-12 copy-right">
+          This site is hosted by the <a href="https://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="js/custom.min.js"></script>
+  <!--<script src="js/geocode.js"></script>-->
+  <!--<script type="text/javascript" src="/zxtm/piwik2.js"></script>-->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
 
+</body>
+
+</html>
