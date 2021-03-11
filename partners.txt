@@ -61,8 +61,8 @@ Ekaterina Egorova	Russia	Moscow	55.7504461	37.6174943	yegorovaea@gmail.com	Mosco
 Elena Voropaeva	Russia	Moscow	55.7504461	37.6174943	voropaevaea2011@gmail.com	Gabrichevsky Epidemiology and Microbiology Research Institute
 Yulia Urban	Russia	Moscow	55.7504461	37.6174943	urbanek@mail.ru 	G. N. Gabrichevsky Research Institute for Epidemiology and Microbiology 
 Stuart C Clarke	Singapore	Singapore	1.340863	103.8303918	s.c.clarke@soton.ac.uk	University of Southampton
-Metka Paragi	Slovenia	Celije	43.4208218	21.18074989	metka.paragi@nlzoh.si	National Laboratory of Health, Environment and Food Ljubljana
-Tamara Kastrin	Slovenia	Celije	43.4208218	21.18074989	tamara.kastrin@nlzoh.si	National Laboratory of Health, Environment and Food Ljubljana
+Metka Paragi	Slovenia	Ljublijana	43.4208218	21.18074989	metka.paragi@nlzoh.si	National Laboratory of Health, Environment and Food
+Tamara Kastrin	Slovenia	Ljublijana	43.4208218	21.18074989	tamara.kastrin@nlzoh.si	National Laboratory of Health, Environment and Food
 Anne von Gottberg	South Africa	Johannesburg	-26.205	28.049722	annev@nicd.ac.za	National Institute for Communicable Diseases
 Kedibone M. Ndlangisa	South Africa	Johannesburg	-26.205	28.049722	kedibonen@nicd.ac.za	National Institute for Communicable Diseases
 Linda De Gouveia	South Africa	Johannesburg	-26.205	28.049722	lindad@nicd.ac.za	National Institute for Communicable Diseases
