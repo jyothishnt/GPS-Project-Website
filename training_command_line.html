@@ -158,52 +158,62 @@
 
           <h3>GPSC assignment</h3>
 
-          <p>Install popPUNK (<a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6360808/">Lees et al
-              2018</a>) as per instructions at <a target="_blank"
-              href="https://poppunk.readthedocs.io/en/latest/installation.html">https://poppunk.readthedocs.io/en/latest/installation.html</a>
-            and download the GPS reference database “GPS_query.tar.bz2” from the following link <a target="_blank"
-              href="https://www.pneumogen.net/gps/GPS_query.tar.bz2">Database</a> and the GPSC designations
-            “gpsc_definitive.csv” from <a target="_blank"
-              href="https://www.pneumogen.net/gps/gpsc_definitive.csv">CSV</a> this page.</p>
-
-          <p>Files required to run GPSC assignment using popPUNK:</p>
+          <p>
+            Install PopPUNK 2.4 as per instructions at <a target="_blank" title="PopPUNK2 installation instructions"
+            href="https://poppunk.readthedocs.io/en/latest/installation.html">PopPUNK documentation</a>
+            and download the <a download href="GPS_v5.zip">GPS reference database</a> and the <a download
+            href="GPS_v5_external_clusters.csv">GPS designation</a>.
+          </p>
+              
+          <p>Files required to run GPSC assignment using PopPUNK 2.4:</p>
           <ol>
-            <li>queries.txt: a list of paths to assemblies you wish to assign GPSCs to</li>
-            <li>GPS_query: GPS reference database, uncompress GPS_query.tar.bz2</li>
-            <li>gpsc_definitive.csv: Published GPSC designations for the references</li>
+            <li>
+              A 2-column tab-delimited file containing sample name and path to the corresponding assembly 
+             (no header)
+            </li>
+            <li>
+             GPS reference database &lt;GPS_v5&gt;
+            </li>
+            <li>
+             GPS designation &lt;GPS_v5_external_clusters.csv&gt;
+            </li>
           </ol>
+          
           <p>
             output directory name is assigned using <em>--output</em>
             <br>
             number of threads can be changed using <em>–threads</em>
           </p>
 
-
           <p>Run GPSC assignment:</p>
-          <pre>poppunk --assign-query --ref-db GPS_query --distances GPS_query/GPS_query.dists --model-dir GPS_query --q-files queries.txt --output GPSC_assignment --threads 8 --full-db --external-clustering gpsc_definitive.csv</pre>
+          <pre>poppunk_assign --db GPS_v5 --distances GPS_v5/GPS_v5.dists --query &lt;2-column path to assembly&gt; --output &lt;GPSC_assignment&gt; --external-clustering GPS_v5_external_clusters.csv</pre>
 
           <p>
             <strong>Outputs:</strong>
             <br>
             <em>_clusters.csv</em>: popPUNK clusters with dataset specific nomenclature
             <br>
-            <em>_external_clusters.csv</em>: GPSC v2 scheme designations
+            <em>_external_clusters.csv</em>: GPSC v5 scheme designations
           </p>
 
-          <p>Novel Clusters: Will be assigned NA in the <em>_external_clusters.csv</em> as they have not been seen in
-            the v2 dataset used to designate the GPSCs. The popPUNK <em>_clusters.csv</em> file can be used to determine
-            if NA isolates are the same cluster or not.</p>
-
-          <p>Please email: <strong>globalpneumoseq@gmail.com</strong> to have novel clusters added to the database and a
-            GPSC cluster name assigned after you have checked for low level contamination which may contribute to biased
-            accessory distances.</p>
-
-          <p>Merged clusters: Unsampled diversity may represent missing variation linking two clusters. GPSCs are then
+          <p>
+            Novel Clusters: Will be assigned NA in the <em>_external_clusters.csv</em> as they have not been defined in 
+            the v5 dataset used to designate the GPSCs. Please email: <a href="mailto:globalpneumoseq@gmail.com">
+            globalpneumoseq@gmail.com</a> to have novel clusters added to the database and a GPSC cluster name assigned
+            after you have checked for low level contamination which may contribute to biased accessory distances.
+          </p>
+          
+          <p>
+            Merged clusters: Unsampled diversity may represent missing variation linking two clusters. GPSCs are then
             merged. For example if GPSC23 and GPSC362 merged, the GPSC would be then reported as GPSC23, with a merge
-            history of GPSC23;362.</p>
+            history of GPSC23;362.
+          </p>
 
-          <p>These instructions are available to download here: <a download
-              href="https://www.pneumogen.net/gps/GPSC_README.rtf">Instructions</a></p>
+          <p>
+           The  <a download href="GPSC_README_PopPUNK2.pdf">instructions for PopPUNK v2.4</a> are available to download
+           <br />
+           The  <a download href="GPSC_README_PopPUNK1.pdf">instructions for PopPUNK v1</a> are available to download
+          </p>
 
 
         </div>
