@@ -10,9 +10,9 @@ Piet Cools	Belgium	Ghent	51.053822	3.72227	piet.cools@ugent.be	Ghent University
 Mario Vaneechoutte	Belgium	Ghent	51.053822	3.72227	mario.vaneechoutte@ugent.be	Ghent University
 Alexander Davydov	Belarus	Minsk	53.902334	27.5618791	alexander.davydovv@gmail.com	The Republican Research and Practical Center for Epidemiology and Microbiology
 Leonid Titov	Belarus	Minsk	53.902334	27.5618791	leonidtitov@tut.by	The Republican Research and Practical Center for Epidemiology and Microbiology
-Maria Cristina de Cunto Brandileone	Brazil	São Paulo	-23.5506507	-46.6333824	maria.brandileone@ial.sp.gov.br	Adolfo Lutz Institute
-Samanta Cristine Grassi Almeida	Brazil	São Paulo	-23.5506507	-46.6333824	salmeida@ial.sp.gov.br	Adolfo Lutz Institute
-Ana Paula Cassiolato	Brazil	São Paulo	-23.5506507	-46.6333824	apcassiolato@hotmail.com	Adolfo Lutz Institute
+Maria Cristina de Cunto Brandileone	Brazil	Sao Paulo	-23.5506507	-46.6333824	maria.brandileone@ial.sp.gov.br	Adolfo Lutz Institute
+Samanta Cristine Grassi Almeida	Brazil	Sao Paulo	-23.5506507	-46.6333824	salmeida@ial.sp.gov.br	Adolfo Lutz Institute
+Ana Paula Cassiolato	Brazil	Sao Paulo	-23.5506507	-46.6333824	apcassiolato@hotmail.com	Adolfo Lutz Institute
 Paul Turner	Cambodia	Siem Reap	13.3617562	103.8590321	pault@tropmedres.ac	University of Oxford
 Margaret Ip	China	Hong Kong	22.2793278	114.1628131	margaretip@cuhk.edu.hk	Chinese University of Hong Kong
 Pak Leung Ho	China 	Hong Kong	22.2793278	114.1628131	plho@hku.hk	The University of Hong Kong
@@ -23,7 +23,7 @@ Luis Felipe Reyes Velasco 	Colombia	Bogota	4.59808	-74.0760439	luis.reyes5@unisa
 Jeremy Keenan	Ethiopia	Amhara	11.5	38.5	jeremy.keenan@ucsf.edu	University of California
 Abel Abera Negash	Ethiopia	Addis Ababa	8.980603	38.757759	abel.abera@ahri.gov.et	Armauer Hansen Research Institute 
 Emmanuelle Varon	France	Paris	48.8566	2.3522	Emmanuelle.Varon@chicreteil.fr	National Reference Center for Pneumococci
-Robert Cohen	France	Créteil	48.7904	2.4556	robert.cohen@activ-france.fr	ACTIV
+Robert Cohen	France	Creteil	48.7904	2.4556	robert.cohen@activ-france.fr	ACTIV
 Eric Sampane-Donkor	Ghana	Accra	5.5600141	-0.2057437	ericsdon@hotmail.com	School of Biomedical and Allied Health Sciences
 Balaji Veeraraghavan	India	Vellore	12.7948109	79.0006411	vbalaji@cmcvellore.ac.in	Christian Medical College
 Geetha Nagaraj	India	Bangalore	12.9791198	77.5912997	geetha.ndri@gmail.com	Kempegowda Institute of Medical Sciences Hospital & Research Center
