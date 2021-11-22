@@ -102,129 +102,24 @@
     <section>
       <div class="container content justify">
         <header>
-          <h1><i class="fa fa-pencil-square-o blue"></i> Training: Command Line</h1>
+          <h1><i class="fa fa-rocket lblue"></i>Capacity Building</h1>
         </header>
         <div class="desc">
-          <!-- TODO: add training command line -->
 
-          <h3>In silico serotyping</h3>
+          <h3>Sustainable local sequencing</h3>
 
-          <p>Install SeroBA (<a target="_blank"
-              href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000186">Epping et al
-              2018</a>) as per instructions at <a target="_blank"
-              href="https://github.com/sanger-pathogens/seroba#installation">https://github.com/sanger-pathogens/seroba#installation</a>
-            and git clone the database from the following link <a target="_blank"
-              href="https://github.com/sanger-pathogens/seroba.git">https://github.com/sanger-pathogens/seroba.git</a>.
-          </p>
-
-          <p>Files required to run serotyping using SeroBA:</p>
-          <ol>
-            <li>paired-end fastq files</li>
-            <li>database</li>
-            <li>sample list (only for running on multiple samples)</li>
-          </ol>
-
-
-          <p>Run in silico serotyping on a single sample:
-          <pre>serotype runSerotyping &lt;full path to the database&gt; &lt;read 1&gt; &lt;read 2&gt; &lt;output folder prefix&gt;</pre>
-          </p>
-
-          <p>Run in silico serotyping on multiple samples:</p>
-          <ol>
-            <li>
-              create a list of sample names and save it as samplelist (e.g. the sample name for
-              <em>24371_8#283_1.fastq.gz</em> is <em>24371_8#283</em>)
-            </li>
-            <li>
-              <pre>for f in $(cat samplelist); do seroba runSerotyping &lt;path to the database&gt; ${f}_1.fastq.gz ${f}_2.fastq.gz ${f}; done</pre>
-            </li>
-            <li>
-              <pre>seroba summary ./</pre>
-            </li>
-          </ol>
-
-
-          <p>
-            <strong>Output:</strong>
-            <br>
-            summary.tsv
-          </p>
-
-          <p>
-            <!-- TODO: link to instructions -->
-            These instructions are available to download here: <a download title="In Silico serotyping instructions"
-            aria-label="Download the In Silico serotyping instructions" href="in-silico-serotyping.txt">Instructions</a>
-          </p>
-
-          <h3>GPSC assignment</h3>
-
-          <p>
-            Install PopPUNK 2.4 as per instructions at <a target="_blank" title="PopPUNK2 installation instructions"
-            aria-label="Open the PopPUNK2 installation instructions in a new window"
-            href="https://poppunk.readthedocs.io/en/latest/installation.html">PopPUNK documentation</a>
-            and download the <a download aria-label="Download the GPS reference database"
-            href="GPS_v5.zip">GPS reference database</a> and the <a download
-            aria-label="Download the GPS designation"
-            href="GPS_v5_external_clusters.csv">GPS designation</a>.
-          </p>
-              
-          <p>Files required to run GPSC assignment using PopPUNK 2.4:</p>
-          <ol>
-            <li>
-              A 2-column tab-delimited file containing sample name and path to the corresponding assembly 
-             (no header)
-            </li>
-            <li>
-             GPS reference database &lt;GPS_v5&gt;
-            </li>
-            <li>
-             GPS designation &lt;GPS_v5_external_clusters.csv&gt;
-            </li>
-          </ol>
+          <h3>Enhancing local capacity for data analysis</h3>
           
-          <p>
-            output directory name is assigned using <em>--output</em>
-            <br>
-            number of threads can be changed using <em>–threads</em>
-          </p>
-
-          <p>Run GPSC assignment:</p>
-          <pre>poppunk_assign --db GPS_v5 --distances GPS_v5/GPS_v5.dists --query &lt;2-column path to assembly&gt; --output &lt;GPSC_assignment&gt; --external-clustering GPS_v5_external_clusters.csv</pre>
-
-          <p>
-            <strong>Outputs:</strong>
-            <br>
-            <em>_clusters.csv</em>: popPUNK clusters with dataset specific nomenclature
-            <br>
-            <em>_external_clusters.csv</em>: GPSC v5 scheme designations
-          </p>
-
-          <p>
-            Novel Clusters: Will be assigned NA in the <em>_external_clusters.csv</em> as they have not been defined in 
-            the v5 dataset used to designate the GPSCs. Please email: <a href="mailto:globalpneumoseq@gmail.com">
-            globalpneumoseq@gmail.com</a> to have novel clusters added to the database and a GPSC cluster name assigned
-            after you have checked for low level contamination which may contribute to biased accessory distances.
-          </p>
+          <h3>One-to-one training</h3>
           
-          <p>
-            Merged clusters: Unsampled diversity may represent missing variation linking two clusters. GPSCs are then
-            merged. For example if GPSC23 and GPSC362 merged, the GPSC would be then reported as GPSC23, with a merge
-            history of GPSC23;362.
-          </p>
-
-          <p>
-           The  <a download aria-label="Download the instructions for PopPUNK v2.4" "href="GPSC_README_PopPUNK2.pdf">
-           instructions for PopPUNK v2.4</a> are available to download
-           <br />
-           The  <a downloadaria-label="Download the instructions for PopPUNK v1" href="GPSC_README_PopPUNK1.pdf">
-           instructions for PopPUNK v1</a> are available to download
-          </p>
-
+          <h3>Portable pipeline: reducing the bioinformatics burden</h3>
 
         </div>
       </div>
     </section>
-
+    
+  </div>
+  
     <div id="modal"></div>
     <footer>
       <div class="container">
