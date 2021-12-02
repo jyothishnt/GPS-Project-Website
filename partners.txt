@@ -20,7 +20,7 @@ Hui Wang	China	Beijing	39.904202	116.407394	whuibj@163.com	Peking University Peo
 Chunjiang Zhao	China	Beijing	39.904202	116.407394	chunkiang@163.com	Peking University People's Hospital, China
 Luis Felipe Reyes Velasco 	Colombia	Bogota	4.59808	-74.0760439	luis.reyes5@unisabana.edu.co	Universidad De La Sabana
 Jeremy Keenan	Ethiopia	Amhara	11.5	38.5	jeremy.keenan@ucsf.edu	University of California
-Abel Abera Negash	Ethiopia	Addis Ababa 8.980603	38.757759	abel.abera@ahri.gov.et	Armauer Hansen Research Institute
+Abel Abera Negash	Ethiopia	Addis Ababa	8.980603	38.757759	abel.abera@ahri.gov.et	Armauer Hansen Research Institute
 Emmanuelle Varon	France	Créteil	48.789612	2.452600	Emmanuelle.Varon@chicreteil.fr	National Reference Center for Pneumococci
 Robert Cohen	France	Paris	48.8566	2.3522	Robert.cohen@active-france.fr	ACTIV
 Eric Sampane-Donkor	Ghana	Accra	5.5600141	-0.2057437	ericsdon@hotmail.com	School of Biomedical and Allied Health Sciences
@@ -47,7 +47,7 @@ Naima Elmdaghri	Morocco	Casablanca	33.5950627	-7.6187768	naimaelmdaghri@yahoo.fr
 Benild Moiane	Mozambique	Manhica	-25.4038418	32.8067838	 	Centro de Investigação em Saúde da Manhiça
 Betuel Sigauque	Mozambique	Manhica	-25.4038418	32.8067838	Betuel.Sigauque@manhica.net	Centro de Investigação em Saúde da Manhiça
 Helio Mucavele	Mozambique	Manhica	-25.4038418	32.8067838	Helio.Mucavele@manhica.net	Centro de Investigação em Saúde da Manhiça
-Marien de Jonger	Netherlands	Nijmegen	51.84169	5.85865	Radbond University Medical Center
+Marien de Jonger	Netherlands	Nijmegen	51.84169	5.85865	MariendeJonge@radboudumc.nl	Radbond University Medical Center
 Andrew J Pollard	Nepal	Kathmandu	27.708317	85.3205817	andrew.pollard@paediatrics.ox.ac.uk	University of Oxford and the NIHR Oxford Biomedical Research Centre
 Rama Kandasamy	Nepal	Kathmandu	27.708317	85.3205817	rama.kandasamy@paediatrics.ox.ac.uk	University of Oxford
 Philip E Carter 	New Zealand	Auckland	-36.852095	174.7631803	Philip.Carter@ESR.CRI.NZ	Kenepuru Science Centre
