@@ -1,4 +1,4 @@
-Name  Country	City	latitude	Longitude	Email	Affiliation
+Name	Country	City	latitude	Longitude	Email	Affiliation
 Alejandra Corso	Argentina	Buenos Aires	-34.6075682	-58.4370894	acorso@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
 Diego Faccone	Argentina	Buenos Aires	-34.6075682	-58.4370894	dfaccone@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas (INEI)-Administración Nacional de Laboratorios e Institutos de Salud (ANLIS) "Dr. C. Malbrán"
 Paula Gagetti	Argentina	Buenos Aires	-34.6075682	-58.4370894	pgagetti@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
