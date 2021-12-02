@@ -1,4 +1,4 @@
-Name	Country	City	latitude	Longitude	Email	Affiliation
+Name  Country	City	latitude	Longitude	Email	Affiliation
 Alejandra Corso	Argentina	Buenos Aires	-34.6075682	-58.4370894	acorso@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
 Diego Faccone	Argentina	Buenos Aires	-34.6075682	-58.4370894	dfaccone@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas (INEI)-Administración Nacional de Laboratorios e Institutos de Salud (ANLIS) "Dr. C. Malbrán"
 Paula Gagetti	Argentina	Buenos Aires	-34.6075682	-58.4370894	pgagetti@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
@@ -47,7 +47,7 @@ Naima Elmdaghri	Morocco	Casablanca	33.5950627	-7.6187768	naimaelmdaghri@yahoo.fr
 Benild Moiane	Mozambique	Manhica	-25.4038418	32.8067838	 	Centro de Investigação em Saúde da Manhiça
 Betuel Sigauque	Mozambique	Manhica	-25.4038418	32.8067838	Betuel.Sigauque@manhica.net	Centro de Investigação em Saúde da Manhiça
 Helio Mucavele	Mozambique	Manhica	-25.4038418	32.8067838	Helio.Mucavele@manhica.net	Centro de Investigação em Saúde da Manhiça
-Marien de Jonger	Netherlands	Nijmegen	51.84169	5.85865	Marien.DeJonge@radboudumc.nl	Radbond University Medical Center
+Marien de Jonger	Netherlands	Nijmegen	51.84169	5.85865	MarienDeJonge@radboudumc.nl	Radbond University Medical Center
 Andrew J Pollard	Nepal	Kathmandu	27.708317	85.3205817	andrew.pollard@paediatrics.ox.ac.uk	University of Oxford and the NIHR Oxford Biomedical Research Centre
 Rama Kandasamy	Nepal	Kathmandu	27.708317	85.3205817	rama.kandasamy@paediatrics.ox.ac.uk	University of Oxford
 Philip E Carter 	New Zealand	Auckland	-36.852095	174.7631803	Philip.Carter@ESR.CRI.NZ	Kenepuru Science Centre
