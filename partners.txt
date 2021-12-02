@@ -8,6 +8,8 @@ Roly Malaker	Bangladesh	Dhaka	23.7593572	90.3788136	roly@chrfbd.org	Child Health
 Samir K. Saha	Bangladesh	Dhaka	23.7593572	90.3788136	samirk.sks@gmail.com	Child Health Research Foundation
 Alexander Davydov	Belarus	Minsk	53.902334	27.5618791	alexander.davydovv@gmail.com	The Republican Research and Practical Center for Epidemiology and Microbiology
 Leonid Titov	Belarus	Minsk	53.902334	27.5618791	leonidtitov@tut.by	The Republican Research and Practical Center for Epidemiology and Microbiology
+Piet Cool	Belgium	Ghent	51.053822	3.72227	piet.cools@ugent.be	Ghent University
+Mario Vaneechoutte	Belgium	Ghent	51.0583822	3.72227	mario.vaneechoutte@ugent.be	Ghent University
 Maria Cristina de Cunto Brandileone	Brazil	São Paulo	-23.5506507	-46.6333824	maria.brandileone@ial.sp.gov.br	Adolfo Lutz Institute
 Samanta Cristine Grassi Almeida	Brazil	São Paulo	-23.5506507	-46.6333824	salmeida@ial.sp.gov.br	Adolfo Lutz Institute
 Paul Turner	Cambodia	Siem Reap	13.3617562	103.8590321	pault@tropmedres.ac	University of Oxford
@@ -18,6 +20,9 @@ Hui Wang	China	Beijing	39.904202	116.407394	whuibj@163.com	Peking University Peo
 Chunjiang Zhao	China	Beijing	39.904202	116.407394	chunkiang@163.com	Peking University People's Hospital, China
 Luis Felipe Reyes Velasco 	Colombia	Bogota	4.59808	-74.0760439	luis.reyes5@unisabana.edu.co	Universidad De La Sabana
 Jeremy Keenan	Ethiopia	Amhara	11.5	38.5	jeremy.keenan@ucsf.edu	University of California
+Abel Abera Negash	Ethiopia	Addis Ababa	8.980603	38.757759	abel.abera@ahri.gov.et	Armauer Hansen Research Institute
+Emmanuelle Varon	France	Créteil	48.789612	2.452600	Emmanuelle.Varon@chicreteil.fr	National Reference Center for Pneumococci
+Robert Cohen	France	Paris	48.8566	2.3522	Robert.cohen@active-france.fr	ACTIV
 Eric Sampane-Donkor	Ghana	Accra	5.5600141	-0.2057437	ericsdon@hotmail.com	School of Biomedical and Allied Health Sciences
 Balaji Veeraraghavan	India	Vellore	12.7948109	79.0006411	vbalaji@cmcvellore.ac.in	Christian Medical College
 Geetha Nagaraj	India	Bangalore	12.9791198	77.5912997	geetha.ndri@gmail.com	Kempegowda Institute of Medical Sciences Hospital & Research Center
@@ -26,6 +31,7 @@ Noga Givon-Lavi	Israel	Beersheva	31.2516276	34.8222598	givon@bgu.ac.il	Ben-Gurio
 Nurit Porat	Israel	Beersheva	31.2516276	34.8222598	npurat@bgu.ac.il	Ben-Gurion University of the Negev
 Rachel Benisty	Israel	Beersheva	31.2516276	34.8222598	kahanr@bgu.ac.il	Ben-Gurion University of the Negev
 Ron Dagan	Israel	Beersheva	31.2516276	34.8222598	rdagan@bgu.ac.il	Ben-Gurion University of the Negev
+Satoshi Nakano	Japan	Kyoto	35.0116	135.7681	snakano@nih.go.jp	Kyoto University Graduate School of Medicine
 Godfrey Bigogo	Kenya	Nairobi	-1.2832533	36.8172449	GBigogo@kemricdc.org	Kenya Medical Research Institute
 Anthony Scott	Kenya	Kilifi	-3.15073925	39.67507159	Anthony.Scott@lshtm.ac.uk	London School of Hygiene & Tropical Medicine
 Anmol Kiran	Malawi	Blantyre	-15.7862543	35.0035694	Anmol.Kiran@liverpool.ac.uk	Malawi-Liverpool-Wellcome-Trust
@@ -41,6 +47,7 @@ Naima Elmdaghri	Morocco	Casablanca	33.5950627	-7.6187768	naimaelmdaghri@yahoo.fr
 Benild Moiane	Mozambique	Manhica	-25.4038418	32.8067838	 	Centro de Investigação em Saúde da Manhiça
 Betuel Sigauque	Mozambique	Manhica	-25.4038418	32.8067838	Betuel.Sigauque@manhica.net	Centro de Investigação em Saúde da Manhiça
 Helio Mucavele	Mozambique	Manhica	-25.4038418	32.8067838	Helio.Mucavele@manhica.net	Centro de Investigação em Saúde da Manhiça
+Marien de Jonger	Netherlands	Nijmegen	51.84169	5.85865	MariendeJonge@radboudumc.nl	Radbond University Medical Center
 Andrew J Pollard	Nepal	Kathmandu	27.708317	85.3205817	andrew.pollard@paediatrics.ox.ac.uk	University of Oxford and the NIHR Oxford Biomedical Research Centre
 Rama Kandasamy	Nepal	Kathmandu	27.708317	85.3205817	rama.kandasamy@paediatrics.ox.ac.uk	University of Oxford
 Philip E Carter 	New Zealand	Auckland	-36.852095	174.7631803	Philip.Carter@ESR.CRI.NZ	Kenepuru Science Centre
@@ -69,9 +76,13 @@ Linda De Gouveia	South Africa	Johannesburg	-26.205	28.049722	lindad@nicd.ac.za	N
 Mignon du Plessis	South Africa	Johannesburg	-26.205	28.049722	mignond@nicd.ac.za	National Institute for Communicable Diseases
 Mushal Ali	South Africa	Johannesburg	-26.205	28.049722	MushalA@nicd.ac.za	National Institute for Communicable Diseases
 Nicole Wolter	South Africa	Johannesburg	-26.205	28.049722	nicolew@nicd.ac.za	National Institute for Communicable Diseases
+Cebile Lekhuleni	South Africa	Johannesburg	-26.205	28.049722	cebileL@nicd.ac.za	National Institute for Communicable Diseases
 Shabir A. Madhi	South Africa	Soweto	-26.2227778	27.89	madhis@rmpru.co.za	University of the Witwatersrand
 Susan A Nzenze	South Africa	Soweto	-26.2227778	27.89	sanzenze@gmail.com	University of the Witwatersrand
 Carmen Muñoz Almagro	Spain	Barcelona	41.3828939	2.1774322	cma@sjdhospitalbarcelona.org	Hospital Sant Joan de Deu
+Alba Redin Alonso	Spain	Barcelona	41.3828939	2.1774322	aredin@fsjd.org	Hospital Sant Joan de Deu
+James Ngocho	Tanzania	Moshi	-3.34882	37.343151	James.ngocho@kcmuco.ac.tz	Kilimanjaro Clinical Research Institute
+Blandina Mmbaga	Tanzania	Moshi	-3.34882	37.343151	b.mmbaga@kcri.ac.tz	Kilimanjaro Clinical Research Institute
 Paul Turner	Thailand	Maesot	16.713140	98.573837	pault@tropmedres.ac	University of Oxford
 Stuart C Clarke	Thailand	Bangkok	13.7542529	100.493087	s.c.clarke@soton.ac.uk	University of Southampton
 Somporn Srifuengfung	Thailand	Bangkok	13.7542529	100.493087	somporn.sri@mahidol.ac.th 	Siriraj Hospital and Siam University
@@ -100,4 +111,5 @@ Bernard Beall	USA	Atlanta	33.7490987	-84.3901849	beb0@cdc.gov	CDC
 Keith P Klugman	USA	Seattle	47.6038321	-122.3300624	Keith.Klugman@gatesfoundation.org	Bill & Melinda Gates Foundation
 Lesley McGee	USA	Atlanta	33.7490987	-84.3901849	afi4@cdc.gov	CDC/NCIRD/DBD/RDB
 Paulina Hawkins	USA	Atlanta	33.7490987	-84.3901849	pahues@emory.edu	Rollins School of Public Health
-Robert F Breiman	USA	Atlanta	33.7490987	-84.3901849	rfbreiman@emory.edu	The Emory Global Health Institute
+Robert F Breiman	USA	Atlanta	33.7490987	-84.3901849	rfbreiman@emory.edu	The Emory Global Health Institute
+Hoa Ngo Thi	Vietnam	Ho Chi Minh City	10.823099	106.629662	hoant@oucru.org	Oxford University Clinical Research Unit
