@@ -1,7 +1,7 @@
-Name	Country	City	latitude	Longitude	Email	Affiliation
-Alejandra Corso	Argentina	Buenos Aires	-34.6075682	-58.4370894	acorso@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
-Diego Faccone	Argentina	Buenos Aires	-34.6075682	-58.4370894	dfaccone@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas (INEI)-Administración Nacional de Laboratorios e Institutos de Salud (ANLIS) "Dr. C. Malbrán"
-Paula Gagetti	Argentina	Buenos Aires	-34.6075682	-58.4370894	pgagetti@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
+Name  Country	City	latitude	Longitude	Email	Affiliation
+Alejandra Corso	Argentina	Buenos Aires	-34.6075682	-58.4370894	acorso@anlis.gov.ar	Administraci√≥n Nacional de Laboratorios e Institutos de Salud
+Diego Faccone	Argentina	Buenos Aires	-34.6075682	-58.4370894	dfaccone@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas (INEI)-Administraci√≥n Nacional de Laboratorios e Institutos de Salud (ANLIS) "Dr. C. Malbr√°n"
+Paula Gagetti	Argentina	Buenos Aires	-34.6075682	-58.4370894	pgagetti@anlis.gov.ar	Administraci√≥n Nacional de Laboratorios e Institutos de Salud
 Abdullah W Brooks	Bangladesh	Dhaka	23.7593572	90.3788136	abrooks@mac.com	International Centre for Diarrheal Diseases Research
 Md Hasanuzzaman	Bangladesh	Dhaka	23.7593572	90.3788136	hsnzmn027@gmail.com	Child Health Research Foundation
 Roly Malaker	Bangladesh	Dhaka	23.7593572	90.3788136	roly@chrfbd.org	Child Health Research Foundation
@@ -10,8 +10,8 @@ Alexander Davydov	Belarus	Minsk	53.902334	27.5618791	alexander.davydovv@gmail.co
 Leonid Titov	Belarus	Minsk	53.902334	27.5618791	leonidtitov@tut.by	The Republican Research and Practical Center for Epidemiology and Microbiology
 Piet Cool	Belgium	Ghent	51.053822	3.72227	piet.cools@ugent.be	Ghent University
 Mario Vaneechoutte	Belgium	Ghent	51.0583822	3.72227	mario.vaneechoutte@ugent.be	Ghent University
-Maria Cristina de Cunto Brandileone	Brazil	São Paulo	-23.5506507	-46.6333824	maria.brandileone@ial.sp.gov.br	Adolfo Lutz Institute
-Samanta Cristine Grassi Almeida	Brazil	São Paulo	-23.5506507	-46.6333824	salmeida@ial.sp.gov.br	Adolfo Lutz Institute
+Maria Cristina de Cunto Brandileone	Brazil	S√£o Paulo	-23.5506507	-46.6333824	maria.brandileone@ial.sp.gov.br	Adolfo Lutz Institute
+Samanta Cristine Grassi Almeida	Brazil	S√£o Paulo	-23.5506507	-46.6333824	salmeida@ial.sp.gov.br	Adolfo Lutz Institute
 Paul Turner	Cambodia	Siem Reap	13.3617562	103.8590321	pault@tropmedres.ac	University of Oxford
 Margaret Ip	China	Hong Kong	22.2793278	114.1628131	margaretip@cuhk.edu.hk	Chinese University of Hong Kong
 Pak Leung Ho	China 	Hong Kong	22.2793278	114.1628131	plho@hku.hk	The University of Hong Kong
@@ -21,7 +21,7 @@ Chunjiang Zhao	China	Beijing	39.904202	116.407394	chunkiang@163.com	Peking Unive
 Luis Felipe Reyes Velasco 	Colombia	Bogota	4.59808	-74.0760439	luis.reyes5@unisabana.edu.co	Universidad De La Sabana
 Jeremy Keenan	Ethiopia	Amhara	11.5	38.5	jeremy.keenan@ucsf.edu	University of California
 Abel Abera Negash	Ethiopia	Addis Ababa 8.980603	38.757759	abel.abera@ahri.gov.et	Armauer Hansen Research Institute
-Emmanuelle Varon	France	Créteil	48.789612	2.452600	Emmanuelle.Varon@chicreteil.fr	National Reference Center for Pneumococci
+Emmanuelle Varon	France	Cr√©teil	48.789612	2.452600	Emmanuelle.Varon@chicreteil.fr	National Reference Center for Pneumococci
 Robert Cohen	France	Paris	48.8566	2.3522	Robert.cohen@active-france.fr	ACTIV
 Eric Sampane-Donkor	Ghana	Accra	5.5600141	-0.2057437	ericsdon@hotmail.com	School of Biomedical and Allied Health Sciences
 Balaji Veeraraghavan	India	Vellore	12.7948109	79.0006411	vbalaji@cmcvellore.ac.in	Christian Medical College
@@ -40,18 +40,18 @@ Jennifer Cornick	Malawi	Blantyre	-15.7862543	35.0035694	j.cornick@liverpool.ac.u
 Maaike Alaerts	Malawi	Blantyre	-15.7862543	35.0035694	maaike_esi@hotmail.com	Malawi-Liverpool-Wellcome-Trust
 Shamala Devi Sekaran (Sekaran SD)	Malaysia	Selangor	3.2083304	101.304146	shamalamy@yahoo.com	MAHSA University
 Stuart C Clarke	Malaysia	Kuala Lumpur	3.1516964	101.6942371	s.c.clarke@soton.ac.uk	University of Southampton
-Houria Belabbès 	Morocco	Casablanca	33.5950627	-7.6187768	belhor2001@yahoo.fr	Ibn Rochd university-hospital center
+Houria Belabb√®s 	Morocco	Casablanca	33.5950627	-7.6187768	belhor2001@yahoo.fr	Ibn Rochd university-hospital center
 Idrissa Diawara 	Morocco	Casablanca	33.5950627	-7.6187768	diawaraidris@gmail.com	Mohammed VI University of Health Sciences (UM6SS)
-Khalid Zerouali	Morocco	Casablanca	33.5950627	-7.6187768	khalid.zerouali2000@gmail.com	Faculté de médecine et de pharmacie de Casablanca
+Khalid Zerouali	Morocco	Casablanca	33.5950627	-7.6187768	khalid.zerouali2000@gmail.com	Facult√© de m√©decine et de pharmacie de Casablanca
 Naima Elmdaghri	Morocco	Casablanca	33.5950627	-7.6187768	naimaelmdaghri@yahoo.fr	Faculty of Medicine and Pharmacy & Ibn Rochd University Hospital Center 
-Benild Moiane	Mozambique	Manhica	-25.4038418	32.8067838	 	Centro de Investigação em Saúde da Manhiça
-Betuel Sigauque	Mozambique	Manhica	-25.4038418	32.8067838	Betuel.Sigauque@manhica.net	Centro de Investigação em Saúde da Manhiça
-Helio Mucavele	Mozambique	Manhica	-25.4038418	32.8067838	Helio.Mucavele@manhica.net	Centro de Investigação em Saúde da Manhiça
+Benild Moiane	Mozambique	Manhica	-25.4038418	32.8067838	 	Centro de Investiga√ß√£o em Sa√∫de da Manhi√ßa
+Betuel Sigauque	Mozambique	Manhica	-25.4038418	32.8067838	Betuel.Sigauque@manhica.net	Centro de Investiga√ß√£o em Sa√∫de da Manhi√ßa
+Helio Mucavele	Mozambique	Manhica	-25.4038418	32.8067838	Helio.Mucavele@manhica.net	Centro de Investiga√ß√£o em Sa√∫de da Manhi√ßa
 Marien de Jonger	Netherlands	Nijmegen	51.84169	5.85865	Radbond University Medical Center
 Andrew J Pollard	Nepal	Kathmandu	27.708317	85.3205817	andrew.pollard@paediatrics.ox.ac.uk	University of Oxford and the NIHR Oxford Biomedical Research Centre
 Rama Kandasamy	Nepal	Kathmandu	27.708317	85.3205817	rama.kandasamy@paediatrics.ox.ac.uk	University of Oxford
 Philip E Carter 	New Zealand	Auckland	-36.852095	174.7631803	Philip.Carter@ESR.CRI.NZ	Kenepuru Science Centre
-Christian Happi	Nigeria	Ede	7.733890	4.434980	happic@run.edu.ng	Redeemers’ University
+Christian Happi	Nigeria	Ede	7.733890	4.434980	happic@run.edu.ng	Redeemers‚Äô University
 Iruka Okeke	Nigeria	Ibadan	7.3777462	3.8972497	iruka.n.okeke@gmail.com	University of Ibadan
 Stephen Obaro	Nigeria	Abuja	9.0643305	7.4892974	stephen.obaro@unmc.edu	University of Nebraska Medical Center
 Imran Nisar	Pakistan	Karachi	25.1446897	67.18477673	imran.nisar@aku.edu	Aga Khan University
@@ -79,7 +79,7 @@ Nicole Wolter	South Africa	Johannesburg	-26.205	28.049722	nicolew@nicd.ac.za	Nat
 Cebile Lekhuleni	South Africa	Johannesburg	-26.205	28.049722	cebileL@nicd.ac.za	National Institute for Communicable Diseases
 Shabir A. Madhi	South Africa	Soweto	-26.2227778	27.89	madhis@rmpru.co.za	University of the Witwatersrand
 Susan A Nzenze	South Africa	Soweto	-26.2227778	27.89	sanzenze@gmail.com	University of the Witwatersrand
-Carmen Muñoz Almagro	Spain	Barcelona	41.3828939	2.1774322	cma@sjdhospitalbarcelona.org	Hospital Sant Joan de Deu
+Carmen Mu√±oz Almagro	Spain	Barcelona	41.3828939	2.1774322	cma@sjdhospitalbarcelona.org	Hospital Sant Joan de Deu
 Alba Redin Alonso	Spain	Barcelona	41.3828939	2.1774322	aredin@fsjd.org	Hospital Sant Joan de Deu
 James Ngocho	Tanzania	Moshi	-3.34882	37.343151	James.ngocho@kcmuco.ac.tz	Kilimanjaro Clinical Research Institute
 Blandina Mmbaga	Tanzania	Moshi	-3.34882	37.343151	b.mmbaga@kcri.ac.tz	Kilimanjaro Clinical Research Institute
@@ -91,10 +91,10 @@ Ebenezer Foster-Nyarko	The Gambia	Banjul	13.45535	-16.575646	efosternyarko@mrc.g
 Ebrima Bojang	The Gambia	Banjul	13.45535	-16.575646	exb862@student.bham.ac.uk	MRC Unit The Gambia at LSHTM
 Martin Antonio	The Gambia	Banjul	13.45535	-16.575646	mantonio@mrc.gm	MRC Unit The Gambia at LSHTM
 Peggy-Estelle Tientcheu 	The Gambia	Banjul	13.45535	-16.575646	ptientcheu@mrc.gm	MRC Unit The Gambia at LSHTM
-Jennifer Moïsi	Togo	Lome	6.130419	1.215829	Jennifer.Moisi@pfizer.com	Agence de Médecine Préventive
+Jennifer Mo√Øsi	Togo	Lome	6.130419	1.215829	Jennifer.Moisi@pfizer.com	Agence de M√©decine Pr√©ventive
 Michele Nurse-Lucas	Trinidad and Tobago	St. Augustine	10.65782	-61.516708	nurselmi@gmail.com	The University of the West Indies
 Patrick E Akpaka	Trinidad and Tobago	St. Augustine	10.65782	-61.516708	Patrick.Akpaka@sta.uwi.edu	The University of the West Indies
-Özgen Köseoglu Eser	Turkey	Ankara	39.9207774	32.854067	eser.ozgen@gmail.com	Hacettepe University 
+√ñzgen K√∂seoglu Eser	Turkey	Ankara	39.9207774	32.854067	eser.ozgen@gmail.com	Hacettepe University 
 Alison Maguire	UK	Cambridge	52.2034823	0.1235817	ajm38@cam.ac.uk	University of Cambridge
 David Aanensen	UK	Cambridge	52.2034823	0.1235817	daanensen@gmail.com	Imperial College London
 Leon Bentley	UK	Cambridge	52.2034823	0.1235817	leonjbentley@gmail.com	Wellcome Sanger Institute
