@@ -1,7 +1,8 @@
 Name	Country	City	latitude	Longitude	Email	Affiliation
-Alejandra Corso	Argentina	Buenos Aires	-34.6075682	-58.4370894	acorso@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
+Alejandra Corso	Argentina	Buenos Aires	-34.6075682	-58.4370894	acorso@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas-ANLIS Doctor Carlos G. Malbrán (INM)
 Diego Faccone	Argentina	Buenos Aires	-34.6075682	-58.4370894	dfaccone@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas (INEI)-Administración Nacional de Laboratorios e Institutos de Salud (ANLIS) "Dr. C. Malbrán"
 Paula Gagetti	Argentina	Buenos Aires	-34.6075682	-58.4370894	pgagetti@anlis.gov.ar	Administración Nacional de Laboratorios e Institutos de Salud
+Jonathan Zintgraff  	Argentina	Buenos Aires	-34.6075682	-58.4370894	jzintgraff@anlis.gov.ar	Instituto Nacional de Enfermedades Infecciosas-ANLIS Doctor Carlos G. Malbrán (INM)
 Abdullah W Brooks	Bangladesh	Dhaka	23.7593572	90.3788136	abrooks@mac.com	International Centre for Diarrheal Diseases Research
 Md Hasanuzzaman	Bangladesh	Dhaka	23.7593572	90.3788136	hsnzmn027@gmail.com	Child Health Research Foundation
 Roly Malaker	Bangladesh	Dhaka	23.7593572	90.3788136	roly@chrfbd.org	Child Health Research Foundation
@@ -10,15 +11,26 @@ Alexander Davydov	Belarus	Minsk	53.902334	27.5618791	alexander.davydovv@gmail.co
 Leonid Titov	Belarus	Minsk	53.902334	27.5618791	leonidtitov@tut.by	The Republican Research and Practical Center for Epidemiology and Microbiology
 Piet Cool	Belgium	Ghent	51.053822	3.72227	piet.cools@ugent.be	Ghent University
 Mario Vaneechoutte	Belgium	Ghent	51.0583822	3.72227	mario.vaneechoutte@ugent.be	Ghent University
-Maria Cristina de Cunto Brandileone	Brazil	São Paulo	-23.5506507	-46.6333824	maria.brandileone@ial.sp.gov.br	Adolfo Lutz Institute
-Samanta Cristine Grassi Almeida	Brazil	São Paulo	-23.5506507	-46.6333824	salmeida@ial.sp.gov.br	Adolfo Lutz Institute
+Maria Cristina de Cunto Brandileone	Brazil	São Paulo	-23.5506507	-46.6333824	maria.brandileone@ial.sp.gov.br	Instituto Adolfo Lutz (IAL) de São Paulo
+Samanta Cristine Grassi Almeida	Brazil	São Paulo	-23.5506507	-46.6333824	samanta.almeida@ial.sp.gov.br 	Instituto Adolfo Lutz (IAL) de São Paulo
+Ana Paula Silva de Lemos	Brazil	São Paulo	-23.5506507	-46.6333824	ana.lemos@ial.sp.gov.br 	Instituto Adolfo Lutz (IAL) de São Paulo
 Paul Turner	Cambodia	Siem Reap	13.3617562	103.8590321	pault@tropmedres.ac	University of Oxford
+Pedro Alarcón	Chile	Santiago	-33.4724228	-70.7699142	palarcon@ispch.cl 	Instituto de Salud Pública de Chile (ISP)
+Pamela Araya	Chile	Santiago	-33.4724228	-70.7699142	paraya@ispch.cl 	Instituto de Salud Pública de Chile (ISP)
 Margaret Ip	China	Hong Kong	22.2793278	114.1628131	margaretip@cuhk.edu.hk	Chinese University of Hong Kong
 Pak Leung Ho	China 	Hong Kong	22.2793278	114.1628131	plho@hku.hk	The University of Hong Kong
 Pierra Law	China 	Hong Kong	22.2793278	114.1628131	pytlaw@gmail.com	The University of Hong Kong
 Hui Wang	China	Beijing	39.904202	116.407394	whuibj@163.com	Peking University People's Hospital, China
 Chunjiang Zhao	China	Beijing	39.904202	116.407394	chunkiang@163.com	Peking University People's Hospital, China
-Luis Felipe Reyes Velasco 	Colombia	Bogota	4.59808	-74.0760439	luis.reyes5@unisabana.edu.co	Universidad De La Sabana
+Luis Felipe Reyes Velasco 	Colombia	Bogotá 	4.6486259	-74.247892	luis.reyes5@unisabana.edu.co	Universidad De La Sabana
+Jaime Moreno 	Colombia	Bogotá 	4.6486259	-74.247892	jmoreno@ins.gov.co	Instituto Nacional de Salud (INS)
+Carolina Duarte	Colombia	Bogotá 	4.6486259	-74.247892	cduarte@ins.gov.co	Instituto Nacional de Salud (INS)
+Clara Inés Agudelo	Colombia	Bogotá 	4.6486259	-74.247892	cia1949@gmail.com 	Instituto Nacional de Salud
+Elizabeth Castañeda	Colombia	Bogotá 	4.6486259	-74.247892	ecastaneda21@gmail.com 	Instituto Nacional de Salud
+Gilda Toraño Peraza	Cuba	Havana 	23.0510717	-82.6131892	Gilda@ipk.sld.cu	Instituto de Medicina Tropical Pedro Kourí (IPK)
+Brenda Barreto Núñez 	Cuba	Havana 	23.0510717	-82.6131892	bbarreto@ipk.sld.cu	Instituto de Medicina Tropical Pedro Kourí (IPK)
+Jacqueline Sánchez 	Dominican Republic	Santo Domingo	18.4801923	-70.01692	jacquelines1954@yahoo.es	Hospital Infantil, Doctor Robert Reid Cabral (HRR)
+Doraliza Cedano	Dominican Republic	Santo Domingo	18.4801923	-70.01692	darikenc11@hotmail.com 	Hospital Infantil, Doctor Robert Reid Cabral (HRR)
 Jeremy Keenan	Ethiopia	Amhara	11.5	38.5	jeremy.keenan@ucsf.edu	University of California
 Abel Abera Negash	Ethiopia	Addis Ababa	8.980603	38.757759	abel.abera@ahri.gov.et	Armauer Hansen Research Institute
 Emmanuelle Varon	France	Créteil	48.789612	2.452600	Emmanuelle.Varon@chicreteil.fr	National Reference Center for Pneumococci
@@ -40,6 +52,8 @@ Jennifer Cornick	Malawi	Blantyre	-15.7862543	35.0035694	j.cornick@liverpool.ac.u
 Maaike Alaerts	Malawi	Blantyre	-15.7862543	35.0035694	maaike_esi@hotmail.com	Malawi-Liverpool-Wellcome-Trust
 Shamala Devi Sekaran (Sekaran SD)	Malaysia	Selangor	3.2083304	101.304146	shamalamy@yahoo.com	MAHSA University
 Stuart C Clarke	Malaysia	Kuala Lumpur	3.1516964	101.6942371	s.c.clarke@soton.ac.uk	University of Southampton
+Gabriela Echániz Aviles	Mexico	Cuernavaca 	18.9320308	-99.310605	igechaniz@insp.mx 	Instituto Nacional de Salud Pública (ISP)
+Araceli Soto-Noguerón	Mexico	Cuernavaca 	18.9320308	-99.310605	asoto@insp.mx 	Instituto Nacional de Salud Pública (ISP)
 Houria Belabbès 	Morocco	Casablanca	33.5950627	-7.6187768	belhor2001@yahoo.fr	Ibn Rochd university-hospital center
 Idrissa Diawara 	Morocco	Casablanca	33.5950627	-7.6187768	diawaraidris@gmail.com	Mohammed VI University of Health Sciences (UM6SS)
 Khalid Zerouali	Morocco	Casablanca	33.5950627	-7.6187768	khalid.zerouali2000@gmail.com	Faculté de médecine et de pharmacie de Casablanca
@@ -59,6 +73,8 @@ Sadia Shakoor	Pakistan	Karachi	25.1446897	67.18477673	sadia.shakoor@aku.edu	Aga 
 Shaper Misra	Pakistan	Lahore	31.5656079	74.3141775	shaper.mirza@lums.edu.pk 	University of Ibadan
 Deborah Lehmann	Papua New Guinea	Papua New Guinea	-5.6816069	144.2489081	deborah.lehmann@telethonkids.org.au	The University of Western Australia
 Rebecca Ford	Papua New Guinea	Papua New Guinea	-5.6816069	144.2489081	rebecca.ford@pngimr.org.pg	Papua New Guinea Institute of Medical Research
+Gustavo Chamorro Cortesi 	Paraguay	Asunción 	-25.2966809	-57.6681289	gacortesi@gmail.com	Laboratorio Central de Salud Pública (LCS)
+María Eugenia León	Paraguay	Asunción 	-25.2966809	-57.6681289	maruleonayala@hotmail.com  	Laboratorio Central de Salud Pública (LCS)
 Theresa J. Ochoa	Peru	Lima	-12.0621065	-77.0365256	Theresa.J.Ochoa@uth.tmc.edu	Instituto de Medicina Tropical
 Anna Skoczynska	Poland	Warsaw	52.2319581	21.0067249	a.skoczynska@nil.gov.pl	National Medicines Institute
 Ewa Sadowy	Poland	Warsaw	52.2319581	21.0067249	e.sadowy@nil.gov.pl	National Medicines Institute
@@ -106,10 +122,16 @@ Rebecca Henderson	UK	Cambridge	52.2034823	0.1235817	rh23@sanger.ac.uk	Wellcome S
 Stephanie W Lo	UK	Cambridge	52.2034823	0.1235817	sl28@sanger.ac.uk	Wellcome Sanger Institute
 Stephen D Bentley	UK	Cambridge	52.2034823	0.1235817	sdb@sanger.ac.uk	Wellcome Sanger Institute
 John A Lees	UK	London	51.5073219	-0.1276474	j.lees@imperial.ac.uk	Imperial College London
+Gabriela García	Uruguay	Montevideo 	-34.8207362	-56.3765215	ggarcia@msp.gub.uy 	Departamento de Laboratorios, Ministerio de Salud Pública (DLS)
+Cristina Modgasy	Uruguay	Montevideo 	-34.8207362	-56.3765215	cmogdasy@msp.gub.uy	Departamento de Laboratorios, Ministerio de Salud Pública (DLS)
+Teresa Camou 	Uruguay	Montevideo 	-34.8207362	-56.3765215	tcamou@msp.gub.uy	Departamento de Laboratorios, Ministerio de Salud Pública (DLS)
 Jennifer Verani	USA	Atlanta	33.7490987	-84.3901849	qzr7@cdc.gov	CDC
 Bernard Beall	USA	Atlanta	33.7490987	-84.3901849	beb0@cdc.gov	CDC
 Keith P Klugman	USA	Seattle	47.6038321	-122.3300624	Keith.Klugman@gatesfoundation.org	Bill & Melinda Gates Foundation
 Lesley McGee	USA	Atlanta	33.7490987	-84.3901849	afi4@cdc.gov	CDC/NCIRD/DBD/RDB
 Paulina Hawkins	USA	Atlanta	33.7490987	-84.3901849	pahues@emory.edu	Rollins School of Public Health
 Robert F Breiman	USA	Atlanta	33.7490987	-84.3901849	rfbreiman@emory.edu	The Emory Global Health Institute
+José Luis Di Fabio	USA	Washington, DC	38.8938672	-77.0846158	difabioj@gmail.com 	Independent
+Daisy Payares	Venezuela	Caracas 	10.4686988	-67.0304508	Daisypayares2@gmail.com 	Instituto Nacional de Higiene Rafael Rangel, (INH)
+Noreyda Marcano 	Venezuela	Caracas 	10.4686988	-67.0304508	Noreydamarcano@gmail.com 	Instituto Nacional de Higiene Rafael Rangel, (INH)
 Hoa Ngo Thi	Vietnam	Ho Chi Minh City	10.823099	106.629662	hoant@oucru.org	Oxford University Clinical Research Unit
