@@ -22,7 +22,7 @@ var myIcon = L.icon({
 });
 
 var myBlueIcon = L.icon({
-    iconUrl: 'img/white-x-mark.svg',
+    iconUrl: 'img/white-triangle.svg',
     iconSize: [8, 8],
     iconAnchor: [0, 0],
     popupAnchor: [4, 0],
