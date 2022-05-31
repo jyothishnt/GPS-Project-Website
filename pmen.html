@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+
+  <title>GPS :: Global Pneumococcal Sequencing Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600' rel='stylesheet'
+    type='text/css'>
+  <!-- fonts, icons for bootstrap -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap, latest compiled and minified CSS -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"> -->
+  <link href="css/styles.min.css" rel="stylesheet">
+  <style>
+    #mapid {
+      height: 720px;
+      margin-top: 100px;
+    }
+
+    img.leaflet-marker-icon:hover {
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      opacity: 0.8;
+    }
+
+    /* Popover styling */
+
+    a {
+      text-decoration: none;
+    }
+
+    .popover__title {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      line-height: 36px;
+      text-decoration: none;
+      color: rgb(228, 68, 68);
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .popover__wrapper {
+      position: relative;
+      margin-top: 1.5rem;
+      display: inline-block;
+
+    }
+
+    .popover__content {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: -150px;
+      transform: translate(0, 10px);
+      /*background-color: #c6d7f2; */
+      background-color: #e2f0f4;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      width: auto;
+      margin-left: 60px;
+    }
+
+    .popover__content:before {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      right: calc(50% - 10px);
+      top: -8px;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent #e2f0f4 transparent;
+      transition-duration: 0.3s;
+      transition-property: transform;
+    }
+
+    .popover__wrapper:hover .popover__content {
+      z-index: 10;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, -20px);
+      transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    }
+
+    .popover__message {
+      text-align: center;
+    }
+
+    .chartsdiv {
+      height: 350px;
+    }
+
+    input:focus {
+      outline-offset: -2px;
+    }
+
+    .clusterImg {
+      display: inline-block;
+    }
+
+    .clusterContainer {
+      width: auto;
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    .popover__content {
+      min-width: 255px;
+      margin-bottom: 40px;
+      z-index: 100;
+    }
+
+    #mapid {
+      z-index: 0;
+    }
+
+    .datainfo {
+      margin-top: 5px;
+      overflow-x: auto;
+    }
+
+    .datainfotitle {
+      margin-top: 120px;
+      overflow-x: auto;
+    }
+
+    .borderset {
+      border-width: 1px !important;
+    }
+
+    input.borderset {
+      height: 22px;
+    }
+capacity_building
+    div.modal-body {
+      padding: 0px;
+    }
+
+    .modal-title {
+      color: #1570a6;
+    }
+
+    svg#Micro {
+      max-height: 30px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .microLink {
+      display: inline-block;
+    }
+
+    .sampleText,
+    .sampleSize {
+      display: inline-block;
+      margin-left: 82px;
+    }
+
+    .microreactLink {
+      display: inline-block;
+      margin-left: 150px;
+    }
+
+    select.category {
+      margin-right: 40px;
+      height: 30px;
+      color: #1570a6;
+    }
+
+    .categoryLabel {
+      font-size: 20px;
+      color: #1570a6;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+
+    form {
+      display: inline-block;
+      background-color: #e2f0f4;
+      font-weight: 700;
+    }
+
+    div.formGroup {
+      background-color: #e2f0f4;
+    }
+
+    svg {
+      height: 320px;
+      width: 130px;
+      margin-left: 10px;
+    }
+
+    .cls-1 {
+      isolation: isolate;
+    }
+
+    .cls-2,
+    .cls-3 {
+      fill: #3b7383;
+    }
+
+    .cls-3 {
+      opacity: 0.53;
+    }
+
+    .cls-4 {
+      fill: #673b8d;
+    }
+
+    .cls-5 {
+      fill: #a288ba;
+    }
+
+    .cls-6 {
+      fill: #3c7382;
+    }
+  </style>
+
+
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-sham.js"></script>
+<![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="gps.ico">
+  <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin=""></script>-->
+</head>
+
+<body>
+  <!-- Header Starts -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          <h1><i class=""></i><a href="index.html"><span class="color">GPS</span></a></h1>
+          <div class="hmeta">Global Pneumococcal Sequencing Project</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation bar starts -->
+
+  <div class="navbar navbar-default bs-docs-nav top-menu" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <a id="home" href="index.html">
+              <!-- <i class="fa fa-home blue"> </i> --> Home
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              About <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class=""><a id="summary" href="project_outline.html">Project Outline</a></li>
+              <li class=""><a id="summary" href="the_team.html">The Team</a></li>
+              <li class=""><a id="founders" href="partners.html">Project Partners </a></li>
+              <li class=""><a id="substudies" href="substudies.html">Sub-studies</a></li>
+            </ul>
+          </li>
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class=""><a id="resources_overview" href="resources_overview.html">Overview</a></li>
+              <li class=""><a id="sampling_map" href="sampling_map.html">Countries</a></li>
+              <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">Strains</a></li>
+              <li class=""><a id="serotypes" href="serotypes.html">Serotypes</a></li>
+              <!-- <li class=""><a id="public_database" href="/public_database.html">Database (public)</a></li> -->
+              <li class=""><a id="pmen" href="pmen.html">PMEN Clones</a></li>
+              <li class=""><a id="isolate_bank_request" href="isolate_bank_request.html">Isolate Bank Request</a></li>
+              <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Database</a></li>
+            </ul>
+          </li>
+          <li><a id="publications" href="publications.html">Publications</a></li>
+          <li><a id="capacity_building" href="capacity_building.html">Capacity Building</a></li>
+          <li><a id="gps-visualiser" href="/gps-visualiser" target="_blank">GPS Visualiser</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class=""><a id="training_browser_based" href="training_drag_and_drop.html">Drag and Drop Tools</a>
+              </li>
+              <li class=""><a id="training_command_line" href="training_command_line.html">Command Line</a></li>
+            </ul>
+          </li>
+          <li><a id="contact" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- Navigation bar ends -->
+
+  <section>
+    <div class="container content justify">
+
+      <div class="desc">
+        <h2>PMEN Clones as at April 2006</h2>
+  
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th rowspan="2">No.</th>
+              <th rowspan="2">Clone</th>
+              <th rowspan="2">Reference no./ATCC no.</th>
+              <th rowspan="2">Serotype</th>
+              <th colspan="7" class="text-center">Antibiotic susceptibilities (Etests) (µg/ml)</th>
+              <th rowspan="2">Sequence Type</th>
+              <th rowspan="2">MLST Profile</th>
+              <th rowspan="2">PBP Profile</th>
+              <th rowspan="2"><i>erm</i>/<i>mef</i></th>
+              <th rowspan="2">References</th>
+            </tr>
+            <tr>
+              <th>PEN</th>
+              <th>CTX</th>
+              <th>ERY</th>
+              <th>CLIN</th>
+              <th>CHL</th>
+              <th>TET</th>
+              <th>SXT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Spain<sup>23F</sup>-1</td>
+              <td>SP264/ATCC700669</td>
+              <td>23F</td>
+              <td>1.0</td>
+              <td>1.5</td>
+              <td>0.25</td>
+              <td>0.19</td>
+              <td>16</td>
+              <td>64.0</td>
+              <td>2.0</td>
+              <td>ST81</td>
+              <td>4-4-2-4-4-1-1</td>
+              <td>1-1-1</td>
+              <td>-</td>
+              <td><a href="#ref-1">1</a>, <a href="#ref-2">2</a>, <a href="#ref-3">3</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Spain<sup>6B</sup>-2</td>
+              <td>GM17/ATCC700670</td>
+              <td>6B</td>
+              <td>0.5</td>
+              <td>0.75</td>
+              <td>0.19</td>
+              <td>0.19</td>
+              <td>16</td>
+              <td>48.0</td>
+              <td>2.0</td>
+              <td>ST90</td>
+              <td>5-6-1-2-6-3-4</td>
+              <td>1-2-2</td>
+              <td>-</td>
+              <td><a href="#ref-4">4</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Spain<sup>9V</sup>-3</td>
+              <td>TL7/1993/ATCC700671</td>
+              <td>9V</td>
+              <td>1.5</td>
+              <td>0.75</td>
+              <td>0.125</td>
+              <td>0.19</td>
+              <td>3</td>
+              <td>0.5</td>
+              <td>1.5</td>
+              <td>ST156</td>
+              <td>7-11-10-1-6-8-1</td>
+              <td>1-1-1</td>
+              <td>-</td>
+              <td><a href="#ref-1">1</a>, <a href="#ref-5">5</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Tennessee<sup>23F</sup>-4</td>
+              <td>CS111/ATCC51916</td>
+              <td>23F</td>
+              <td>0.125</td>
+              <td>32.0</td>
+              <td>32</td>
+              <td>0.125</td>
+              <td>3</td>
+              <td>0.25</td>
+              <td>2.0</td>
+              <td>ST37</td>
+              <td>1-8-6-2-6-4-6</td>
+              <td>2-3-3</td>
+              <td><i>mef</i></td>
+              <td><a href="#ref-6">6</a>, <a href="#ref-7">7</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Spain<sup>14</sup>-5</td>
+              <td>MS22/ATCC700902</td>
+              <td>14</td>
+              <td>1.5</td>
+              <td>1.0</td>
+              <td>0.19</td>
+              <td>0.125</td>
+              <td>32</td>
+              <td>24.0</td>
+              <td>0.25</td>
+              <td>ST18</td>
+              <td>1-5-4-11-9-3-16</td>
+              <td>1-4-1</td>
+              <td>-</td>
+              <td><a href="#ref-8">8</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Hungary<sup>19A</sup>-6</td>
+              <td>HUN663/ATCC700673</td>
+              <td>19A</td>
+              <td>1.0</td>
+              <td>0.75</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>24</td>
+              <td>48.0</td>
+              <td>3.0</td>
+              <td>ST268</td>
+              <td>7-13-42-6-10-6-56</td>
+              <td>3-5-4</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-4">4</a>, <a href="#ref-9">9</a></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>S.Africa<sup>19A</sup>-7</td>
+              <td>17619/ATCC700674</td>
+              <td>19A</td>
+              <td>0.19</td>
+              <td>0.094</td>
+              <td>0.25</td>
+              <td>0.19</td>
+              <td>4</td>
+              <td>1.0</td>
+              <td>4.0</td>
+              <td>ST75</td>
+              <td>2-13-8-25-25-6-8</td>
+              <td>4-6-5</td>
+              <td>-</td>
+              <td><a href="#ref-10">10</a></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>S.Africa<sup>6B</sup>-8</td>
+              <td>50803/ATCC700675</td>
+              <td>6B</td>
+              <td>0.19</td>
+              <td>0.125</td>
+              <td>0.19</td>
+              <td>0.19</td>
+              <td>2</td>
+              <td>0.5</td>
+              <td>1.5</td>
+              <td>ST185</td>
+              <td>7-22-1-2-5-1-14</td>
+              <td>5-7-6</td>
+              <td>-</td>
+              <td><a href="#ref-10">10</a></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>England<sup>14</sup>-9</td>
+              <td>PN93/872/B/ATCC700676</td>
+              <td>14</td>
+              <td>0.016</td>
+              <td>0.016</td>
+              <td>64</td>
+              <td>0.125</td>
+              <td>3</td>
+              <td>0.5</td>
+              <td>0.064</td>
+              <td>ST9</td>
+              <td>1-5-4-5-5-1-8</td>
+              <td>6-5-7</td>
+              <td><i>mef</i></td>
+              <td><a href="#ref-11">11</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>CSR<sup>14</sup>-10</td>
+              <td>87-029055/ATCC700677</td>
+              <td>14</td>
+              <td>8.0</td>
+              <td>1.0</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>32</td>
+              <td>48.0</td>
+              <td>0.25</td>
+              <td>ST20</td>
+              <td>1-5-4-1-5-3-3</td>
+              <td>7-8-8</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-12">12</a>, <a href="#ref-13">13</a></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>CSR<sup>19A</sup>-11</td>
+              <td>91-006571/ATCC700678</td>
+              <td>19A</td>
+              <td>6.0</td>
+              <td>0.5</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>24</td>
+              <td>64.0</td>
+              <td>2.0</td>
+              <td>ST175</td>
+              <td>7-5-4-26-10-3-55</td>
+              <td>7-8-8</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-12">12</a>, <a href="#ref-13">13</a></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Finland<sup>6B</sup>-12</td>
+              <td>43362 Fi10/ATCC700903</td>
+              <td>6B</td>
+              <td>4.0</td>
+              <td>0.75</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>8</td>
+              <td>64.0</td>
+              <td>6.0</td>
+              <td>ST270</td>
+              <td>5-6-43-2-6-1-28</td>
+              <td>1-9-1</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-14">14</a></td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>S.Africa<sup>19A</sup>-13</td>
+              <td>51702/ATCC700904</td>
+              <td>19A</td>
+              <td>1.5</td>
+              <td>0.5</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>24</td>
+              <td>48.0</td>
+              <td>4.0</td>
+              <td>ST41</td>
+              <td>1-8-9-5-11-1-12</td>
+              <td>8-10-9</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-10">10</a></td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Taiwan<sup>19F</sup>-14</td>
+              <td>TW31/ATCC700905</td>
+              <td>19F</td>
+              <td>2.0</td>
+              <td>0.75</td>
+              <td>16</td>
+              <td>0.25</td>
+              <td>16</td>
+              <td>48.0</td>
+              <td>2.0</td>
+              <td>ST236</td>
+              <td>15-16-19-15-6-20-26</td>
+              <td>9-11-9</td>
+              <td><i>mef</i></td>
+              <td><a href="#ref-15">15</a></td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Taiwan<sup>23F</sup>-15</td>
+              <td>Tw17/ATCC700906</td>
+              <td>23F</td>
+              <td>0.75</td>
+              <td>0.75</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>4</td>
+              <td>48.0</td>
+              <td>0.25</td>
+              <td>ST242</td>
+              <td>15-29-4-21-30-1-14</td>
+              <td>9-12-10</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-15">15</a></td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Poland<sup>23F</sup>-16</td>
+              <td>178/ATCC BAA-343</td>
+              <td>23F</td>
+              <td>8.0</td>
+              <td>4.0</td>
+              <td>&gt;256</td>
+              <td>0.25</td>
+              <td>16</td>
+              <td>64.0</td>
+              <td>1.5</td>
+              <td>ST173</td>
+              <td>7-13-8-1-10-6-36</td>
+              <td>4-13-1</td>
+              <td>-</td>
+              <td><a href="#ref-16">16</a></td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>Maryland<sup>6B</sup>-17</td>
+              <td>4752-98/ATCC BAA-342</td>
+              <td>6B</td>
+              <td>1.5</td>
+              <td>1.0</td>
+              <td>24</td>
+              <td>0.19</td>
+              <td>3</td>
+              <td>0.75</td>
+              <td>2.0</td>
+              <td>ST384</td>
+              <td>7-6-9-2-6-1-67</td>
+              <td>10-14-1</td>
+              <td><i>mef</i></td>
+              <td><a href="#ref-17">17</a></td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Tennessee<sup>14</sup>-18</td>
+              <td>4954-98/ATCC BAA-340</td>
+              <td>14</td>
+              <td>4.0</td>
+              <td>12.0</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>3</td>
+              <td>32.0</td>
+              <td>2.0</td>
+              <td>ST67</td>
+              <td>2-8-7-4-6-1-1</td>
+              <td>11-15-11</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-17">17</a></td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Colombia<sup>5</sup>-19</td>
+              <td>Spn1439-106/ATCC BAA-341</td>
+              <td>5</td>
+              <td>0.003</td>
+              <td>0.016</td>
+              <td>0.125</td>
+              <td>0.125</td>
+              <td>16</td>
+              <td>32.0</td>
+              <td>0.19</td>
+              <td>ST289</td>
+              <td>16-12-9-1-41-33-33</td>
+              <td>12-5-12</td>
+              <td>-</td>
+              <td><a href="#ref-18">18</a></td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>Poland<sup>6B</sup>-20</td>
+              <td>2708/ATCC BAA-612</td>
+              <td>6B</td>
+              <td>0.064</td>
+              <td>0.032</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>8</td>
+              <td>64.0</td>
+              <td>0.5</td>
+              <td>ST315</td>
+              <td>20-28-1-1-15-14-14</td>
+              <td>12-16-13</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-16">16</a></td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>Portugal<sup>19F</sup>-21</td>
+              <td>DCC98/ATCC BAA-657</td>
+              <td>19F</td>
+              <td>0.032</td>
+              <td>0.032</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>4</td>
+              <td>12.0</td>
+              <td>0.047</td>
+              <td>ST177</td>
+              <td>7-14-4-12-1-1-14</td>
+              <td>13-17-14</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-19">19</a></td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>Greece<sup>6B</sup>-22</td>
+              <td>GR890/ATCC BAA-658</td>
+              <td>6B</td>
+              <td>0.023</td>
+              <td>0.047</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>16</td>
+              <td>96.0</td>
+              <td>0.25</td>
+              <td>ST273</td>
+              <td>5-6-1-2-6-1-14</td>
+              <td>12-5-12</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-20">20</a>, <a href="#ref-21">21</a></td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>N.Carolina<sup>6A</sup>-23</td>
+              <td>97-1177/ATCC BAA-659</td>
+              <td>6A</td>
+              <td>1.0</td>
+              <td>0.75</td>
+              <td>4</td>
+              <td>0.19</td>
+              <td>3</td>
+              <td>0.5</td>
+              <td>1.0</td>
+              <td>ST376</td>
+              <td>6-11-1-1-15-72-77</td>
+              <td>9-18-15</td>
+              <td><i>mef</i></td>
+              <td><a href="#ref-22">22</a></td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>Utah<sup>35B</sup>-24</td>
+              <td>94-3330/ATCC BAA-660</td>
+              <td>35B</td>
+              <td>1.0</td>
+              <td>0.75</td>
+              <td>0.125</td>
+              <td>0.125</td>
+              <td>3</td>
+              <td>0.38</td>
+              <td>0.38</td>
+              <td>ST377</td>
+              <td>18-12-4-44-14-77-93</td>
+              <td>14-15-1</td>
+              <td>-</td>
+              <td><a href="#ref-22">22</a></td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>Sweden<sup>15A</sup>-25</td>
+              <td>DCC1476/ATCC BAA-661</td>
+              <td>15A</td>
+              <td>0.064</td>
+              <td>0.047</td>
+              <td>&gt;256</td>
+              <td>&gt;256</td>
+              <td>4</td>
+              <td>0.25</td>
+              <td>0.094</td>
+              <td>ST63</td>
+              <td>2-5-36-12-17-21-14</td>
+              <td>15-10-16</td>
+              <td><i>erm</i></td>
+              <td><a href="#ref-19">19</a></td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>Colombia<sup>23F</sup>-26</td>
+              <td>DCC1587/ATCC BAA-662</td>
+              <td>23F</td>
+              <td>0.064</td>
+              <td>0.094</td>
+              <td>0.19</td>
+              <td>0.19</td>
+              <td>4</td>
+              <td>0.5</td>
+              <td>0.094</td>
+              <td>ST338</td>
+              <td>7-13-8-6-1-6-8</td>
+              <td>12-6-17</td>
+              <td>-</td>
+              <td><a href="#ref-19">19</a></td>
+            </tr>
+            <tr>
+              <td>27</td>
+              <td>Sweden<sup>1</sup>-27</td>
+              <td>PJ351/1</td>
+              <td>1</td>
+              <td>0.006</td>
+              <td>0.016</td>
+              <td>0.19</td>
+              <td>0.19</td>
+              <td>4</td>
+              <td>0.38</td>
+              <td>0.38</td>
+              <td>ST217</td>
+              <td>10-18-4-1-7-19-9</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-23">23</a>, <a href="#ref-24">24</a></td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>Sweden<sup>1</sup>-28</td>
+              <td>PJ755/1</td>
+              <td>1</td>
+              <td>0.006</td>
+              <td>0.016</td>
+              <td>0.19</td>
+              <td>0.125</td>
+              <td>2</td>
+              <td>0.25</td>
+              <td>0.047</td>
+              <td>ST306</td>
+              <td>12-8-13-5-16-4-20</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-24">24</a>, <a href="#ref-25">25</a></td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>USA<sup>1</sup>-29</td>
+              <td>NCTC7465</td>
+              <td>1</td>
+              <td>0.012</td>
+              <td>0.016</td>
+              <td>0.125</td>
+              <td>0.125</td>
+              <td>2</td>
+              <td>0.25</td>
+              <td>0.125</td>
+              <td>ST615</td>
+              <td>10-31-4-1-6-4-94</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-24">24</a></td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>Greece<sup>21</sup>-30</td>
+              <td>JJ273-21</td>
+              <td>21</td>
+              <td>0.016</td>
+              <td>0.094</td>
+              <td>0.25</td>
+              <td>0.125</td>
+              <td>3</td>
+              <td>0.25</td>
+              <td>0.125</td>
+              <td>ST193</td>
+              <td>8-10-2-16-1-26-1</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-20">20</a>, <a href="#ref-26">26</a></td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>Netherlands<sup>3</sup>-31</td>
+              <td>M264-3</td>
+              <td>3</td>
+              <td>0.023</td>
+              <td>0.023</td>
+              <td>0.19</td>
+              <td>0.125</td>
+              <td>4</td>
+              <td>0.38</td>
+              <td>0.047</td>
+              <td>ST180</td>
+              <td>7-15-2-10-6-1-22</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>32</td>
+              <td>Denmark<sup>14</sup>-32</td>
+              <td>PN528</td>
+              <td>14</td>
+              <td>1.0</td>
+              <td>0.75</td>
+              <td>0.125</td>
+              <td>0.125</td>
+              <td>3</td>
+              <td>64.0</td>
+              <td>1.5</td>
+              <td>ST230</td>
+              <td>12-19-2-17-6-22-14</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-28">28</a></td>
+            </tr>
+            <tr>
+              <td>33</td>
+              <td>Netherlands<sup>8</sup>-33</td>
+              <td>M270-8</td>
+              <td>8</td>
+              <td>0.016</td>
+              <td>0.023</td>
+              <td>0.19</td>
+              <td>0.19</td>
+              <td>3</td>
+              <td>0.38</td>
+              <td>0.032</td>
+              <td>ST53</td>
+              <td>2-5-1-11-16-3-14</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>34</td>
+              <td>Denmark<sup>12F</sup>-34</td>
+              <td>M293-12F</td>
+              <td>12F</td>
+              <td>0.016</td>
+              <td>0.016</td>
+              <td>0.19</td>
+              <td>0.19</td>
+              <td>3</td>
+              <td>0.25</td>
+              <td>0.047</td>
+              <td>ST218</td>
+              <td>10-20-14-1-6-1-29</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>35</td>
+              <td>Netherlands<sup>14</sup>-35</td>
+              <td>M269-14</td>
+              <td>14</td>
+              <td>0.016</td>
+              <td>0.023</td>
+              <td>0.25</td>
+              <td>0.25</td>
+              <td>3</td>
+              <td>0.5</td>
+              <td>0.094</td>
+              <td>ST124</td>
+              <td>7-5-1-8-14-11-14</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>36</td>
+              <td>Netherlands<sup>18C</sup>-36</td>
+              <td>M241-18C</td>
+              <td>18C</td>
+              <td>0.023</td>
+              <td>0.023</td>
+              <td>0.125</td>
+              <td>0.19</td>
+              <td>3</td>
+              <td>0.38</td>
+              <td>0.064</td>
+              <td>ST113</td>
+              <td>7-2-1-1-10-1-21</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>37</td>
+              <td>Netherlands<sup>15B</sup>-37</td>
+              <td>M254-15B</td>
+              <td>15B</td>
+              <td>0.012</td>
+              <td>0.023</td>
+              <td>0.125</td>
+              <td>0.19</td>
+              <td>2</td>
+              <td>0.25</td>
+              <td>0.094</td>
+              <td>ST199</td>
+              <td>8-13-14-4-17-4-14</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>Sweden<sup>4</sup>-38</td>
+              <td>M5-4</td>
+              <td>4</td>
+              <td>0.012</td>
+              <td>0.016</td>
+              <td>0.125</td>
+              <td>0.19</td>
+              <td>4</td>
+              <td>0.25</td>
+              <td>0.094</td>
+              <td>ST205</td>
+              <td>10-5-4-5-13-10-18</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>39</td>
+              <td>Netherlands<sup>7F</sup>-39</td>
+              <td>M248-7F</td>
+              <td>7F</td>
+              <td>0.012</td>
+              <td>0.016</td>
+              <td>0.19</td>
+              <td>0.19</td>
+              <td>3</td>
+              <td>0.5</td>
+              <td>0.094</td>
+              <td>ST191</td>
+              <td>8-9-2-1-6-1-17</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-27">27</a></td>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>Sweden<sup>1</sup>-40</td>
+              <td>PJ537-1</td>
+              <td>1</td>
+              <td>0.012</td>
+              <td>0.012</td>
+              <td>0.125</td>
+              <td>0.125</td>
+              <td>2</td>
+              <td>0.19</td>
+              <td>0.125</td>
+              <td>ST304</td>
+              <td>13-8-13-5-17-4-8</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-29">29</a></td>
+            </tr>
+            <tr>
+              <td>41</td>
+              <td>Portugal<sup>6A</sup>-41</td>
+              <td>DCC501</td>
+              <td>6A</td>
+              <td>0.012</td>
+              <td>0.023</td>
+              <td>0.125</td>
+              <td>0.125</td>
+              <td>3</td>
+              <td>0.38</td>
+              <td>0.75</td>
+              <td>ST327</td>
+              <td>1-5-7-12-10-1-14</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-30">30</a></td>
+            </tr>
+            <tr>
+              <td>42</td>
+              <td>Norway<sup>NT</sup>-42</td>
+              <td>1141/96</td>
+              <td>NT</td>
+              <td>0.094</td>
+              <td>0.125</td>
+              <td>4</td>
+              <td>0.064</td>
+              <td>2</td>
+              <td>32.0</td>
+              <td>0.38</td>
+              <td>ST344</td>
+              <td>8-37-9-29-2-12-53</td>
+              <td>-</td>
+              <td><i>mef</i></td>
+              <td><a href="#ref-30">30</a></td>
+            </tr>
+            <tr>
+              <td>43</td>
+              <td>USA<sup>NT</sup>-43</td>
+              <td>SP165</td>
+              <td>NT</td>
+              <td>0.094</td>
+              <td>0.094</td>
+              <td>4</td>
+              <td>0.094</td>
+              <td>3</td>
+              <td>32.0</td>
+              <td>0.25</td>
+              <td>ST448</td>
+              <td>8-5-2-27-2-11-71</td>
+              <td>-</td>
+              <td>-</td>
+              <td><a href="#ref-31">31</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div>
+          <p>
+            CSR = The Czechoslovakian Republic
+          </p>
+          <p>
+            PEN = penicillin; CTX = cefotaxime; ERY = erythromycin; CLIN = clindamycin; CHL = chloramphenicol; TET = tetracycline; SXT = trimethoprim-sulphamethoxazole 
+          </p>
+          <p>
+            MLST (Multilocus Sequence Typing) Profile:<br>
+            <i>aroE</i> (shikimate dehydrogenae) - <i>gdh</i> (glucose-6-phosphate dehydrogenase) - <i>gki</i> (glucose kinase) - <i>recP</i> (transketolase) - <i>spi</i> (signal peptidase) - <i>xpt</i> (xanthine phosphoribosyltransferase) - <i>ddl</i> (D-alanine-D-alanine ligase)
+          </p>
+          <p>
+            PBP (Penicillin-binding Protein) Profile:<br>
+            <i>pbp1a</i> - <i>pbp2b</i> - <i>pbp2x</i>
+          </p>
+          <p>
+            <i>erm</i> = <i>erm</i>(B) gene; <i>mef</i> = <i>mef</i>(A) gene
+          </p>
+        </div>  
+
+        <div>
+          <h3>References</h3>
+          <ol>
+            <li id="ref-1">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/1766389/" target="_blank">Coffey, T. J., C. G. Dowson, M. Daniels, J. Zhou, C. Martin, B. G. Spratt and J. M. Musser.</a> 1991. Horizontal transfer of multiple penicillin-binding protein genes, and capsular biosynthetic genes, in natural populations of Streptococcus pneumoniae. Mol. Microbiol. <b>5</b>:2255-2260.
+            </li>
+            <li id="ref-2">placeholder</li>
+            <li id="ref-3">placeholder</li>
+            <li id="ref-4">placeholder</li>
+            <li id="ref-5">placeholder</li>
+            <li id="ref-6">placeholder</li>
+            <li id="ref-7">placeholder</li>
+            <li id="ref-8">placeholder</li>
+            <li id="ref-9">placeholder</li>
+            <li id="ref-10">placeholder</li>
+            <li id="ref-11">placeholder</li>
+            <li id="ref-12">placeholder</li>
+            <li id="ref-13">placeholder</li>
+            <li id="ref-14">placeholder</li>
+            <li id="ref-15">placeholder</li>
+            <li id="ref-16">placeholder</li>
+            <li id="ref-17">placeholder</li>
+            <li id="ref-18">placeholder</li>
+            <li id="ref-19">placeholder</li>
+            <li id="ref-20">placeholder</li>
+            <li id="ref-21">placeholder</li>
+            <li id="ref-22">placeholder</li>
+            <li id="ref-23">placeholder</li>
+            <li id="ref-24">placeholder</li>
+            <li id="ref-25">placeholder</li>
+            <li id="ref-26">placeholder</li>
+            <li id="ref-27">placeholder</li>
+            <li id="ref-28">placeholder</li>
+            <li id="ref-29">placeholder</li>
+            <li id="ref-30">placeholder</li>
+            <li id="ref-31">placeholder</li>
+          </ol>
+        </div>
+
+    </div>
+  </section>
+
+
+  <div id="modal"></div>
+  <footer>
+    <div class="container">
+      <div class="row copy">
+        <div class="col-lg-7 col-md-7 col-sm-12 copy-left">
+          <span>GPS &copy; 2016</span> -
+          <a href="cookiespolicy.html" onclick="">Cookies policy</a> | <a href="legal.html">Terms &amp; Conditions.</a>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 copy-right">
+          This site is hosted by the <a href="https://www.sanger.ac.uk/">Wellcome Trust Sanger Institute</a>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="js/custom.min.js"></script>
+  <!--<script src="js/geocode.js"></script>-->
+  <!--<script type="text/javascript" src="/zxtm/piwik2.js"></script>-->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+</body>
+
+</html>
