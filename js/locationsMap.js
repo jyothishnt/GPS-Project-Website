@@ -15,23 +15,17 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?
 // locations with a microreact tree
 
 var myIcon = L.icon({
-    iconUrl: 'img/microreact-map-marker2.svg',
-    shadowUrl: 'https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png',
-    iconSize: [25, 40],
-    iconAnchor: [15, 36],
-    popupAnchor: [-2, -28],
-    shadowSize: [50, 30],
-    shadowAnchor: [20, 36]
+    iconUrl: 'img/white-dot.svg',
+    iconSize: [8, 8],
+    iconAnchor: [0, 0],
+    popupAnchor: [4, 0],
 });
 
 var myBlueIcon = L.icon({
-    iconUrl: 'microreact-map-marker-blue.svg',
-    shadowUrl: 'https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png',
-    iconSize: [25, 40],
-    iconAnchor: [15, 36],
-    popupAnchor: [-2, -28],
-    shadowSize: [50, 30],
-    shadowAnchor: [20, 36]
+    iconUrl: 'img/white-x-mark.svg',
+    iconSize: [8, 8],
+    iconAnchor: [0, 0],
+    popupAnchor: [4, 0],
 });
 
 var country;
