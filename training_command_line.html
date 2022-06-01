@@ -178,24 +178,24 @@
           </p>
           
           <p>
-            GPS reference database:
+            GPS reference database (n=42,163):
             <br />
             <a download class="btn btn-info white"
             title="GPS reference database" target="_blank"
             aria-label="Download the GPS reference database"
-            href="https://drive.google.com/file/d/1Q6Ok8YGQzwMJjN6_37xhRU_k65rTOzBN/view?usp=sharing">
+            href="https://gps-project.cog.sanger.ac.uk/GPS_v6.zip">
               <i class="fa fa-download white fa-lg"></i>
               Download
             </a>
           </p>
 
           <p>
-            GPS designation:
+            GPS designation (933 GPSCs):
             <br />
             <a download class="btn btn-info white"
             title="GPS designation CSV file" target="_blank"
             aria-label="Download the GPS designation CSV file"
-            href="GPS_v5_external_clusters.csv">
+            href="GPS_v6_external_clusters.csv">
               <i class="fa fa-download white fa-lg"></i>
               Download
             </a>
@@ -204,14 +204,13 @@
           <p>Files required to run GPSC assignment using PopPUNK 2.4:</p>
           <ol>
             <li>
-              A 2-column tab-delimited file containing sample name and path to the corresponding assembly 
-             (no header)
+              A 2-column tab-delimited file containing sample name and path to the corresponding assembly (no header)
             </li>
             <li>
-             GPS reference database &lt;GPS_v5&gt;
+             GPS reference database &lt;GPS_v6&gt;
             </li>
             <li>
-             GPS designation &lt;GPS_v5_external_clusters.csv&gt;
+             GPS designation &lt;GPS_v6_external_clusters.csv&gt;
             </li>
           </ol>
           
@@ -222,27 +221,22 @@
           </p>
 
           <p>Run GPSC assignment:</p>
-          <pre>poppunk_assign --db GPS_v5 --distances GPS_v5/GPS_v5.dists --query &lt;2-column path to assembly&gt; --output &lt;GPSC_assignment&gt; --external-clustering GPS_v5_external_clusters.csv</pre>
+          <pre>poppunk_assign --db GPS_v6 --distances GPS_v6/GPS_v6.dists --query &lt;2-column path to assembly&gt; --output &lt;GPSC_assignment&gt; --external-clustering GPS_v6_external_clusters.csv</pre>
 
           <p>
             <strong>Outputs:</strong>
             <br>
             <em>_clusters.csv</em>: popPUNK clusters with dataset specific nomenclature
             <br>
-            <em>_external_clusters.csv</em>: GPSC v5 scheme designations
+            <em>_external_clusters.csv</em>: GPSC v6 scheme designations
           </p>
 
           <p>
-            Novel Clusters: Will be assigned NA in the <em>_external_clusters.csv</em> as they have not been defined in 
-            the v5 dataset used to designate the GPSCs. Please email: <a href="mailto:globalpneumoseq@gmail.com">
-            globalpneumoseq@gmail.com</a> to have novel clusters added to the database and a GPSC cluster name assigned
-            after you have checked for low level contamination which may contribute to biased accessory distances.
+            <strong>Novel Clusters are assigned NA</strong> in the <em>_external_clusters.csv</em> as they have not been defined in the v6 dataset used to designate the GPSCs. Please email: <a href="mailto:globalpneumoseq@gmail.com">globalpneumoseq@gmail.com</a> to have novel clusters added to the database and a GPSC cluster name assigned after you have checked for low level contamination which may contribute to biased accessory distances.
           </p>
           
           <p>
-            Merged clusters: Unsampled diversity may represent missing variation linking two clusters. GPSCs are then
-            merged. For example if GPSC23 and GPSC362 merged, the GPSC would be then reported as GPSC23, with a merge
-            history of GPSC23;362.
+            Merged clusters: Unsampled diversity may represent missing variation linking two clusters. GPSCs are then merged. For example if GPSC23 and GPSC362 merged, the GPSC would be then reported as GPSC23, with a merge history of GPSC23;362.
           </p>
 
           <p>
