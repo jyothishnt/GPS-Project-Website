@@ -291,11 +291,14 @@
               <li class=""><a id="GPSC_lineages" href="GPSC_lineages.html">Strains</a></li>
               <li class=""><a id="serotypes" href="serotypes.html">Serotypes</a></li>
               <!-- <li class=""><a id="public_database" href="/public_database.html">Database (public)</a></li> -->
+              <li class=""><a id="pmen" href="pmen.html">PMEN Clones</a></li>
+              <li class=""><a id="isolate_bank_request" href="isolate_bank_request.html">Isolate Bank Request</a></li>
               <li class=""><a id="data_downloads" target="_blank" href="/dataviewer/gps/data">Database</a></li>
             </ul>
           </li>
           <li><a id="publications" href="publications.html">Publications</a></li>
           <li><a id="capacity_building" href="capacity_building.html">Capacity Building</a></li>
+          <li><a id="gps-visualiser" href="/gps-visualiser" target="_blank">GPS Visualiser</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -312,6 +315,29 @@
   <!-- Navigation bar ends -->
 
   <section>
+    <div class="container content justify">
+      <h2>GPSC Strains</h2>
+      <p>
+        Global Pneumococcal Sequence Cluster (GPSC) is <strong>an international genomic definition of pneumococcal lineage</strong> (<a href="https://www.thelancet.com/article/S2352-3964(19)30259-2/fulltext" target="_blank">Gladstone & Lo et al 2019 Ebiomedicine</a>) defined using a clustering software named <a href="https://genome.cshlp.org/content/early/2019/01/16/gr.241455.118" target="_blank">PopPUNK</a>. This typing scheme captures all variations across the entire genome and gives us the best chance of monitoring and understanding the processes of vaccine evasion (<a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(19)30297-X/fulltext" target="_blank">Lo & Gladstone et al 2019 Lancet Infectious Diseases</a>).
+        <ul style="list-style: initial; margin: initial; padding: 0 0 0 40px;">
+          <li>You can assign GPSC using Pathogenwatch (<a href="https://www.youtube.com/watch?v=Q8bDuZZ3hXg" target="_blank">tutorial video</a>) or command line (<a href="training_command_line.html">step-by-step instruction</a>).</li>
+          <li>You can explore the common GPSCs’ phylogenies in Microreact and recombination pattern in Phandango by hovering over the cluster (each cluster represents a GPSC).</li>
+        </ul>
+      </p>
+      <br>
+      <p>
+        The search feature below enables search by GPSC, serotype or ST.
+      </p>
+      <p><em>
+          For example:
+          <ol>
+            <li>Select the category 'GPSC' in the first box and type 'GPSC32' in the second box to display GPSC32.</li>
+            <li>Select the category 'Serotype' in the first box and choose a serotype from the dropdown to search for all of the GPSC that contain that particular serotype.</li>
+            <li>Select the category 'ST' in the first box to search for corresponding GPSC</li>
+          </ol>
+      </em></p>
+    </div>
+
     <div class="container" id='app'></div>
     <script type="text/javascript" src='bundle.js'></script>
   </section>

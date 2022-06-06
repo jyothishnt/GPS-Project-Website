@@ -4,7 +4,7 @@ var mymap = L.map("partnersMapid", {
 });
 
 L.tileLayer(
-  "https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2dwcy13Z3NhLWVkZ2UiLCJhIjoiY2owaWE4d2w0MDAwMTMybXk4cTN2eG5xYSJ9.l5ZaIOGl6IY_2i_fWfsRDA",
+  "https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2dwcy13Z3NhLWVkZ2UiLCJhIjoiY2owaWE4d2w0MDAwMTMybXk4cTN2eG5xYSJ9.l5ZaIOGl6IY_2i_fWfsRDA",
   {
     attribution:
       'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -18,24 +18,11 @@ L.tileLayer(
 
 // locations with a microreact tree
 
-var myIcon = L.icon({
-  iconUrl: "img/microreact-map-marker2.svg",
-  shadowUrl: "https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png",
-  iconSize: [25, 40],
-  iconAnchor: [15, 36],
-  popupAnchor: [-2, -28],
-  shadowSize: [50, 30],
-  shadowAnchor: [20, 36]
-});
-
 var myBlueIcon = L.icon({
-  iconUrl: "img/microreact-map-marker-blue.svg",
-  shadowUrl: "https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png",
-  iconSize: [25, 40],
-  iconAnchor: [15, 36],
-  popupAnchor: [-2, -28],
-  shadowSize: [50, 30],
-  shadowAnchor: [20, 36]
+  iconUrl: "img/white-dot.svg",
+  iconSize: [8, 8],
+  iconAnchor: [0, 0],
+  popupAnchor: [4, 0],
 });
 
 let isClicked = false;
