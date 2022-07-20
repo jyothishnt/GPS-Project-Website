@@ -20192,7 +20192,8 @@
 	  serotype: ['15A', '22F', '23F', '34'],
 	  countries: [''],
 	  objectID: 33
-	}, {
+	},
+	/* {
 	  title: 'GPSC35',
 	  url: '',
 	  image: 'img/clusterImages/Cluster34.png',
@@ -20204,7 +20205,8 @@
 	  serotype: ['10A'],
 	  countries: [''],
 	  objectID: 34
-	}, {
+	},
+	{
 	  title: 'GPSC36',
 	  url: '',
 	  image: 'img/clusterImages/Cluster35.png',
@@ -20216,7 +20218,8 @@
 	  serotype: ['10A', '35F'],
 	  countries: [''],
 	  objectID: 35
-	}, {
+	}, */
+	{
 	  title: 'GPSC37',
 	  url: 'https://microreact.org/project/gpsGPSC37',
 	  image: 'img/clusterImages/cluster37.png',
@@ -20493,7 +20496,8 @@
 	  serotype: ['6A', '6B', '19A'],
 	  countries: ['The Gambia'],
 	  objectID: 57
-	}, {
+	}, 
+	/* {
 	  title: 'GPSC59',
 	  url: '',
 	  image: 'img/clusterImages/cluster59.png',
@@ -20505,7 +20509,7 @@
 	  serotype: ['35B', '35D'],
 	  countries: [''],
 	  objectID: 58
-	},
+	}, */
 	/*{
 	  title: 'GPSC60',
 	  url: '',
@@ -20646,7 +20650,8 @@
 	  serotype: ['4'],
 	  countries: [],
 	  objectID: 69
-	}, {
+	}, 
+	/* {
 	  title: 'GPSC71',
 	  url: '',
 	  image: 'img/clusterImages/cluster71.png',
@@ -20658,7 +20663,8 @@
 	  serotype: ['21'],
 	  countries: [''],
 	  objectID: 70
-	}, {
+	},  */
+	{
 	  title: 'GPSC72',
 	  url: 'https://microreact.org/project/gpsGPSC72',
 	  image: 'img/clusterImages/cluster72.png',
@@ -20800,7 +20806,7 @@
 	}, */
 	{
 	  title: 'GPSC83',
-	  url: '',
+	  url: 'https://microreact.org/project/bvmKoXGt4TJJ4wnPxuJWok-gpsc83',
 	  image: 'img/clusterImages/cluster83.png',
 	  height: '60px',
 	  width: '70px',
@@ -20810,7 +20816,8 @@
 	  serotype: ['3'],
 	  countries: [],
 	  objectID: 82
-	}, {
+	}, 
+	/* {
 	  title: 'GPSC84',
 	  url: '',
 	  image: 'img/clusterImages/cluster84.png',
@@ -20846,7 +20853,7 @@
 	  serotype: ['4'],
 	  countries: [],
 	  objectID: 85
-	},
+	}, */
 	/*{
 	  title: 'GPSC87',
 	  url: '',
@@ -20873,7 +20880,7 @@
 	  countries: [],
 	  objectID: 87,
 	}, */
-	{
+	/* {
 	  title: 'GPSC89',
 	  url: '',
 	  image: 'img/clusterImages/cluster89.png',
@@ -20885,7 +20892,8 @@
 	  serotype: ['6C'],
 	  countries: [],
 	  objectID: 88
-	}, {
+	}, */
+	{
 	  title: 'GPSC90',
 	  url: 'https://microreact.org/project/gpsGPSC90',
 	  image: 'img/clusterImages/cluster90.png',
