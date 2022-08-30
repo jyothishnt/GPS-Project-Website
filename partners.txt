@@ -86,15 +86,15 @@ Yulia Urban	Russia	Moscow	55.7504461	37.6174943	urbanek@mail.ru 	G. N. Gabrichev
 Stuart C Clarke	Singapore	Singapore	1.340863	103.8303918	s.c.clarke@soton.ac.uk	University of Southampton
 Metka Paragi	Slovenia	Ljublijana	43.4208218	21.18074989	metka.paragi@nlzoh.si	National Laboratory of Health, Environment and Food
 Tamara Kastrin	Slovenia	Ljublijana	43.4208218	21.18074989	tamara.kastrin@nlzoh.si	National Laboratory of Health, Environment and Food
-Anne von Gottberg	South Africa	Johannesburg	-26.205	28.049722	annev@nicd.ac.za	National Institute for Communicable Diseases
-Kedibone M. Ndlangisa	South Africa	Johannesburg	-26.205	28.049722	kedibonen@nicd.ac.za	National Institute for Communicable Diseases
-Linda De Gouveia	South Africa	Johannesburg	-26.205	28.049722	lindad@nicd.ac.za	National Institute for Communicable Diseases
-Mignon du Plessis	South Africa	Johannesburg	-26.205	28.049722	mignond@nicd.ac.za	National Institute for Communicable Diseases
-Mushal Ali	South Africa	Johannesburg	-26.205	28.049722	MushalA@nicd.ac.za	National Institute for Communicable Diseases
-Nicole Wolter	South Africa	Johannesburg	-26.205	28.049722	nicolew@nicd.ac.za	National Institute for Communicable Diseases
-Cebile Lekhuleni	South Africa	Johannesburg	-26.205	28.049722	cebileL@nicd.ac.za	National Institute for Communicable Diseases
-Shabir A. Madhi	South Africa	Soweto	-26.2227778	27.89	madhis@rmpru.co.za	University of the Witwatersrand
-Susan A Nzenze	South Africa	Soweto	-26.2227778	27.89	sanzenze@gmail.com	University of the Witwatersrand
+Anne von Gottberg	South Africa	Johannesburg	-26.205	29.049722	annev@nicd.ac.za	National Institute for Communicable Diseases
+Kedibone M. Ndlangisa	South Africa	Johannesburg	-26.205	29.049722	kedibonen@nicd.ac.za	National Institute for Communicable Diseases
+Linda De Gouveia	South Africa	Johannesburg	-26.205	29.049722	lindad@nicd.ac.za	National Institute for Communicable Diseases
+Mignon du Plessis	South Africa	Johannesburg	-26.205	29.049722	mignond@nicd.ac.za	National Institute for Communicable Diseases
+Mushal Ali	South Africa	Johannesburg	-26.205	29.049722	MushalA@nicd.ac.za	National Institute for Communicable Diseases
+Nicole Wolter	South Africa	Johannesburg	-26.205	29.049722	nicolew@nicd.ac.za	National Institute for Communicable Diseases
+Cebile Lekhuleni	South Africa	Johannesburg	-26.205	29.049722	cebileL@nicd.ac.za	National Institute for Communicable Diseases
+Shabir A. Madhi	South Africa	Soweto	-26.2227778	26.89	madhis@rmpru.co.za	University of the Witwatersrand
+Susan A Nzenze	South Africa	Soweto	-26.2227778	26.89	sanzenze@gmail.com	University of the Witwatersrand
 Carmen Muñoz Almagro	Spain	Barcelona	41.3828939	2.1774322	cma@sjdhospitalbarcelona.org	Hospital Sant Joan de Deu
 Alba Redin Alonso	Spain	Barcelona	41.3828939	2.1774322	aredin@fsjd.org	Hospital Sant Joan de Deu
 James Ngocho	Tanzania	Moshi	-3.34882	37.343151	James.ngocho@kcmuco.ac.tz	Kilimanjaro Clinical Research Institute
