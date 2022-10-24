@@ -135,3 +135,4 @@ José Luis Di Fabio	USA	Washington, DC	38.8938672	-77.0846158	difabioj@gmail.com
 Daisy Payares	Venezuela	Caracas 	10.4686988	-67.0304508	Daisypayares2@gmail.com 	Instituto Nacional de Higiene Rafael Rangel, (INH)
 Noreyda Marcano 	Venezuela	Caracas 	10.4686988	-67.0304508	Noreydamarcano@gmail.com 	Instituto Nacional de Higiene Rafael Rangel, (INH)
 Hoa Ngo Thi	Vietnam	Ho Chi Minh City	10.823099	106.629662	hoant@oucru.org	Oxford University Clinical Research Unit
+Dwi Daningrat	Indonesia	Central Jakarta	-6.1823119	106.8014452	wa.daningrat@ndm.ox.ac.uk	University of Oxford
