@@ -10,6 +10,7 @@
 ### Maintained by
 
 - Stephanie Lo @ [The Wellcome Trust Sanger Institute](http://www.sanger.ac.uk) from June 2019
+- Harry Hung @ [The Wellcome Trust Sanger Institute](http://www.sanger.ac.uk) from May 2022
 
 This responsive website is designed using the latest web technology standards
 such as [HTML5](www.html5rocks.com/), [Bootstrap](http://getbootstrap.com/), [jQuery](http://jquery.com), and [CSS3](http://www.w3schools.com/css/css3_intro.asp)
